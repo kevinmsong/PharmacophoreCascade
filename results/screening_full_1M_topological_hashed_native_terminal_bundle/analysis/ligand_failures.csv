@@ -1,0 +1,4 @@
+ligand_id,source_input_rank,prep_failure_reason,scoring_failure_count,scoring_failure_reasons,failure_reason
+ZINCk500000g7Sjx,601,,8,conformer_generation_failed,conformer_generation_failed
+ZINCk5000009G8pw,3568,,16,conformer_generation_failed,conformer_generation_failed
+ZINCk50000046njo,3721,,12,conformer_generation_failed,conformer_generation_failed

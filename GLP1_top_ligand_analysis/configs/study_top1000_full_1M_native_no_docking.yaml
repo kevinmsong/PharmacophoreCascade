@@ -1,0 +1,95 @@
+study_name: top1000_full_1M_native_no_docking
+screening_artifact_prefix: top1000_full_1M_native_no_docking
+
+paths:
+  screening_csv: ../results/screening_full_1M_topological_hashed.csv
+  pilot_csv: ../results/screening_full_1M_topological_hashed.csv
+  outputs_dir: derived_top1000_full_1M_native_no_docking
+  reports_dir: derived_top1000_full_1M_native_no_docking/reports
+  references_dir: references
+
+ligands:
+  id_column: zinc_id
+  smiles_column: smiles
+  assay_ph: 7.4
+  max_tautomers_per_microstate: 8
+  max_microstates_per_ligand: 2
+  embed_conformers: 1
+  pains_filter: true
+
+pocket:
+  reference_structure: 6X18_GLP1_GLP1R.pdb
+  reference_state: active
+  receptor_chain: R
+  ligand_chain: P
+  contact_cutoff_angstrom: 4.5
+  water_cutoff_angstrom: 3.5
+  docking_box_padding_angstrom: 6.0
+  max_pose_center_distance_angstrom: 10.0
+  min_pose_residue_contacts: 3
+
+structures:
+  - structure_id: 6X18
+    label: workspace_active_peptide_bound
+    state: active
+    pdb_path: 6X18_GLP1_GLP1R.pdb
+    receptor_chain: R
+    ligand_chain: P
+    source: workspace
+    primary: true
+  - structure_id: AF_P43220_F1
+    label: alphafold_supplemental_model
+    state: supplemental_inactive_like
+    pdb_path: AF-P43220-F1-model_v6_GLP1R.pdb
+    receptor_chain: A
+    source: workspace
+    primary: false
+  - structure_id: 6LN2
+    label: experimental_inactive_full_length
+    state: inactive
+    pdb_path: references/6LN2.pdb
+    source: rcsb
+    primary: true
+  - structure_id: 5VEW
+    label: experimental_inactive_tmd_control
+    state: inactive
+    pdb_path: references/5VEW.pdb
+    source: rcsb
+    primary: false
+  - structure_id: 7KI0
+    label: experimental_active_peptide_control
+    state: active
+    pdb_path: references/7KI0.pdb
+    source: rcsb
+    primary: true
+  - structure_id: 7LCJ
+    label: experimental_active_small_molecule_control
+    state: active
+    pdb_path: references/7LCJ.pdb
+    source: rcsb
+    primary: true
+
+docking:
+  engine: vina
+  exhaustiveness: 24
+  num_modes: 20
+  seeds: [11, 29, 47]
+  pose_score_field: affinity_kcal_mol
+  bootstrap_iterations: 3000
+  shortlist_sizes:
+    review: 100
+    md: 100
+    rigorous_fe: 20
+  max_shortlist_per_scaffold: 8
+
+simulation:
+  forcefield_protein: ff14SB
+  forcefield_lipid: Lipid17
+  forcefield_water: TIP3P
+  ligand_forcefield: GAFF2_AM1_BCC
+  membrane: POPC
+  salt_molar: 0.15
+  restrained_relaxation_ns: 5
+  production_short_ns: 20
+  production_long_ns: 100
+  long_md_replica_count: 3

@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Paired bootstrap deltas versus the full cascade.}
+\label{tab:benchmark_deltas}
+\begin{tabular}{lrrrr}
+\toprule
+Method & Metric & Delta mean & 95\% CI low & 95\% CI high \\
+\midrule
+Stage-3 only & bedroc & -0.182 & -0.436 & -0.000 \\
+Std. 3D pharm. & bedroc & -0.239 & -0.512 & -0.017 \\
+Stage-3 only & ef\_01pct & -8.800 & -100.000 & 0.000 \\
+Std. 3D pharm. & ef\_01pct & -8.800 & -100.000 & 0.000 \\
+Stage-3 only & ef\_1pct & -11.900 & -30.000 & 0.000 \\
+Std. 3D pharm. & ef\_1pct & -12.120 & -30.000 & 0.000 \\
+Stage-3 only & ef\_5pct & -3.908 & -10.000 & 0.000 \\
+Std. 3D pharm. & ef\_5pct & -5.608 & -12.000 & 0.000 \\
+Stage-3 only & pr\_auc & -0.177 & -0.430 & -0.011 \\
+Std. 3D pharm. & pr\_auc & -0.205 & -0.463 & -0.026 \\
+Stage-3 only & roc\_auc & -0.057 & -0.137 & 0.017 \\
+Std. 3D pharm. & roc\_auc & -0.069 & -0.209 & 0.091 \\
+Stage-3 only & scaffold\_recovery\_top10 & -0.199 & -0.400 & 0.000 \\
+Std. 3D pharm. & scaffold\_recovery\_top10 & -0.264 & -0.500 & 0.000 \\
+Stage-3 only & scaffold\_recovery\_top25 & -0.170 & -0.368 & 0.000 \\
+Std. 3D pharm. & scaffold\_recovery\_top25 & -0.202 & -0.400 & 0.000 \\
+Stage-3 only & scaffold\_recovery\_top50 & -0.039 & -0.200 & 0.167 \\
+Std. 3D pharm. & scaffold\_recovery\_top50 & -0.109 & -0.286 & 0.000 \\
+Stage-3 only & top10\_recovery & -0.198 & -0.500 & 0.000 \\
+Std. 3D pharm. & top10\_recovery & -0.260 & -0.500 & 0.000 \\
+Stage-3 only & top25\_recovery & -0.173 & -0.400 & 0.000 \\
+Std. 3D pharm. & top25\_recovery & -0.204 & -0.500 & 0.000 \\
+Stage-3 only & top50\_recovery & -0.041 & -0.300 & 0.200 \\
+Std. 3D pharm. & top50\_recovery & -0.109 & -0.300 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

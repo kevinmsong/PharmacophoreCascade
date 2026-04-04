@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Rank stability under component ablations.}
+\label{tab:ablation_results}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Method & n\_shared & Kendall tau & Spearman r & jaccard\_top10 & jaccard\_top50 & jaccard\_top100 & jaccard\_top500 \\
+\midrule
+remove stage1 & 1000 & 0.118 & 0.176 & 0.000 & 0.010 & 0.010 & 0.038 \\
+remove stage2 & 1000 & -0.020 & -0.030 & 0.000 & 0.000 & 0.000 & 0.000 \\
+remove stage3 & 80 & 0.018 & 0.031 & 0.000 & 0.010 & 0.015 & 0.026 \\
+native top stage3 only & 52 & 0.431 & 0.608 & 0.053 & 0.031 & 0.026 & 0.028 \\
+alternative tiebreak & 80 & 0.022 & 0.026 & 0.000 & 0.010 & 0.005 & 0.016 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,39 @@
+complex_pdb: structures/complex.pdb
+glp1_chains: P
+glp1r_chains: R
+radius_iface: 6.0
+radius_pocket: 8.0
+
+library: library.smi
+max_mols: 1000
+use_vina: false
+vina_exe: vina
+receptor_pdbqt: pocket/mimic_pocket.pdbqt
+pocket_pdb: pocket/mimic_pocket.pdb
+pharmacophore: maps/pharmacophore.json
+out_csv: maps/mimic_hits.csv
+out_sdf: maps/mimic_hits.sdf
+
+zinc:
+  enable: true
+  urls: []  # e.g., ["https://files.docking.org/.../tranche.smi.gz"]
+  archive: ""  # Path to ZINC archive if available
+  output: library.smi
+  max_mols: 100000
+
+screening:
+  max_confs: 20
+  pharm_tol: 1.8
+  thresholds:
+    min_pharm_cov: 0.35
+    min_frac_within: 0.25
+    max_clashes: 2
+  keep_top_k_per_tranche: 10000
+
+rescoring:
+  enable: false
+  max_confs: 40
+  pharm_tol: 1.6
+
+docking:
+  dock_top_k_fraction: 0.05

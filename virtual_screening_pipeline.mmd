@@ -1,0 +1,52 @@
+---
+config:
+  theme: neutral
+  look: neo
+  layout: fixed
+  fontSize: 18
+  padding: 10
+---
+flowchart TB
+    A["<b>Start:</b> <br>1M ZINC tranche scan"] --> B["<b>Stage 0:</b><br>Standardize molecules<br>Property + chemistry gate"]
+    B --> C["<b>Stage 1:</b><br>Physicochemical hotspot bitmask scoring"]
+    C --> D["<b>Stage 2:</b><br>Pair-hash prescreen"]
+    D --> E["Shortlist heap finalize:<br>Top shortlist_pct% of gate-pass molecules<br>by cascade score"]
+    E --> F["<b>Stage 3:</b><br>3D conformer rerank"]
+    F --> G["Stage-3 audit outputs:<br>full ranked CSV + top-100 CSV + plots"]
+    F --> H["Diversified native candidate pool:<br>12k by stage-3 rank<br>4k by hotspot breadth<br>4k by native-supported hotspot score"]
+    H --> I["Scaffold-aware native selection:<br>Top 5,000 under Murcko cap"]
+    I --> J["Native ligand preparation:<br>microstates, tautomers,<br>multiple 3D conformers"]
+    K["Native GLP-1/GLP-1R reference:<br>6X18 peptide-contact pharmacophore"] --> L["Weighted reference-feature table"]
+    J --> N["Conformer-aware native scoring<br>against reference features"]
+    L --> N
+    N --> O["Best conformer per microstate"]
+    O --> P["Best state per ligand"]
+    P --> Q["Post-score hotspot inference:<br>ligand hotspot map + global hotspot frequencies"]
+    P --> R["Scored 5,000-ligand native audit table"]
+    R --> S["Final native ranking:<br>native coverage -> matched features -> RMSD -> pair error<br>then stage-3 screen metrics"]
+    S --> T["<b>Primary output:<br>final native top-1000 CSV</b>"]
+    P --> U["Always-on diagnostics:<br>correlation, quartiles, rank shift, residuals"]
+
+     A:::stage
+     B:::stage
+     C:::stage
+     D:::stage
+     E:::stage
+     F:::stage
+     G:::output
+     H:::native
+     I:::native
+     J:::native
+     K:::native
+     L:::native
+     N:::native
+     O:::native
+     P:::native
+     Q:::native
+     R:::native
+     S:::native
+     T:::output
+     U:::output
+    classDef stage fill:#e7eef6,stroke:#4a6fa5,color:#1e293b,stroke-width:1.5px,font-size:18px
+    classDef native fill:#e8f3ec,stroke:#2f6b4f,color:#1e293b,stroke-width:1.5px,font-size:18px
+    classDef output fill:#f5f5f5,stroke:#9ca3af,color:#1e293b,stroke-width:1.5px,font-size:18px

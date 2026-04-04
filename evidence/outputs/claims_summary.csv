@@ -1,0 +1,6 @@
+claim,verdict,narrative
+claim1_native_adds_info,supports,"Pearson r = 0.038 between cascade score and native coverage (Spearman ρ = 0.000; median |rank shift| = 307), confirming that native reranking provides information orthogonal to the frontend cascade."
+claim2_frontend_enriches_not_determines,supports,"Native top-100 ligands have a median screen percentile of 47.2%, with only 2% drawn from the cascade top-1%; the frontend enriches but does not constrain native performance."
+claim3_native_not_cosmetic_stage3,supports,Stage-3 top-10 and native top-10 share Jaccard = 0.00 with Pearson r = 0.038 between their coverage scores; native scoring is not a cosmetic re-ordering of Stage-3 results.
+claim4_diversified_pool_reduces_collapse,inconclusive,Insufficient ligands in one or both pool-source groups.
+claim5_residue_motif_convergence,contradicts,Only 0/4 claimed motif residues are enriched in top-10 native-ranked ligands; convergence on the stated motif is not confirmed.

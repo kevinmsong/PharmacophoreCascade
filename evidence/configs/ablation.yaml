@@ -1,0 +1,26 @@
+random_seed: 42
+
+# Shortlist fraction sensitivity sweep
+shortlist_fraction_sweep: [0.01, 0.025, 0.05, 0.10]
+
+# Cascade weight sensitivity sweep: [hotspot_weight, pair_hash_weight]
+cascade_weight_sweep:
+  - [0.6, 0.4]
+  - [0.5, 0.5]
+  - [0.4, 0.6]   # current (baseline)
+  - [0.2, 0.8]
+  - [1.0, 0.0]   # hotspot only
+  - [0.0, 1.0]   # pair-hash only
+
+# Named ablations to run (table-level, no re-running the cascade)
+required_ablations:
+  - remove_stage1        # cascade_score = pair_hash_overlap_pct only
+  - remove_stage2        # cascade_score = hotspot_weighted_pct only
+  - remove_stage3        # rank native pool by cascade_score not native coverage
+  - native_top_stage3_only    # restrict native pool to stage3-rank top-N
+  - alternative_tiebreak      # native rank reversed: rmsd primary, coverage secondary
+
+# For native_top_stage3_only: how many top stage-3 ligands to keep
+native_top_stage3_n: 5000
+
+top_k_comparison_values: [10, 50, 100, 500]

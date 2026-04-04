@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Pairwise rank correlation and Jaccard overlap between ranking methods.}
+\label{tab:benchmark_pairwise}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method A & Method B & Kendall tau & Spearman r & jaccard\_top10 & jaccard\_top25 & jaccard\_top50 \\
+\midrule
+Full cascade & Stage-3 only & 0.585 & 0.741 & 0.176 & 0.136 & 0.250 \\
+Full cascade & Std. 3D pharm. & 0.169 & 0.229 & 0.111 & 0.111 & 0.163 \\
+Stage-3 only & Std. 3D pharm. & 0.584 & 0.548 & 0.429 & 0.351 & 0.515 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,7 @@
+metric,value
+pearson_r_stage3_vs_native_coverage,0.03751677417830867
+spearman_r_stage3_rank_vs_native_rank,-0.005054081054081054
+jaccard_top10,0.0
+jaccard_top50,0.030927835051546393
+jaccard_top100,0.07526881720430108
+jaccard_top500,0.3333333333333333

@@ -1,0 +1,7 @@
+Figure caption
+Descriptive analysis of `native_weighted_coverage_pct` for the top 4,997 native-scored ligands from the `full_1M_topological_hashed` native rerank. Panel A shows the distribution with its central spread; Panel B shows the empirical cumulative distribution; Panel C shows the rank-ordered score profile; and Panel D shows how much of the total native-coverage mass is captured as increasingly larger fractions of the ranked ligand set are retained.
+
+The native weighted coverage distribution is compact rather than broadly dispersed (mean 24.24% ± 1.89, median 24.65%, IQR 23.25% to 24.87%, range 15.09% to 29.97%).
+The near-zero skewness (-0.073) indicates that the scored cohort is not dominated by a small extreme-value tail; instead, most ligands fall into a relatively narrow native-mimicry band.
+The upper tail is still meaningful but modestly concentrated: the top 10% of ligands account for 11.26% of the total native-coverage mass, and the top 25% account for 27.58%.
+Taken together, the figure suggests that the native terminal rerank separates ligands within a constrained dynamic range rather than producing a few runaway outliers. That is consistent with a screening workflow that enriches for a common GLP-1-like interaction pattern while still requiring secondary geometric and chemical criteria to prioritize the very best mimetics.

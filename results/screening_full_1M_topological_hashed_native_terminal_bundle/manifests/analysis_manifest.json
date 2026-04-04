@@ -1,0 +1,118 @@
+{
+  "config_path": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\GLP1_top_ligand_analysis\\configs\\study_top1000_full_1M_native_tuned_no_docking.yaml",
+  "pair_tolerance_angstrom": 3.0,
+  "final_rank_mode": "native_first",
+  "final_sort_contract": [
+    {
+      "field": "native_weighted_coverage_pct",
+      "direction": "desc"
+    },
+    {
+      "field": "native_matched_reference_features",
+      "direction": "desc"
+    },
+    {
+      "field": "native_fit_rmsd_angstrom",
+      "direction": "asc"
+    },
+    {
+      "field": "native_mean_pair_distance_error_angstrom",
+      "direction": "asc"
+    },
+    {
+      "field": "stage3_screen_rank",
+      "direction": "asc"
+    },
+    {
+      "field": "zinc_id",
+      "direction": "asc"
+    }
+  ],
+  "pool_strategy": {
+    "strategy": "deduplicated_union_with_stage3_backfill",
+    "requested_pool_k": 20000,
+    "requested_source_quotas": {
+      "stage3_rank": 12000,
+      "hotspot_breadth": 4000,
+      "native_supported_hotspot_score": 4000
+    },
+    "realized_source_counts": {
+      "total_unique_candidates": 20000,
+      "stage3_rank": 12000,
+      "hotspot_breadth": 4000,
+      "native_supported_hotspot_score": 4000
+    }
+  },
+  "selection_strategy": {
+    "selection_top_k": 5000,
+    "max_per_scaffold": 8,
+    "scaffold_key": "Murcko"
+  },
+  "candidate_pool_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\input\\native_candidate_pool.csv",
+  "selected_input_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\input\\native_selected_input.csv",
+  "excluded_selected_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\input\\native_excluded_by_chemistry.csv",
+  "prepared_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\ligands\\native_terminal_prepared.csv",
+  "prepared_sdf": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\ligands\\native_terminal_prepared.sdf",
+  "prep_failures_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\ligands\\native_terminal_failures.csv",
+  "reference_feature_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\native_reference_features.csv",
+  "native_contact_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\native_feature_receptor_contacts.csv",
+  "microstate_mapping_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\microstate_native_mapping.csv",
+  "microstate_match_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\microstate_native_feature_matches.csv",
+  "best_summary_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\ligand_best_native_mapping_summary.csv",
+  "scoring_failures_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\scoring_failures.csv",
+  "ligand_failures_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\ligand_failures.csv",
+  "ligand_hotspot_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\ligand_hotspot_compatibility.csv",
+  "global_hotspot_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\global_hotspot_frequency.csv",
+  "aligned_best_sdf": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\best_ligands_aligned_to_native_pharmacophore.sdf",
+  "counts": {
+    "candidate_pool_size": 20000,
+    "selected_ligands": 5000,
+    "chemistry_excluded_selected_ligands": 0,
+    "prepared_microstates": 43313,
+    "prep_failures": 0,
+    "scored_microstates": 43249,
+    "scoring_failures": 64,
+    "successful_best_ligands": 4997,
+    "scored_summary_rows": 5000,
+    "final_rows": 1000
+  },
+  "timings": {
+    "selection_sec": 15.303110000000743,
+    "library_prepare_sec": 4245.390442199998,
+    "reference_setup_sec": 3.648124799998186,
+    "scoring_sec": 13486.508356999992,
+    "artifact_generation_sec": 10.599581000002217,
+    "total_sec": 17770.081178499997
+  },
+  "output_paths": {
+    "native_scored": "results\\screening_full_1M_topological_hashed_native_scored_top5000.csv",
+    "native_final": "results\\top_1000_glp1_mimetics_full_1M_topological_hashed_native_final.csv",
+    "bundle_root": "results\\screening_full_1M_topological_hashed_native_terminal_bundle"
+  },
+  "pains_filter_enabled": true,
+  "embed_conformers": 4,
+  "diagnostics": {
+    "status": "generated",
+    "always_on": true,
+    "diagnostics": [
+      "correlation",
+      "quartiles",
+      "rank_shift",
+      "residuals"
+    ],
+    "outputs": {
+      "summary_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\ligand_best_native_mapping_summary.csv",
+      "analysis_label": "Top 4,997 native-scored ligands",
+      "bootstrap_iterations": 2000,
+      "metrics_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\native_correlation_metrics.csv",
+      "quartiles_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\native_correlation_quartiles.csv",
+      "rank_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\native_rank_comparison.csv",
+      "scatter_png": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+      "quartile_png": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+      "rank_png": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+      "residual_png": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "report_md": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\reports\\native_correlation_analysis.md",
+      "ligand_count": 4997
+    }
+  }
+}

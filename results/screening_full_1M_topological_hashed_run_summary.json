@@ -1,0 +1,2128 @@
+{
+  "generated_at": "2026-03-14 03:13:19",
+  "args": {
+    "total_target": 1000000,
+    "zinc_prefixes": [
+      "H17",
+      "H18",
+      "H19",
+      "H20"
+    ],
+    "top_hotspots": 25,
+    "pair_features": 24,
+    "shortlist_pct": 5.0,
+    "rerank_conformers": 16,
+    "rerank_query_features": 28,
+    "rerank_pair_tolerance": 2.75,
+    "rerank_tolerance": 2.75,
+    "hotspot_min_exact": 3,
+    "hotspot_min_groups": 2,
+    "pair_hash_mode": "precision_5bin",
+    "rerank_score_mode": "stage3_only",
+    "native_support_max_residues": 8,
+    "chemistry_gate_mode": "strict",
+    "native_final_top_k": 1000,
+    "native_candidate_pool_k": 20000,
+    "native_selection_top_k": 5000,
+    "native_rerank_top_k": 5000,
+    "native_rerank_pool_k": 20000,
+    "native_rerank_max_per_scaffold": 8,
+    "native_rerank_pair_tolerance": 3.0,
+    "final_rank_mode": "native_first",
+    "workers": 15,
+    "results_dir": "results",
+    "output_label": "full_1M_topological_hashed",
+    "pharmacophore_path": "maps/pharmacophore_rigorous.json"
+  },
+  "counts": {
+    "total_scanned": 1000000,
+    "invalid_molecules": 0,
+    "property_filtered": 2410,
+    "chemistry_filtered": 41350,
+    "warn_only_flagged": 0,
+    "no_typed_features": 0,
+    "property_pass": 956240,
+    "hotspot_filtered": 7269,
+    "hotspot_pass": 948971,
+    "shortlist_size": 47812,
+    "shortlist_heap_capacity": 50000,
+    "rerank_candidates": 47812,
+    "final_hits": 47689
+  },
+  "timings": {
+    "pharmacophore_precompute_sec": 0.004814300002180971,
+    "stage0_property_gate_sec": 4367.89570009186,
+    "stage1_hotspot_scoring_sec": 449.9835874014607,
+    "stage2_pair_hash_scoring_sec": 168.5519262051239,
+    "shortlist_finalize_sec": 1.0367612000045483,
+    "stage3_rerank_sec": 7465.796350999997,
+    "artifact_generation_sec": 5.7577691999977105,
+    "total_pipeline_sec": 30265.442575400004
+  },
+  "curated_contact_groups": [
+    {
+      "name": "ECD anchoring",
+      "peptide_residues": [
+        "Phe28",
+        "Ile29",
+        "Leu32",
+        "Val33"
+      ],
+      "receptor_residues": [
+        {
+          "resnum": 32,
+          "resname": "LEU"
+        },
+        {
+          "resnum": 39,
+          "resname": "TRP"
+        },
+        {
+          "resnum": 67,
+          "resname": "ASP"
+        },
+        {
+          "resnum": 69,
+          "resname": "TYR"
+        },
+        {
+          "resnum": 121,
+          "resname": "ARG"
+        },
+        {
+          "resnum": 123,
+          "resname": "LEU"
+        },
+        {
+          "resnum": 128,
+          "resname": "GLU"
+        }
+      ]
+    },
+    {
+      "name": "Upper TMD activation pocket",
+      "peptide_residues": [
+        "His7",
+        "Glu9",
+        "Thr13",
+        "Ser14",
+        "Ser17",
+        "Ser18"
+      ],
+      "receptor_residues": [
+        {
+          "resnum": 145,
+          "resname": "TYR"
+        },
+        {
+          "resnum": 190,
+          "resname": "ARG"
+        },
+        {
+          "resnum": 197,
+          "resname": "LYS"
+        },
+        {
+          "resnum": 297,
+          "resname": "TRP"
+        },
+        {
+          "resnum": 298,
+          "resname": "THR"
+        },
+        {
+          "resnum": 299,
+          "resname": "ARG"
+        },
+        {
+          "resnum": 388,
+          "resname": "LEU"
+        },
+        {
+          "resnum": 392,
+          "resname": "SER"
+        }
+      ]
+    },
+    {
+      "name": "ECL1 support",
+      "peptide_residues": [
+        "Trp31"
+      ],
+      "receptor_residues": [
+        {
+          "resnum": 211,
+          "resname": "GLN"
+        },
+        {
+          "resnum": 212,
+          "resname": "HIS"
+        }
+      ]
+    }
+  ],
+  "curated_receptor_residues": [
+    {
+      "resnum": 32,
+      "resname": "LEU",
+      "group": "ECD anchoring",
+      "curated_priority": 1,
+      "peptide_residues": [
+        "Phe28",
+        "Ile29",
+        "Leu32",
+        "Val33"
+      ]
+    },
+    {
+      "resnum": 39,
+      "resname": "TRP",
+      "group": "ECD anchoring",
+      "curated_priority": 2,
+      "peptide_residues": [
+        "Phe28",
+        "Ile29",
+        "Leu32",
+        "Val33"
+      ]
+    },
+    {
+      "resnum": 67,
+      "resname": "ASP",
+      "group": "ECD anchoring",
+      "curated_priority": 3,
+      "peptide_residues": [
+        "Phe28",
+        "Ile29",
+        "Leu32",
+        "Val33"
+      ]
+    },
+    {
+      "resnum": 69,
+      "resname": "TYR",
+      "group": "ECD anchoring",
+      "curated_priority": 4,
+      "peptide_residues": [
+        "Phe28",
+        "Ile29",
+        "Leu32",
+        "Val33"
+      ]
+    },
+    {
+      "resnum": 121,
+      "resname": "ARG",
+      "group": "ECD anchoring",
+      "curated_priority": 5,
+      "peptide_residues": [
+        "Phe28",
+        "Ile29",
+        "Leu32",
+        "Val33"
+      ]
+    },
+    {
+      "resnum": 123,
+      "resname": "LEU",
+      "group": "ECD anchoring",
+      "curated_priority": 6,
+      "peptide_residues": [
+        "Phe28",
+        "Ile29",
+        "Leu32",
+        "Val33"
+      ]
+    },
+    {
+      "resnum": 128,
+      "resname": "GLU",
+      "group": "ECD anchoring",
+      "curated_priority": 7,
+      "peptide_residues": [
+        "Phe28",
+        "Ile29",
+        "Leu32",
+        "Val33"
+      ]
+    },
+    {
+      "resnum": 145,
+      "resname": "TYR",
+      "group": "Upper TMD activation pocket",
+      "curated_priority": 8,
+      "peptide_residues": [
+        "His7",
+        "Glu9",
+        "Thr13",
+        "Ser14",
+        "Ser17",
+        "Ser18"
+      ]
+    },
+    {
+      "resnum": 190,
+      "resname": "ARG",
+      "group": "Upper TMD activation pocket",
+      "curated_priority": 9,
+      "peptide_residues": [
+        "His7",
+        "Glu9",
+        "Thr13",
+        "Ser14",
+        "Ser17",
+        "Ser18"
+      ]
+    },
+    {
+      "resnum": 197,
+      "resname": "LYS",
+      "group": "Upper TMD activation pocket",
+      "curated_priority": 10,
+      "peptide_residues": [
+        "His7",
+        "Glu9",
+        "Thr13",
+        "Ser14",
+        "Ser17",
+        "Ser18"
+      ]
+    },
+    {
+      "resnum": 297,
+      "resname": "TRP",
+      "group": "Upper TMD activation pocket",
+      "curated_priority": 11,
+      "peptide_residues": [
+        "His7",
+        "Glu9",
+        "Thr13",
+        "Ser14",
+        "Ser17",
+        "Ser18"
+      ]
+    },
+    {
+      "resnum": 298,
+      "resname": "THR",
+      "group": "Upper TMD activation pocket",
+      "curated_priority": 12,
+      "peptide_residues": [
+        "His7",
+        "Glu9",
+        "Thr13",
+        "Ser14",
+        "Ser17",
+        "Ser18"
+      ]
+    },
+    {
+      "resnum": 299,
+      "resname": "ARG",
+      "group": "Upper TMD activation pocket",
+      "curated_priority": 13,
+      "peptide_residues": [
+        "His7",
+        "Glu9",
+        "Thr13",
+        "Ser14",
+        "Ser17",
+        "Ser18"
+      ]
+    },
+    {
+      "resnum": 388,
+      "resname": "LEU",
+      "group": "Upper TMD activation pocket",
+      "curated_priority": 14,
+      "peptide_residues": [
+        "His7",
+        "Glu9",
+        "Thr13",
+        "Ser14",
+        "Ser17",
+        "Ser18"
+      ]
+    },
+    {
+      "resnum": 392,
+      "resname": "SER",
+      "group": "Upper TMD activation pocket",
+      "curated_priority": 15,
+      "peptide_residues": [
+        "His7",
+        "Glu9",
+        "Thr13",
+        "Ser14",
+        "Ser17",
+        "Ser18"
+      ]
+    },
+    {
+      "resnum": 211,
+      "resname": "GLN",
+      "group": "ECL1 support",
+      "curated_priority": 16,
+      "peptide_residues": [
+        "Trp31"
+      ]
+    },
+    {
+      "resnum": 212,
+      "resname": "HIS",
+      "group": "ECL1 support",
+      "curated_priority": 17,
+      "peptide_residues": [
+        "Trp31"
+      ]
+    }
+  ],
+  "native_supported_receptor_residues": [
+    {
+      "resnum": 380,
+      "resname": "ARG",
+      "group": "Native-supported expansion",
+      "native_supported": true,
+      "native_support_rank": 1,
+      "native_support_lift": 1.4621784248763836,
+      "native_support_delta": 0.2904604208952035,
+      "native_support_weight_sum": 471.02413399999995
+    },
+    {
+      "resnum": 384,
+      "resname": "LEU",
+      "group": "Native-supported expansion",
+      "native_supported": true,
+      "native_support_rank": 2,
+      "native_support_lift": 1.372084174759307,
+      "native_support_delta": 0.25442947182077613,
+      "native_support_weight_sum": 508.5053429999999
+    },
+    {
+      "resnum": 306,
+      "resname": "TRP",
+      "group": "Native-supported expansion",
+      "native_supported": true,
+      "native_support_rank": 3,
+      "native_support_lift": 3.581693478465055,
+      "native_support_delta": 0.21429334472812733,
+      "native_support_weight_sum": 107.16780100000001
+    },
+    {
+      "resnum": 205,
+      "resname": "TYR",
+      "group": "Native-supported expansion",
+      "native_supported": true,
+      "native_support_rank": 4,
+      "native_support_lift": 1.1741253512008694,
+      "native_support_delta": 0.13971340058296577,
+      "native_support_weight_sum": 706.4077970000001
+    },
+    {
+      "resnum": 300,
+      "resname": "ASN",
+      "group": "Native-supported expansion",
+      "native_supported": true,
+      "native_support_rank": 5,
+      "native_support_lift": 1.0652542225417148,
+      "native_support_delta": 0.059837929403146806,
+      "native_support_weight_sum": 474.474429
+    },
+    {
+      "resnum": 237,
+      "resname": "VAL",
+      "group": "Native-supported expansion",
+      "native_supported": true,
+      "native_support_rank": 6,
+      "native_support_lift": 1.0796575452712927,
+      "native_support_delta": 0.005982266851832077,
+      "native_support_weight_sum": 72.90963900000001
+    },
+    {
+      "resnum": 31,
+      "resname": "SER",
+      "group": "Native-supported expansion",
+      "native_supported": true,
+      "native_support_rank": 7,
+      "native_support_lift": 5.458711749715007,
+      "native_support_delta": 0.2996016909060387,
+      "native_support_weight_sum": 158.6859749999999
+    },
+    {
+      "resnum": 221,
+      "resname": "GLN",
+      "group": "Native-supported expansion",
+      "native_supported": true,
+      "native_support_rank": 8,
+      "native_support_lift": 5.458711749715007,
+      "native_support_delta": 0.2996016909060387,
+      "native_support_weight_sum": 155.7272299999999
+    }
+  ],
+  "curated_weight_bonus": 2.0,
+  "pharmacophore": {
+    "path": "maps/pharmacophore_rigorous.json",
+    "num_features": 102,
+    "feature_types": {
+      "aromatic": 25,
+      "hba": 7,
+      "hbd": 9,
+      "hydrophobic": 43,
+      "negative": 10,
+      "positive": 8
+    },
+    "pair_hash_mode": "precision_5bin",
+    "hotspot_selected_features": [
+      {
+        "resnum": 32,
+        "resname": "LEU",
+        "atom": "CB",
+        "type": "hydrophobic",
+        "weight": 3.2637629378084863,
+        "curated_priority": 1,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "hydrophobe"
+      },
+      {
+        "resnum": 39,
+        "resname": "TRP",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 5.117862331843046,
+        "curated_priority": 2,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 67,
+        "resname": "ASP",
+        "atom": "OD1",
+        "type": "negative",
+        "weight": 5.847981347779262,
+        "curated_priority": 3,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "cation"
+      },
+      {
+        "resnum": 69,
+        "resname": "TYR",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 5.125471217122991,
+        "curated_priority": 4,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 121,
+        "resname": "ARG",
+        "atom": "NH1",
+        "type": "positive",
+        "weight": 5.8447180891092145,
+        "curated_priority": 5,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "anion"
+      },
+      {
+        "resnum": 123,
+        "resname": "LEU",
+        "atom": "CB",
+        "type": "hydrophobic",
+        "weight": 3.298040858000524,
+        "curated_priority": 6,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "hydrophobe"
+      },
+      {
+        "resnum": 128,
+        "resname": "GLU",
+        "atom": "OE1",
+        "type": "negative",
+        "weight": 6.348530781635937,
+        "curated_priority": 7,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "cation"
+      },
+      {
+        "resnum": 145,
+        "resname": "TYR",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 5.228309233825289,
+        "curated_priority": 8,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 190,
+        "resname": "ARG",
+        "atom": "NH1",
+        "type": "positive",
+        "weight": 5.628413673759965,
+        "curated_priority": 9,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "anion"
+      },
+      {
+        "resnum": 197,
+        "resname": "LYS",
+        "atom": "NZ",
+        "type": "positive",
+        "weight": 5.755059417910767,
+        "curated_priority": 10,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "anion"
+      },
+      {
+        "resnum": 297,
+        "resname": "TRP",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 5.042648349959043,
+        "curated_priority": 11,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 298,
+        "resname": "THR",
+        "atom": "OG1",
+        "type": "hbd",
+        "weight": 4.508656903096598,
+        "curated_priority": 12,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "acceptor"
+      },
+      {
+        "resnum": 299,
+        "resname": "ARG",
+        "atom": "NH1",
+        "type": "positive",
+        "weight": 5.90803382683271,
+        "curated_priority": 13,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "anion"
+      },
+      {
+        "resnum": 388,
+        "resname": "LEU",
+        "atom": "CB",
+        "type": "hydrophobic",
+        "weight": 3.2297691309515084,
+        "curated_priority": 14,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "hydrophobe"
+      },
+      {
+        "resnum": 392,
+        "resname": "SER",
+        "atom": "OG",
+        "type": "hbd",
+        "weight": 4.403613659820314,
+        "curated_priority": 15,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "acceptor"
+      },
+      {
+        "resnum": 211,
+        "resname": "GLN",
+        "atom": "OE1",
+        "type": "hba",
+        "weight": 4.715790191797241,
+        "curated_priority": 16,
+        "curated_group": "ECL1 support",
+        "curated_peptide_residues": [
+          "Trp31"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "donor"
+      },
+      {
+        "resnum": 212,
+        "resname": "HIS",
+        "atom": "CD2",
+        "type": "aromatic",
+        "weight": 5.286214410459725,
+        "curated_priority": 17,
+        "curated_group": "ECL1 support",
+        "curated_peptide_residues": [
+          "Trp31"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 380,
+        "resname": "ARG",
+        "atom": "NH1",
+        "type": "positive",
+        "weight": 4.900560100894129,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 1,
+        "native_support_lift": 1.4621784248763836,
+        "native_support_weight_sum": 471.02413399999995,
+        "query_family": "anion"
+      },
+      {
+        "resnum": 384,
+        "resname": "LEU",
+        "atom": "CB",
+        "type": "hydrophobic",
+        "weight": 2.254031244321838,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 2,
+        "native_support_lift": 1.372084174759307,
+        "native_support_weight_sum": 508.5053429999999,
+        "query_family": "hydrophobe"
+      },
+      {
+        "resnum": 306,
+        "resname": "TRP",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 4.12107122148781,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 3,
+        "native_support_lift": 3.581693478465055,
+        "native_support_weight_sum": 107.16780100000001,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 205,
+        "resname": "TYR",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 4.287938892071253,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 4,
+        "native_support_lift": 1.1741253512008694,
+        "native_support_weight_sum": 706.4077970000001,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 300,
+        "resname": "ASN",
+        "atom": "OD1",
+        "type": "hba",
+        "weight": 3.546857787442296,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 5,
+        "native_support_lift": 1.0652542225417148,
+        "native_support_weight_sum": 474.474429,
+        "query_family": "donor"
+      },
+      {
+        "resnum": 237,
+        "resname": "VAL",
+        "atom": "CB",
+        "type": "hydrophobic",
+        "weight": 2.214761293870544,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 6,
+        "native_support_lift": 1.0796575452712927,
+        "native_support_weight_sum": 72.90963900000001,
+        "query_family": "hydrophobe"
+      },
+      {
+        "resnum": 31,
+        "resname": "SER",
+        "atom": "OG",
+        "type": "hbd",
+        "weight": 3.62107530456332,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 7,
+        "native_support_lift": 5.458711749715007,
+        "native_support_weight_sum": 158.6859749999999,
+        "query_family": "acceptor"
+      },
+      {
+        "resnum": 221,
+        "resname": "GLN",
+        "atom": "OE1",
+        "type": "hba",
+        "weight": 3.4687705536030373,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 8,
+        "native_support_lift": 5.458711749715007,
+        "native_support_weight_sum": 155.7272299999999,
+        "query_family": "donor"
+      }
+    ],
+    "pair_query_selected_features": [
+      {
+        "resnum": 32,
+        "resname": "LEU",
+        "atom": "CB",
+        "type": "hydrophobic",
+        "weight": 3.2637629378084863,
+        "curated_priority": 1,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "hydrophobe"
+      },
+      {
+        "resnum": 39,
+        "resname": "TRP",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 5.117862331843046,
+        "curated_priority": 2,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 67,
+        "resname": "ASP",
+        "atom": "OD1",
+        "type": "negative",
+        "weight": 5.847981347779262,
+        "curated_priority": 3,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "cation"
+      },
+      {
+        "resnum": 69,
+        "resname": "TYR",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 5.125471217122991,
+        "curated_priority": 4,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 121,
+        "resname": "ARG",
+        "atom": "NH1",
+        "type": "positive",
+        "weight": 5.8447180891092145,
+        "curated_priority": 5,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "anion"
+      },
+      {
+        "resnum": 123,
+        "resname": "LEU",
+        "atom": "CB",
+        "type": "hydrophobic",
+        "weight": 3.298040858000524,
+        "curated_priority": 6,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "hydrophobe"
+      },
+      {
+        "resnum": 128,
+        "resname": "GLU",
+        "atom": "OE1",
+        "type": "negative",
+        "weight": 6.348530781635937,
+        "curated_priority": 7,
+        "curated_group": "ECD anchoring",
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "cation"
+      },
+      {
+        "resnum": 145,
+        "resname": "TYR",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 5.228309233825289,
+        "curated_priority": 8,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 190,
+        "resname": "ARG",
+        "atom": "NH1",
+        "type": "positive",
+        "weight": 5.628413673759965,
+        "curated_priority": 9,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "anion"
+      },
+      {
+        "resnum": 197,
+        "resname": "LYS",
+        "atom": "NZ",
+        "type": "positive",
+        "weight": 5.755059417910767,
+        "curated_priority": 10,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "anion"
+      },
+      {
+        "resnum": 297,
+        "resname": "TRP",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 5.042648349959043,
+        "curated_priority": 11,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 298,
+        "resname": "THR",
+        "atom": "OG1",
+        "type": "hbd",
+        "weight": 4.508656903096598,
+        "curated_priority": 12,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "acceptor"
+      },
+      {
+        "resnum": 299,
+        "resname": "ARG",
+        "atom": "NH1",
+        "type": "positive",
+        "weight": 5.90803382683271,
+        "curated_priority": 13,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "anion"
+      },
+      {
+        "resnum": 388,
+        "resname": "LEU",
+        "atom": "CB",
+        "type": "hydrophobic",
+        "weight": 3.2297691309515084,
+        "curated_priority": 14,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "hydrophobe"
+      },
+      {
+        "resnum": 392,
+        "resname": "SER",
+        "atom": "OG",
+        "type": "hbd",
+        "weight": 4.403613659820314,
+        "curated_priority": 15,
+        "curated_group": "Upper TMD activation pocket",
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "acceptor"
+      },
+      {
+        "resnum": 211,
+        "resname": "GLN",
+        "atom": "OE1",
+        "type": "hba",
+        "weight": 4.715790191797241,
+        "curated_priority": 16,
+        "curated_group": "ECL1 support",
+        "curated_peptide_residues": [
+          "Trp31"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "donor"
+      },
+      {
+        "resnum": 212,
+        "resname": "HIS",
+        "atom": "CD2",
+        "type": "aromatic",
+        "weight": 5.286214410459725,
+        "curated_priority": 17,
+        "curated_group": "ECL1 support",
+        "curated_peptide_residues": [
+          "Trp31"
+        ],
+        "native_supported": false,
+        "native_support_rank": 0,
+        "native_support_lift": 0.0,
+        "native_support_weight_sum": 0.0,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 380,
+        "resname": "ARG",
+        "atom": "NH1",
+        "type": "positive",
+        "weight": 4.900560100894129,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 1,
+        "native_support_lift": 1.4621784248763836,
+        "native_support_weight_sum": 471.02413399999995,
+        "query_family": "anion"
+      },
+      {
+        "resnum": 384,
+        "resname": "LEU",
+        "atom": "CB",
+        "type": "hydrophobic",
+        "weight": 2.254031244321838,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 2,
+        "native_support_lift": 1.372084174759307,
+        "native_support_weight_sum": 508.5053429999999,
+        "query_family": "hydrophobe"
+      },
+      {
+        "resnum": 306,
+        "resname": "TRP",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 4.12107122148781,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 3,
+        "native_support_lift": 3.581693478465055,
+        "native_support_weight_sum": 107.16780100000001,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 205,
+        "resname": "TYR",
+        "atom": "CD1",
+        "type": "aromatic",
+        "weight": 4.287938892071253,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 4,
+        "native_support_lift": 1.1741253512008694,
+        "native_support_weight_sum": 706.4077970000001,
+        "query_family": "aromatic"
+      },
+      {
+        "resnum": 300,
+        "resname": "ASN",
+        "atom": "OD1",
+        "type": "hba",
+        "weight": 3.546857787442296,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 5,
+        "native_support_lift": 1.0652542225417148,
+        "native_support_weight_sum": 474.474429,
+        "query_family": "donor"
+      },
+      {
+        "resnum": 237,
+        "resname": "VAL",
+        "atom": "CB",
+        "type": "hydrophobic",
+        "weight": 2.214761293870544,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 6,
+        "native_support_lift": 1.0796575452712927,
+        "native_support_weight_sum": 72.90963900000001,
+        "query_family": "hydrophobe"
+      },
+      {
+        "resnum": 31,
+        "resname": "SER",
+        "atom": "OG",
+        "type": "hbd",
+        "weight": 3.62107530456332,
+        "curated_priority": 0,
+        "curated_group": null,
+        "curated_peptide_residues": [],
+        "native_supported": true,
+        "native_support_rank": 7,
+        "native_support_lift": 5.458711749715007,
+        "native_support_weight_sum": 158.6859749999999,
+        "query_family": "acceptor"
+      }
+    ],
+    "rerank_query_selected_features": [
+      {
+        "family": "cation",
+        "weight": 6.348530781635937,
+        "x": 119.095,
+        "y": 162.966,
+        "z": 102.264,
+        "resnum": 128,
+        "resname": "GLU",
+        "curated_group": "ECD anchoring",
+        "curated_priority": 7,
+        "source_feature_count": 1,
+        "source_types": [
+          "negative"
+        ],
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ]
+      },
+      {
+        "family": "anion",
+        "weight": 5.90803382683271,
+        "x": 106.078,
+        "y": 148.909,
+        "z": 105.939,
+        "resnum": 299,
+        "resname": "ARG",
+        "curated_group": "Upper TMD activation pocket",
+        "curated_priority": 13,
+        "source_feature_count": 1,
+        "source_types": [
+          "positive"
+        ],
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ]
+      },
+      {
+        "family": "cation",
+        "weight": 5.847981347779262,
+        "x": 109.958,
+        "y": 174.197,
+        "z": 96.89,
+        "resnum": 67,
+        "resname": "ASP",
+        "curated_group": "ECD anchoring",
+        "curated_priority": 3,
+        "source_feature_count": 1,
+        "source_types": [
+          "negative"
+        ],
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ]
+      },
+      {
+        "family": "anion",
+        "weight": 5.8447180891092145,
+        "x": 113.447,
+        "y": 173.103,
+        "z": 94.571,
+        "resnum": 121,
+        "resname": "ARG",
+        "curated_group": "ECD anchoring",
+        "curated_priority": 5,
+        "source_feature_count": 1,
+        "source_types": [
+          "positive"
+        ],
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ]
+      },
+      {
+        "family": "anion",
+        "weight": 5.755059417910767,
+        "x": 109.937,
+        "y": 137.513,
+        "z": 102.898,
+        "resnum": 197,
+        "resname": "LYS",
+        "curated_group": "Upper TMD activation pocket",
+        "curated_priority": 10,
+        "source_feature_count": 1,
+        "source_types": [
+          "positive"
+        ],
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ]
+      },
+      {
+        "family": "anion",
+        "weight": 5.628413673759965,
+        "x": 108.876,
+        "y": 126.941,
+        "z": 109.398,
+        "resnum": 190,
+        "resname": "ARG",
+        "curated_group": "Upper TMD activation pocket",
+        "curated_priority": 9,
+        "source_feature_count": 1,
+        "source_types": [
+          "positive"
+        ],
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ]
+      },
+      {
+        "family": "aromatic",
+        "weight": 5.286214410459725,
+        "x": 98.907,
+        "y": 154.756,
+        "z": 91.342,
+        "resnum": 212,
+        "resname": "HIS",
+        "curated_group": "ECL1 support",
+        "curated_priority": 17,
+        "source_feature_count": 1,
+        "source_types": [
+          "aromatic"
+        ],
+        "curated_peptide_residues": [
+          "Trp31"
+        ]
+      },
+      {
+        "family": "aromatic",
+        "weight": 5.228309233825289,
+        "x": 113.822,
+        "y": 137.171,
+        "z": 98.626,
+        "resnum": 145,
+        "resname": "TYR",
+        "curated_group": "Upper TMD activation pocket",
+        "curated_priority": 8,
+        "source_feature_count": 1,
+        "source_types": [
+          "aromatic"
+        ],
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ]
+      },
+      {
+        "family": "aromatic",
+        "weight": 5.125471217122991,
+        "x": 112.28,
+        "y": 169.392,
+        "z": 99.102,
+        "resnum": 69,
+        "resname": "TYR",
+        "curated_group": "ECD anchoring",
+        "curated_priority": 4,
+        "source_feature_count": 1,
+        "source_types": [
+          "aromatic"
+        ],
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ]
+      },
+      {
+        "family": "aromatic",
+        "weight": 5.117862331843046,
+        "x": 104.997,
+        "y": 168.284,
+        "z": 100.365,
+        "resnum": 39,
+        "resname": "TRP",
+        "curated_group": "ECD anchoring",
+        "curated_priority": 2,
+        "source_feature_count": 1,
+        "source_types": [
+          "aromatic"
+        ],
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ]
+      },
+      {
+        "family": "aromatic",
+        "weight": 5.042648349959043,
+        "x": 98.179,
+        "y": 144.47,
+        "z": 109.55,
+        "resnum": 297,
+        "resname": "TRP",
+        "curated_group": "Upper TMD activation pocket",
+        "curated_priority": 11,
+        "source_feature_count": 1,
+        "source_types": [
+          "aromatic"
+        ],
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ]
+      },
+      {
+        "family": "anion",
+        "weight": 4.900560100894129,
+        "x": 115.704,
+        "y": 142.177,
+        "z": 115.369,
+        "resnum": 380,
+        "resname": "ARG",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "positive"
+        ],
+        "curated_peptide_residues": []
+      },
+      {
+        "family": "donor",
+        "weight": 4.715790191797241,
+        "x": 104.551,
+        "y": 159.499,
+        "z": 90.142,
+        "resnum": 211,
+        "resname": "GLN",
+        "curated_group": "ECL1 support",
+        "curated_priority": 16,
+        "source_feature_count": 1,
+        "source_types": [
+          "hba"
+        ],
+        "curated_peptide_residues": [
+          "Trp31"
+        ]
+      },
+      {
+        "family": "acceptor",
+        "weight": 4.508656903096598,
+        "x": 105.003,
+        "y": 145.329,
+        "z": 106.077,
+        "resnum": 298,
+        "resname": "THR",
+        "curated_group": "Upper TMD activation pocket",
+        "curated_priority": 12,
+        "source_feature_count": 1,
+        "source_types": [
+          "hbd"
+        ],
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ]
+      },
+      {
+        "family": "cation",
+        "weight": 4.437276390399396,
+        "x": 120.75,
+        "y": 146.085,
+        "z": 97.978,
+        "resnum": 138,
+        "resname": "GLU",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "negative"
+        ],
+        "curated_peptide_residues": []
+      },
+      {
+        "family": "acceptor",
+        "weight": 4.403613659820314,
+        "x": 116.583,
+        "y": 127.541,
+        "z": 102.566,
+        "resnum": 392,
+        "resname": "SER",
+        "curated_group": "Upper TMD activation pocket",
+        "curated_priority": 15,
+        "source_feature_count": 1,
+        "source_types": [
+          "hbd"
+        ],
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ]
+      },
+      {
+        "family": "aromatic",
+        "weight": 4.287938892071253,
+        "x": 107.631,
+        "y": 149.76,
+        "z": 99.852,
+        "resnum": 205,
+        "resname": "TYR",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "aromatic"
+        ],
+        "curated_peptide_residues": []
+      },
+      {
+        "family": "aromatic",
+        "weight": 4.12107122148781,
+        "x": 108.595,
+        "y": 140.086,
+        "z": 116.687,
+        "resnum": 306,
+        "resname": "TRP",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "aromatic"
+        ],
+        "curated_peptide_residues": []
+      },
+      {
+        "family": "cation",
+        "weight": 4.071024105466561,
+        "x": 119.344,
+        "y": 168.092,
+        "z": 99.966,
+        "resnum": 127,
+        "resname": "GLU",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "negative"
+        ],
+        "curated_peptide_residues": []
+      },
+      {
+        "family": "cation",
+        "weight": 4.0561148884980955,
+        "x": 106.026,
+        "y": 172.774,
+        "z": 92.486,
+        "resnum": 68,
+        "resname": "GLU",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "negative"
+        ],
+        "curated_peptide_residues": []
+      },
+      {
+        "family": "acceptor",
+        "weight": 3.62107530456332,
+        "x": 104.901,
+        "y": 154.28,
+        "z": 107.587,
+        "resnum": 31,
+        "resname": "SER",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "hbd"
+        ],
+        "curated_peptide_residues": []
+      },
+      {
+        "family": "donor",
+        "weight": 3.546857787442296,
+        "x": 106.065,
+        "y": 141.638,
+        "z": 112.847,
+        "resnum": 300,
+        "resname": "ASN",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "hba"
+        ],
+        "curated_peptide_residues": []
+      },
+      {
+        "family": "donor",
+        "weight": 3.4687705536030373,
+        "x": 102.696,
+        "y": 150.308,
+        "z": 102.498,
+        "resnum": 221,
+        "resname": "GLN",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "hba"
+        ],
+        "curated_peptide_residues": []
+      },
+      {
+        "family": "hydrophobe",
+        "weight": 3.298040858000524,
+        "x": 118.752,
+        "y": 171.489,
+        "z": 98.875,
+        "resnum": 123,
+        "resname": "LEU",
+        "curated_group": "ECD anchoring",
+        "curated_priority": 6,
+        "source_feature_count": 1,
+        "source_types": [
+          "hydrophobic"
+        ],
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ]
+      },
+      {
+        "family": "hydrophobe",
+        "weight": 3.2637629378084863,
+        "x": 105.199,
+        "y": 156.143,
+        "z": 101.38,
+        "resnum": 32,
+        "resname": "LEU",
+        "curated_group": "ECD anchoring",
+        "curated_priority": 1,
+        "source_feature_count": 1,
+        "source_types": [
+          "hydrophobic"
+        ],
+        "curated_peptide_residues": [
+          "Phe28",
+          "Ile29",
+          "Leu32",
+          "Val33"
+        ]
+      },
+      {
+        "family": "hydrophobe",
+        "weight": 3.2297691309515084,
+        "x": 116.447,
+        "y": 132.466,
+        "z": 106.346,
+        "resnum": 388,
+        "resname": "LEU",
+        "curated_group": "Upper TMD activation pocket",
+        "curated_priority": 14,
+        "source_feature_count": 1,
+        "source_types": [
+          "hydrophobic"
+        ],
+        "curated_peptide_residues": [
+          "His7",
+          "Glu9",
+          "Thr13",
+          "Ser14",
+          "Ser17",
+          "Ser18"
+        ]
+      },
+      {
+        "family": "hydrophobe",
+        "weight": 2.254031244321838,
+        "x": 118.245,
+        "y": 136.664,
+        "z": 109.844,
+        "resnum": 384,
+        "resname": "LEU",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "hydrophobic"
+        ],
+        "curated_peptide_residues": []
+      },
+      {
+        "family": "hydrophobe",
+        "weight": 2.214761293870544,
+        "x": 105.563,
+        "y": 130.306,
+        "z": 109.618,
+        "resnum": 237,
+        "resname": "VAL",
+        "curated_group": null,
+        "curated_priority": 0,
+        "source_feature_count": 1,
+        "source_types": [
+          "hydrophobic"
+        ],
+        "curated_peptide_residues": []
+      }
+    ]
+  },
+  "workflow_contract": {
+    "chart_source": "virtual_screening_pipeline.mmd",
+    "primary_output": "top_1000_glp1_mimetics_<label>_native_final.csv",
+    "stage3_outputs_role": "audit_artifacts",
+    "native_pool_strategy": {
+      "strategy": "deduplicated_union_with_stage3_backfill",
+      "fractions": {
+        "stage3_rank": 0.6,
+        "hotspot_breadth": 0.2,
+        "native_supported_hotspot_score": 0.2
+      },
+      "requested_pool_k": 20000,
+      "requested_source_quotas": {
+        "stage3_rank": 12000,
+        "hotspot_breadth": 4000,
+        "native_supported_hotspot_score": 4000
+      }
+    },
+    "native_selection": {
+      "selection_top_k": 5000,
+      "max_per_scaffold": 8,
+      "scaffold_key": "Murcko"
+    },
+    "final_rank_mode": "native_first",
+    "final_sort_contract": [
+      {
+        "field": "native_weighted_coverage_pct",
+        "direction": "desc"
+      },
+      {
+        "field": "native_matched_reference_features",
+        "direction": "desc"
+      },
+      {
+        "field": "native_fit_rmsd_angstrom",
+        "direction": "asc"
+      },
+      {
+        "field": "native_mean_pair_distance_error_angstrom",
+        "direction": "asc"
+      },
+      {
+        "field": "stage3_screen_rank",
+        "direction": "asc"
+      },
+      {
+        "field": "zinc_id",
+        "direction": "asc"
+      }
+    ],
+    "diagnostics_contract": {
+      "status": "required",
+      "always_on": true,
+      "diagnostics": [
+        "correlation",
+        "quartiles",
+        "rank_shift",
+        "residuals"
+      ],
+      "outputs": {}
+    }
+  },
+  "native_rerank": {
+    "enabled": true,
+    "config_path": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\GLP1_top_ligand_analysis\\configs\\study_top1000_full_1M_native_tuned_no_docking.yaml",
+    "final_rank_mode": "native_first",
+    "pair_tolerance_angstrom": 3.0,
+    "pains_filter_enabled": true,
+    "embed_conformers": 4,
+    "final_sort_contract": [
+      {
+        "field": "native_weighted_coverage_pct",
+        "direction": "desc"
+      },
+      {
+        "field": "native_matched_reference_features",
+        "direction": "desc"
+      },
+      {
+        "field": "native_fit_rmsd_angstrom",
+        "direction": "asc"
+      },
+      {
+        "field": "native_mean_pair_distance_error_angstrom",
+        "direction": "asc"
+      },
+      {
+        "field": "stage3_screen_rank",
+        "direction": "asc"
+      },
+      {
+        "field": "zinc_id",
+        "direction": "asc"
+      }
+    ],
+    "pool_strategy": {
+      "strategy": "deduplicated_union_with_stage3_backfill",
+      "requested_pool_k": 20000,
+      "requested_source_quotas": {
+        "stage3_rank": 12000,
+        "hotspot_breadth": 4000,
+        "native_supported_hotspot_score": 4000
+      },
+      "realized_source_counts": {
+        "total_unique_candidates": 20000,
+        "stage3_rank": 12000,
+        "hotspot_breadth": 4000,
+        "native_supported_hotspot_score": 4000
+      }
+    },
+    "selection_strategy": {
+      "selection_top_k": 5000,
+      "max_per_scaffold": 8,
+      "scaffold_key": "Murcko"
+    },
+    "counts": {
+      "candidate_pool_size": 20000,
+      "selected_ligands": 5000,
+      "chemistry_excluded_selected_ligands": 0,
+      "prepared_microstates": 43313,
+      "prep_failures": 0,
+      "scored_microstates": 43249,
+      "scoring_failures": 64,
+      "successful_best_ligands": 4997,
+      "scored_summary_rows": 5000,
+      "final_rows": 1000
+    },
+    "timings": {
+      "selection_sec": 15.303110000000743,
+      "library_prepare_sec": 4245.390442199998,
+      "reference_setup_sec": 3.648124799998186,
+      "scoring_sec": 13486.508356999992,
+      "artifact_generation_sec": 10.599581000002217,
+      "total_sec": 17770.081178499997
+    },
+    "output_paths": {
+      "native_scored": "results\\screening_full_1M_topological_hashed_native_scored_top5000.csv",
+      "native_final": "results\\top_1000_glp1_mimetics_full_1M_topological_hashed_native_final.csv",
+      "bundle_root": "results\\screening_full_1M_topological_hashed_native_terminal_bundle",
+      "bundle_manifest": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\manifests\\analysis_manifest.json"
+    },
+    "diagnostics": {
+      "status": "generated",
+      "always_on": true,
+      "diagnostics": [
+        "correlation",
+        "quartiles",
+        "rank_shift",
+        "residuals"
+      ],
+      "outputs": {
+        "summary_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\ligand_best_native_mapping_summary.csv",
+        "analysis_label": "Top 4,997 native-scored ligands",
+        "bootstrap_iterations": 2000,
+        "metrics_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\native_correlation_metrics.csv",
+        "quartiles_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\native_correlation_quartiles.csv",
+        "rank_csv": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\analysis\\native_rank_comparison.csv",
+        "scatter_png": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+        "quartile_png": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+        "rank_png": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+        "residual_png": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+        "report_md": "results\\screening_full_1M_topological_hashed_native_terminal_bundle\\reports\\native_correlation_analysis.md",
+        "ligand_count": 4997
+      }
+    }
+  },
+  "output_paths": {
+    "shortlist": "results\\screening_full_1M_topological_hashed_shortlist.csv",
+    "full": "results\\screening_full_1M_topological_hashed.csv",
+    "top100": "results\\top_100_glp1_mimetics_full_1M_topological_hashed.csv",
+    "native_scored": "results\\screening_full_1M_topological_hashed_native_scored_top5000.csv",
+    "native_final": "results\\top_1000_glp1_mimetics_full_1M_topological_hashed_native_final.csv",
+    "native_bundle_root": "results\\screening_full_1M_topological_hashed_native_terminal_bundle",
+    "pharmacophore_plot": "results\\pharmacophore_3d_full_1M_topological_hashed.png",
+    "top20_plot": "results\\top_20_glp1_mimetics_full_1M_topological_hashed.png",
+    "distributions_plot": "results\\property_distributions_full_1M_topological_hashed.png",
+    "run_summary": "results\\screening_full_1M_topological_hashed_run_summary.json"
+  }
+}

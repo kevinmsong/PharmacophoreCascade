@@ -1,0 +1,387 @@
+[
+  {
+    "chain": "R",
+    "resSeq": 29,
+    "resName": "THR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 30,
+    "resName": "VAL"
+  },
+  {
+    "chain": "R",
+    "resSeq": 31,
+    "resName": "SER"
+  },
+  {
+    "chain": "R",
+    "resSeq": 32,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 33,
+    "resName": "TRP"
+  },
+  {
+    "chain": "R",
+    "resSeq": 35,
+    "resName": "THR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 36,
+    "resName": "VAL"
+  },
+  {
+    "chain": "R",
+    "resSeq": 39,
+    "resName": "TRP"
+  },
+  {
+    "chain": "R",
+    "resSeq": 43,
+    "resName": "ARG"
+  },
+  {
+    "chain": "R",
+    "resSeq": 66,
+    "resName": "PHE"
+  },
+  {
+    "chain": "R",
+    "resSeq": 67,
+    "resName": "ASP"
+  },
+  {
+    "chain": "R",
+    "resSeq": 68,
+    "resName": "GLU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 69,
+    "resName": "TYR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 88,
+    "resName": "TYR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 89,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 90,
+    "resName": "PRO"
+  },
+  {
+    "chain": "R",
+    "resSeq": 91,
+    "resName": "TRP"
+  },
+  {
+    "chain": "R",
+    "resSeq": 118,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 121,
+    "resName": "ARG"
+  },
+  {
+    "chain": "R",
+    "resSeq": 123,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 127,
+    "resName": "GLU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 128,
+    "resName": "GLU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 137,
+    "resName": "PRO"
+  },
+  {
+    "chain": "R",
+    "resSeq": 138,
+    "resName": "GLU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 140,
+    "resName": "GLN"
+  },
+  {
+    "chain": "R",
+    "resSeq": 141,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 142,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 144,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 145,
+    "resName": "TYR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 148,
+    "resName": "TYR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 152,
+    "resName": "TYR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 190,
+    "resName": "ARG"
+  },
+  {
+    "chain": "R",
+    "resSeq": 194,
+    "resName": "VAL"
+  },
+  {
+    "chain": "R",
+    "resSeq": 197,
+    "resName": "LYS"
+  },
+  {
+    "chain": "R",
+    "resSeq": 198,
+    "resName": "ASP"
+  },
+  {
+    "chain": "R",
+    "resSeq": 201,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 204,
+    "resName": "MET"
+  },
+  {
+    "chain": "R",
+    "resSeq": 205,
+    "resName": "TYR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 207,
+    "resName": "THR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 210,
+    "resName": "GLN"
+  },
+  {
+    "chain": "R",
+    "resSeq": 211,
+    "resName": "GLN"
+  },
+  {
+    "chain": "R",
+    "resSeq": 213,
+    "resName": "GLN"
+  },
+  {
+    "chain": "R",
+    "resSeq": 214,
+    "resName": "TRP"
+  },
+  {
+    "chain": "R",
+    "resSeq": 215,
+    "resName": "ASP"
+  },
+  {
+    "chain": "R",
+    "resSeq": 221,
+    "resName": "GLN"
+  },
+  {
+    "chain": "R",
+    "resSeq": 230,
+    "resName": "PHE"
+  },
+  {
+    "chain": "R",
+    "resSeq": 233,
+    "resName": "MET"
+  },
+  {
+    "chain": "R",
+    "resSeq": 234,
+    "resName": "GLN"
+  },
+  {
+    "chain": "R",
+    "resSeq": 237,
+    "resName": "VAL"
+  },
+  {
+    "chain": "R",
+    "resSeq": 238,
+    "resName": "ALA"
+  },
+  {
+    "chain": "R",
+    "resSeq": 241,
+    "resName": "TYR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 295,
+    "resName": "GLY"
+  },
+  {
+    "chain": "R",
+    "resSeq": 297,
+    "resName": "TRP"
+  },
+  {
+    "chain": "R",
+    "resSeq": 298,
+    "resName": "THR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 299,
+    "resName": "ARG"
+  },
+  {
+    "chain": "R",
+    "resSeq": 300,
+    "resName": "ASN"
+  },
+  {
+    "chain": "R",
+    "resSeq": 301,
+    "resName": "SER"
+  },
+  {
+    "chain": "R",
+    "resSeq": 303,
+    "resName": "MET"
+  },
+  {
+    "chain": "R",
+    "resSeq": 306,
+    "resName": "TRP"
+  },
+  {
+    "chain": "R",
+    "resSeq": 309,
+    "resName": "ILE"
+  },
+  {
+    "chain": "R",
+    "resSeq": 310,
+    "resName": "ARG"
+  },
+  {
+    "chain": "R",
+    "resSeq": 311,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 313,
+    "resName": "ILE"
+  },
+  {
+    "chain": "R",
+    "resSeq": 314,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 317,
+    "resName": "ILE"
+  },
+  {
+    "chain": "R",
+    "resSeq": 364,
+    "resName": "GLU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 372,
+    "resName": "ASP"
+  },
+  {
+    "chain": "R",
+    "resSeq": 380,
+    "resName": "ARG"
+  },
+  {
+    "chain": "R",
+    "resSeq": 383,
+    "resName": "LYS"
+  },
+  {
+    "chain": "R",
+    "resSeq": 384,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 387,
+    "resName": "GLU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 388,
+    "resName": "LEU"
+  },
+  {
+    "chain": "R",
+    "resSeq": 389,
+    "resName": "SER"
+  },
+  {
+    "chain": "R",
+    "resSeq": 391,
+    "resName": "THR"
+  },
+  {
+    "chain": "R",
+    "resSeq": 392,
+    "resName": "SER"
+  },
+  {
+    "chain": "R",
+    "resSeq": 513,
+    "resName": "HOH"
+  },
+  {
+    "chain": "R",
+    "resSeq": 518,
+    "resName": "HOH"
+  }
+]

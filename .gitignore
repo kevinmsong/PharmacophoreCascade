@@ -1,0 +1,73 @@
+# ── Implementation / Algorithm (confidential) ──
+*.py
+lib/
+analysis/
+tests/
+evidence/src/
+evidence/run.py
+evidence/build_external_benchmark_dataset.py
+evidence/__init__.py
+GLP1_top_ligand_analysis/scripts/
+GLP1_top_ligand_analysis/derived/
+
+# ── Manuscript (confidential) ──
+publication/main.tex
+publication/supplementary.tex
+publication/references.bib
+publication/main.aux
+publication/main.bbl
+publication/main.blg
+publication/main.fdb_latexmk
+publication/main.fls
+publication/main.log
+publication/main.out
+publication/main.pdf
+publication/supplementary.aux
+publication/supplementary.log
+publication/supplementary.out
+publication/supplementary.pdf
+publication/Topological_to_3D_Native_Pharmacophore_Cascade_*.pdf
+
+# ── Root-level LaTeX build artifacts ──
+main.aux
+main.log
+main.out
+main.pdf
+supplementary.aux
+supplementary.log
+supplementary.out
+supplementary.pdf
+
+# ── Large intermediate files (>5 MB) ──
+results/screening_full_1M_topological_hashed.csv
+results/screening_full_1M_topological_hashed_shortlist.csv
+results/screening_full_1M_topological_hashed_native_terminal_bundle/ligands/
+results/screening_full_1M_topological_hashed_native_terminal_bundle/analysis/microstate_native_mapping.csv
+results/screening_full_1M_topological_hashed_native_terminal_bundle/analysis/best_ligands_aligned_to_native_pharmacophore.sdf
+results/screening_full_1M_topological_hashed_native_terminal_bundle/analysis/microstate_native_feature_matches.csv
+results/screening_full_1M_topological_hashed_native_terminal_bundle/analysis/ligand_best_native_mapping_summary.csv
+results/screening_full_1M_topological_hashed_native_terminal_bundle/analysis/ligand_hotspot_compatibility.csv
+results/screening_full_1M_topological_hashed_native_terminal_bundle/input/native_candidate_pool.csv
+results/screening_full_1M_topological_hashed_native_terminal_bundle/input/native_selected_input.csv
+
+# ── Evidence caches and large bundles ──
+evidence/outputs/cache/
+evidence/outputs/benchmark_external/benchmark_native_bundle/
+
+# ── Temporary / build / cache ──
+tmp/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pid
+*.log
+*.pkl
+*.parquet
+
+# ── OS / editor ──
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
