@@ -2,13 +2,11 @@
 
 Data and workflow documentation accompanying:
 
-> **Topological-to-3D Native Pharmacophore Cascade for Ultra-High-Throughput Ligand Discovery at Peptide-Receptor Interfaces**
+> **A staged topology-to-native pharmacophore cascade for million-scale discovery at peptide-receptor interfaces**
 >
 > Kevin Song, Lei Ye, Jianyi Zhang
 >
 > Department of Biomedical Engineering, The University of Alabama at Birmingham
->
-> *Journal of Chemical Information and Modeling* (2026)
 
 ---
 
