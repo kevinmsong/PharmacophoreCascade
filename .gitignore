@@ -93,3 +93,13 @@ evidence/outputs/benchmark_*/benchmark_external/benchmark_native_bundle/
 /manuscript_review_log.md
 /ACS_Omega_Submission_Previous.pdf
 /.claude/
+
+# ── Round-2 revision: large benchmark / production / docking intermediates ──
+evidence/outputs/**/native_only_bundle/
+evidence/outputs/**/benchmark_native_bundle/
+evidence/outputs/production_*/prod_native_bundle/
+evidence/outputs/production_*/stage012_evaluation.csv
+evidence/outputs/docking_top10/runs/
+evidence/outputs/docking_top10/ligands_pdbqt/
+evidence/outputs/docking_top10/top10_ligands.sdf
+evidence/outputs/_smoke_glp1r_full/

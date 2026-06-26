@@ -1,0 +1,22 @@
+{
+  "source": "results/screening_full_1M_topological_hashed_native_terminal_bundle (headline 1M run; matches Table S1, the top-ligand figures, and Fig S2)",
+  "pearson_screen_native_cov": 0.057,
+  "spearman_screen_native_cov": 0.061,
+  "median_abs_final_rank_shift_top1000": 1926,
+  "screen_native_top10_overlap": 0,
+  "n_native_scored": 4997,
+  "ZINCj700000JVICU_final_native_rank": 18,
+  "ZINCj700000JVICU": {
+    "ligand_id": "ZINCj700000JVICU",
+    "screen_rank": 4895,
+    "final_native_rank": 18,
+    "rank_shift": 4877,
+    "weighted_coverage_pct": 12.08,
+    "native_weighted_coverage_pct": 29.15
+  },
+  "rank_definitions": {
+    "screen_rank": "Stage-3 cascade-score rank within the screen",
+    "native_score_rank": "rank by native weighted coverage only (coarse ties); native_rank in native_rank_comparison.csv (e.g. JVICU=6) - NOT used in the manuscript",
+    "final_native_rank": "final lexicographic rank used everywhere: native weighted coverage, then matched features, then fit RMSD, then mean pair-distance error (e.g. JVICU=18)"
+  }
+}

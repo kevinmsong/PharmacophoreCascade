@@ -1,0 +1,4 @@
+method_a,method_b,n_shared,kendall_tau,spearman_r,jaccard_top10,jaccard_top25,jaccard_top50
+full_cascade,stage3_only,310,0.3411838396492327,0.47601576197127365,0.0,0.0,0.08695652173913043
+full_cascade,standard_3d_pharmacophore,310,0.3357135400354943,0.47137780293104997,0.0,0.0,0.08695652173913043
+stage3_only,standard_3d_pharmacophore,310,0.9945297003862617,0.9982155498915937,1.0,1.0,1.0
