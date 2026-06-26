@@ -1,0 +1,8 @@
+metric,curated,automated_no_curation
+roc_auc,0.7997,0.9387
+pr_auc,0.4649,0.3725
+ef_1pct,30.0,20.0
+ef_5pct,10.0,4.0
+bedroc,0.5463,0.4236
+top10_recovery,0.5,0.2
+scaffold_recovery_top10,0.5,0.2

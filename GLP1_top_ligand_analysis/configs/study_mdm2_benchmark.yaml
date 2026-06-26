@@ -1,0 +1,61 @@
+study_name: mdm2_benchmark
+screening_artifact_prefix: mdm2_benchmark
+paths:
+  screening_csv: ../results/screening_full_1M_native_tuned.csv
+  pilot_csv: ../results/screening_full_1M_native_tuned.csv
+  outputs_dir: derived_mdm2_benchmark
+  reports_dir: derived_mdm2_benchmark/reports
+  references_dir: references
+ligands:
+  id_column: zinc_id
+  smiles_column: smiles
+  assay_ph: 7.4
+  max_tautomers_per_microstate: 8
+  max_microstates_per_ligand: 2
+  embed_conformers: 4
+  pains_filter: true
+pocket:
+  reference_structure: references_extra/1YCR.pdb
+  reference_state: active
+  receptor_chain: A
+  ligand_chain: B
+  contact_cutoff_angstrom: 4.5
+  water_cutoff_angstrom: 3.5
+  docking_box_padding_angstrom: 6.0
+  max_pose_center_distance_angstrom: 10.0
+  min_pose_residue_contacts: 3
+structures:
+- structure_id: mdm2
+  label: MDM2-p53 (1YCR)
+  state: active
+  pdb_path: references_extra/1YCR.pdb
+  receptor_chain: A
+  ligand_chain: B
+  source: rcsb
+  primary: true
+docking:
+  engine: vina
+  exhaustiveness: 24
+  num_modes: 20
+  seeds:
+  - 11
+  - 29
+  - 47
+  pose_score_field: affinity_kcal_mol
+  bootstrap_iterations: 3000
+  shortlist_sizes:
+    review: 100
+    md: 100
+    rigorous_fe: 20
+  max_shortlist_per_scaffold: 8
+simulation:
+  forcefield_protein: ff14SB
+  forcefield_lipid: Lipid17
+  forcefield_water: TIP3P
+  ligand_forcefield: GAFF2_AM1_BCC
+  membrane: POPC
+  salt_molar: 0.15
+  restrained_relaxation_ns: 5
+  production_short_ns: 20
+  production_long_ns: 100
+  long_md_replica_count: 3

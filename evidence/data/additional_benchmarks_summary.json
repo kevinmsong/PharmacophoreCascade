@@ -1,0 +1,26 @@
+{
+  "ghsr": {
+    "name": "Ghrelin receptor (GHSR)",
+    "chembl_target": "CHEMBL4616",
+    "actives": 10,
+    "decoys": 300,
+    "library_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\data\\ghsr_external_benchmark_library.csv",
+    "status": "ok"
+  },
+  "ntsr1": {
+    "name": "Neurotensin receptor 1 (NTSR1)",
+    "chembl_target": "CHEMBL4123",
+    "actives": 10,
+    "decoys": 300,
+    "library_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\data\\ntsr1_external_benchmark_library.csv",
+    "status": "ok"
+  },
+  "mdm2": {
+    "name": "MDM2-p53 interface",
+    "chembl_target": "CHEMBL5023",
+    "actives": 10,
+    "decoys": 300,
+    "library_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\data\\mdm2_external_benchmark_library.csv",
+    "status": "ok"
+  }
+}

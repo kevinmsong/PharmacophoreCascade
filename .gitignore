@@ -1,14 +1,14 @@
 # ── Implementation / Algorithm (confidential) ──
 *.py
-lib/
-analysis/
-tests/
-evidence/src/
-evidence/run.py
-evidence/build_external_benchmark_dataset.py
-evidence/__init__.py
-GLP1_top_ligand_analysis/scripts/
-GLP1_top_ligand_analysis/derived/
+/lib/
+/analysis/
+/tests/
+/evidence/src/
+/evidence/run.py
+/evidence/build_external_benchmark_dataset.py
+/evidence/__init__.py
+/GLP1_top_ligand_analysis/scripts/
+/GLP1_top_ligand_analysis/derived/
 
 # ── Manuscript (confidential) ──
 publication/main.tex
@@ -29,14 +29,14 @@ publication/supplementary.pdf
 publication/Topological_to_3D_Native_Pharmacophore_Cascade_*.pdf
 
 # ── Root-level LaTeX build artifacts ──
-main.aux
-main.log
-main.out
-main.pdf
-supplementary.aux
-supplementary.log
-supplementary.out
-supplementary.pdf
+/main.aux
+/main.log
+/main.out
+/main.pdf
+/supplementary.aux
+/supplementary.log
+/supplementary.out
+/supplementary.pdf
 
 # ── Large intermediate files (>5 MB) ──
 results/screening_full_1M_topological_hashed.csv
@@ -71,3 +71,25 @@ Thumbs.db
 *.swo
 *~
 .vscode/
+
+# ── ACS Omega revision: bundled tools and large intermediate analysis dumps ──
+/GLP1_top_ligand_analysis/tools/
+/GLP1_top_ligand_analysis/derived_715_topological/
+/GLP1_top_ligand_analysis/derived_top100_full_1M_native_no_docking/
+/GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/
+/GLP1_top_ligand_analysis/derived_top100_full_1M_native_no_docking_smoke/
+/GLP1_top_ligand_analysis/derived_top100_full_1M_native_no_docking_smoke_repeat/
+/GLP1_top_ligand_analysis/derived_top100_full_1M_native_no_docking_smoke_validation/
+/GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking_smoke/
+
+# ── Per-target benchmark native bundles (large SDF / microstate dumps) ──
+evidence/outputs/benchmark_*/benchmark_external/benchmark_native_bundle/
+
+# ── Manuscript artifacts, submission bundle, agent cache (kept out of the public repo) ──
+/JCIM_submission.pdf
+/JCIM_submission.zip
+/JCIM_submission/
+/author_response.md
+/manuscript_review_log.md
+/ACS_Omega_Submission_Previous.pdf
+/.claude/

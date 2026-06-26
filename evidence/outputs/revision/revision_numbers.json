@@ -1,0 +1,145 @@
+{
+  "reproducibility": {
+    "smoke3": {
+      "median_cov": 22.3,
+      "best_cov": 22.3,
+      "median_feat": 4.0,
+      "rmsd": 1.67
+    },
+    "smoke3_repeat": {
+      "median_cov": 22.3,
+      "best_cov": 22.3,
+      "median_feat": 4.0,
+      "rmsd": 1.67
+    },
+    "validation5": {
+      "median_cov": 24.6,
+      "best_cov": 26.6,
+      "median_feat": 5.0,
+      "rmsd": 2.13
+    },
+    "top100": {
+      "median_cov": 24.1,
+      "best_cov": 27.2,
+      "median_feat": 5.0,
+      "rmsd": 2.1,
+      "n": 100,
+      "failures": 0
+    },
+    "top1000_smoke20": {
+      "median_cov": 23.2,
+      "best_cov": 26.6,
+      "median_feat": 5.0,
+      "rmsd": 2.1,
+      "n": 20
+    },
+    "note": "smoke3 and smoke3_repeat are bit-identical (deterministic reproducibility)."
+  },
+  "docking": {
+    "n_ligands": 9,
+    "structures": [
+      "5VEW",
+      "6LN2",
+      "6X18",
+      "7KI0",
+      "7LCJ"
+    ],
+    "active_structs": [
+      "6X18",
+      "7KI0",
+      "7LCJ"
+    ],
+    "inactive_structs": [
+      "5VEW",
+      "6LN2"
+    ],
+    "median_best_active_kcalmol": -6.87,
+    "best_active_range": [
+      -7.83,
+      -5.49
+    ],
+    "median_active_preference_kcalmol": -1.13,
+    "n_active_preferring": 3,
+    "n_with_both_states": 3
+  },
+  "binding_site": {
+    "6X18": {
+      "poses": "9/10",
+      "median_overlap": 0.92,
+      "median_centroid_A": 21.18,
+      "deep_cleft": 7,
+      "footprint": "Tyr152/Arg190/Met233/Val237/Tyr241/Trp306/Ile313/Glu387/Leu388"
+    },
+    "7LCJ": {
+      "poses": "3/10",
+      "median_overlap": 0.55,
+      "median_centroid_A": 3.66,
+      "mode": "intermediate cleft"
+    }
+  },
+  "ablation": {
+    "roc_auc": {
+      "curated": 0.7997,
+      "automated": 0.9387
+    },
+    "pr_auc": {
+      "curated": 0.4649,
+      "automated": 0.3725
+    },
+    "ef_1pct": {
+      "curated": 30.0,
+      "automated": 20.0
+    },
+    "ef_5pct": {
+      "curated": 10.0,
+      "automated": 4.0
+    },
+    "bedroc": {
+      "curated": 0.5463,
+      "automated": 0.4236
+    },
+    "top10_recovery": {
+      "curated": 0.5,
+      "automated": 0.2
+    },
+    "scaffold_recovery_top10": {
+      "curated": 0.5,
+      "automated": 0.2
+    },
+    "note": "automated full_cascade vs single-pass 3D: 0.939 vs 0.603 ROC-AUC (architecture carries discriminative power; curation improves early recovery)."
+  },
+  "generalization": {
+    "glp1r": {
+      "full_cascade_roc": 0.8,
+      "full_cascade_ef1": 30.0,
+      "full_cascade_bedroc": 0.546,
+      "top10": 5,
+      "single_pass_roc": 0.727,
+      "stage3_only_roc": 0.742
+    },
+    "ghsr": {
+      "full_cascade_roc": 0.953,
+      "full_cascade_ef1": 40.0,
+      "full_cascade_bedroc": 0.649,
+      "top10": 5,
+      "single_pass_roc": 0.879,
+      "stage3_only_roc": 0.953
+    },
+    "ntsr1": {
+      "full_cascade_roc": 0.977,
+      "full_cascade_ef1": 40.0,
+      "full_cascade_bedroc": 0.855,
+      "top10": 8,
+      "single_pass_roc": 0.805,
+      "stage3_only_roc": 0.976
+    },
+    "mdm2": {
+      "full_cascade_roc": 0.912,
+      "full_cascade_ef1": 40.0,
+      "full_cascade_bedroc": 0.926,
+      "top10": 9,
+      "single_pass_roc": 0.632,
+      "stage3_only_roc": 0.635
+    }
+  }
+}

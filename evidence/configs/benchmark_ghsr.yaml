@@ -1,0 +1,65 @@
+random_seed: 42
+top_k_values:
+- 10
+- 25
+- 50
+output_dir: evidence/outputs
+data:
+  stage3_audit: results/screening_full_1M_topological_hashed.csv
+  final_ranked: results/top_1000_glp1_mimetics_full_1M_topological_hashed_native_final.csv
+  native_scored: GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/analysis/microstate_native_mapping.csv
+  feature_matches: GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/analysis/microstate_native_feature_matches.csv
+  reference_features: GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/analysis/native_reference_features.csv
+  rank_comparison: GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/analysis/native_rank_comparison.csv
+  hotspot_compat: GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/analysis/ligand_hotspot_compatibility.csv
+  actives_csv: null
+  decoys_csv: null
+  docking_csv: null
+benchmark:
+  library_csv: evidence/data/ghsr_external_benchmark_library.csv
+  exclusions_csv: evidence/data/ghsr_external_benchmark_exclusions.csv
+  output_dir: evidence/outputs/benchmark_ghsr/benchmark_external
+  pharmacophore_path: maps/pharmacophore_ghsr.json
+  docking_raw_csv: null
+  bootstrap_iterations: 500
+  bootstrap_seed: 42
+  workers: 1
+  top_hotspots: 25
+  pair_features: 24
+  rerank_query_features: 28
+  pair_hash_mode: precision_5bin
+  rerank_conformers: 16
+  rerank_tolerance: 2.75
+  rerank_pair_tolerance: 2.75
+  rerank_score_mode: stage3_only
+  hotspot_min_exact: 3
+  hotspot_min_groups: 2
+  chemistry_gate_mode: strict
+  native_support_max_residues: 0
+  native_candidate_pool_k: 999999
+  native_selection_top_k: 999999
+  native_final_top_k: 999999
+  native_rerank_max_per_scaffold: 999999
+  native_rerank_pair_tolerance: 3.0
+  final_rank_mode: native_first
+cascade_weights:
+  hotspot: 0.4
+  pair_hash: 0.6
+property_bins:
+  mw_bins:
+  - 200
+  - 300
+  - 400
+  - 500
+  - 700
+  logp_bins:
+  - -2
+  - 1
+  - 3
+  - 5
+  - 8
+claimed_motif_residues:
+- SER14
+- ASP15
+- SER17
+- SER18
