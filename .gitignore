@@ -103,3 +103,7 @@ evidence/outputs/docking_top10/runs/
 evidence/outputs/docking_top10/ligands_pdbqt/
 evidence/outputs/docking_top10/top10_ligands.sdf
 evidence/outputs/_smoke_glp1r_full/
+
+# ── Public reproducibility package (overrides the global *.py ignore above) ──
+!/reproduce/
+!/reproduce/*.py
