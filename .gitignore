@@ -86,9 +86,9 @@ Thumbs.db
 evidence/outputs/benchmark_*/benchmark_external/benchmark_native_bundle/
 
 # ── Manuscript artifacts, submission bundle, agent cache (kept out of the public repo) ──
-/JCIM_submission.pdf
-/JCIM_submission.zip
-/JCIM_submission/
+/ACS_Omega_submission.pdf
+/ACS_Omega_submission.zip
+/ACS_Omega_submission/
 /author_response.md
 /manuscript_review_log.md
 /ACS_Omega_Submission_Previous.pdf
