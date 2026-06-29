@@ -1,14 +1,15 @@
 # ── Implementation / Algorithm (confidential) ──
+# The production screening engine and core algorithm stay private; the public
+# analysis/benchmark source under evidence/ is re-included near the end of this file.
 *.py
 /lib/
 /analysis/
 /tests/
-/evidence/src/
-/evidence/run.py
-/evidence/build_external_benchmark_dataset.py
-/evidence/__init__.py
 /GLP1_top_ligand_analysis/scripts/
 /GLP1_top_ligand_analysis/derived/
+# Keep the production engine and report generator private even though evidence/ is public
+/run_optimized_1M_topological_hashed_screening.py
+/generate_comprehensive_report.py
 
 # ── Manuscript (confidential) ──
 publication/main.tex
@@ -107,3 +108,6 @@ evidence/outputs/_smoke_glp1r_full/
 # ── Public reproducibility package (overrides the global *.py ignore above) ──
 !/reproduce/
 !/reproduce/*.py
+
+# ── Public analysis/benchmark source (engine stays private; harness, metrics, figures) ──
+!/evidence/**/*.py
