@@ -1,7 +1,7 @@
 stage,actives,decoys,background,active_survival_pct
-input,10,300,30000,100.0
-stage0_pass,9,268,28834,90.0
-stage1_pass,7,2,82,70.0
-stage3_shortlist,5,0,0,50.0
-native_pool,5,0,0,50.0
-final_ranked,5,0,0,50.0
+input,50,1500,30000,100.0
+stage0_pass,31,1500,28832,62.0
+stage1_pass,23,279,82,46.0
+stage3_shortlist,15,5,0,30.0
+native_pool,15,5,0,30.0
+final_ranked,15,5,0,30.0

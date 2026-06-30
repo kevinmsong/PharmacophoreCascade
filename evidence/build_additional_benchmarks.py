@@ -73,6 +73,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--targets", nargs="+", default=list(TARGET_SPECS), choices=list(TARGET_SPECS))
     p.add_argument("--output-dir", default=str(HERE / "data"))
     p.add_argument("--decoys-per-active", type=int, default=30)
+    p.add_argument("--scaffold-limit", type=int, default=None,
+                   help="Override the per-target distinct-scaffold active cap (default: per-spec).")
     p.add_argument("--max-zinc-candidates", type=int, default=200000)
     p.add_argument("--zinc-dir", default=str(ROOT / "tmp" / "zinc"))
     return p
@@ -97,7 +99,7 @@ def main() -> None:
             require_assay_terms=spec["require_assay_terms"],
             assay_terms=spec["assay_terms"],
             excluded_terms=spec["excluded_terms"],
-            scaffold_limit=spec["scaffold_limit"],
+            scaffold_limit=args.scaffold_limit if args.scaffold_limit is not None else spec["scaffold_limit"],
             potency_threshold_nM=spec["potency_threshold_nM"],
         )
         actives[key] = act_df

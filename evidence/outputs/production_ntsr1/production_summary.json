@@ -1,51 +1,51 @@
 {
   "background_size": 30000,
   "shortlist_fraction": 0.05,
-  "n_candidates": 91,
-  "n_shortlist": 5,
-  "actives_in_final": 5,
+  "n_candidates": 384,
+  "n_shortlist": 20,
+  "actives_in_final": 15,
   "stage_survival": [
     {
       "stage": "input",
-      "actives": 10,
-      "decoys": 300,
+      "actives": 50,
+      "decoys": 1500,
       "background": 30000,
       "active_survival_pct": 100.0
     },
     {
       "stage": "stage0_pass",
-      "actives": 9,
-      "decoys": 268,
-      "background": 28834,
-      "active_survival_pct": 90.0
+      "actives": 31,
+      "decoys": 1500,
+      "background": 28832,
+      "active_survival_pct": 62.0
     },
     {
       "stage": "stage1_pass",
-      "actives": 7,
-      "decoys": 2,
+      "actives": 23,
+      "decoys": 279,
       "background": 82,
-      "active_survival_pct": 70.0
+      "active_survival_pct": 46.0
     },
     {
       "stage": "stage3_shortlist",
-      "actives": 5,
-      "decoys": 0,
+      "actives": 15,
+      "decoys": 5,
       "background": 0,
-      "active_survival_pct": 50.0
+      "active_survival_pct": 30.0
     },
     {
       "stage": "native_pool",
-      "actives": 5,
-      "decoys": 0,
+      "actives": 15,
+      "decoys": 5,
       "background": 0,
-      "active_survival_pct": 50.0
+      "active_survival_pct": 30.0
     },
     {
       "stage": "final_ranked",
-      "actives": 5,
-      "decoys": 0,
+      "actives": 15,
+      "decoys": 5,
       "background": 0,
-      "active_survival_pct": 50.0
+      "active_survival_pct": 30.0
     }
   ]
 }

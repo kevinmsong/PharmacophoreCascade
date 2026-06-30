@@ -46,9 +46,9 @@ REV = ROOT / "evidence" / "outputs" / "revision"
 SUMMARY_PATHS = {
     "glp1r": ROOT / "evidence" / "outputs" / "benchmark_summary.csv",
     "glp1r_automated": ROOT / "evidence" / "outputs" / "benchmark_glp1r_automated" / "benchmark_summary.csv",
-    "ghsr": ROOT / "evidence" / "outputs" / "benchmark_ghsr" / "benchmark_summary.csv",
-    "ntsr1": ROOT / "evidence" / "outputs" / "benchmark_ntsr1" / "benchmark_summary.csv",
-    "mdm2": ROOT / "evidence" / "outputs" / "benchmark_mdm2" / "benchmark_summary.csv",
+    "ghsr": ROOT / "evidence" / "outputs" / "benchmark_ghsr_full" / "benchmark_summary.csv",
+    "ntsr1": ROOT / "evidence" / "outputs" / "benchmark_ntsr1_full" / "benchmark_summary.csv",
+    "mdm2": ROOT / "evidence" / "outputs" / "benchmark_mdm2_full" / "benchmark_summary.csv",
 }
 LABELS = {
     "glp1r": "GLP-1R",

@@ -64,14 +64,14 @@ def actives_table(systems: list[str]) -> None:
 
 
 def counts_table(systems: list[str]) -> None:
-    summ = json.loads((DATA / "additional_benchmarks_summary.json").read_text())
     lines = [
         "\\begin{table}[H]",
         "\\centering",
         "\\footnotesize",
         "\\caption{\\textbf{Composition of the additional retrospective benchmarks.} "
-        "Each labeled universe contains 10 in-domain actives (distinct Murcko scaffolds) and 300 "
-        "property-matched, scaffold-distinct, ECFP4-dissimilar decoys drawn from the local ZINC pool.}",
+        "Each labeled universe contains 50 in-domain actives (distinct Murcko scaffolds) and 30 "
+        "property-matched, scaffold-distinct, ECFP4-dissimilar decoys per active (1{,}500 total) drawn "
+        "from the local ZINC pool.}",
         "\\label{tab:si_new_counts}",
         "\\begin{tabular}{@{}l l l c c@{}}",
         "\\toprule",
@@ -80,10 +80,10 @@ def counts_table(systems: list[str]) -> None:
     ]
     for key in systems:
         name, chembl, pdb, _ = SYSTEMS[key]
-        info = summ.get(key, {})
-        lines.append(
-            f"{name} & {chembl} & PDB {pdb} & {info.get('actives','--')} & {info.get('decoys','--')} \\\\"
-        )
+        df = pd.read_csv(DATA / f"{key}_external_benchmark_library.csv")
+        na = int((df["label"] == "active").sum())
+        nd = int((df["label"] == "decoy").sum())
+        lines.append(f"{name} & {chembl} & PDB {pdb} & {na} & {nd:,} \\\\")
     lines += ["\\bottomrule", "\\end{tabular}", "\\end{table}", ""]
     (OUT / "si_new_systems_counts_table.tex").write_text("\n".join(lines), encoding="utf-8")
     print("wrote si_new_systems_counts_table.tex")

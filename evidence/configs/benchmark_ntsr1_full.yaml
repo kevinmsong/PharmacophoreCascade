@@ -23,7 +23,7 @@ benchmark:
   docking_raw_csv: null
   bootstrap_iterations: 5000
   bootstrap_seed: 42
-  workers: 1
+  workers: 12
   top_hotspots: 25
   pair_features: 24
   rerank_query_features: 28
