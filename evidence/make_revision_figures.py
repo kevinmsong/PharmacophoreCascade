@@ -178,7 +178,7 @@ def ablation_table() -> None:
     mets = [("roc_auc", "ROC-AUC"), ("pr_auc", "PR-AUC"), ("ef_1pct", "EF1\\%"),
             ("bedroc", "BEDROC ($\\alpha=20$)"), ("top10_recovery", "Actives in top 10")]
     lines = [
-        "\\begin{table}[tbp]",
+        "\\begin{table}[H]",
         "\\centering",
         "\\caption{\\textbf{Cascade performance with and without manual curation (GLP-1R).} "
         "The fully automated interface pharmacophore removes all hand-picked contact groups, "
