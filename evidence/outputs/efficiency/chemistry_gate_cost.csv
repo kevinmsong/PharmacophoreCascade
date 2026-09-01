@@ -1,0 +1,5 @@
+system,n_actives,retained_strict,lost_to_structural_alerts,retention_strict,max_retained_if_alerts_readmitted
+GLP-1R,10,8,0,0.8,8
+GHSR,50,9,9,0.18,18
+NTSR1,50,15,17,0.3,32
+MDM2-p53,50,39,8,0.78,47

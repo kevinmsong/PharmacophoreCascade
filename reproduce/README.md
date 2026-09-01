@@ -1,9 +1,41 @@
 # Reproducibility package
 
 This directory lets anyone recompute every retrospective enrichment number reported
-in the manuscript *A staged topology-to-native pharmacophore cascade for scalable
-native rescoring at peptide-receptor interfaces* **without** the production screening
-engine, directly from the released per-molecule benchmark scores.
+in the manuscript *Native Peptide-Contact Pharmacophore Scoring at Library Scale: A
+Staged Cascade and Its Efficiency–Retention Trade-off* **without** the production
+screening engine, directly from the released per-molecule benchmark scores.
+
+Three other directories carry the rest of the released material:
+
+| Directory | What it does |
+|---|---|
+| `reference_implementation/` | A readable reimplementation of Stage 0–2 scoring, written from the manuscript's equations alone, plus a script that checks it against the engine's released scores. See its README for the measured agreement. |
+| `evidence/` | The analysis scripts behind the paper's figures and tables: active attrition, the efficiency–retention sweep, TOST equivalence testing and the paired docking test, the common-support ablation recomputation, the figure scripts, and three checkers covering figure accessibility, numerical consistency, and manuscript cross-references. |
+| `evidence/outputs/` | Their outputs, including the per-molecule attrition table and the shortlist sweep. |
+
+To regenerate the analyses and figures from released data:
+
+```bash
+python evidence/analyze_active_attrition.py --check
+python evidence/analyze_efficiency_retention.py
+python evidence/analyze_equivalence.py
+python evidence/analyze_ablation_common_support.py
+python evidence/make_ieee_figures.py                 # --target acs for the ACS build
+python evidence/make_ieee_appendix_figures.py        # --target acs for the ACS build
+python evidence/check_figure_accessibility.py
+python reference_implementation/verify_against_released_scores.py
+```
+
+The manuscript sources are checked against these outputs rather than transcribed
+by hand. `evidence/check_manuscript_numbers.py` re-derives every headline
+statistic from the CSVs above and confirms the value appears in the LaTeX, and
+`evidence/check_response_crossrefs.py` confirms the response letter names the
+figures and tables the built manuscript actually numbers that way:
+
+```bash
+python evidence/check_manuscript_numbers.py --dir <submission folder>
+python evidence/check_response_crossrefs.py --dir <submission folder>
+```
 
 ## What is released here
 
@@ -54,14 +86,28 @@ enrichment while the staged cascade supplies scalability.
 
 Grouped-bootstrap 95% confidence intervals and paired p-values (each active
 resampled with its matched decoys) are provided pre-computed in the
-`benchmark_*/benchmark_summary.csv` tables.
+`benchmark_*/benchmark_summary.csv` tables. `evidence/analyze_equivalence.py`
+recomputes the bootstrap from scratch and adds the TOST equivalence tests and the
+paired Wilcoxon test on the docking deltas.
 
 ## What is not released
 
 The production screening engine that executes the million-compound scan is under
 active development for separate applications and is therefore not open-sourced; it
 is available from the corresponding author under a reasonable-use agreement. It is
-not required to reproduce any reported result: the Methods specify the exact
-operation, parameters, and closed-form scoring functions of every stage, and the
-released per-molecule scores above are sufficient to recompute all enrichment
-metrics with the script in this directory.
+not required to reproduce any reported result.
+
+Two things make that claim checkable rather than asserted. First, the released
+per-molecule scores are sufficient to recompute every enrichment metric with the
+script in this directory. Second, `reference_implementation/` reimplements the
+Stage 0–2 scoring equations independently of the engine and verifies them against
+its released output; it reproduces the Stage-0 and Stage-1 gate outcomes for 100% of
+the GLP-1R benchmark and the continuous scores to within 0.03–0.05 percentage points
+on average. Writing it surfaced two errors in earlier descriptions of the method — a
+rotatable-bond bound in the Stage-0 equation that the code does not apply, and a
+receptor-feature selection rule described as "top N by weight" when it is not — both
+of which are corrected in the current manuscript.
+
+Stage 3 and the terminal native branch are not reimplemented, because both depend on
+RDKit conformer embedding rather than on a closed-form expression. Their per-molecule
+outputs are released instead.

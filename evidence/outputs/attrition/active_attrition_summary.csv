@@ -1,0 +1,16 @@
+system,stage_lost,reason_class,n
+GHSR,-,retained,9
+GHSR,Stage 0,structural alert,9
+GHSR,Stage 1,hotspot gate,11
+GHSR,Stage-3 shortlist,below shortlist cut,21
+GLP-1R,-,retained,8
+GLP-1R,Stage 1,hotspot gate,1
+GLP-1R,Stage-3 shortlist,below shortlist cut,1
+MDM2-p53,-,retained,39
+MDM2-p53,Stage 0,structural alert,8
+MDM2-p53,Stage-3 shortlist,below shortlist cut,3
+NTSR1,-,retained,15
+NTSR1,Stage 0,property envelope,2
+NTSR1,Stage 0,structural alert,17
+NTSR1,Stage 1,hotspot gate,8
+NTSR1,Stage-3 shortlist,below shortlist cut,8

@@ -111,3 +111,20 @@ evidence/outputs/_smoke_glp1r_full/
 
 # ── Public analysis/benchmark source (engine stays private; harness, metrics, figures) ──
 !/evidence/**/*.py
+
+# ── Public Stage 0-2 reference implementation (promised in the manuscript) ──
+!/reference_implementation/
+!/reference_implementation/**/*.py
+
+# ── Manuscripts and correspondence stay private until published ──
+# These two checkers embed the substance of confidential peer review (the
+# reviewers' comments and captions from the unpublished manuscript), so they are
+# held back with the manuscript rather than released with the analysis code.
+/evidence/check_reviewer_coverage.py
+/evidence/check_response_crossrefs.py
+/ACS_Omega_resubmission/
+/IEEE_Access_submission/
+/Reviewer_Comments_JCIM.*
+/Response_to_Reviewers_*
+/Response to the Editor and Reviewers_*
+/cover_letter_*

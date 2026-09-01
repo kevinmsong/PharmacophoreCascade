@@ -1,0 +1,27 @@
+\begin{table}[!t]
+\caption{Component ablations against the canonical final 1\,000-ligand ranking.
+Each ablation replaces one pipeline element with a simplified alternative. All
+comparisons are computed over the same population, so $\tau$ is comparable across
+rows: $\tau_{1000}$ correlates the two orderings over the canonical top 1\,000, and
+$\tau_\mathrm{common}$ repeats the comparison over every ligand either ranking
+reaches, with unranked ligands tied below all ranked ones. $J_k$ is the Jaccard
+overlap of the top-$k$ sets. An earlier version of this table reported $\tau$ over
+shared sets of only 52--80 ligands for the three native-branch rows; those small
+sets came from an incomplete export of the native-scored population and are
+superseded here.}
+\label{tab:ablation}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrrrrr}
+\hline
+Ablation & $n$ & $\tau_{1000}$ & $\tau_\mathrm{common}$ & $J_{10}$ & $J_{100}$ \\
+\hline
+Remove Stage 2 (hotspot only) & 1,000 & -0.020 & +0.058 & 0.000 & 0.000 \\
+Remove Stage 1 (pair-hash only) & 1,000 & +0.118 & +0.071 & 0.000 & 0.010 \\
+Cascade score only within native pool & 1,000 & +0.065 & +0.420 & 0.000 & 0.015 \\
+Native pool: top Stage-3 only & 1,000 & +0.448 & +0.454 & 0.176 & 0.389 \\
+Alternative final tie-break & 1,000 & +0.679 & +0.416 & 0.000 & 0.005 \\
+\hline
+\end{tabular}
+\end{table}

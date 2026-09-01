@@ -1,0 +1,10 @@
+ligand_id,label,smiles,engine_status,engine_rank
+CHEMBL6027640,active,Cn1c(CN2CCC(c3cccc(OCc4ccc(C#N)cc4)n3)CC2)nc2ccc(C(=O)O)cc21,scored,1
+CHEMBL250748,active,CC(C)c1nc2cc(Cl)c(Cl)cc2nc1S(=O)(=O)CCC1OCCO1,scored,2
+CHEMBL400700,active,CS(=O)(=O)c1nc2cc(Cl)c(Cl)cc2nc1NC1CCS(=O)(=O)C1,scored,3
+CHEMBL398714,active,CC(C)(C)Nc1nc2cc(Cl)c(Cl)cc2nc1S(C)(=O)=O,hotspot_filtered,247
+ZINCf5000002Jl9F,decoy,CCOC(=O)CS(=O)(=O)Nc1cnns1,scored,4
+ZINCf50000027sEX,decoy,COC(=O)[C@@H](C)COC(=O)CS(C)(=O)=O,scored,6
+ZINCf5000000awrm,decoy,O=C1NC[C@H](Cn2cc(I)cnc2=O)O1,hotspot_filtered,275
+ZINCf50000031AOO,decoy,COC(=O)[C@@H](C)n1c(O)ncc(I)c1=O,hotspot_filtered,298
+ZINCf5000002ecOQ,decoy,CS(=O)(=O)[C@@H]1COC[C@H]1NC(=O)C=CI,chemistry_filtered,246

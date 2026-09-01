@@ -1,0 +1,161 @@
+system,ligand_id,smiles,cascade_score_pct,engine_gate,stage_lost,reason_class,reason_detail
+GLP-1R,CHEMBL398714,CC(C)(C)Nc1nc2cc(Cl)c(Cl)cc2nc1S(C)(=O)=O,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GLP-1R,CHEMBL6027640,Cn1c(CN2CCC(c3cccc(OCc4ccc(C#N)cc4)n3)CC2)nc2ccc(C(=O)O)cc21,41.64246741272771,candidate,-,retained,reached native scoring
+GLP-1R,CHEMBL250112,CS(=O)(=O)c1nc2cc(Cl)c(Cl)cc2nc1NC1CCCc2ccccc21,17.078523159557218,candidate,-,retained,reached native scoring
+GLP-1R,CHEMBL399841,Cc1nnc(S(=O)(=O)c2nc3cc(Cl)c(Cl)cc3nc2C(C)C)s1,16.57662297770835,candidate,-,retained,reached native scoring
+GLP-1R,CHEMBL251760,CC(C)c1nc2cc(Cl)c(Cl)cc2nc1S(=O)(=O)Cc1ccc(S(C)(=O)=O)cc1,21.500054514789003,candidate,-,retained,reached native scoring
+GLP-1R,CHEMBL400700,CS(=O)(=O)c1nc2cc(Cl)c(Cl)cc2nc1NC1CCS(=O)(=O)C1,17.85611515962809,candidate,-,retained,reached native scoring
+GLP-1R,CHEMBL401183,CS(=O)(=O)c1nc2cc(Cl)c(Cl)cc2nc1N1CCCC1,12.13190744189817,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 12.1, below the top-5% cut"
+GLP-1R,CHEMBL250748,CC(C)c1nc2cc(Cl)c(Cl)cc2nc1S(=O)(=O)CCC1OCCO1,16.760980957417274,candidate,-,retained,reached native scoring
+GLP-1R,CHEMBL248912,Cc1nnc([S+]([O-])c2nc3cc(Cl)c(Cl)cc3nc2C(C)C)s1,17.47677485150386,candidate,-,retained,reached native scoring
+GLP-1R,CHEMBL400500,CS(=O)(=O)c1nc2cc(Cl)c(Cl)cc2nc1N1CCC(=O)N1,15.851586351520236,candidate,-,retained,reached native scoring
+GHSR,CHEMBL480821,Cc1ccc(-c2ccc(S(=O)(=O)N3CCCC[C@H]3C(=O)N3CC[C@@H](N)C3)cc2F)o1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GHSR,CHEMBL4172656,Cc1ccc2[nH]c(C(=O)N[C@H]3Cc4ccccc4[C@@H]3C(=O)N[C@H]3CCCN(C)C3)cc2c1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GHSR,CHEMBL251572,COc1cc2c(cc1N1C[C@@H](C)N[C@@H](C)C1)N(S(=O)(=O)c1ccc(-c3ccccn3)s1)CC2,18.83411221191787,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 18.8, below the top-5% cut"
+GHSR,CHEMBL401134,COc1cc2c(cc1N1C[C@@H](C)N[C@@H](C)C1)N(S(=O)(=O)c1ccc(-c3ccccn3)cc1)CC2,19.29200943636848,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 19.3, below the top-5% cut"
+GHSR,CHEMBL518774,Cc1ccc(-c2ccc(S(=O)(=O)N3CC[C@H](O)[C@H]3C(=O)N3CC[C@@H](N)C3)cc2F)o1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GHSR,CHEMBL259166,CC(C)(N)C(=O)N[C@H](COCc1ccccc1)c1nnnn1CCCC(=O)NCCSCCO,26.742393705419342,candidate,-,retained,reached native scoring
+GHSR,CHEMBL460680,CC(C)(N)C(=O)N[C@H](CCC(F)(F)c1ccccc1)c1nnnn1CCOC(=O)NCCCCO,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GHSR,CHEMBL270666,CC(C)(N)C(=O)N[C@H](COCc1ccccc1)c1nnnn1[C@H](CC#N)COc1ccccc1O,28.77684017572941,candidate,-,retained,reached native scoring
+GHSR,CHEMBL482220,N[C@@H]1CCN(C(=O)[C@@H]2CCCCN2S(=O)(=O)c2ccc(-c3cc(Cl)ccc3Cl)cc2)C1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GHSR,CHEMBL2364468,COc1ccc(N2C[C@@H](C)N[C@@H](C)C2)cc1NS(=O)(=O)c1ccc(-c2ccc(C)o2)cc1Cl,0.0,stage0_fail,Stage 0,structural alert,PAINS:anil_di_alk_C(246)
+GHSR,CHEMBL260819,COc1ccc(F)c(-c2ccc(S(=O)(=O)Nc3cc(N4C[C@@H](C)N[C@@H](C)C4)ccc3OC)cc2)c1,0.0,stage0_fail,Stage 0,structural alert,PAINS:anil_di_alk_C(246)
+GHSR,CHEMBL271876,CC(C)(N)C(=O)N[C@H](COCc1ccccc1)c1nnnn1[C@H](CC#N)COc1ccccn1,24.64209224791416,candidate,-,retained,reached native scoring
+GHSR,CHEMBL404336,CC(C)(N)C(=O)N[C@H](COCc1ccccc1)c1nnnn1C(/C=C/c1ccccc1)CC#N,20.92621723054222,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 20.9, below the top-5% cut"
+GHSR,CHEMBL251169,COc1cc2c(cc1N1C[C@@H](C)N[C@@H](C)C1)N(S(=O)(=O)c1ccc3ccccc3c1)CC2,15.08256540063293,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 15.1, below the top-5% cut"
+GHSR,CHEMBL2364429,COc1ccc(N2C[C@@H](C)N[C@@H](C)C2)cc1NS(=O)(=O)c1ccc(-c2cc(C)cs2)cc1F,0.0,stage0_fail,Stage 0,structural alert,PAINS:anil_di_alk_C(246)
+GHSR,CHEMBL1161835,CC(C)(N)C(=O)N[C@H](Cc1c[nH]c2ccccc12)C(=O)N1CCC2(CC1)C[C@@H](O)c1ccccc12,21.39582753846037,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 21.4, below the top-5% cut"
+GHSR,CHEMBL2364354,COc1ccc(NS(=O)(=O)c2ccc(-c3cccc(C)n3)s2)cc1N1C[C@@H](C)N[C@@H](C)C1,22.361085909723396,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 22.4, below the top-5% cut"
+GHSR,CHEMBL410135,CC(C)(N)C(=O)N[C@H](COCc1ccccc1)c1nnnn1CCNC(=O)CCc1cccc(O)c1,30.347904004054456,candidate,-,retained,reached native scoring
+GHSR,CHEMBL379074,CNC(C)(C)C/C=C/C(=O)N(C)[C@H](Cc1ccc2ccccc2c1)C(=O)N(C)CCc1cccs1,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+GHSR,CHEMBL4637980,Cc1ccc2[nH]c(C(=O)N[C@H]3CN(S(=O)(=O)c4ccccc4)C[C@@H]3C(=O)NCCN(C)C)cc2c1,20.12625951173912,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 20.1, below the top-5% cut"
+GHSR,CHEMBL2364408,COc1ccc(NS(=O)(=O)c2ccc(-c3cc(C)cs3)s2)cc1N1C[C@@H](C)N[C@@H](C)C1,18.454776495870327,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 18.5, below the top-5% cut"
+GHSR,CHEMBL403180,CC(C)(N)C(=O)N[C@H](COCc1ccccc1)c1nnnn1C(CC#N)CCc1ccccc1,20.92621723054222,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 20.9, below the top-5% cut"
+GHSR,CHEMBL1923504,CCC[C@@H]1NCCOc2ccccc2CCCNC(=O)[C@@H](Cc2ccccc2)NC(=O)CN(C)C1=O,21.068573943163727,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 21.1, below the top-5% cut"
+GHSR,CHEMBL4645148,Cc1ccc2[nH]c(C(=O)N[C@H]3CN(S(=O)(=O)c4cccnc4)C[C@@H]3C(=O)NCCN(C)C)cc2c1,24.04930265883883,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 24.0, below the top-5% cut"
+GHSR,CHEMBL2364338,Cc1ccc(-c2ccc(S(=O)(=O)Nc3cccc(N4C[C@@H](C)N[C@@H](C)C4)n3)cc2F)o1,19.24857132837227,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 19.2, below the top-5% cut"
+GHSR,CHEMBL2364382,COc1ccc(NS(=O)(=O)c2ccc(-c3ccccc3)s2)cc1N1C[C@@H](C)N[C@@H](C)C1,18.90757897471845,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 18.9, below the top-5% cut"
+GHSR,CHEMBL1161828,CC(C)(N)C(=O)N[C@H](CCCc1ccccc1)C(=O)N1CCC2(CC1)CS(=O)(=O)c1ccccc12,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GHSR,CHEMBL516602,Cc1ccc(-c2ccc(S(=O)(=O)N3CCNC[C@H]3C(=O)N3CC[C@@H](N)C3)cc2)o1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GHSR,CHEMBL4170481,Cc1ccc2[nH]c(C(=O)N[C@H]3Cc4ccccc4[C@@H]3NC(=O)[C@@H]3CN(C)CCO3)cc2c1,19.669642652614005,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 19.7, below the top-5% cut"
+GHSR,CHEMBL3218890,COc1cccc(-n2cc3nc(-c4cccnc4C)n(C[C@H]4CCCN(C(C)C)C4)c(=O)c3n2)c1,21.671967435481346,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 21.7, below the top-5% cut"
+GHSR,CHEMBL4164328,CN(C)CCNC(=O)[C@H]1c2ccccc2C[C@@H]1NC(=O)c1cc2ccccc2[nH]1,19.275064566494947,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 19.3, below the top-5% cut"
+GHSR,CHEMBL2364381,COc1ccc(NS(=O)(=O)c2ccc(-c3ccsc3)s2)cc1N1C[C@@H](C)N[C@@H](C)C1,18.77878462104113,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 18.8, below the top-5% cut"
+GHSR,CHEMBL2364384,COc1ccc(N2C[C@@H](C)N[C@@H](C)C2)cc1NS(=O)(=O)c1ccc2c(Cl)cccc2c1,0.0,stage0_fail,Stage 0,structural alert,PAINS:anil_di_alk_C(246)
+GHSR,CHEMBL481620,COc1cccc(C(=O)Nc2ccc(S(=O)(=O)N3CCCC[C@H]3C(=O)N3CC[C@H](N)C3)cc2)c1,19.93338936148033,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 19.9, below the top-5% cut"
+GHSR,CHEMBL4637284,Cc1ccc2[nH]c(C(=O)N[C@H]3CN(S(=O)(=O)c4cnccn4)C[C@@H]3C(=O)NCCN(C)C)cc2c1,26.402055379760085,candidate,-,retained,reached native scoring
+GHSR,CHEMBL2364480,COc1ccc(N2C[C@@H](C)N[C@@H](C)C2)cc1NS(=O)(=O)c1ccc(-c2csc(C)c2)c(F)c1,0.0,stage0_fail,Stage 0,structural alert,PAINS:anil_di_alk_C(246)
+GHSR,CHEMBL1161827,CC(C)(N)C(=O)N[C@H](CCCc1ccccc1)C(=O)N1CCC2(CC1)C[S+]([O-])c1ccccc12,14.980426523069733,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 15.0, below the top-5% cut"
+GHSR,CHEMBL519322,Cc1ccccc1CN(C[C@H]1CCCN1)C(=O)[C@H](C)Oc1cccc(Cl)c1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GHSR,CHEMBL251573,COc1cc2c(cc1N1C[C@@H](C)N[C@@H](C)C1)N(S(=O)(=O)c1ccc(-c3ccon3)s1)CC2,18.848446307606515,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 18.8, below the top-5% cut"
+GHSR,CHEMBL272540,COc1ccc(N2C[C@@H](C)N[C@@H](C)C2)cc1NS(=O)(=O)c1ccc(-c2cnco2)s1,0.0,stage0_fail,Stage 0,structural alert,PAINS:anil_di_alk_C(246)
+GHSR,CHEMBL480639,Cc1ccc(-c2ccc(S(=O)(=O)N3CCCC[C@H]3C(=O)N3C[C@@H](C)N[C@@H](C)C3)cc2F)o1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GHSR,CHEMBL4164040,Nc1ccncc1C(=O)N[C@H]1c2ccccc2C[C@@H]1NC(=O)c1cc2c(F)cc(F)cc2[nH]1,26.76262341104597,candidate,-,retained,reached native scoring
+GHSR,CHEMBL1161829,CC(C)(N)C(=O)N[C@H](CCCc1ccccc1)C(=O)N1CCC2(CC1)COc1ccccc12,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+GHSR,CHEMBL1162058,CNC(C)(C)C/C=C/C(=O)N(C)[C@H](Cc1ccc2ccccc2c1)C(=O)N(C)CCc1ccccc1,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+GHSR,CHEMBL130229,CCOC(=O)[C@@H](CCc1ccccc1)NC(=O)[C@@H](Cc1c[nH]c2ccccc12)NC(=O)C(C)(C)N,24.145938154176967,candidate,-,retained,reached native scoring
+GHSR,CHEMBL382844,CC(C)(N)C(=O)N[C@H](COCc1ccccc1)C(=O)N1CCC2=NNC(=O)[C@@]2(Cc2ccccc2)C1,25.394878094189067,candidate,-,retained,reached native scoring
+GHSR,CHEMBL4171914,Cn1ccc2c(F)c(C(=O)N[C@H]3Cc4ccccc4[C@@H]3NC(=O)c3cnccc3N)ccc21,27.92509097289452,candidate,-,retained,reached native scoring
+GHSR,CHEMBL2364485,COc1ccc(N2C[C@@H](C)N[C@@H](C)C2)cc1NS(=O)(=O)c1ccc(-c2ccc(C)o2)cn1,0.0,stage0_fail,Stage 0,structural alert,PAINS:anil_di_alk_C(246)
+GHSR,CHEMBL1079185,CCCCc1ccc(S(=O)(=O)Nc2ccc3c(c2)CCN(Cc2cnc[nH]2)CC3)cc1,17.332207155103074,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 17.3, below the top-5% cut"
+GHSR,CHEMBL1161822,CC(C)(N)C(=O)N[C@H](CCCc1ccccc1)C(=O)N1CCC2(CC1)CSc1ccccc12,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+NTSR1,CHEMBL463811,CC(C)C[C@H](NC(=O)Cn1ccc2cc(NS(=O)(=O)c3cccc4cccnc34)ccc21)C(=O)O,24.44612881398585,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL294989,CC(C)CC(NC(=O)OCC1c2ccccc2-c2ccccc21)C(=O)O,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+NTSR1,CHEMBL462830,COc1ccccc1-c1cc(C(=O)N[C@@H](CC(C)C)C(=O)O)nn1-c1ccnc2cc(Cl)ccc12,21.571543784844334,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL2431120,COc1cc2nc(C3CC3)nc(N3CCN(c4ccccc4OC)CC3)c2cc1OC,16.528540327890838,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL3315193,CC(C)C[C@H](NC(=O)Cn1ccc2cc(-c3cnc4ccccc4c3)ccc21)C(=O)O,20.55589580012079,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL3099769,COc1cccc(OC)c1-c1nc(C(=O)N[C@@H](CC(C)C)C(=O)O)cn1-c1cccc2ccccc12,19.60554493747545,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL3315203,CC(C)C[C@H](NC(=O)Cn1ccc2cc(-c3cncc4ccccc34)ccc21)C(=O)O,20.964529167388392,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL1301125,COC(=O)C[C@]1(C(=O)OC)CN(C#N)N(c2ccc(Cl)cc2)C12c1ccccc1-c1ccccc12,8.93567913877976,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 8.9, below the top-5% cut"
+NTSR1,CHEMBL3315221,CC(C)C[C@H](NC(=O)Cn1ccc2ccc(-c3cnc4ccccc4c3)cc21)C(=O)O,0.0,stage0_fail,Stage 0,structural alert,PAINS:dyes5A(27)
+NTSR1,CHEMBL1323442,CCOC(=O)c1c(C)[nH]c(C(=O)OCC(=O)Nc2sccc2C(N)=O)c1C,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+NTSR1,CHEMBL3099777,COc1cccc(OC)c1-c1nc(C(=O)N[C@@H](CC(C)C)C(=O)O)cn1-c1ccnc2ccccc12,22.56845037607985,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL1490404,Cn1cc([N+](=O)[O-])c(C(=O)Nc2nc(-c3ccc(Cl)cc3)cs2)n1,17.54799374763278,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL1611170,CCOC(=O)COc1ccc(/C=C/[N+](=O)[O-])c(OCC(=O)OCC)c1,15.770316424553624,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 15.8, below the top-5% cut"
+NTSR1,CHEMBL1600146,CCN(CC)c1ccc(C=C2C(=O)NC(=S)NC2=O)cc1,0.0,stage0_fail,Stage 0,structural alert,PAINS:ene_six_het_A(483); reactive:michael_acceptor
+NTSR1,CHEMBL1468368,O=C1NC(=O)C(=Cc2cn(CCOc3ccc4c(c3)OCO4)c3ccccc23)C(=O)N1,0.0,stage0_fail,Stage 0,structural alert,PAINS:ene_six_het_A(483); reactive:michael_acceptor
+NTSR1,CHEMBL3315213,O=C(Cn1ccc2cc(-c3cnc4ccccc4c3)ccc21)N[C@@H](Cc1ccccc1)C(=O)O,24.854752149246128,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL3315202,CC(C)C[C@H](NC(=O)Cn1ccc2cc(-c3cccc4cnccc34)ccc21)C(=O)O,21.367691456085552,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL1546134,CC1=NNC(=O)/C1=C\c1cn(-c2ccccc2)nc1-c1cccs1,0.0,stage0_fail,Stage 0,structural alert,PAINS:ene_five_het_A(201); reactive:michael_acceptor
+NTSR1,CHEMBL3315209,CC(C)C[C@H](NC(=O)Cn1ccc2cc(-c3cnc4ccccc4c3)ccc21)c1nn[nH]n1,23.042853314589102,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL1538066,CC(C)C[C@H](NC(=O)c1[nH]cnc1C(=O)N[C@@H](C)c1ccccc1)C(=O)OCc1ccccc1,15.552670184466402,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 15.6, below the top-5% cut"
+NTSR1,CHEMBL2431121,COc1cc2nc(C3CCCC3)nc(N3CCN(c4ccccc4OC)CC3)c2cc1OC,16.506814841286644,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL1597454,CC(=O)OCCCNc1cc(Sc2ccc(C)cc2)c2nonc2c1[N+](=O)[O-],14.77929187145367,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 14.8, below the top-5% cut"
+NTSR1,CHEMBL1446377,COc1cc2nc(C3CCC3)nc(N3CCN(c4ccccc4OC)CC3)c2cc1OC,16.506814841286644,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL1547420,COC(=O)C(=Cc1ccc(OCc2ccc([N+](=O)[O-])cc2)c(OC)c1)C(=O)OC,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+NTSR1,CHEMBL1312502,O=C(Nc1ccc(N2CCN(C(=O)c3ccco3)CC2)c(Cl)c1)c1cc2ccccc2o1,0.0,stage0_fail,Stage 0,structural alert,PAINS:anil_di_alk_A(478)
+NTSR1,CHEMBL1328169,Cc1cc(C)n(-c2nc(N(c3ccccc3)c3ccccc3)nc(-n3nc(C)cc3C)n2)n1,14.583631449708763,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 14.6, below the top-5% cut"
+NTSR1,CHEMBL1586252,Cc1cc(C)c2c(c1)/C(=C/C(=O)c1ccc(Br)s1)C(=O)N2,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+NTSR1,CHEMBL1594369,CCOC(=O)/C(=C\c1cccc(O)c1)c1nc(O)c2c(C)c(C)sc2n1,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+NTSR1,CHEMBL2003819,CN(C)S(=O)(=O)c1ccc(-c2csc(N/N=C/c3ccc(O)cc3)n2)cc1,0.0,stage0_fail,Stage 0,structural alert,PAINS:hzone_phenol_B(215)
+NTSR1,CHEMBL3315194,CC(C)C[C@H](NC(=O)Cn1ccc2ccccc21)C(=O)O,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+NTSR1,CHEMBL1550591,N#CC1=C(c2ccccc2)/C(=C/c2ccccc2)OC1=O,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+NTSR1,CHEMBL2431119,C=Cc1nc(N2CCN(c3ccccc3OC)CC2)c2cc(OC)c(OC)cc2n1,15.731490474357908,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 15.7, below the top-5% cut"
+NTSR1,CHEMBL1966869,CCOC(=O)/C=c1\s/c(=C\c2ccc3cc(OC)ccc3c2)c(=O)n1CC(=O)NCC1CCCO1,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+NTSR1,CHEMBL1438069,CC(C)c1ccc(Nc2nnc(SC3CCOC3=O)s2)cc1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+NTSR1,CHEMBL3315223,CC(C)C[C@H](NC(=O)Cn1ccc2ccc(-c3cncc4ccccc34)cc21)C(=O)O,0.0,stage0_fail,Stage 0,structural alert,PAINS:dyes5A(27)
+NTSR1,CHEMBL1611686,Cc1ccc(-c2cc(-c3ccccc3)cc(-c3ccccc3)[n+]2-c2ccccc2)cc1.[O-][Cl+3]([O-])([O-])[O-],0.0,stage0_fail,Stage 0,property envelope,LogP=7.3
+NTSR1,CHEMBL1595121,CC1=NOC(=O)/C1=C\c1ccc(-c2cc(Cl)ccc2Cl)o1,0.0,stage0_fail,Stage 0,structural alert,PAINS:ene_five_het_A(201); reactive:michael_acceptor
+NTSR1,CHEMBL1340713,COC(=O)c1ccc2c(c1)C(C)(C)C(/C=C/c1ccc(O)cc1)=[N+]2C.[I-],0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+NTSR1,CHEMBL1453900,Cc1ccc(C(=O)Nc2nnc(N=C(S)Nc3ccccc3)s2)cc1,12.664049964621876,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 12.7, below the top-5% cut"
+NTSR1,CHEMBL3315204,CC(C)C[C@H](NC(=O)Cn1ccc2cc(Nc3ccc4cnccc4c3)ccc21)C(=O)O,22.990067095891987,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL1461496,Cc1cc(C)n(-c2nc(Nc3ccccc3C)nc(-n3nc(C)cc3C)n2)n1,11.870333370465282,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 11.9, below the top-5% cut"
+NTSR1,CHEMBL1387563,Cc1ccc(-c2ccc(/C=C3\C(=O)ON=C3c3ccccc3)o2)c([N+](=O)[O-])c1,0.0,stage0_fail,Stage 0,structural alert,PAINS:ene_five_het_A(201); reactive:michael_acceptor
+NTSR1,CHEMBL1321527,Nc1ccccc1C#CC(=O)c1ccccc1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+NTSR1,CHEMBL1385214,CSc1nnc(NC(=O)C23CC4CC(CC(C4)C2)C3)s1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+NTSR1,CHEMBL1369296,O=C1ON=C(c2ccc(Cl)cc2)/C1=C/c1ccc(O)cc1,0.0,stage0_fail,Stage 0,structural alert,PAINS:ene_five_het_A(201); reactive:michael_acceptor
+NTSR1,CHEMBL1995726,CN(C)S(=O)(=O)c1ccc(-c2csc(N/N=C/c3ccco3)n2)cc1,0.0,stage0_fail,Stage 0,structural alert,PAINS:hzone_furan_A(6)
+NTSR1,CHEMBL1608453,O=C(CC1Nc2ccccc2NC1=O)Nc1cc(Cl)cc(Cl)c1,0.0,stage1_fail,Stage 1,hotspot gate,too few exact priority-residue matches or curated groups
+NTSR1,CHEMBL1586169,Cc1cccc(OCc2n(C)c3ccccc3[n+]2CC(=O)OC2CC(C)CCC2C(C)C)c1.[Cl-],0.0,stage0_fail,Stage 0,property envelope,LogP=5.4
+NTSR1,CHEMBL1493442,COc1ccc(Oc2cc(NC(=O)c3nn(C)cc3[N+](=O)[O-])cc([N+](=O)[O-])c2)cc1,32.326151624461104,candidate,-,retained,reached native scoring
+NTSR1,CHEMBL1325640,CN(C)c1ccc(-n2cccc2/C=C/[N+](=O)[O-])cc1,0.0,stage0_fail,Stage 0,structural alert,PAINS:anil_di_alk_A(478)
+MDM2-p53,CHEMBL3407579,CC(C)(C)NC(=O)C(c1c(C(=O)O)[nH]c2cc(Cl)ccc12)N(C=O)Cc1cc(F)c(F)c(F)c1,0.0,stage0_fail,Stage 0,structural alert,PAINS:indol_3yl_alk(461)
+MDM2-p53,CHEMBL5913446,CC[C@@H]([C@@H](O)CO)N1C(=O)[C@@](C)(CC(=O)O)C[C@H](c2cccc(Cl)c2)[C@H]1c1ccc(Cl)cc1,31.068857873659915,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL3653239,COc1ccccc1-c1nc2c(n1C(C)C)C(c1ccc(Cl)cc1)N(C1CCC(=O)N(C)C1)C2=O,26.716016459171364,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5989834,CC(C)C(O)c1nc2nc(-c3noc(=O)[nH]3)nc(N[C@H](C)C3CCC3)c2n1C[C@H]1CC[C@H](C)CC1,38.68792824807584,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL3693969,CNC(=O)[C@@H]1NC2(CCCCC2)[C@@]2(C(=O)Nc3cc(Cl)ccc32)[C@H]1c1cccc(Cl)c1F,22.43652432550668,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5879668,COC1(c2nc3nc(-c4noc(=O)[nH]4)nc(N[C@H](C)C4CCC4)c3n2C[C@H]2CC[C@H](C)CC2)CCC1,37.24429000642206,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5883242,C[C@@H](Nc1nc(-c2noc(=O)[nH]2)nc2nc(N(C)CC3CC3)n(C[C@H]3CC[C@H](C)CC3)c12)C1CCC1,34.243045828952184,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5921912,C[C@@H](Nc1nc(-c2noc(=O)[nH]2)nc2nc(-c3nccs3)n(C[C@H]3CC[C@H](C)CC3)c12)C1CCC1,37.140269454221766,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL378100,CN(C)C(=O)[C@@H]1N[C@H](CC(C)(C)C)[C@]2(C(=O)Nc3cc(Cl)ccc32)[C@H]1c1cccc(Cl)c1,20.5115264199178,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 20.5, below the top-5% cut"
+MDM2-p53,CHEMBL4102803,O=C(CC(c1ccccc1)c1ccccc1)N[C@H](Cc1ccc(O)cc1)C(=O)O,26.137004333984088,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5869704,C[C@@H](Nc1nc(-c2noc(=O)[nH]2)nc2nc(C(O)C3CCC3)n(C[C@H]3CC[C@H](C)CC3)c12)C1CCC1,38.79825199237402,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5978015,CC[C@H]1CC[C@H](Cn2c(N3CCOCC3)nc3nc(C(=O)O)nc(N[C@H](C)C4CCC4)c32)CC1,35.306387231728536,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL3819071,CC[C@H](C)[C@H](NC(=O)[C@@H](NC(=O)C(=O)c1c(-c2ccccc2)[nH]c2ccccc12)C(C)C)C(=O)OC,38.21277966777244,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL3687241,CC(C)c1c2c(nn1Cc1nnn[nH]1)C(=O)N(c1cccc(Cl)c1F)C2c1ccc(Cl)cc1,27.31622180182571,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL6064615,C[C@@H](Nc1nc(-c2noc(=O)[nH]2)nc2nc(-n3ccnc3)n(C[C@H]3CC[C@H](C)CC3)c12)C1CCC1,37.85528671763072,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5849977,C[C@@H](Nc1nc(-c2noc(=O)[nH]2)nc2nc(C3CC3)n(C[C@H]3CC[C@H](C)CC3)c12)C1CCC1,33.073604724090266,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5876084,CO[C@]1(c2ccc(Cl)cc2)c2c(F)cc(C(C)(C)O)cc2C(=O)N1Cc1ccc(C#N)cn1,31.588709411541934,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL6024824,CC1CCCN1c1nc2nc(-c3noc(=O)[nH]3)nc(N[C@H](C)C3CCC3)c2n1C[C@H]1CC[C@H](C)CC1,36.38272378949292,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5877121,CC(O)(CO)c1ccc2c(c1)C(=O)N(Cc1ccc(C#N)cc1)[C@]2(C)OCC1(CO)CC1,31.79931088928799,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5859878,C[C@H](CO)Nc1nc2nc(-c3noc(=O)[nH]3)nc(-c3cccc(Cl)c3)c2n1C[C@H]1CC[C@H](C)CC1,36.03045445396388,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5267044,Cc1c(Cl)ccc2c(/C=C3\NC(=O)N(Cc4ccc(F)c(F)c4)C3=O)c[nH]c12,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+MDM2-p53,CHEMBL5816136,C[C@@H](Nc1nc(C(=O)O)nc2nc(-c3ncco3)n(Cc3ccc(C(F)(F)F)cc3)c12)C1CCC1,36.26221450347357,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5988926,C[C@H](CO)Nc1nc2nc(C(=O)O)nc(N[C@H](C)C3CCC3)c2n1Cc1ccc(C(F)(F)F)cc1,39.5107398904054,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL6024197,Cc1cn(C[C@H]2CC[C@H](C)CC2)c2c(-c3cncc(Cl)c3)nc(-c3noc(=O)[nH]3)nc12,26.85828790581637,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5901726,C[C@@H](Nc1nc(-c2noc(=O)[nH]2)nc2nc(N3CC(C)(O)C3)n(C[C@H]3CC[C@H](C)CC3)c12)C1CCC1,39.08974849779622,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL4115504,O=C(O)C[C@H]1C[C@H](c2cccc(Cl)c2)[C@@H](c2ccc(Cl)cc2)N([C@H](CO)C2CC2)C1=O,26.06771067780224,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL199341,C=C(C(=O)O)C(CCCCCC)C(=O)O,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+MDM2-p53,CHEMBL4114636,C[C@]1(CC(=O)O)C[C@H](c2cccc(Cl)c2)[C@@H](c2ccc(Cl)cc2)N([C@H]2CC[C@@H](O)[C@H]2O)C1=O,29.68194765089799,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5811937,C[C@H]1CC[C@H](Cn2c(C3(F)COC3)nc3nc(-c4noc(=O)[nH]4)nc(-c4cncc(Cl)c4)c32)CC1,31.137882045602225,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL6030067,C[C@@H](Nc1nc(C(=O)O)nc2nc(-c3ncccn3)n(Cc3ccc(C(F)(F)F)cc3)c12)C1CCC1,36.2635178551006,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL6006846,C[C@H](CO)Nc1nc2nc(-c3n[nH]c(=O)o3)nc(-c3cccc(Cl)c3)c2n1C[C@H]1CC[C@H](C)CC1,40.104366012494005,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5854116,Cc1cn(C[C@H]2CC[C@H](C)CC2)c2c(-c3cncc(Cl)c3)nc(C(=O)O)nc12,23.645694738074425,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL2177185,O=C1[C@@H](Cc2nnn[nH]2)C[C@H](c2cccc(Cl)c2)[C@@H](c2ccc(Cl)cc2)N1CC1CC1,20.886344435030733,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 20.9, below the top-5% cut"
+MDM2-p53,CHEMBL4109769,O=C(O)C[C@H]1C[C@H](c2cccc(Cl)c2)[C@]2(C(=O)Nc3cc(Cl)ccc32)N(CC2CC2)C1=O,26.26175116408589,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL2313485,COc1cc(C(O)c2c(-c3cc[nH]c3)[nH]c3ccccc23)cc(OC)c1OC,38.565071109208745,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL514709,COc1ccc(/C=C2/C(=O)Nc3ccccc32)c(OC)c1,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+MDM2-p53,CHEMBL5808134,C[C@H]1CC[C@H](Cn2ccc3nc(-c4n[nH]c(=O)o4)nc(-c4cncc(Cl)c4)c32)CC1,30.143291383228828,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5745234,C[C@@H](Nc1nc(C(=O)O)nc2nc(-c3nccs3)n(Cc3ccc(Cl)cc3)c12)C1CC1,32.01639260059466,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL2347389,O=C(O)C[C@@H]1O[C@@H](c2cccc(Cl)c2)[C@@H](c2ccc(Cl)cc2)N(CC2CC2)C1=O,20.51499677278382,candidate,Stage-3 shortlist,below shortlist cut,"cascade score 20.5, below the top-5% cut"
+MDM2-p53,CHEMBL5775440,Cc1nc2nc(C(=O)O)nc(N[C@H](C)C3CCC3)c2n1C[C@H]1CC[C@H](C)CC1,28.07391255105736,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5747471,C[C@H]1CC[C@H](Cn2ccc3nc(-c4noc(=O)[nH]4)nc(-c4cccc(Cl)c4)c32)CC1,24.05903554828378,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL3265101,COc1ccc(/C=C2/C(=O)Nc3cc(F)ccc32)c(-c2ccc(C#N)cc2)c1,0.0,stage0_fail,Stage 0,structural alert,reactive:michael_acceptor
+MDM2-p53,CHEMBL4068667,CC(CC(=O)N[C@@H](Cc1ccc(OCCCNc2ccccn2)cc1)C(=O)O)c1ccccc1,40.41613382150841,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL5928219,C[C@@H](Nc1nc(C(=O)O)nc2nc(N3CCOC[C@@H]3C)n(Cc3ccc(Cl)cc3)c12)C1CC1,34.83547920623701,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL3220103,O=C1NC(=O)C(=Cc2cc(-c3ccccc3)n(-c3ccc([N+](=O)[O-])cc3)c2-c2ccccc2)C(=O)N1,0.0,stage0_fail,Stage 0,structural alert,PAINS:ene_six_het_A(483); reactive:michael_acceptor
+MDM2-p53,CHEMBL6012158,C[C@@H](Nc1nc(C(=O)O)nc2nc(-c3nccn3C)n(Cc3ccc(C(F)(F)F)cc3)c12)C1CCC1,36.7086317191575,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL1688303,O=C1c2ccccc2[C@](OCC2(CO)CC2)(c2ccc(Cl)cc2)N1Cc1ccc([N+](=O)[O-])cc1,31.65195982769627,candidate,-,retained,reached native scoring
+MDM2-p53,CHEMBL3217780,O=C1NC(=S)NC(=O)C1=Cc1cc(-c2ccccc2)n(-c2ccc([N+](=O)[O-])cc2)c1-c1ccccc1,0.0,stage0_fail,Stage 0,structural alert,PAINS:ene_six_het_A(483); reactive:michael_acceptor
+MDM2-p53,CHEMBL416288,CN1CCc2cccc3c2[C@@H]1Cc1ccc(O)c(O)c1-3,0.0,stage0_fail,Stage 0,structural alert,PAINS:catechol_A(92)
+MDM2-p53,CHEMBL6050672,C[C@@H](Nc1nc(C(=O)O)nc2nc(-c3cnn(C)c3)n(Cc3ccc(C(F)(F)F)cc3)c12)C1CCC1,38.29257667841882,candidate,-,retained,reached native scoring

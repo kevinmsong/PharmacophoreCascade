@@ -1,0 +1,22 @@
+\begin{table}[!t]
+\caption{Stage and cause of in-domain active loss under production constraints.
+Each system's actives were embedded in a 30\,000-molecule ZINC background and screened
+with the million-compound-run settings. Entries give the number of actives removed at
+each stage, split by cause. Structural-alert losses are strict-mode PAINS and
+reactive-group rejections, which are a tunable gate setting rather than a failure of
+topological matching.}
+\label{tab:attrition}
+\centering
+\begin{tabular}{llrrrr}
+\hline
+Stage & Cause & GLP-1R & GHSR & NTSR1 & MDM2 \\
+\hline
+Stage 0 & property envelope & -- & -- & 2 & -- \\
+Stage 0 & structural alert & -- & 9 & 17 & 8 \\
+Stage 1 & hotspot gate & 1 & 11 & 8 & -- \\
+Stage-3 shortlist & below shortlist cut & 1 & 21 & 8 & 3 \\
+\hline
+\textbf{Reached native scoring} & & 8 & 9 & 15 & 39 \\
+\hline
+\end{tabular}
+\end{table}
