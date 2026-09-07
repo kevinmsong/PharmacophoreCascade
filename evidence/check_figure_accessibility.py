@@ -68,8 +68,8 @@ PALETTE_EXEMPT = {
         "sequential Blues density map - single hue varying in lightness only, "
         "which is safe under every form of color-vision deficiency",
     "figA4_top20_structures.png":
-        "RDKit structure drawings use conventional element colors; atoms also "
-        "carry element labels, so identity does not depend on hue",
+        "RDKit structure drawings retain explicit element labels; the current "
+        "ACS exports use a monochrome atom palette",
 }
 
 
@@ -88,7 +88,7 @@ def check_figure(path: Path) -> dict:
     sample = ink[np.random.default_rng(0).choice(len(ink), min(60000, len(ink)),
                                                  replace=False)]
     # Neutrals (any grey) are always acceptable.
-    is_neutral = sample.ptp(axis=1) < 40
+    is_neutral = np.ptp(sample, axis=1) < 40
     d = np.linalg.norm(sample[:, None, :] - palette[None, :, :], axis=-1).min(axis=1)
     off = float((~is_neutral & (d > 90)).mean())
 
@@ -108,7 +108,13 @@ def main() -> None:
     print(f"  {'file':<34s} {'dpi':>6s} {'off-palette':>12s} {'grey spread':>12s}  status")
 
     ok = True
-    for p in sorted(Path(args.dir).glob("fig[0-9A]*.png")):
+    paths = sorted(Path(args.dir).glob("fig[0-9A]*.png"))
+    toc = Path(args.dir) / "toc_graphic.png"
+    if toc.exists():
+        paths.append(toc)
+    if not paths:
+        raise SystemExit("No publication figures found")
+    for p in paths:
         r = check_figure(p)
         flags = []
         if abs(r["dpi"] - 600) > 1:
@@ -129,6 +135,7 @@ def main() -> None:
             print(f"  {name}: {why}")
 
     print("\nAll figures pass." if ok else "\nSome figures need review.")
+    raise SystemExit(0 if ok else 1)
 
 
 if __name__ == "__main__":

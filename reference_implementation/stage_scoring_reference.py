@@ -9,8 +9,8 @@ screening engine, and it is not intended to be fast.
 
 What is implemented
 -------------------
-* **Stage 0** (eq. 1): standardization, the property envelope, and the strict
-  structural-alert screen.
+* **Stage 0** (eq. 1): standardization and the property envelope; structural
+  alerts are recorded without exclusion in the current configuration.
 * **Stage 1** (eq. 2): the hotspot-weighted fraction ``H`` and the three-part
   gate.
 * **Stage 2** (eq. 4): the typed pair-hash catalogues and the recall,
@@ -122,8 +122,8 @@ def standardize(smiles: str) -> Chem.Mol | None:
         return None
 
 
-def stage0(smiles: str) -> dict:
-    """Evaluate the Stage-0 gate, reporting why a molecule fails."""
+def stage0(smiles: str, exclude_alerts: bool = False) -> dict:
+    """Evaluate retained property limits; report alerts without excluding by default."""
     mol = standardize(smiles)
     if mol is None:
         return {"pass": False, "reason": "unparseable", "mol": None}
@@ -152,11 +152,11 @@ def stage0(smiles: str) -> dict:
     for label, patt in REACTIVE_PATTERNS.items():
         if patt is not None and mol.HasSubstructMatch(patt):
             alerts.append(f"reactive:{label}")
-    if alerts:
+    if alerts and exclude_alerts:
         return {"pass": False, "reason": "alert: " + "; ".join(alerts),
                 "mol": mol, "properties": props, "alerts": alerts}
 
-    return {"pass": True, "reason": "", "mol": mol, "properties": props}
+    return {"pass": True, "reason": "", "mol": mol, "properties": props, "alerts": alerts}
 
 
 # --------------------------------------------------------------------------
@@ -558,7 +558,8 @@ def evaluate(smiles: str, pharmacophore: dict,
                 "stage0_reason": "no typed features", "cascade_score_pct": 0.0}
 
     s1 = stage1(feats, pharmacophore["hotspots"], required_groups)
-    caps = compute_type_caps(pharmacophore["n_features"])
+    # Explicit fixed caps used by the headline and retrospective reruns.
+    caps = dict(BASE_TYPE_CAPS)
     lig_pairs, lig_w = ligand_pair_catalogue(mol, feats, caps)
     q_pairs, q_w = receptor_pair_query(pharmacophore["pair_query"])
     s2 = stage2(lig_pairs, lig_w, q_pairs, q_w)

@@ -49,7 +49,9 @@ def load_text(sub: Path) -> str:
              "ablation_table.tex", "ablation_curation_table.tex", "top10_table.tex",
              "terminology_table.tex", "decoy_robustness_table.tex",
              "top10_docking_table.tex", "production_survival_table.tex",
-             "supporting_information.tex"]
+             "supporting_information.tex",
+             "floor_survival_table.tex", "floor_timing_table.tex",
+             "current_run_config_table.tex", "current_rank_shift_table.tex"]
     parts = []
     for n in names:
         p = sub / n
@@ -105,9 +107,9 @@ def check_tost(c: Checker) -> None:
     t = pd.read_csv(p).query("metric == 'roc_auc'")
     for _, r in t.iterrows():
         name = r.system
-        c.expect(f"{name} TOST delta", f"${signed(r.observed_delta)}$")
+        c.expect(f"{name} TOST delta", signed(r.observed_delta))
         c.expect(f"{name} TOST 90% CI",
-                 f"$[{signed(r.ci90_low)}, {signed(r.ci90_high)}]$")
+                 f"[{signed(r.ci90_low)}, {signed(r.ci90_high)}]")
 
 
 def check_attrition(c: Checker) -> None:
@@ -120,37 +122,43 @@ def check_attrition(c: Checker) -> None:
         retained = int((sub.stage_lost == "-").sum())
         total = len(sub)
         c.expect(f"{sysname} reached native scoring", f"{retained}/{total}")
-    # Every Stage-0 loss is a structural alert bar two property-envelope losses.
+    # Under the revised setting, structural alerts cannot exclude an active.
     lost0 = per[per.stage_lost == "Stage 0"]
     alerts = int((lost0.reason_class == "structural alert").sum())
     envelope = int((lost0.reason_class == "property envelope").sum())
-    c.expect("Stage-0 structural-alert losses", f"{alerts} are strict-mode")
-    c.expect("Stage-0 total losses", f"the {alerts + envelope} Stage-0")
+    assert alerts == 0, f"Structural-alert exclusions still present: {alerts}"
+    c.expect("Stage-0 active survival", "158/160")
     assert envelope == 2, f"expected 2 property-envelope losses, found {envelope}"
 
 
 def check_efficiency(c: Checker) -> None:
-    """Molecules native-scored and actives retained, production vs permissive."""
-    sw = pd.read_csv(EV / "efficiency" / "shortlist_sweep.csv")
-    for sysname in SYSTEMS:
-        s = sw[sw.system == sysname]
-        prod = s.iloc[(s.shortlist_fraction - 0.05).abs().argmin()]
-        perm = s.iloc[s.shortlist_fraction.argmax()]
-        for row, tag in ((prod, "production"), (perm, "permissive")):
-            c.expect(f"{sysname} {tag} native-scored",
-                     f"{int(row.n_native_scored):,}")
-            c.expect(f"{sysname} {tag} retained",
-                     f"{int(row.n_actives_retained)}/{int(row.n_actives_input)}")
+    """Shortlist size, native scoring, and actives retained for each policy pair.
+
+    Keyed on the data file rather than on a phrase in the caption: wording is
+    edited between drafts, and a prose-keyed branch silently falls through to a
+    different dataset when someone rewrites the sentence it was matching.
+    """
+    policies = EV / "absolute_floor" / "policy_comparison.csv"
+    for row in pd.read_csv(policies).itertuples():
+        tag = f"{row.system} {row.policy}"
+        for stage in ["shortlist", "native_success", "final_ranked"]:
+            c.expect(f"{tag} {stage} ligands", f'{getattr(row, stage + "_n"):,}')
+        c.expect(f"{tag} shortlist actives", f"{row.shortlist_actives}/{row.n_actives}")
+        c.expect(f"{tag} final actives", f"{row.final_ranked_actives}/{row.n_actives}")
+    headline = json.loads(
+        (EV / "absolute_floor" / "analysis_summary.json").read_text())["headline"]
+    c.expect("measured end-to-end hours",
+             f"{headline['pipeline_wall_seconds'] / 3600:.2f}")
 
 
 def check_docking(c: Checker) -> None:
     """Paired Wilcoxon result for the active-state preference."""
     d = json.loads((EV / "equivalence" / "docking_wilcoxon.json").read_text())
-    c.expect("docking Wilcoxon W", f"$W = {int(d['wilcoxon_W'])}$")
+    c.expect("docking Wilcoxon W", f"$W = {d['wilcoxon_W']:g}$")
     c.expect("docking Wilcoxon p", f"$p = {d['p_two_sided']:.4f}$")
-    c.expect("docking median delta", f"${d['median_delta']:.2f}$~kcal")
-    c.expect("docking IQR low", f"${d['iqr_low']:.2f}$")
-    c.expect("docking IQR high", f"${d['iqr_high']:.2f}$")
+    c.expect("docking median delta", f"{d['median_delta']:.2f}~kcal")
+    c.expect("docking IQR low", f"{d['iqr_low']:.2f}")
+    c.expect("docking IQR high", f"{d['iqr_high']:.2f}")
 
 
 def check_alternate_structure(c: Checker) -> None:
@@ -160,15 +168,15 @@ def check_alternate_structure(c: Checker) -> None:
     c.expect("7KI0 native-only ROC-AUC", f"{t.loc['native_only'].roc_auc:.3f}")
     c.expect("7KI0 BEDROC", f"{t.loc['full_cascade'].bedroc:.3f}")
     c.expect("7KI0 top-10 recovery",
-             f"{int(round(t.loc['full_cascade'].top10_recovery * 10))} of 10")
+             f"{t.loc['full_cascade'].top10_recovery * 10:.2f} of 10")
 
 
 def check_ablations(c: Checker) -> None:
     """Kendall tau over the common support, all rows comparable."""
     t = pd.read_csv(EV / "ablation_common" / "ablation_common_support.csv")
     for _, r in t.iterrows():
-        c.expect(f"ablation tau1000 [{r.ablation[:28]}]", f"${signed(r.tau_shared)}$")
-        c.expect(f"ablation tauCommon [{r.ablation[:28]}]", f"${signed(r.tau_common)}$")
+        c.expect(f"ablation tau1000 [{r.ablation[:28]}]", signed(r.tau_1000))
+        c.expect(f"ablation tauCommon [{r.ablation[:28]}]", signed(r.tau_common))
 
 
 def check_decoy_replicates(c: Checker) -> None:

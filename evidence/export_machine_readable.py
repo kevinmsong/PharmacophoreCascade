@@ -11,6 +11,7 @@ headline benchmark run. Output: evidence/data/machine_readable/<system>_benchmar
 from __future__ import annotations
 
 from pathlib import Path
+import json
 
 import pandas as pd
 
@@ -35,21 +36,32 @@ KEEP = ["ligand_id", "label", "canonical_smiles", "chembl_id", "pref_name",
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     for system, (lib_path, bench_dir) in SYSTEMS.items():
-        if not lib_path.exists():
-            continue
+        manifest=ROOT/f'evidence/outputs/alert_disabled_revision/benchmark_{system}_full.json'
+        state=json.loads(manifest.read_text())
+        assert state['status']=='completed' and state['settings']['chemistry_gate_mode']=='warn_only'
         lib = pd.read_csv(lib_path)
+        assert lib.ligand_id.is_unique
         cols = [c for c in KEEP if c in lib.columns]
         rec = lib[cols].copy()
         n_methods = 0
         for method in METHODS:
             rk = bench_dir / f"{method}_ranking.csv"
-            if not rk.exists():
-                continue
             r = pd.read_csv(rk)[["ligand_id", "rank", "score", "status"]].rename(
                 columns={"rank": f"{method}_rank", "score": f"{method}_score", "status": f"{method}_status"}
             )
-            rec = rec.merge(r, on="ligand_id", how="left")
+            rec = rec.merge(r, on="ligand_id", how="left",validate='one_to_one')
+            ties=pd.read_csv(bench_dir.parent/'benchmark_tie_groups.csv')
+            ties=ties[ties.method==method][['ligand_id','evaluation_tie_group','evaluation_rank']].rename(
+                columns={'evaluation_tie_group':f'{method}_tie_group','evaluation_rank':f'{method}_evaluation_rank'})
+            rec=rec.merge(ties,on='ligand_id',how='left',validate='one_to_one')
+            assert rec[f'{method}_evaluation_rank'].notna().all()
+            assert rec[f'{method}_rank'].notna().all(),f'Incomplete ranks: {system}/{method}'
             n_methods += 1
+        evaluation=pd.read_csv(bench_dir/'benchmark_evaluation.csv')
+        gate_columns=[c for c in ['ligand_id','topology_status','chemistry_flagged','pains_alert','reactive_flags'] if c in evaluation]
+        rec=rec.merge(evaluation[gate_columns],on='ligand_id',how='left',validate='one_to_one')
+        rec['chemistry_gate_mode']='warn_only'
+        rec['native_pains_filter']=False
         out_path = OUT / f"{system}_benchmark_scored.csv"
         rec.to_csv(out_path, index=False)
         print(f"{system}: {len(rec)} molecules, {n_methods} methods -> {out_path.name}")

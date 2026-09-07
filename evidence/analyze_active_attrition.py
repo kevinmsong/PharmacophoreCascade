@@ -333,4 +333,7 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    # Current entry point uses measured final survival under non-excluding
+    # alerts. The functions above are retained for historical source audits.
+    from analyze_alert_disabled_attrition import main as current_main
+    current_main()

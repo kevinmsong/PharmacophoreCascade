@@ -32,11 +32,11 @@ CACHE = ROOT / "evidence" / "outputs" / "cache"
 OUT = ROOT / "evidence" / "outputs" / "ablation_common"
 
 LABELS = {
-    "ablate_remove_stage2": "Remove Stage 2 (hotspot only)",
-    "ablate_remove_stage1": "Remove Stage 1 (pair-hash only)",
+    "ablate_remove_stage2": "Hotspot-score ordering",
+    "ablate_remove_stage1": "Pair-overlap ordering",
     "ablate_remove_stage3": "Cascade score only within native pool",
-    "ablate_native_top_stage3_only": "Native pool: top Stage-3 only",
-    "ablate_alternative_tiebreak": "Alternative final tie-break",
+    "ablate_native_top_stage3_only": "Observed Stage-3 top-5,000 subset",
+    "ablate_alternative_tiebreak": "Native-fit RMSD ordering",
 }
 ORDER = [
     "ablate_remove_stage2", "ablate_remove_stage1", "ablate_remove_stage3",
@@ -50,8 +50,7 @@ def _ranked(df: pd.DataFrame, id_col: str, score_col: str, ascending: bool) -> p
     return pd.Series(np.arange(1, len(d) + 1), index=d[id_col].to_numpy())
 
 
-RESULTS = ROOT / "results"
-BUNDLE = RESULTS / "screening_full_1M_topological_hashed_native_terminal_bundle" / "analysis"
+RESULTS = ROOT / "results" / "absolute_floor_1000"
 
 
 def build_rankings() -> tuple[pd.Series, dict[str, pd.Series]]:
@@ -62,9 +61,10 @@ def build_rankings() -> tuple[pd.Series, dict[str, pd.Series]]:
     successfully native-scored ligands, which is the population the ablations
     are defined over.
     """
-    stage3 = pd.read_parquet(CACHE / "stage3.parquet")
-    native = pd.read_csv(BUNDLE / "ligand_best_native_mapping_summary.csv")
-    final = pd.read_csv(RESULTS / "top_1000_glp1_mimetics_full_1M_topological_hashed_native_final.csv")
+    stage3 = pd.read_csv(RESULTS / "screening_full_1M_floor1000.csv")
+    native = pd.read_csv(RESULTS / "screening_full_1M_floor1000_native_scored_top5000.csv")
+    native = native[native.native_weighted_coverage_pct.notna()].sort_values('final_rank')
+    final = pd.read_csv(RESULTS / "top_1000_glp1_mimetics_full_1M_floor1000_native_final.csv")
 
     canonical = pd.Series(
         np.arange(1, len(final) + 1),
@@ -73,9 +73,9 @@ def build_rankings() -> tuple[pd.Series, dict[str, pd.Series]]:
 
     stage3 = stage3.assign(ligand_id=stage3["zinc_id"])
     ns = native.assign(ligand_id=native["zinc_id"])
-    ns = ns.sort_values("native_weighted_coverage_pct", ascending=False)
+    ns = ns.sort_values("final_rank", kind='stable')
     ns = ns.drop_duplicates("ligand_id")
-    rank_col = "source_input_rank" if "source_input_rank" in ns.columns else "shortlist_rank"
+    rank_col = "stage3_screen_rank"
 
     ablations = {
         "ablate_remove_stage1": _ranked(stage3, "ligand_id", "pair_hash_overlap_pct", False),
@@ -84,8 +84,8 @@ def build_rankings() -> tuple[pd.Series, dict[str, pd.Series]]:
             ns.sort_values("cascade_score_pct", ascending=False).drop_duplicates("ligand_id"),
             "ligand_id", "cascade_score_pct", False),
         "ablate_native_top_stage3_only": _ranked(
-            ns.nsmallest(5000, rank_col), "ligand_id", "native_weighted_coverage_pct", False),
-        "ablate_alternative_tiebreak": _ranked(ns, "ligand_id", "fit_rmsd_angstrom", True),
+            ns[ns[rank_col]<=5000], "ligand_id", "final_rank", True),
+        "ablate_alternative_tiebreak": _ranked(ns, "ligand_id", "native_fit_rmsd_angstrom", True),
     }
     return canonical, ablations
 
@@ -106,6 +106,7 @@ def compare(canonical: pd.Series, ablations: dict[str, pd.Series]) -> pd.DataFra
         shared = canonical.index.intersection(cand.index)
         tau_shared = kendalltau(canonical.reindex(shared), cand.reindex(shared)).correlation
         rho_shared = spearmanr(canonical.reindex(shared), cand.reindex(shared)).correlation
+        tau_1000 = kendalltau(canonical, cand.reindex(canonical.index).fillna(bottom)).correlation
 
         cand_common = cand.reindex(support).fillna(bottom).to_numpy()
         tau_common = kendalltau(ref_common, cand_common).correlation
@@ -122,6 +123,7 @@ def compare(canonical: pd.Series, ablations: dict[str, pd.Series]) -> pd.DataFra
             "ablation": LABELS[name],
             "n_shared": len(shared),
             "tau_shared": tau_shared,
+            "tau_1000": tau_1000,
             "rho_shared": rho_shared,
             "n_common": len(support),
             "tau_common": tau_common,
@@ -133,33 +135,32 @@ def compare(canonical: pd.Series, ablations: dict[str, pd.Series]) -> pd.DataFra
 
 def latex(df: pd.DataFrame) -> str:
     lines = [
-        r"\begin{table}[!t]",
-        r"\caption{Component ablations against the canonical final 1\,000-ligand ranking.",
-        r"Each ablation replaces one pipeline element with a simplified alternative. All",
-        r"comparisons are computed over the same population, so $\tau$ is comparable across",
-        r"rows: $\tau_{1000}$ correlates the two orderings over the canonical top 1\,000, and",
+        r"\begin{table}[tbp]",
+        r"\centering",
+        r"\caption{\textbf{Ranking perturbations against the final 1,000-ligand ranking.}",
+        r"These analyses reorder the score tables; they are not end-to-end gate-removal",
+        r"experiments. All comparisons use the same population, so $\tau$ is comparable across",
+        r"rows: $\tau_{1000}$ correlates the two orderings over the top 1,000, and",
         r"$\tau_\mathrm{common}$ repeats the comparison over every ligand either ranking",
         r"reaches, with unranked ligands tied below all ranked ones. $J_k$ is the Jaccard",
-        r"overlap of the top-$k$ sets. An earlier version of this table reported $\tau$ over",
-        r"shared sets of only 52--80 ligands for the three native-branch rows; those small",
-        r"sets came from an incomplete export of the native-scored population and are",
-        r"superseded here.}",
+        r"overlap of the top-$k$ sets. The Stage-3 subset contains only successfully native-scored",
+        r"ligands whose Stage-3 rank is at most 5,000; it does not estimate scores for",
+        r"unobserved members of a different native pool.}",
         r"\label{tab:ablation}",
-        r"\centering",
         r"\footnotesize",
         r"\setlength{\tabcolsep}{3.5pt}",
-        r"\begin{tabular}{lrrrrr}",
-        r"\hline",
-        r"Ablation & $n$ & $\tau_{1000}$ & $\tau_\mathrm{common}$"
+        r"\begin{tabular}{@{}lrrrrr@{}}",
+        r"\toprule",
+        r"Ranking perturbation & $n_{\rm shared}$ & $\tau_{1000}$ & $\tau_\mathrm{common}$"
         r" & $J_{10}$ & $J_{100}$ \\",
-        r"\hline",
+        r"\midrule",
     ]
     for _, r in df.iterrows():
         lines.append(
-            f"{r.ablation} & {int(r.n_shared):,} & {r.tau_shared:+.3f} & {r.tau_common:+.3f}"
+            f"{r.ablation} & {int(r.n_shared):,} & {r.tau_1000:+.3f} & {r.tau_common:+.3f}"
             f" & {r.J10:.3f} & {r.J100:.3f} \\\\"
         )
-    lines += [r"\hline", r"\end{tabular}", r"\end{table}", ""]
+    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}", ""]
     return "\n".join(lines)
 
 

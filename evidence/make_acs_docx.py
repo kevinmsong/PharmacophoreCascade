@@ -390,6 +390,19 @@ def colorize_marked_runs(path: Path) -> int:
                 anchor = new_r
             run._element.getparent().remove(run._element)
 
+    # Treat refreshed tables as complete revision units, including retained
+    # headings. This matches the review-copy LaTeX table coloring.
+    for table in doc.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                for para in cell.paragraphs:
+                    for run in para.runs:
+                        _set_color(run, REV_RGB, qn)
+                        colored += len(run.text)
+    for para in doc.paragraphs:
+        if re.match(r'Table\s+\d+[.:]', para.text):
+            for run in para.runs:
+                _set_color(run, REV_RGB, qn)
     doc.save(str(path))
     return colored
 
@@ -431,9 +444,64 @@ PREAMBLE = r"""\documentclass[11pt,letterpaper]{article}
 """
 
 
-def common_cleanup(body: str, highlighted: bool) -> str:
+def resolve_document_numbers(body: str, aux_name: str) -> str:
+    """Carry LaTeX's actual float/equation numbering into editable Word output."""
+    aux = (SUB / aux_name).read_text(encoding="utf-8")
+    numbers = dict(re.findall(r"\\newlabel\{([^}]+)\}\{\{([^}]+)\}", aux))
+
+    def caption(match):
+        block = match.group(0)
+        label = re.search(r"\\label\{([^}]+)\}", block)
+        cap = re.search(r"\\caption(?:\[[^\]]*\])?\{", block)
+        if not label or not cap:
+            return block
+        key = label.group(1)
+        if key not in numbers:
+            raise ValueError(f"Unresolved caption {key}: build LaTeX first")
+        kind = "Scheme" if key.startswith("sch:") else "Figure" if match.group(1)=="figure" else "Table"
+        arg, end = read_group(block, cap.end()-1)
+        if not re.match(r"(?:Scheme|Figure|Table)\s+\d", arg):
+            arg = f"{kind} {numbers[key]}. " + arg
+        return block[:cap.end()] + arg + block[end-1:]
+
+    body = re.sub(r"\\begin\{(figure|table|longtable)\}.*?\\end\{\1\}", caption, body, flags=re.S)
+
+    def equation(match):
+        block = match.group(1)
+        label = re.search(r"\\label\{([^}]+)\}", block)
+        if not label: return match.group(0)
+        number = numbers[label.group(1)]
+        block = block[:label.start()] + block[label.end():]
+        return r"\begin{equation}" + block + r"\qquad\text{(" + number + r")}\end{equation}"
+
+    body = re.sub(r"\\begin\{equation\}(.*?)\\end\{equation\}", equation, body, flags=re.S)
+
+    def reference(match):
+        macro,key=match.groups()
+        if key not in numbers:
+            raise ValueError(f"Unresolved reference {key}: build LaTeX first")
+        number=numbers[key]
+        prefixes={"figref":"Figure~","tabref":"Table~","schemeref":"Scheme~","eqnref":"eq~"}
+        return "("+number+")" if macro=="eqref" else prefixes.get(macro,"")+number
+
+    return re.sub(r"\\(figref|tabref|schemeref|eqnref|eqref|ref)\{([^}]+)\}",reference,body)
+
+
+def common_cleanup(body: str, highlighted: bool, aux_name: str = "main.aux") -> str:
     """Transformations every document needs, in dependency order."""
     body = inline_inputs(body, SUB)
+    # Pandoc consumes numeric text after LaTeX array column modifiers.
+    # Word column widths/alignment are assigned by the document formatter.
+    body = re.sub(r'[<>]\{\\(?:raggedleft|raggedright|centering)\\arraybackslash\}', '', body)
+    # A Word table repeats its own header; do not emit LaTeX continuation
+    # headers as a second data row.
+    body = re.sub(r'\\endfirsthead.*?\\endhead', r'\\endhead', body, flags=re.S)
+    body = body.replace(
+        r' & & \multicolumn{2}{c}{5\% only} & \multicolumn{2}{c}{5\% + floor} \\' + '\n' +
+        r'System & Stage & Total & Actives & Total & Actives \\',
+        r'System & Stage & 5\% total & 5\% actives & Floor total & Floor actives \\')
+    body = re.sub(r"\\angstrom\b", "Å", body)
+    body = re.sub(r"\{\\rm\s+([^{}]+)\}", lambda m: r"{\mathrm{" + m.group(1).strip() + "}}", body)
     body = apply_revision_markup(body, highlighted)
     body = convert_scheme(body)
     body = unwrap_resizebox(body)
@@ -444,6 +512,7 @@ def common_cleanup(body: str, highlighted: bool) -> str:
     body = drop_partial_rules(body)
     body = figures_to_png(body)
     body = strip_comments(body)
+    body = resolve_document_numbers(body, aux_name)
     # Environments and switches with no meaning in Word.
     for env in ("singlespace",):
         body = body.replace(f"\\begin{{{env}}}", "").replace(f"\\end{{{env}}}", "")
@@ -458,6 +527,8 @@ def build_manuscript(out_tex: Path, highlighted: bool) -> None:
     pre = (SUB / "acs_preamble.tex").read_text(encoding="utf-8")
 
     title = " ".join(re.search(r"\\title\{(.*?)\}\s*\n", pre, re.S).group(1).split())
+    if highlighted:
+        title = MARK_START + title + MARK_END
     abstract = re.search(r"\\begin\{abstract\}(.*?)\\end\{abstract\}", src, re.S).group(1)
     abstract = apply_revision_markup(abstract.strip().replace("\\noindent", ""),
                                      highlighted)
@@ -471,8 +542,10 @@ def build_manuscript(out_tex: Path, highlighted: bool) -> None:
                   r"Text shown in " + MARK_START + "blue" + MARK_END +
                   r" is new or rewritten relative to the manuscript originally "
                   r"submitted to ACS Omega. Text in black is carried over "
-                  r"substantially unchanged. All figures and tables were rebuilt "
-                  r"for this revision."
+                  r"substantially unchanged. Tables are marked blue as complete "
+                  r"revised units, including retained headings. Figure graphics "
+                  r"retain the publication palettes. The clean and highlighted "
+                  r"copies contain the same scientific text and results."
                   "\n\n\\vspace{1em}\n\n")
 
     head = PREAMBLE + banner + r"""
@@ -502,7 +575,7 @@ The University of Alabama at Birmingham}
 def build_supplementary(out_tex: Path) -> None:
     src = (SUB / "supporting_information.tex").read_text(encoding="utf-8")
     body = src.split("\\begin{document}", 1)[1].split("\\end{document}", 1)[0]
-    body = common_cleanup(body, highlighted=False)
+    body = common_cleanup(body, highlighted=False, aux_name="supporting_information.aux")
     for cmd in (r"\setcounter{page}{1}", r"\setcounter{figure}{0}",
                 r"\setcounter{table}{0}"):
         body = body.replace(cmd, "")
@@ -514,10 +587,19 @@ def build_response(out_tex: Path) -> None:
     body = src.split("\\begin{document}", 1)[1].split("\\end{document}", 1)[0]
     body = strip_comments(body)
 
-    # Reviewer quotes become block quotes; our own macros become plain markup.
+    # Reviewer quotes become italic block quotes; our own macros become plain
+    # markup. Manuscript quotes stay roman so the two remain distinguishable in
+    # Word, where the LaTeX shading and rule do not survive the conversion.
     body = body.replace("\\begin{reviewerquote}", "\\begin{quote}\\itshape")
     body = body.replace("\\end{reviewerquote}", "\\end{quote}")
+    body = body.replace("\\begin{manuscriptquote}", "\\begin{quote}")
+    body = body.replace("\\end{manuscriptquote}", "\\end{quote}")
     body = rewrite_macro(body, "comment", lambda a: "\\subsection*{" + a + "}")
+    # Without this the quote runs straight on from the preceding paragraph and
+    # the reader cannot tell where our reply ends and the manuscript begins.
+    body = rewrite_macro(
+        body, "quoted",
+        lambda a: "\n\n\\textbf{Revised text} (" + a + "):\n")
     body = body.replace("\\response", "\n\n\\textbf{Response.} ")
     body = body.replace("\\changes", "\n\n\\textbf{Changes to the manuscript.} ")
     body = body.replace("\\hrule", "")
@@ -580,6 +662,8 @@ def main() -> None:
         if colorize:
             n = colorize_marked_runs(out)
             print(f"  revised text colored: {n:,} characters")
+        from format_acs_docx import format_document
+        format_document(out)
         print(f"  wrote {out_name} ({out.stat().st_size:,} bytes)")
 
 

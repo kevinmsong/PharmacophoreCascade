@@ -45,6 +45,14 @@ OUT = TARGET_DIRS["ieee"]
 
 SYSTEM_ORDER = ["GLP-1R", "GHSR", "NTSR1", "MDM2-p53"]
 
+#: Axis labels use the en dash the manuscript sets for the protein-protein pair;
+#: SYSTEM_ORDER keeps the hyphen because it also indexes the released tables.
+DISPLAY = {"MDM2-p53": "MDM2–p53"}
+
+
+def shown(system: str) -> str:
+    return DISPLAY.get(system, system)
+
 
 # --------------------------------------------------------------------------
 # Figure 1 - staged architecture
@@ -61,14 +69,14 @@ def fig1_cascade() -> None:
 
     # (title, input -> output line, surviving count, color, y, box width)
     rows = [
-        ("Input library", "1 000 000 ZINC compounds (tranches H17–H20)", "1,000,000", "#4D4D4D", 0.955, 0.50),
-        ("Stage 0 · Standardization and property/chemistry gate",
-         "in: SMILES  →  out: standardized molecules inside the design space", "956,240", screen, 0.855, 0.80),
+        ("Input library", "1,000,000 ZINC compounds (tranches H17–H20)", "1,000,000", "#4D4D4D", 0.955, 0.50),
+        ("Stage 0 · Standardization and property limits",
+         "in: SMILES  →  out: property-qualified molecules; alerts are annotations", "956,240", screen, 0.855, 0.80),
         ("Stage 1 · Receptor hotspot compatibility",
          "in: typed ligand features  →  out: hotspot fraction $H$, pass/fail gate", "948,971", screen, 0.755, 0.80),
         ("Stage 2 · Typed pair-hash comparison",
          "in: feature pairs  →  out: pair overlap $O_\\mathrm{pair}$ for the cascade score", "no gate", screen, 0.655, 0.78),
-        ("Cascade-score shortlist (top 5%)",
+        ("Cascade-score shortlist (5%; minimum 1,000)",
          "in: ranked survivors  →  out: the only molecules given 3D treatment", "47,812", screen, 0.555, 0.72),
         ("Stage 3 · Conformer-level geometric rerank",
          "in: 16 ETKDG conformers each  →  out: anchor coverage $\\times$ geometry penalty", "47,689", screen, 0.455, 0.76),
@@ -79,6 +87,23 @@ def fig1_cascade() -> None:
         ("Final ranked output",
          "in: native scores  →  out: ranked peptide-mimicking candidates", "1,000", edge, 0.130, 0.56),
     ]
+
+    # The ACS revision is tied to the completed fresh execution, not hand-entered
+    # archived counts. Retain the historical rendering for the other journal.
+    fresh = ROOT / "results/absolute_floor_1000/screening_full_1M_floor1000_run_summary.json"
+    if OUT == TARGET_DIRS["acs"] and fresh.exists():
+        run = json.loads(fresh.read_text())
+        counts = run["counts"]
+        native_counts = run["native_rerank"]["counts"]
+        measured = [f"{counts['total_scanned']:,}", f"{counts['property_pass']:,}",
+                    f"{counts['hotspot_pass']:,}", "no gate", f"{counts['shortlist_size']:,}",
+                    f"{counts['final_hits']:,}",
+                    f"{native_counts['candidate_pool_size']:,} → {native_counts['selected_ligands']:,}",
+                    f"{native_counts['successful_best_ligands']:,} scored", f"{native_counts['final_rows']:,}"]
+        rows = [(title, sub, count, color, y, width)
+                for (title, sub, _, color, y, width), count in zip(rows, measured)]
+    elif OUT != TARGET_DIRS["acs"]:
+        rows[4] = ("Cascade-score shortlist (top 5%)", *rows[4][1:])
 
     cx = 0.42
     fig, ax = plt.subplots(figsize=(fs.PAGE_WIDTH, 6.0))
@@ -193,58 +218,22 @@ def fig2_pharmacophore() -> None:
             zorder=2,
         )
 
-    # Ring and label the curated contact features only. Each label is placed at
-    # whichever candidate offset sits furthest from the other features and from
-    # labels already placed, with a hairline leader back to its marker.
+    # Place residue labels using their rendered extents, so labels do not
+    # collide with each other or spill outside the plotting area.
     curated = feats[feats["curated_group"].notna()]
-    seen: set[str] = set()
-    all_pts = proj
-    xr = float(np.ptp(proj[:, 0]))
-    yr = float(np.ptp(proj[:, 1]))
-    # Candidate label anchors, in data units, as (dx, dy) around the marker.
-    candidates = [
-        (0.030 * xr, 0.030 * yr), (0.030 * xr, -0.055 * yr),
-        (-0.085 * xr, 0.030 * yr), (-0.085 * xr, -0.055 * yr),
-        (0.030 * xr, 0.085 * yr), (-0.085 * xr, 0.085 * yr),
-        (0.0, 0.075 * yr), (0.0, -0.085 * yr),
-    ]
-    placed: list[tuple[float, float]] = []
-
+    seen = set()
+    labels = []
     for idx, r in curated.iterrows():
         p = proj[feats.index.get_loc(idx)]
-        ax.scatter(
-            p[0], p[1],
-            s=26 + 5.5 * r["weight"],
-            facecolors="none",
-            edgecolors=group_edge[r["curated_group"]],
-            linewidths=1.0,
-            zorder=3,
-        )
+        ax.scatter(p[0],p[1],s=26+5.5*r["weight"],facecolors="none",
+                   edgecolors=group_edge[r["curated_group"]],linewidths=1.0,zorder=3)
         tag = f"{r['resname']}{int(r['resnum'])}"
-        if tag in seen:
-            continue
+        if tag in seen: continue
         seen.add(tag)
-
-        best, best_cost = candidates[0], np.inf
-        for dx, dy in candidates:
-            lx, ly = p[0] + dx, p[1] + dy
-            # Normalized distances so x and y contribute comparably.
-            d_pts = np.hypot((all_pts[:, 0] - lx) / xr, (all_pts[:, 1] - ly) / yr)
-            cost = 1.0 / (float(np.partition(d_pts, 1)[1]) + 1e-3)
-            for qx, qy in placed:
-                d = np.hypot((lx - qx) / xr, (ly - qy) / yr)
-                cost += 3.0 / (d + 1e-3)
-            if cost < best_cost:
-                best_cost, best = cost, (dx, dy)
-
-        lx, ly = p[0] + best[0], p[1] + best[1]
-        placed.append((lx, ly))
-        ax.plot([p[0], lx], [p[1], ly], color="#8A8A8A", linewidth=0.35, zorder=3.5)
-        ax.text(
-            lx, ly, tag, fontsize=5.4, color="#1A1A1A", zorder=4,
-            ha="left" if best[0] >= 0 else "right",
-            va="bottom" if best[1] >= 0 else "top",
-        )
+        labels.append(ax.annotate(tag,xy=p,xytext=(7,7),textcoords='offset points',
+            fontsize=6.0,color='#1A1A1A',zorder=4,
+            bbox=dict(facecolor='white',edgecolor='none',alpha=.90,pad=.25),
+            arrowprops=dict(arrowstyle='-',color='#8A8A8A',lw=.35)))
 
     ax.set_xlabel("Principal axis 1 (Å)")
     ax.set_ylabel("Principal axis 2 (Å)")
@@ -284,6 +273,23 @@ def fig2_pharmacophore() -> None:
     fs.panel_label(axb, "(b)", dx=-0.42)
 
     fig.tight_layout(w_pad=1.6)
+    from matplotlib.text import Text
+    from matplotlib.transforms import Bbox
+    fig.canvas.draw();renderer=fig.canvas.get_renderer()
+    placed=[Bbox.from_bounds(x-3,y-3,6,6) for x,y in ax.transData.transform(proj)]
+    bounds=ax.get_window_extent(renderer)
+    offsets=[(dx,dy) for dy in [7,-7,17,-17,27,-27,37,-37] for dx in [7,-7,20,-20,35,-35]]
+    for label in labels:
+        choices=[]
+        for dx,dy in offsets:
+            label.set_position((dx,dy));label.set_ha('left' if dx>0 else 'right');label.set_va('bottom' if dy>0 else 'top')
+            box=Text.get_window_extent(label,renderer).expanded(1.12,1.18)
+            overlap=sum(max(0,min(box.x1,b.x1)-max(box.x0,b.x0))*max(0,min(box.y1,b.y1)-max(box.y0,b.y0)) for b in placed)
+            outside=max(0,bounds.x0-box.x0)+max(0,box.x1-bounds.x1)+max(0,bounds.y0-box.y0)+max(0,box.y1-bounds.y1)
+            choices.append((overlap*100+outside*1000+dx*dx+dy*dy,dx,dy,box))
+        _,dx,dy,box=min(choices,key=lambda item:item[0])
+        label.set_position((dx,dy));label.set_ha('left' if dx>0 else 'right');label.set_va('bottom' if dy>0 else 'top')
+        placed.append(box)
     fs.save(fig, OUT, "fig2_pharmacophore")
     print("wrote fig2_pharmacophore")
 
@@ -373,25 +379,24 @@ def fig4_cross_system() -> None:
                    edgecolor="white", linewidth=0.5, label=st["label"], zorder=2)
             ax.errorbar(pos, vals, yerr=[lo, hi], fmt="none", ecolor="#333333",
                         elinewidth=0.6, capsize=1.5, capthick=0.6, zorder=3)
+            # A zero-height bar is indistinguishable from a missing series, so
+            # say so in print: EF1% is genuinely 0 for MDM2-p53 single-pass 3D.
+            for p, v in zip(pos, vals):
+                if v == 0:
+                    ax.annotate("0", xy=(p, 0), xytext=(0, 2.5),
+                                textcoords="offset points", ha="center", va="bottom",
+                                fontsize=6.0, color=st["color"], fontweight="bold",
+                                zorder=4)
         ax.set_title(title)
         ax.set_xticks(x)
-        ax.set_xticklabels(systems, rotation=28, ha="right", fontsize=6.6)
+        ax.set_xticklabels([shown(s) for s in systems], rotation=28, ha="right",
+                           fontsize=6.6)
         ax.grid(axis="x", visible=False)
         fs.panel_label(ax, f"({letter})", dx=-0.22, dy=1.13)
 
-    # Call out the one system where the front end costs enrichment.
-    axes[0].set_ylim(0, 1.28)
-    axes[0].annotate(
-        "front end costs\nenrichment here",
-        xy=(3 - width, summaries["MDM2-p53"].loc["full_cascade", "roc_auc"] + 0.10),
-        xytext=(1.55, 1.16),
-        fontsize=6.0,
-        color="#1A1A1A",
-        ha="center",
-        va="top",
-        arrowprops=dict(arrowstyle="->", lw=0.6, color="#4D4D4D",
-                        connectionstyle="arc3,rad=-0.2"),
-    )
+    # Interpretation is written from the completed comparisons in the text;
+    # an annotation tied to the old strict-filter result would be misleading.
+    axes[0].set_ylim(0, 1.05)
     handles = [
         plt.Rectangle((0, 0), 1, 1, facecolor=fs.METHOD_STYLE[m]["color"],
                       hatch=fs.METHOD_STYLE[m]["hatch"], edgecolor="white",
@@ -478,10 +483,18 @@ def fig5_attrition() -> None:
         ("property envelope", fs.OKABE_ITO["orange"], "\\\\", "Stage 0: property envelope"),
         ("hotspot gate", fs.OKABE_ITO["purple"], "xx", "Stage 1: hotspot gate"),
         ("below shortlist cut", fs.OKABE_ITO["sky"], "..", "Stage-3 shortlist cut"),
-        ("retained", fs.OKABE_ITO["green"], "", "Reached native scoring"),
+        ("unparseable", fs.OKABE_ITO["black"], "++", "Stage 0: invalid input"),
+        ("3D scoring failure", fs.OKABE_ITO["vermillion"], "oo", "Stage 3: no valid score"),
+        ("native pool or scaffold cap", fs.OKABE_ITO["grey"], "//", "Native selection"),
+        ("native preparation or scoring failure", fs.OKABE_ITO["yellow"], "xx", "Native preparation/scoring"),
+        ("below final rank limit", fs.OKABE_ITO["blue"], "..", "Final top-1,000 cutoff"),
+        ("retained", fs.OKABE_ITO["green"], "", "In final ranking"),
     ]
+    causes=[c for c in causes if (att.reason_class==c[0]).any()]
+    if not set(att.reason_class).issubset({c[0] for c in causes}):
+        raise ValueError('Unrepresented attrition cause')
 
-    fig, ax = plt.subplots(figsize=(fs.COL_WIDTH, 2.5))
+    fig, ax = plt.subplots(figsize=(fs.PAGE_WIDTH, 2.8))
     ypos = np.arange(len(SYSTEM_ORDER))[::-1]
 
     for y, s in zip(ypos, SYSTEM_ORDER):
@@ -495,20 +508,22 @@ def fig5_attrition() -> None:
             pct = 100 * n / total
             ax.barh(y, pct, left=left, height=0.6, color=color, hatch=hatch,
                     edgecolor="white", linewidth=0.6, zorder=2)
-            if pct > 9:
+            if pct >= 3:
                 ax.text(left + pct / 2, y, str(n), ha="center", va="center",
-                        fontsize=6.4, color="white", fontweight="bold", zorder=3)
+                        fontsize=7, color="black", fontweight="bold", zorder=3,
+                        bbox=dict(facecolor='white',edgecolor='none',alpha=.85,pad=.7))
             left += pct
 
     ax.set_yticks(ypos)
     ax.set_yticklabels(
-        [f"{s}\n($n$={len(att[att.system == s])})" for s in SYSTEM_ORDER], fontsize=6.6
+        [f"{shown(s)}\n($n$={len(att[att.system == s])})" for s in SYSTEM_ORDER],
+        fontsize=6.6,
     )
     ax.set_xlabel("In-domain actives (%)")
     ax.set_xlim(0, 100)
     ax.grid(axis="y", visible=False)
     handles = [
-        plt.Rectangle((0, 0), 1, 1, color=c, hatch=h, edgecolor="white", linewidth=0.5, label=lab)
+        plt.Rectangle((0, 0), 1, 1, facecolor=c, hatch=h, edgecolor="white", linewidth=0.5, label=lab)
         for _cause, c, h, lab in causes
     ]
     ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5, -0.30),
@@ -550,7 +565,8 @@ def fig7_docking() -> None:
     ax.set_xlabel("AutoDock Vina affinity (kcal mol$^{-1}$)")
     ax.invert_xaxis()
     ax.grid(axis="y", visible=False)
-    ax.legend(loc="lower left", fontsize=6.2)
+    ax.legend(loc="lower left", bbox_to_anchor=(0, 1.04), ncol=2,
+              borderaxespad=0, fontsize=6.2)
     fs.panel_label(ax, "(a)", dx=-0.33)
 
     # Panel b: the paired differences the significance test is run on.
@@ -558,7 +574,9 @@ def fig7_docking() -> None:
     axb.axvline(0, color="#9A9A9A", linewidth=0.7, zorder=1)
     axb.scatter(d, ypos, s=22, color=fs.OKABE_ITO["purple"], marker="D",
                 edgecolors="white", linewidths=0.5, zorder=3)
-    axb.axvline(float(np.median(d)), color=fs.OKABE_ITO["purple"], linewidth=0.8,
+    for y,value in zip(ypos,d):
+        if not np.isfinite(value):axb.text(0,y,'no pair',ha='center',va='center',fontsize=6,color='#555555')
+    axb.axvline(float(stats['median_delta']), color=fs.OKABE_ITO["purple"], linewidth=0.8,
                 linestyle="--", zorder=2)
     axb.set_yticks(ypos)
     axb.set_yticklabels([])
@@ -594,7 +612,12 @@ def main() -> None:
     fig2_pharmacophore()
     fig3_glp1r_benchmark()
     fig4_cross_system()
-    fig6_efficiency()
+    if args.target == "acs" and (EV / "absolute_floor/policy_comparison.csv").exists():
+        from analyze_absolute_floor import figures
+        figures(pd.read_csv(EV / "absolute_floor/policy_comparison.csv"),
+                pd.read_csv(EV / "absolute_floor/all_stage_survival.csv"))
+    else:
+        fig6_efficiency()
     fig5_attrition()
     fig7_docking()
 

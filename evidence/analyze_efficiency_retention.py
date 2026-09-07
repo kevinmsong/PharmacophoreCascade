@@ -160,4 +160,6 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    # Replaced inferred native admission with executed paired-policy results.
+    from analyze_absolute_floor import main as current_main
+    current_main()

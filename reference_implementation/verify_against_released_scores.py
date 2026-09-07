@@ -20,6 +20,7 @@ Whatever agreement is obtained is reported as-is, including any disagreement.
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -38,6 +39,8 @@ PHARM = ROOT / "maps" / "pharmacophore_rigorous.json"
 def check_stage_status(ph: dict) -> None:
     """Stage-0 / Stage-1 pass-fail agreement on the released benchmark."""
     df = pd.read_csv(BENCH)
+    if 'topology_status' in df:
+        df=df.rename(columns={'topology_status':'full_cascade_status','smiles':'canonical_smiles'})
     status = df["full_cascade_status"].astype(str)
 
     rows = []
@@ -73,6 +76,8 @@ def check_stage_status(ph: dict) -> None:
           f"(over {int(reached.sum())} Stage-0 survivors)")
     print("  engine status counts        :",
           dict(status.value_counts()))
+    out.attrs['summary']={'n':len(out),'stage0_agreement':float(s0_agree),
+        'stage1_agreement':float(s1_agree),'stage0_survivors':int(reached.sum())}
     return out
 
 
@@ -110,6 +115,7 @@ def check_continuous(ph: dict, n: int, seed: int) -> None:
         return
 
     print(f"\n=== Continuous-score agreement (headline run, n = {len(cmp)}) ===")
+    summary={'n':len(cmp)}
     for label, a, b in (("hotspot fraction H (%)", "engine_H", "ref_H"),
                         ("pair overlap O_pair (%)", "engine_O", "ref_O"),
                         ("cascade score (%)", "engine_cascade", "ref_cascade")):
@@ -117,6 +123,8 @@ def check_continuous(ph: dict, n: int, seed: int) -> None:
         r = np.corrcoef(cmp[a], cmp[b])[0, 1]
         print(f"  {label:26s} Pearson r = {r:.4f}  "
               f"mean abs diff = {np.abs(d).mean():.3f}  max = {np.abs(d).max():.3f}")
+        summary[a]={'pearson_r':float(r),'mean_abs_difference':float(np.abs(d).mean()),
+                    'max_abs_difference':float(np.abs(d).max())}
 
     # The cascade score must equal 0.4 H + 0.6 O_pair on the engine's own
     # columns; this confirms eq. (3) as printed.
@@ -124,20 +132,37 @@ def check_continuous(ph: dict, n: int, seed: int) -> None:
     print(f"\n  eq. (3) check on the engine's own columns: "
           f"max |0.4H + 0.6*O_pair - cascade| = "
           f"{np.abs(recomputed - cmp['engine_cascade']).max():.6f}")
+    summary['equation_max_abs_error']=float(np.abs(recomputed-cmp['engine_cascade']).max())
+    cmp.attrs['summary']=summary
+    return cmp
 
 
 def main() -> None:
+    global BENCH,AUDIT
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--n", type=int, default=300, help="molecules for the continuous check")
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument('--benchmark-evaluation',type=Path)
+    ap.add_argument('--audit',type=Path)
+    ap.add_argument('--output-dir',type=Path)
     args = ap.parse_args()
+    if args.benchmark_evaluation:BENCH=args.benchmark_evaluation
+    if args.audit:AUDIT=args.audit
 
     ph = load_hotspots(PHARM)
     print(f"Loaded receptor pharmacophore: {ph['n_features']} features, "
           f"{len(ph['hotspots'])} Stage-1 hotspots, "
           f"{len(ph['pair_query'])} Stage-2 pair-query features.\n")
-    check_stage_status(ph)
-    check_continuous(ph, args.n, args.seed)
+    gate=check_stage_status(ph)
+    scores=check_continuous(ph, args.n, args.seed)
+    if args.output_dir:
+        args.output_dir.mkdir(parents=True,exist_ok=True)
+        gate.to_csv(args.output_dir/'stage_status_comparison.csv',index=False)
+        scores.to_csv(args.output_dir/'continuous_score_comparison.csv',index=False)
+        result={'gate':gate.attrs['summary'],'continuous':scores.attrs['summary'],
+                'benchmark_source':str(BENCH),'score_source':str(AUDIT),'seed':args.seed,
+                'chemistry_gate_mode':'non-excluding alerts','feature_caps':'fixed'}
+        (args.output_dir/'verification_summary.json').write_text(json.dumps(result,indent=2))
 
 
 if __name__ == "__main__":

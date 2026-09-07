@@ -29,13 +29,15 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from scipy.stats import wilcoxon
+from scipy.stats import rankdata
+from itertools import product
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "reproduce"))
 from reproduce_benchmarks import bedroc, enrichment_factor  # noqa: E402
 
 from sklearn.metrics import roc_auc_score  # noqa: E402
+from tie_aware_metrics import evaluate as evaluate_ties, clustered_counts
 
 DATA = ROOT / "evidence" / "data" / "machine_readable"
 OUT = ROOT / "evidence" / "outputs" / "equivalence"
@@ -49,19 +51,9 @@ MARGIN = 0.05
 
 
 def _metric(sub: pd.DataFrame, method: str, name: str) -> float:
-    labels = (sub["label"] == "active").to_numpy().astype(int)
-    ranks = sub[f"{method}_rank"].to_numpy().astype(float)
-    if labels.sum() == 0 or labels.sum() == len(labels):
-        return np.nan
-    if name == "roc_auc":
-        return roc_auc_score(labels, -ranks)
-    if name == "bedroc":
-        order = np.argsort(ranks)
-        pos = np.where(labels[order] == 1)[0] + 1
-        return bedroc(pos, len(labels), int(labels.sum()), 20.0)
-    if name == "ef_1pct":
-        return enrichment_factor(ranks, labels, 1.0)
-    raise ValueError(name)
+    frame=sub[['ligand_id','label',f'{method}_rank',f'{method}_score',f'{method}_status']].rename(
+        columns={f'{method}_rank':'rank',f'{method}_score':'score',f'{method}_status':'status'})
+    return evaluate_ties(frame)[name]
 
 
 def grouped_bootstrap_delta(
@@ -78,20 +70,13 @@ def grouped_bootstrap_delta(
     respects the benchmark's matching structure and keeps the resulting
     intervals honest about the small number of actives.
     """
-    rng = np.random.default_rng(seed)
-    actives = df[df.label == "active"]["ligand_id"].tolist()
-    # Map each active to itself plus its matched decoys.
-    groups = {}
-    for a in actives:
-        decoys = df[df.matched_active_ligand_id == a]
-        groups[a] = pd.concat([df[df.ligand_id == a], decoys])
-
-    deltas = np.empty(n_boot)
-    for i in range(n_boot):
-        picked = rng.choice(actives, size=len(actives), replace=True)
-        sub = pd.concat([groups[a] for a in picked], ignore_index=True)
-        deltas[i] = _metric(sub, method_a, metric) - _metric(sub, method_b, metric)
-    return deltas[~np.isnan(deltas)]
+    results=[]
+    for method in [method_a,method_b]:
+        frame=df[['ligand_id','label',f'{method}_rank',f'{method}_score',f'{method}_status']].rename(
+            columns={f'{method}_rank':'rank',f'{method}_score':'score',f'{method}_status':'status'})
+        _,boot=clustered_counts(frame,df,draws=n_boot,seed=seed)
+        results.append(boot[metric])
+    return results[0]-results[1]
 
 
 def tost(deltas: np.ndarray, margin: float) -> dict:
@@ -147,12 +132,23 @@ def run_equivalence(n_boot: int, seed: int) -> pd.DataFrame:
 def run_docking_test() -> dict:
     """Paired Wilcoxon signed-rank on the active-minus-inactive Vina deltas."""
     path = ROOT / "evidence" / "outputs" / "revision" / "docking_top10_summary.csv"
-    df = pd.read_csv(path).sort_values("final_rank")
+    all_rows = pd.read_csv(path).sort_values("final_rank")
+    df=all_rows.replace([np.inf,-np.inf],np.nan).dropna(subset=['best_active','best_inactive','active_pref'])
     d = df["active_pref"].to_numpy(dtype=float)
-    stat, p_two = wilcoxon(d, alternative="two-sided", mode="exact")
-    _, p_less = wilcoxon(d, alternative="less", mode="exact")
+    if len(d)==0:raise RuntimeError('No ligands have successful docking against both states')
+    # Exhaustive conditional sign flips give the exact signed-rank null even
+    # when rounded Vina scores produce ties. Drop zero differences explicitly.
+    nonzero=d[np.abs(d)>1e-12]
+    ranks=rankdata(np.round(np.abs(nonzero),10),method='average')
+    positive=float(ranks[nonzero>0].sum());total=float(ranks.sum())
+    stat=min(positive,total-positive)
+    null_positive=np.array([np.dot(bits,ranks) for bits in product([0,1],repeat=len(ranks))])
+    p_two=float((np.minimum(null_positive,total-null_positive)<=stat+1e-12).mean())
+    p_less=float((null_positive<=positive+1e-12).mean())
     return {
         "n": int(len(d)),
+        "n_selected":int(len(all_rows)),"n_zero_differences":int(len(d)-len(nonzero)),
+        "test_method":"exact signed-rank permutation; exhaustive sign flips, average ranks for ties, zero differences excluded",
         "median_delta": float(np.median(d)),
         "iqr_low": float(np.percentile(d, 25)),
         "iqr_high": float(np.percentile(d, 75)),
@@ -168,27 +164,31 @@ def run_docking_test() -> dict:
 def latex_tost(eq: pd.DataFrame) -> str:
     sub = eq[eq.metric == "roc_auc"]
     lines = [
-        r"\begin{table}[!t]",
-        r"\caption{Equivalence testing of the full cascade against the native-only baseline",
-        r"(ROC-AUC). Two one-sided tests were run on the grouped-bootstrap distribution of the",
-        r"paired difference against a pre-specified margin of $\pm$" + f"{MARGIN:.2f}" + r".",
-        r"Equivalence requires the 90\% interval to lie wholly inside that margin. It does not",
-        r"on any system: these benchmarks lack the power to establish equivalence, and a",
-        r"non-significant difference must not be read as parity.}",
-        r"\label{tab:tost}",
+        r"\begin{table}[tbp]",
         r"\centering",
-        r"\begin{tabular}{lrrrl}",
-        r"\hline",
+        r"\caption{\textbf{Equivalence testing of the full cascade against the native-only",
+        r"baseline (ROC-AUC).} Two one-sided tests were run on the grouped-bootstrap",
+        r"distribution of the paired difference against a pre-specified margin of $\pm$"
+        + f"{MARGIN:.2f}" + r".",
+        r"Equivalence requires the 90\% interval to lie wholly inside that margin. A",
+        r"non-significant difference alone must not be read as equivalence.}",
+        r"\label{tab:tost}",
+        r"\footnotesize",
+        r"\setlength{\tabcolsep}{6pt}",
+        r"\begin{tabular}{@{}lrrrl@{}}",
+        r"\toprule",
         r"System & $n$ & $\Delta$ROC-AUC & 90\% CI & Equivalent? \\",
-        r"\hline",
+        r"\midrule",
     ]
     for _, r in sub.iterrows():
         eqv = "yes" if r.equivalent else "no"
+        # The manuscript sets the protein-protein pair with an en dash throughout.
+        system = r.system.replace("MDM2-p53", "MDM2--p53")
         lines.append(
-            f"{r.system} & {int(r.n_actives)} & {r.observed_delta:+.3f} & "
+            f"{system} & {int(r.n_actives)} & {r.observed_delta:+.3f} & "
             f"[{r.ci90_low:+.3f}, {r.ci90_high:+.3f}] & {eqv} \\\\"
         )
-    lines += [r"\hline", r"\end{tabular}", r"\end{table}", ""]
+    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}", ""]
     return "\n".join(lines)
 
 

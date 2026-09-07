@@ -21,9 +21,12 @@ Metric definitions match the Methods section:
     relative to the overall active prevalence.
   * BEDROC (alpha = 20): early-recognition-weighted score (Truchon & Bayly,
     J. Chem. Inf. Model. 2007, 47, 488-508).
-  * top-k recovery: number of actives ranked within the top k positions.
-Molecules that failed an intermediate stage are ranked below scored molecules
-(as in the manuscript), so ordering by the released rank reproduces that.
+  * top-k recovery: expected number of actives within the top k positions.
+Equal-status/equal-score groups remain tied, including missing scores within a
+failure status. ROC-AUC and average precision retain score ties. EF, BEDROC and
+top-k retrieval average over every within-tie ordering. Original identifier-
+ordered ranks remain in the release for traceability but do not resolve ties in
+these statistics. Evaluation ranks encode the score groups explicitly.
 """
 from __future__ import annotations
 
@@ -54,33 +57,46 @@ def bedroc(rank_positions: np.ndarray, n_total: int, n_actives: int, alpha: floa
 
 
 def enrichment_factor(ranks: np.ndarray, labels: np.ndarray, pct: float) -> float:
-    """EF k% = (fraction of actives recovered in the top ceil(k% * N)) / (k/100),
-    matching the convention used in the manuscript and evidence summaries."""
+    """EF k% = (fraction of actives recovered in the top m) / (m/N), m=ceil(k%*N).
+    Legacy total-order helper; primary evaluation below uses exchangeable positions within score ties."""
     n = len(labels)
     n_act = int(labels.sum())
     m = max(1, math.ceil(pct / 100.0 * n))
     recovered = labels[np.argsort(ranks)][:m].sum()
-    return (recovered / n_act) / (pct / 100.0)
+    return (recovered / n_act) / (m / n)
 
 
 def metrics_for_method(df: pd.DataFrame, method: str) -> dict:
     labels = (df["label"] == "active").to_numpy().astype(int)
     ranks = df[f"{method}_rank"].to_numpy().astype(float)
-    score = -ranks  # rank 1 (top) -> highest score; ties impossible (unique ranks)
-    order = np.argsort(ranks)
-    sorted_labels = labels[order]
-    active_positions = np.where(sorted_labels == 1)[0] + 1  # 1-indexed
+    evaluation_ranks=df[f'{method}_evaluation_rank'].to_numpy(dtype=float)
+    score=-evaluation_ranks
+    # Independently expand each score tie into exchangeable rank positions.
+    # The probability of an active at any position is the group's prevalence.
+    probabilities=[]
+    for value in np.sort(np.unique(evaluation_ranks)):
+        group=labels[evaluation_ranks==value]
+        probabilities.extend([float(group.mean())]*len(group))
+    probabilities=np.asarray(probabilities)
     n, n_act = len(labels), int(labels.sum())
     return {
         "method": method,
         "ROC-AUC": roc_auc_score(labels, score),
         "PR-AUC": average_precision_score(labels, score),
-        "EF1%": enrichment_factor(ranks, labels, 1.0),
-        "EF5%": enrichment_factor(ranks, labels, 5.0),
-        "BEDROC": bedroc(active_positions, n, n_act, 20.0),
-        "top10_rec": int((ranks[labels == 1] <= 10).sum()),
-        "top25_rec": int((ranks[labels == 1] <= 25).sum()),
+        "EF1%": probabilities[:max(1,math.ceil(.01*n))].sum()/n_act*n/max(1,math.ceil(.01*n)),
+        "EF5%": probabilities[:max(1,math.ceil(.05*n))].sum()/n_act*n/max(1,math.ceil(.05*n)),
+        "BEDROC": expected_bedroc(probabilities,n_act),
+        "top10_rec": float(probabilities[:10].sum()),
+        "top25_rec": float(probabilities[:25].sum()),
     }
+
+
+def expected_bedroc(probabilities, n_act, alpha=20.):
+    n=len(probabilities);ra=n_act/n
+    s=np.dot(probabilities,np.exp(-alpha*np.arange(1,n+1)/n))
+    rie=s/n_act*n*math.expm1(alpha/n)/(1-math.exp(-alpha))
+    factor=ra*math.sinh(alpha/2)/(math.cosh(alpha/2)-math.cosh(alpha/2-alpha*ra))
+    return rie*factor+1/(1-math.exp(alpha*(1-ra)))
 
 
 def run_system(system: str) -> pd.DataFrame:
