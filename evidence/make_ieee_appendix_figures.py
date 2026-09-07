@@ -268,13 +268,15 @@ def figA3_top_ligand_overlay() -> None:
 
 def figA4_top20_structures() -> None:
     """Structure grid for the top 20 native-ranked ligands."""
+    import io
+
+    from PIL import Image, ImageDraw, ImageFont
     from rdkit import Chem, RDLogger
-    from rdkit.Chem import Draw
     from rdkit.Chem.Draw import rdMolDraw2D
 
     RDLogger.DisableLog("rdApp.*")
     final = pd.read_csv(FINAL_CSV).head(20)
-    mols, legends = [], []
+    mols, labels = [], []
     for i, r in final.iterrows():
         m = Chem.MolFromSmiles(str(r["smiles"]))
         if m is None:
@@ -282,46 +284,83 @@ def figA4_top20_structures() -> None:
         Chem.rdDepictor.Compute2DCoords(m)
         mols.append(m)
         cov = r.get("native_weighted_coverage_pct", np.nan)
-        legends.append(f"{i + 1}. {r['zinc_id']}\n{cov:.2f}% native coverage")
+        labels.append((f"{i + 1}. {r['zinc_id']}", f"{cov:.2f}% native coverage"))
 
-    # Draw at the actual full-page print resolution, rather than only stamping
-    # 600-dpi metadata on an image too small for a 6.5-inch text block.
-    drawer = rdMolDraw2D.MolDraw2DCairo(3900, 4250, 975, 850)
-    opts = drawer.drawOptions()
-    opts.legendFontSize = 58
-    opts.legendFraction = .20
-    opts.fixedFontSize = 48
-    opts.bondLineWidth = 4.5
-    opts.useBWAtomPalette()
-    drawer.DrawMolecules(mols, legends=legends)
-    drawer.FinishDrawing()
-    png = drawer.GetDrawingText()
-    (OUT / "figA4_top20_structures.png").write_bytes(png)
+    # Full-page print resolution, rather than 600-dpi metadata stamped on an
+    # image too small for a 6.5-inch text block.
+    WIDTH, HEIGHT, PANEL_W, PANEL_H = 3900, 4250, 975, 850
+    COLS = WIDTH // PANEL_W
+    #: Share of each panel reserved below the structure for its two label lines.
+    BAND = 0.20
+    #: Distance between the baselines of those two lines, as a multiple of the
+    #: font size. RDKit's built-in legend leaves them almost touching.
+    LEADING = 1.34
+    FONT_PX = 52
 
-    # Stamp 600 dpi so the file declares the resolution IEEE Access asks for.
-    from PIL import Image
-    import io
+    def draw_grid(backend):
+        """Render the structures with the label band left blank."""
+        drawer = backend(WIDTH, HEIGHT, PANEL_W, PANEL_H)
+        opts = drawer.drawOptions()
+        opts.legendFraction = BAND
+        opts.fixedFontSize = 48
+        opts.bondLineWidth = 4.5
+        opts.useBWAtomPalette()
+        drawer.DrawMolecules(mols, legends=[""] * len(mols))
+        drawer.FinishDrawing()
+        return drawer.GetDrawingText()
 
-    img = Image.open(io.BytesIO(png))
-    img.save(OUT / "figA4_top20_structures.png", dpi=(600, 600))
-    # Supply an editable vector drawing and a PDF at the same print size.
-    vector=rdMolDraw2D.MolDraw2DSVG(3900,4250,975,850)
-    vector_opts=vector.drawOptions()
-    vector_opts.legendFontSize=58
-    vector_opts.legendFraction=.20
-    vector_opts.fixedFontSize=48
-    vector_opts.bondLineWidth=4.5
-    vector_opts.useBWAtomPalette()
-    vector.DrawMolecules(mols,legends=legends);vector.FinishDrawing()
-    svg=vector.GetDrawingText()
-    (OUT/'figA4_top20_structures.svg').write_text(svg,encoding='utf-8')
+    image = Image.open(io.BytesIO(draw_grid(rdMolDraw2D.MolDraw2DCairo))).convert("RGB")
+    pen = ImageDraw.Draw(image)
+    # Times, to match the serif the other figures inherit from figstyle.
+    for candidate in (r"C:\Windows\Fonts\times.ttf", "Times New Roman.ttf"):
+        try:
+            font = ImageFont.truetype(candidate, FONT_PX)
+            break
+        except OSError:
+            continue
+    else:
+        import matplotlib
+        font = ImageFont.truetype(
+            str(pathlib.Path(matplotlib.__file__).parent
+                / "mpl-data/fonts/ttf/DejaVuSerif.ttf"), FONT_PX)
+
+    step = FONT_PX * LEADING
+    for n, (name, coverage) in enumerate(labels):
+        col, row = n % COLS, n // COLS
+        cx = col * PANEL_W + PANEL_W / 2
+        # Center the two-line block in the band left blank under the structure.
+        band_top = row * PANEL_H + PANEL_H * (1 - BAND)
+        first = band_top + (PANEL_H * BAND - step) / 2
+        for k, line in enumerate((name, coverage)):
+            pen.text((cx, first + k * step), line, font=font,
+                     fill=(0, 0, 0), anchor="mt")
+
+    image.save(OUT / "figA4_top20_structures.png", dpi=(600, 600))
+
+    # Editable vector drawing and a PDF at the same print size. The SVG carries
+    # its labels as <text>, positioned by the same rule as the raster copy.
+    svg = draw_grid(rdMolDraw2D.MolDraw2DSVG)
+    spans = []
+    for n, (name, coverage) in enumerate(labels):
+        col, row = n % COLS, n // COLS
+        cx = col * PANEL_W + PANEL_W / 2
+        band_top = row * PANEL_H + PANEL_H * (1 - BAND)
+        first = band_top + (PANEL_H * BAND - step) / 2 + FONT_PX
+        for k, line in enumerate((name, coverage)):
+            spans.append(
+                f'<text x="{cx:.1f}" y="{first + k * step:.1f}" '
+                f'style="font-family:Times New Roman,serif;font-size:{FONT_PX}px;'
+                f'text-anchor:middle;fill:#000000">{line}</text>')
+    svg = svg.replace("</svg>", "\n".join(spans) + "\n</svg>")
+    (OUT / "figA4_top20_structures.svg").write_text(svg, encoding="utf-8")
+
     import fitz
-    with fitz.open(stream=svg.encode('utf-8'),filetype='svg') as source:
-        with fitz.open(stream=source.convert_to_pdf(),filetype='pdf') as vector_pdf:
+    with fitz.open(stream=svg.encode("utf-8"), filetype="svg") as source:
+        with fitz.open(stream=source.convert_to_pdf(), filetype="pdf") as vector_pdf:
             with fitz.open() as pdf:
-                page=pdf.new_page(width=6.5*72,height=4250/600*72)
-                page.show_pdf_page(page.rect,vector_pdf,0)
-                pdf.save(OUT/'figA4_top20_structures.pdf')
+                page = pdf.new_page(width=6.5 * 72, height=HEIGHT / 600 * 72)
+                page.show_pdf_page(page.rect, vector_pdf, 0)
+                pdf.save(OUT / "figA4_top20_structures.pdf")
     print("wrote figA4_top20_structures")
 
 
