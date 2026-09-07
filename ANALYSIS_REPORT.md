@@ -1,156 +1,115 @@
-# GLP-1 / GLP1R Small Molecule Mimic Discovery
+# Analysis report
 
-## Chart-Locked Final Workflow Report
+Numbers here are the ones the manuscript reports, regenerated from
+`evidence/outputs/`. Enrichment preserves score ties: molecules with equal status and
+equal score form a tie group that no ligand identifier resolves, and EF, BEDROC, and
+top-k recovery average over the possible within-tie orders.
 
-**Generated:** 2026-03-13 05:51:16
-**Workflow name:** `Topological-to-3D Native Pharmacophore Cascade`
-**Primary workflow:** `run_optimized_1M_topological_hashed_screening.py`
-**Primary native output:** `results\top_1000_glp1_mimetics_full_1M_topological_hashed_native_final.csv`
-**Stage-3 audit table:** `results\screening_full_1M_topological_hashed.csv`
-**Native bundle manifest:** `results\screening_full_1M_topological_hashed_native_terminal_bundle\manifests\analysis_manifest.json`
-**Run summary:** `results\screening_full_1M_topological_hashed_run_summary.json`
+Structural alerts do not exclude (`chemistry_gate_mode=warn_only`, native
+`pains_filter=false`); PAINS and reactive-group matches are annotations. Molecular
+standardization and the MW, LogP, HBD, and HBA limits are active. The shortlist keeps
+the larger of the 5% count or 1,000 molecules, capped by eligible candidates.
 
----
+## Million-compound GLP-1R screen
 
-## 1. Project Overview
+1,000,000 ZINC inputs. Stage 0 admits 997,590; 990,191 pass the hotspot gate; 49,880
+enter 3D scoring; 49,757 receive Stage-3 scores. The native branch scores 4,997 ligands
+successfully and emits 1,000 final-ranked candidates. End-to-end wall time is 12,336.7 s
+(3.43 h) including the native branch once, on 12 workers. The 1,000-molecule minimum is
+inactive at this library scale, since 5% of Stage-0 passers is already 49,880.
 
-This workflow follows the finalized chart contract for the Topological-to-3D Native Pharmacophore Cascade:
-a topological prescreen, a stage-3 geometry-aware rerank, and a native
-GLP-1/GLP1R terminal rerank that produces the final top-1000 ligand table.
-Stage-3 tables and plots remain required audit artifacts, but they are no
-longer the primary endpoint.
+## Final active retention by shortlist rule
 
-The default cascade is:
+| System | Rule | Shortlist | Native scored | Final actives | Input actives |
+|:---|:---|---:|---:|---:|---:|
+| GLP-1R | 5% only | 1,464 | 647 | 8 | 10 |
+| GLP-1R | 5% + min. 1,000 | 1,464 | 647 | 8 | 10 |
+| GHSR | 5% only | 14 | 14 | 9 | 50 |
+| GHSR | 5% + min. 1,000 | 277 | 271 | 39 | 50 |
+| NTSR1 | 5% only | 20 | 20 | 18 | 50 |
+| NTSR1 | 5% + min. 1,000 | 398 | 343 | 35 | 50 |
+| MDM2-p53 | 5% only | 1,566 | 1,152 | 43 | 50 |
+| MDM2-p53 | 5% + min. 1,000 | 1,566 | 1,152 | 43 | 50 |
 
-1. Stage 0 property + chemistry gate
-2. Stage 1 physicochemical hotspot bitmask
-3. Stage 2 typed pair-hash prescreen
-4. Stage 3 geometry-aware rerank on the top 5% shortlist
-5. Diversified 20,000-ligand native pool with 12k / 4k / 4k source quotas
-6. Scaffold-aware native selection of up to 5,000 ligands under a Murcko cap
-7. Native reference-feature scoring with best conformer per microstate and best state per ligand
-8. Final native-first ranking to the primary top-1000 output
+Each pair shares one evaluation of Stages 0-2 and the larger Stage-3 union. Differing
+shortlists get separate native preparation and scoring; identical shortlists share one
+execution. Counts include measured preparation, selection, and scoring failures, rather
+than treating shortlist admission as a successful native score. The extra native-branch
+cost of the minimum is 2.4 to 8.8 min for GHSR and 3.3 to 8.9 min for NTSR1.
 
----
+## Retrospective metrics
 
-## 2. Structural Context
+### GLP-1R
 
-- Interface residues from `maps/glp1r_interface.json`: 77
-- GLP1R chain(s): R
-- Residue list preview: THR29, VAL30, SER31, LEU32, TRP33, THR35, VAL36, TRP39, ARG43, PHE66
+|                           |   roc_auc |   pr_auc |   ef_1pct |   bedroc |   top10_recovery |
+|:--------------------------|----------:|---------:|----------:|---------:|-----------------:|
+| full_cascade              |     0.753 |    0.363 |    23.250 |    0.480 |            0.401 |
+| native_only               |     0.758 |    0.361 |    23.250 |    0.477 |            0.401 |
+| stage3_only               |     0.727 |    0.284 |    15.500 |    0.357 |            0.300 |
+| standard_3d_pharmacophore |     0.717 |    0.259 |    15.500 |    0.300 |            0.200 |
 
----
+### GHSR
 
-## 3. Curated Receptor Pharmacophore
+|                           |   roc_auc |   pr_auc |   ef_1pct |   bedroc |   top10_recovery |
+|:--------------------------|----------:|---------:|----------:|---------:|-----------------:|
+| full_cascade              |     0.867 |    0.610 |    31.000 |    0.740 |            0.200 |
+| native_only               |     0.926 |    0.680 |    31.000 |    0.748 |            0.200 |
+| stage3_only               |     0.852 |    0.408 |    19.375 |    0.589 |            0.120 |
+| standard_3d_pharmacophore |     0.794 |    0.231 |    15.500 |    0.364 |            0.100 |
 
-- Total pharmacophore features: 102
-- Curated feature count: 21
-- Curated receptor residues: 17
-- Native-supported residues: 8
-- Curated weight bonus: +2.0
+### NTSR1
 
-### Curated Contact Groups
+|                           |   roc_auc |   pr_auc |   ef_1pct |   bedroc |   top10_recovery |
+|:--------------------------|----------:|---------:|----------:|---------:|-----------------:|
+| full_cascade              |     0.785 |    0.390 |    25.188 |    0.561 |            0.164 |
+| native_only               |     0.690 |    0.127 |     8.221 |    0.312 |            0.059 |
+| stage3_only               |     0.778 |    0.362 |    19.375 |    0.525 |            0.160 |
+| standard_3d_pharmacophore |     0.560 |    0.142 |    13.563 |    0.250 |            0.100 |
 
-### ECD anchoring
+### MDM2-p53
 
-- GLP-1 residues: `Phe28, Ile29, Leu32, Val33`
-- GLP1R residues: `LEU32, TRP39, ASP67, TYR69, ARG121, LEU123, GLU128`
+|                           |   roc_auc |   pr_auc |   ef_1pct |   bedroc |   top10_recovery |
+|:--------------------------|----------:|---------:|----------:|---------:|-----------------:|
+| full_cascade              |     0.945 |    0.705 |    31.000 |    0.820 |            0.200 |
+| native_only               |     0.945 |    0.705 |    31.000 |    0.820 |            0.200 |
+| stage3_only               |     0.339 |    0.023 |     0.000 |    0.028 |            0.000 |
+| standard_3d_pharmacophore |     0.339 |    0.023 |     0.000 |    0.028 |            0.000 |
 
-### Upper TMD activation pocket
+Native-only scoring exceeds the single-pass 3D pharmacophore on all four systems and
+matches or exceeds the full cascade on three. Equivalence against a prespecified
++/-0.05 ROC-AUC margin is established only for MDM2-p53.
 
-- GLP-1 residues: `His7, Glu9, Thr13, Ser14, Ser17, Ser18`
-- GLP1R residues: `TYR145, ARG190, LYS197, TRP297, THR298, ARG299, LEU388, SER392`
+## Native diagnostics
 
-### ECL1 support
+Across the 4,997 successfully native-scored ligands: median coverage 24.65%
+(IQR 23.25 to 24.87, range 15.09 to 29.97). Stage-3 and native coverage correlate at
+Pearson r = 0.049, Spearman rho = 0.055. Ordering the same set by Stage-3 rank and by
+final native rank gives rho = 0.057, their top-10 sets share 0 molecules, and the median
+absolute within-cohort rank shift among the final top 1,000 is 1,940 positions. The
+terminal stage, not the upstream ordering, determines the output.
 
-- GLP-1 residues: `Trp31`
-- GLP1R residues: `GLN211, HIS212`
+Ranks are computed within the common native-scored set. Coverage-only ranks in native
+diagnostic bundles are labeled separately and may differ because of their tie rules.
 
+## Docking of the top 10
 
-### Top Weighted Features
+| ligand_id        |   final_rank |   best_active |   best_inactive |   active_pref |
+|:-----------------|-------------:|--------------:|----------------:|--------------:|
+| ZINCk700000Gfz1H |            1 |         -7.18 |           -5.71 |         -1.47 |
+| ZINCk700001bQgxo |            2 |         -7.34 |           -6.22 |         -1.12 |
+| ZINCk500000BlHKL |            3 |         -7.07 |           -5.88 |         -1.19 |
+| ZINCj600000JWMq0 |            4 |         -8.45 |           -7.07 |         -1.39 |
+| ZINCk500000gdMQW |            5 |         -7.05 |           -6.13 |         -0.92 |
+| ZINCk600000EmAGZ |            6 |         -8.56 |           -7.25 |         -1.31 |
+| ZINCk5000003XjkE |            7 |         -7.21 |           -6.12 |         -1.08 |
+| ZINCk800000gvPBH |            8 |         -6.83 |           -6.40 |         -0.44 |
+| ZINCk600000Ja5bY |            9 |         -8.70 |           -7.24 |         -1.46 |
+| ZINCk600000y8tEo |           10 |         -7.42 |           -6.28 |         -1.14 |
 
-| Rank | Type | Residue | Weight | Curated Group | GLP-1 Residues |
-|-----:|:-----|:--------|-------:|:--------------|:---------------|
-| 1 | negative | GLU128 OE1 | 6.35 | ECD anchoring | Phe28, Ile29, Leu32, Val33 |
-| 2 | positive | ARG299 NH1 | 5.91 | Upper TMD activation pocket | His7, Glu9, Thr13, Ser14, Ser17, Ser18 |
-| 3 | negative | ASP67 OD1 | 5.85 | ECD anchoring | Phe28, Ile29, Leu32, Val33 |
-| 4 | positive | ARG121 NH1 | 5.84 | ECD anchoring | Phe28, Ile29, Leu32, Val33 |
-| 5 | positive | LYS197 NZ | 5.76 | Upper TMD activation pocket | His7, Glu9, Thr13, Ser14, Ser17, Ser18 |
-| 6 | positive | ARG190 NH1 | 5.63 | Upper TMD activation pocket | His7, Glu9, Thr13, Ser14, Ser17, Ser18 |
-| 7 | aromatic | HIS212 CD2 | 5.29 | ECL1 support | Trp31 |
-| 8 | aromatic | TYR145 CD1 | 5.23 | Upper TMD activation pocket | His7, Glu9, Thr13, Ser14, Ser17, Ser18 |
-| 9 | aromatic | TYR145 CZ | 5.23 | Upper TMD activation pocket | His7, Glu9, Thr13, Ser14, Ser17, Ser18 |
-| 10 | aromatic | TYR69 CD1 | 5.13 | ECD anchoring | Phe28, Ile29, Leu32, Val33 |
-| 11 | aromatic | TYR69 CZ | 5.13 | ECD anchoring | Phe28, Ile29, Leu32, Val33 |
-| 12 | aromatic | TRP39 CD1 | 5.12 | ECD anchoring | Phe28, Ile29, Leu32, Val33 |
+All 10 favor the active state; median difference -1.16 kcal/mol (IQR -1.37 to -1.09),
+exact signed-rank W = 0, two-sided p = 0.0020. The active-state ensemble has three
+structures and the inactive-state ensemble two, so best-per-state sampling is unequal
+and the paired test cannot isolate a receptor-state effect.
 
----
-
-## 4. Query Composition
-
-### Stage 1 Hotspot Query
-
-Selection metadata not available.
-
-### Stage 2 Pair Query
-
-Selection metadata not available.
-
-### Stage 3 Geometry Query
-
-Selection metadata not available.
-
----
-
-## 5. Primary Native Results
-
-Primary native-final results not yet available. Run the chart-locked workflow first.
-
-
----
-
-## 6. Stage-3 Audit Outputs
-
-Stage-3 audit outputs are not yet available.
-
-
----
-
-## 7. Diagnostics
-
-- Diagnostics status: `unavailable`
-- Always-on contract: `True`
-- Reason: `missing_diagnostics_metadata`
-- No diagnostics files were recorded for this run.
-
----
-
-## 8. Pipeline Timing
-
-Run timing summary not yet available.
-
-
----
-
-## 9. File Inventory
-
-### Primary Native Outputs
-
-- `results\top_1000_glp1_mimetics_full_1M_topological_hashed_native_final.csv`
-- `results\screening_full_1M_topological_hashed_native_scored_top5000.csv`
-- `results\screening_full_1M_topological_hashed_native_terminal_bundle\manifests\analysis_manifest.json`
-
-### Stage-3 Audit Outputs
-
-- `results\screening_full_1M_topological_hashed.csv`
-- `results\top_100_glp1_mimetics_full_1M_topological_hashed.csv`
-- `results/pharmacophore_3d_full_1M_topological_hashed.png`
-- `results/top_20_glp1_mimetics_full_1M_topological_hashed.png`
-- `results/property_distributions_full_1M_topological_hashed.png`
-- `results\screening_full_1M_topological_hashed_run_summary.json`
-
-### Workflow Source
-
-- `virtual_screening_pipeline.mmd`
-
-*Report generated from the chart-locked Topological-to-3D Native Pharmacophore Cascade workflow.*
+These computational measurements prioritize candidates for testing. They do not
+demonstrate binding, state selectivity, or agonism.

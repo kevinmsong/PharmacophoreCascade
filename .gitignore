@@ -105,6 +105,30 @@ evidence/outputs/docking_top10/ligands_pdbqt/
 evidence/outputs/docking_top10/top10_ligands.sdf
 evidence/outputs/_smoke_glp1r_full/
 
+# ── Large intermediates from the current headline and policy-pair runs ──
+# Same policy as the equivalent paths above: the prepared-microstate dumps and
+# per-microstate mapping tables are regenerable and run to hundreds of MB, so the
+# repository keeps the ranked outputs and the summary tables, not the raw states.
+results/absolute_floor_1000/screening_full_1M_floor1000.csv
+results/absolute_floor_1000/screening_full_1M_floor1000_shortlist.csv
+**/*_native_terminal_bundle/ligands/
+**/*_native_terminal_bundle/analysis/microstate_native_mapping.csv
+**/*_native_terminal_bundle/analysis/microstate_native_feature_matches.csv
+**/*_native_terminal_bundle/analysis/best_ligands_aligned_to_native_pharmacophore.sdf
+**/*_native_terminal_bundle/analysis/ligand_best_native_mapping_summary.csv
+**/*_native_terminal_bundle/analysis/ligand_hotspot_compatibility.csv
+**/*_native_terminal_bundle/input/native_candidate_pool.csv
+**/*_native_terminal_bundle/input/native_selected_input.csv
+evidence/outputs/absolute_floor/*/*/stage3_scored.csv
+evidence/outputs/absolute_floor/**/stage012_evaluation.csv
+evidence/outputs/absolute_floor/*/stage3_union_scored.csv
+
+# Bootstrap resample dumps: reproducible from the scored tables with seed 42.
+evidence/outputs/**/*.npz
+
+# Submission bundle, rebuilt by evidence/package_current_revision.py
+/ACS_Omega_resubmission.zip
+
 # ── Public reproducibility package (overrides the global *.py ignore above) ──
 !/reproduce/
 !/reproduce/*.py
@@ -122,7 +146,19 @@ evidence/outputs/_smoke_glp1r_full/
 # held back with the manuscript rather than released with the analysis code.
 /evidence/check_reviewer_coverage.py
 /evidence/check_response_crossrefs.py
-/ACS_Omega_resubmission/
+/evidence/check_alert_disabled_reviewer_coverage.py
+
+# The manuscript body and the peer-review correspondence stay private until
+# publication. The figures, the graphical abstract, and the Supporting
+# Information are published, because the Data Availability section promises
+# them and they carry no reviewer text.
+/ACS_Omega_resubmission/*
+!/ACS_Omega_resubmission/fig*.png
+!/ACS_Omega_resubmission/fig*.pdf
+!/ACS_Omega_resubmission/toc_graphic.png
+!/ACS_Omega_resubmission/toc_graphic.pdf
+!/ACS_Omega_resubmission/supporting_information.pdf
+
 /IEEE_Access_submission/
 /Reviewer_Comments_JCIM.*
 /Response_to_Reviewers_*

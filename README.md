@@ -1,186 +1,116 @@
-# Topological-to-3D Native Pharmacophore Cascade
+# Native peptide-contact pharmacophore screening
 
-Data and workflow documentation accompanying:
+Data, analysis code, and an independent reference implementation for
+**High-throughput native peptide-contact pharmacophore scoring at library scale: a staged cascade and its efficiency-retention trade-off**,
+by Kevin Song, John Zhang, Lei Ye, and Jianyi Zhang.
 
-> **A staged topology-to-native pharmacophore cascade for million-scale discovery at peptide-receptor interfaces**
->
-> Kevin Song, Lei Ye, Jianyi Zhang
->
-> Department of Biomedical Engineering, The University of Alabama at Birmingham
+The paper asks which stage of a staged virtual-screening cascade actually supplies its
+retrieval. The answer is the terminal one: a pharmacophore built from the bound peptide's
+own receptor contacts beats a conventional single-pass 3D pharmacophore on all four
+systems tested, and matches or exceeds the full cascade on three of them. The upstream
+stages supply tractability, at a cost in active retention that shortlist depth controls.
 
----
+## Headline screen
 
-## Overview
+One million ZINC compounds (tranches H17-H20) screened against GLP-1R:
 
-This repository contains the data files, configuration, structural inputs, benchmark evidence, and result tables produced by the Topological-to-3D Native Pharmacophore Cascade applied to GLP-1R small-molecule mimetic discovery. The cascade screens ~1 million ZINC compounds through four sequential stages plus a terminal native branch:
+| Stage | Molecules |
+|---|---|
+| Input library | 1,000,000 |
+| Stage 0, standardization and property limits | 997,590 |
+| Stage 1, receptor hotspot gate | 990,191 |
+| Cascade-score shortlist (5%, minimum 1,000) | 49,880 |
+| Successful Stage-3 scores | 49,757 |
+| Native candidate pool, then scaffold-capped selection | 20,000 to 5,000 |
+| Successful native ligand scores | 4,997 |
+| Final ranked output | 1,000 |
 
-1. **Stage 0** -- Physicochemical property and chemistry gating
-2. **Stage 1** -- Receptor-informed hotspot bitmask compatibility scoring
-3. **Stage 2** -- Typed pair-hash relational filtering
-4. **Stage 3** -- Geometry-aware 3D conformer reranking
-5. **Native Branch** -- Diversified pool assembly, scaffold-aware selection, and terminal peptide-contact reranking against the active GLP-1/GLP1R complex
+End-to-end wall time 12,336.7 s (3.43 h) on an eight-core, 16-thread workstation with 12
+workers, including the native branch once. Three-dimensional work runs on 5% of the
+library and terminal peptide-contact scoring on 0.5%.
 
-The final output is a ranked set of 1,000 peptide-mimicking small molecules scored for native peptide-contact mimicry.
+## Retrospective enrichment
 
-### Pipeline Architecture
+ROC-AUC on matched labeled universes (10 actives with 300 decoys for GLP-1R; 50 with
+1,500 for the others). Enrichment preserves score ties: molecules with equal status and
+equal score are tied, no identifier resolves a tie, and EF, BEDROC, and top-k recovery
+average over the possible within-tie orders.
 
-```
- 1M ZINC compounds
-      |
- Stage 0: Property + chemistry gate
-      |
- Stage 1: Hotspot bitmask scoring
-      |
- Stage 2: Pair-hash prescreen
-      |
- Shortlist (top 5% by cascade score)
-      |
- Stage 3: 3D conformer rerank
-      |
-      +---> Stage-3 audit outputs (CSV, plots)
-      |
- Diversified native pool (20,000 ligands)
-      |
- Scaffold-aware selection (5,000 ligands)
-      |
- Native scoring vs. 6X18 peptide-contact pharmacophore
-      |
- Final native top-1,000 ranking
-```
+| System | Full cascade | Native-only | Stage-3 only | Single-pass 3D |
+|---|---|---|---|---|
+| GLP-1R | 0.753 | 0.758 | 0.727 | 0.717 |
+| GHSR | 0.867 | 0.926 | 0.852 | 0.794 |
+| NTSR1 | 0.785 | 0.690 | 0.778 | 0.560 |
+| MDM2-p53 | 0.945 | 0.945 | 0.339 | 0.339 |
 
-The full workflow diagram is in [`virtual_screening_pipeline.mmd`](virtual_screening_pipeline.mmd) (Mermaid format).
+## Shortlist depth against active retention
 
----
+Paired production runs hold every other setting fixed and change only the shortlist rule.
 
-## Repository Contents
+| System | Shortlist (5% only) | Shortlist (5% + min. 1,000) | Actives retained | Native branch |
+|---|---|---|---|---|
+| GLP-1R | 1,464 | 1,464 | 8/10 both | 17.6 min, shared |
+| GHSR | 14 | 277 | 9/50 to 39/50 | 2.4 to 8.8 min |
+| NTSR1 | 20 | 398 | 18/50 to 35/50 | 3.3 to 8.9 min |
+| MDM2-p53 | 1,566 | 1,566 | 43/50 both | 41.7 min, shared |
 
-### Structural Inputs
+A fixed percentage is the wrong control once an upstream gate has already reduced the
+pool to a few hundred molecules. At million-compound scale the percentage term already
+exceeds 1,000, so the minimum never binds. Structural alerts are recorded rather than
+excluding, so 158 of 160 actives clear Stage 0; the two exceptions fail the property
+limits after standardization.
 
-| Path | Description |
-|------|-------------|
-| `structures/6X18_GLP1_GLP1R.pdb` | Active GLP-1/GLP1R cryo-EM complex (PDB 6X18) |
-| `structures/AF-P43220-F1-model_v6_GLP1R.pdb` | AlphaFold GLP1R model |
-| `structures/complex.pdb` | Processed complex used for pharmacophore derivation |
-| `pocket/mimic_pocket.pdb` | Extracted binding pocket |
+## Settings
 
-### Pharmacophore and Interface Data
+Molecular standardization and the MW, LogP, HBD, and HBA limits are active.
+`chemistry_gate_mode=warn_only` and native `pains_filter=false`, so PAINS and
+reactive-group matches are annotations rather than exclusions. The shortlist keeps the
+larger of the 5% count or 1,000 molecules, capped by eligible candidates. The headline
+run uses a Stage-0-pass percentage denominator and 0.4/0.6 hotspot/pair weights;
+production-policy pairs use the Stage-1/2 candidate denominator and 0.25/0.75 weights.
+Typed-feature caps are 2, 2, 4, 6, 6, 6. Retrospective method comparisons are uncapped,
+and the native-only comparator bypasses Stages 0-3 by definition.
 
-| Path | Description |
-|------|-------------|
-| `maps/pharmacophore_rigorous.json` | 102-feature receptor-side pharmacophore with curated contact annotations |
-| `maps/glp1r_interface.json` | GLP1R interface residue map (77 residues) |
+## What is here
 
-### Configuration
+| Artifact | Location |
+|---|---|
+| Independent Stage 0-2 implementation, and its verification script | `reference_implementation/` |
+| Recompute every reported enrichment metric from per-molecule records | `reproduce/` |
+| Analysis, benchmark, and figure source | `evidence/` |
+| Machine-readable per-molecule benchmark records | `evidence/data/machine_readable/` |
+| Retrospective experiments, all four systems | `evidence/outputs/benchmark_{glp1r,ghsr,ntsr1,mdm2}_full/` |
+| Curation and 7KI0 reference checks | `evidence/outputs/benchmark_glp1r_automated/`, `benchmark_glp1r_7ki0/` |
+| Decoy replicates | `evidence/outputs/decoy_replicates/` |
+| Paired shortlist-policy inputs, scores, and survival | `evidence/outputs/absolute_floor/` |
+| Top-10 docking | `evidence/outputs/docking_top10/` |
+| Ranked screening outputs and native bundle | `results/` |
+| Receptor and native pharmacophores, stage configs, structures | `config/`, `maps/`, `pocket/`, `structures/` |
+| 600-dpi figures and the graphical abstract | `ACS_Omega_resubmission/` |
 
-| Path | Description |
-|------|-------------|
-| `config/pipeline.yaml` | Pipeline configuration |
-| `evidence/configs/benchmark.yaml` | Retrospective benchmark configuration |
-| `evidence/configs/ablation.yaml` | Ablation study configuration |
+The production screening engine that executes the million-compound scan is not released;
+it is available from the corresponding author under a reasonable-use agreement. Everything
+needed to recompute the reported statistics from the released per-molecule data, and to
+check the Stage 0-2 scoring functions against the published equations, is in this
+repository.
 
-### Primary Results
+## Reproduction
 
-| Path | Description |
-|------|-------------|
-| `results/top_1000_glp1_mimetics_full_1M_topological_hashed_native_final.csv` | **Primary output:** final native-ranked top-1,000 ligands |
-| `results/screening_full_1M_topological_hashed_native_scored_top5000.csv` | Full native-scored 5,000-ligand table |
-| `results/top_100_glp1_mimetics_full_1M_topological_hashed.csv` | Stage-3 audit top-100 |
-| `results/screening_full_1M_topological_hashed_run_summary.json` | Run parameters and summary statistics |
+See [`reproduce/README.md`](reproduce/README.md) and
+[`reference_implementation/README.md`](reference_implementation/README.md).
+Install with `pip install -r requirements.txt` (Python 3.12.3, RDKit 2024.09.6,
+scikit-learn 1.3.2, NumPy 1.26.4, SciPy 1.11.4, pandas 2.2.3, AutoDock Vina 1.2.7,
+Meeko 0.7.1).
 
-### Result Figures
+Measured times reflect concurrent workstation workloads and are not portable speedup
+estimates. A serial/parallel check on 51 prepared microstates gave byte-identical
+prepared SDFs, with scores, feature mappings, and coordinates agreeing to 1e-12.
 
-| Path | Description |
-|------|-------------|
-| `results/pharmacophore_3d_full_1M_topological_hashed.png` | 3D pharmacophore visualization |
-| `results/top_20_glp1_mimetics_full_1M_topological_hashed.png` | Top-20 ligand structures |
-| `results/property_distributions_full_1M_topological_hashed.png` | Property distribution plots |
-| `publication/publication_figures/figure1_pipeline.png` | Pipeline architecture (Figure 1) |
-| `publication/publication_figures/figure2_pharmacophore.png` | Receptor pharmacophore (Figure 2) |
-| `publication/publication_figures/figure3_top_20_structures.png` | Top-20 structures (Figure 3) |
-| `publication/publication_figures/figure4_top_native_ligand_structural_overlap.png` | Structural overlap analysis (Figure 4) |
-| `publication/publication_figures/figure5_correlation_grid.png` | Metric correlation grid (Figure 5) |
-| `publication/publication_figures/figure6_native_weighted_coverage_profile.png` | Coverage profile (Figure 6) |
-| `publication/publication_figures/figure7_top_native_peptide_mimicry_report.png` | Peptide mimicry report (Figure 7) |
+## Interpretation
 
-### Native Terminal Analysis
-
-Summary analysis files from the native terminal reranking stage are in `results/screening_full_1M_topological_hashed_native_terminal_bundle/`:
-
-- `analysis/` -- Correlation metrics, quartiles, rank comparison, hotspot frequencies, reference features, receptor contacts
-- `reports/` -- Diagnostic plots (correlation scatter, rank reranking, quartiles, residuals) and figure captions
-- `manifests/analysis_manifest.json` -- Machine-readable output inventory
-
-### Benchmark and Evidence Data
-
-| Path | Description |
-|------|-------------|
-| `evidence/data/glp1r_external_benchmark_library.csv` | 310-molecule benchmark library (10 actives + 300 matched decoys) |
-| `evidence/data/glp1r_external_benchmark_exclusions.csv` | Curated ChEMBL exclusion log |
-| `evidence/outputs/benchmark_summary.csv` | Benchmark summary metrics (ROC-AUC, PR-AUC, EF, BEDROC) |
-| `evidence/outputs/benchmark_plots.pdf` | Benchmark performance plots |
-| `evidence/outputs/benchmark_report.md` | Benchmark narrative report |
-| `evidence/outputs/ablation_results.csv` | Ablation study results |
-| `evidence/outputs/ablation_sensitivity.pdf` | Ablation sensitivity plots |
-| `evidence/outputs/claim*_evidence.csv` | Per-claim supporting evidence tables |
-| `evidence/outputs/claims_summary.csv` | Claims evidence summary |
-| `evidence/outputs/*_table.tex` | LaTeX table fragments used in the manuscript |
-| `evidence/outputs/benchmark_external/` | External benchmark ranking CSVs per method |
-
-### GLP1R Ligand Analysis
-
-| Path | Description |
-|------|-------------|
-| `GLP1_top_ligand_analysis/configs/` | Study configuration files |
-| `GLP1_top_ligand_analysis/references/` | Reference PDB structures (5VEW, 6LN2, 7KI0, 7LCJ) |
-| `GLP1_top_ligand_analysis/reports_715_topological/` | QC and screening comparison reports |
-
-### Other Files
-
-| Path | Description |
-|------|-------------|
-| `virtual_screening_pipeline.mmd` | Full pipeline flowchart (Mermaid) |
-| `ANALYSIS_REPORT.md` | Detailed workflow report with stage summaries |
-| `requirements.txt` | Python dependencies |
-
----
-
-## Key Results Summary
-
-- **Library:** 1,000,000 ZINC compounds (tranches H17--H20)
-- **Stage-3 shortlist:** 47,812 ligands (top 5% by cascade score)
-- **Native pool:** 20,000 diversified candidates (12k by Stage-3 rank, 4k by hotspot breadth, 4k by native-supported hotspot score)
-- **Native scored:** 4,997 ligands after scaffold-aware selection and preparation
-- **Final output:** 1,000 native-ranked peptide-mimicking small molecules
-
-### Retrospective Benchmark (310 molecules: 10 actives + 300 decoys)
-
-| Method | ROC-AUC | PR-AUC | EF1% | EF5% | BEDROC |
-|--------|---------|--------|------|------|--------|
-| Full Cascade | 0.800 | 0.465 | 30 | 10 | 0.546 |
-| Stage-3 Only | 0.742 | 0.286 | 20 | 6 | 0.358 |
-| Standard 3D Pharmacophore | 0.727 | 0.261 | 20 | 4 | 0.304 |
-
----
-
-## Final Ranking Criteria
-
-Ligands in the primary output are sorted by:
-
-1. `native_weighted_coverage_pct` (descending)
-2. `native_matched_reference_features` (descending)
-3. `native_fit_rmsd_angstrom` (ascending)
-4. `native_mean_pair_distance_error_angstrom` (ascending)
-5. `stage3_screen_rank` (ascending)
-6. `zinc_id` (ascending)
-
----
-
-## Note
-
-This repository provides data, configuration, and results for reproducibility and review. Source code for the pipeline implementation is not included in this public release.
-
----
-
-## License
-
-All rights reserved. This repository is provided for peer review and academic reference in connection with the accompanying manuscript submission.
+Retrospective retrieval, peptide-feature coverage, and docking scores do not establish
+biological activity. Actives and decoys come from different databases, so property
+matching and repeated decoy draws cannot eliminate source-related bias. Only one non-GPCR
+interface is included. Ranking perturbations reorder observed score tables; they do not
+infer scores for excluded molecules and are not end-to-end gate-removal experiments.
+Prospective binding and signaling measurements remain necessary.
