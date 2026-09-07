@@ -82,7 +82,8 @@ def main():
     lines += [r'Final ranking & Retained & '+' & '.join(cells)+r' \\',r'\bottomrule',r'\end{tabular}',r'\end{table}','']
     (SUB/'attrition_table.tex').write_text('\n'.join(lines),encoding='utf-8')
     lost=frame[frame.stage_lost!='-']
-    lines=[r'\small',r'\begin{longtable}{p{.10\textwidth}p{.21\textwidth}p{.16\textwidth}p{.42\textwidth}}',
+    lines=[r'\footnotesize',r'\setlength{\tabcolsep}{4pt}',
+        r'\begin{longtable}{@{}p{.10\textwidth}p{.21\textwidth}p{.16\textwidth}p{.42\textwidth}@{}}',
         r'\caption{\textbf{In-domain actives absent from the final ranking under production constraints.} '
         r'Structural alerts are annotations, not exclusions. Causes refer to the first failed or limiting stage.}'
         r'\label{tab:attrition_full}\\',r'\toprule',r'System & Ligand & Stage & Cause \\',r'\midrule',

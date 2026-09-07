@@ -1,9 +1,10 @@
-\small
+\footnotesize
 \setlength{\tabcolsep}{4pt}
 \begin{longtable}{@{}p{.13\textwidth}p{.25\textwidth}>{\raggedleft\arraybackslash}p{.16\textwidth}>{\raggedleft\arraybackslash}p{.10\textwidth}>{\raggedleft\arraybackslash}p{.16\textwidth}>{\raggedleft\arraybackslash}p{.10\textwidth}@{}}
 \caption{\textbf{Stage-by-stage counts for each pair of shortlist rules.} Entries are total ligands and in-domain actives, respectively. All systems use the same 30,000-molecule background, fixed 0.25/0.75 production-benchmark weights, and the candidate count as the percentage denominator.}\label{tab:floor-survival}\\
 \toprule
  & & \multicolumn{2}{c}{5\% only} & \multicolumn{2}{c}{5\% + min.\ 1,000} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
 System & Stage & Total & Actives & Total & Actives \\
 \midrule
 \endfirsthead
@@ -46,7 +47,7 @@ MDM2--p53 & Successful 3D & 1,566 & 43 & 1,566 & 43 \\
 MDM2--p53 & Native selection & 1,152 & 43 & 1,152 & 43 \\
 MDM2--p53 & Successful native & 1,152 & 43 & 1,152 & 43 \\
 MDM2--p53 & Final ranking & 1,000 & 43 & 1,000 & 43 \\
-\midrule
+\bottomrule
 \end{longtable}
 \setlength{\tabcolsep}{6pt}
 \normalsize

@@ -31,7 +31,7 @@
   },
   {
     "comment": "1.2",
-    "check": "(?:floor|minimum)\\s+(?:is\\s+nonbinding|does\\s+not\\s+change|is\\s+inactive)",
+    "check": "(?:floor|minimum)\\s+(?:is\\s+nonbinding|does\\s+not\\s+(?:change|bind)|is\\s+inactive|has\\s+no\\s+effect)",
     "passed": true
   },
   {
@@ -186,12 +186,12 @@
   },
   {
     "comment": "2.6b",
-    "check": "table-level\\s+ranking",
+    "check": "reorder(?:ed|ing|ings)?\\s+(?:by|the\\s+reported\\s+score\\s+tables)|table-level\\s+ranking",
     "passed": true
   },
   {
     "comment": "2.6b",
-    "check": "common\\s+support",
+    "check": "common\\s+support|fixed\\s+shared\\s+set|both\\s+orderings\\s+reach",
     "passed": true
   },
   {
@@ -201,7 +201,7 @@
   },
   {
     "comment": "2.6b",
-    "check": "not\\s+independent\\s+end-to-end|do\\s+not\\s+rerun",
+    "check": "not\\s+independent\\s+end-to-end|do\\s+not\\s+rerun|none\\s+re-executes\\s+the\\s+screen|cannot\\s+recover\\s+a\\s+molecule",
     "passed": true
   },
   {

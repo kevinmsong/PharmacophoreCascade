@@ -173,13 +173,14 @@ def supplementary_tables(rows,stages,headline):
     pd.DataFrame(comparisons,columns=['stage','archived','floor_rerun']).to_csv(DATA/'headline_stage_counts.csv',index=False)
     names={'input':'Input','stage0_pass':'Stage 0','stage012_pass':'Stages 1/2','shortlist':'Shortlist',
            'stage3_success':'Successful 3D','native_selected':'Native selection','native_success':'Successful native','final_ranked':'Final ranking'}
-    lines=[r'\small',r'\setlength{\tabcolsep}{4pt}',
+    lines=[r'\footnotesize',r'\setlength{\tabcolsep}{4pt}',
         r'\begin{longtable}{@{}p{.13\textwidth}p{.25\textwidth}>{\raggedleft\arraybackslash}p{.16\textwidth}>{\raggedleft\arraybackslash}p{.10\textwidth}>{\raggedleft\arraybackslash}p{.16\textwidth}>{\raggedleft\arraybackslash}p{.10\textwidth}@{}}',
         r'\caption{\textbf{Stage-by-stage counts for each pair of shortlist rules.} '
         r'Entries are total ligands and in-domain actives, respectively. All systems use the same '
         r'30,000-molecule background, fixed 0.25/0.75 production-benchmark weights, and the candidate '
         r'count as the percentage denominator.}\label{tab:floor-survival}\\',
         r'\toprule',r' & & \multicolumn{2}{c}{5\% only} & \multicolumn{2}{c}{5\% + min.\ 1,000} \\',
+        r'\cmidrule(lr){3-4}\cmidrule(lr){5-6}',
         r'System & Stage & Total & Actives & Total & Actives \\',r'\midrule',r'\endfirsthead',
         r'\toprule',r'System & Stage & Total & Actives & Total & Actives \\',r'\midrule',r'\endhead']
     for key,label in TEX_SYSTEMS.items():
@@ -189,6 +190,9 @@ def supplementary_tables(rows,stages,headline):
             a=base.loc[stage];b=floor.loc[stage]
             lines.append(f'{label} & {name} & {int(a.total):,} & {int(a.actives)} & {int(b.total):,} & {int(b.actives)} \\\\')
         lines.append(r'\midrule')
+    # The loop leaves a \midrule after the last system; a longtable must close on a
+    # \bottomrule or its final row renders with no rule beneath it.
+    lines[-1] = r'\bottomrule'
     lines += [r'\end{longtable}',r'\setlength{\tabcolsep}{6pt}',r'\normalsize','']
     (SUB/'floor_survival_table.tex').write_text('\n'.join(lines),encoding='utf-8')
     lines=[r'\begin{table}[htbp]',r'\centering',r'\caption{\textbf{Measured native-branch wall times for each pair of shortlist rules.} '
