@@ -26,6 +26,7 @@ logger = logging.getLogger(__name__)
 METHOD_DISPLAY_NAMES = {
     "full_cascade": "Full cascade",
     "stage3_only": "Stage-3 only",
+    "native_only": "Native-only",
     "standard_3d_pharmacophore": "Std. 3D pharm.",
     "active_state_docking": "Active-state docking",
     "state_preference_docking_sensitivity": "State-preference docking",
@@ -153,7 +154,8 @@ def _plot_rank_corr_heatmap(pairwise_df: pd.DataFrame, ax: plt.Axes) -> None:
         mat[i, j] = v
         mat[j, i] = v
 
-    im = ax.imshow(mat, vmin=-1, vmax=1, cmap="RdYlGn")
+    im = ax.imshow(mat, vmin=-1, vmax=1, cmap=mcolors.LinearSegmentedColormap.from_list(
+        'orange_white_blue',['#E69F00','#F7F7F7','#0072B2']))
     plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
 
     short = [m.replace("_", "\n") for m in methods]
@@ -215,12 +217,12 @@ def _plot_cascade_vs_native_scatter(
     x = rc["weighted_coverage_pct"].values
     y = rc["native_weighted_coverage_pct"].values
 
-    ax.scatter(x, y, alpha=0.25, s=6, color="steelblue", rasterized=True)
+    ax.scatter(x, y, alpha=0.25, s=6, color="#0072B2", rasterized=True)
 
     # Regression line
     m, b, r, p, _ = __import__("scipy.stats", fromlist=["linregress"]).linregress(x, y)
     x_line = np.linspace(x.min(), x.max(), 100)
-    ax.plot(x_line, m * x_line + b, color="crimson", linewidth=1.5,
+    ax.plot(x_line, m * x_line + b, color="#D55E00", linewidth=1.5,
             label=f"r={r:.3f}, p={p:.2g}")
     ax.set_xlabel("Stage-3 weighted coverage (%)", fontsize=8)
     ax.set_ylabel("Native weighted coverage (%)", fontsize=8)
@@ -236,9 +238,9 @@ def _plot_rank_shift_hist(tables: Dict[str, pd.DataFrame], ax: plt.Axes) -> None
 
     rc = tables["rank_comparison"]
     shifts = rc["abs_rank_shift"].dropna()
-    ax.hist(shifts, bins=50, color="steelblue", edgecolor="white", alpha=0.8)
+    ax.hist(shifts, bins=50, color="#0072B2", edgecolor="white", alpha=0.8)
     med = shifts.median()
-    ax.axvline(med, color="crimson", linewidth=1.5, linestyle="--",
+    ax.axvline(med, color="#D55E00", linewidth=1.5, linestyle="--",
                label=f"median={med:.0f}")
     ax.set_xlabel("Absolute rank shift (screen→native)", fontsize=8)
     ax.set_ylabel("Count", fontsize=8)
@@ -273,7 +275,7 @@ def _plot_external_metric_bars(
         yerr = np.vstack([np.clip(values - low, 0, None), np.clip(high - values, 0, None)])
 
     x = np.arange(len(methods))
-    ax.bar(x, values, yerr=yerr, color="steelblue", edgecolor="white", alpha=0.9, capsize=3)
+    ax.bar(x, values, yerr=yerr, color="#0072B2", edgecolor="white", alpha=0.9, capsize=3)
     ax.set_xticks(x)
     ax.set_xticklabels(
         [METHOD_DISPLAY_NAMES.get(m, m.replace("_", " ")) for m in methods],
@@ -309,7 +311,8 @@ def make_plots(
 
     plt.tight_layout(rect=[0, 0, 1, 0.96])
     out_path = output_dir / "benchmark_plots.pdf"
-    fig.savefig(out_path, bbox_inches="tight", dpi=150)
+    fig.savefig(out_path, bbox_inches="tight", dpi=600)
+    fig.savefig(out_path.with_suffix('.png'), bbox_inches="tight", dpi=600)
     plt.close(fig)
     logger.info("Wrote benchmark_plots.pdf")
 
@@ -332,8 +335,8 @@ def make_ablation_plots(ablation: AblationResult, output_dir: Path) -> None:
         labels = [f"({r['hotspot_weight']:.1f},{r['pair_hash_weight']:.1f})"
                   for _, r in weight_df.iterrows()]
         vals = weight_df[jaccard_col].values
-        ax.bar(labels, vals, color="steelblue")
-        ax.axhline(1.0, color="crimson", linestyle="--", linewidth=1)
+        ax.bar(labels, vals, color="#0072B2")
+        ax.axhline(1.0, color="#D55E00", linestyle="--", linewidth=1)
         ax.set_ylim(0, 1.05)
         ax.set_xlabel("(hotspot_w, pair_hash_w)", fontsize=8)
         ax.set_ylabel("Jaccard top-100 vs baseline", fontsize=8)
@@ -341,7 +344,8 @@ def make_ablation_plots(ablation: AblationResult, output_dir: Path) -> None:
         plt.xticks(rotation=30, fontsize=7)
 
     out_path = output_dir / "ablation_sensitivity.pdf"
-    fig.savefig(out_path, bbox_inches="tight", dpi=150)
+    fig.savefig(out_path, bbox_inches="tight", dpi=600)
+    fig.savefig(out_path.with_suffix('.png'), bbox_inches="tight", dpi=600)
     plt.close(fig)
     logger.info("Wrote ablation_sensitivity.pdf")
 
@@ -454,7 +458,7 @@ def make_latex_tables(
         summary_caption = (
             "Retrospective external benchmark performance on the GLP-1R active-vs-decoy set. "
             "Metrics summarize discrimination and early enrichment for the full cascade and the simpler baseline methods. "
-            "BEDROC used alpha=20."
+            "Equal-status/equal-score outcomes remain tied; early-retrieval metrics average over within-tie orderings. BEDROC used alpha=20."
         )
         summary_tex = _df_to_latex(
             bench.summary_df[display_cols],
@@ -502,7 +506,7 @@ def make_latex_tables(
             )
         summary_recovery_tex = _df_to_latex(
             recovery_df,
-            caption="Early active and scaffold recovery on the retrospective GLP-1R benchmark. Values denote the fraction of benchmark actives or active Murcko scaffolds recovered within the top-k ranked molecules.",
+            caption="Expected early active recovery on the retrospective GLP-1R benchmark, averaged over within-score-tie orderings. Values denote the fraction of benchmark actives recovered within the top-k positions.",
             label="tab:benchmark_summary_recovery",
             size_command=r"\normalsize",
             tabcolsep_pt=4,
@@ -539,7 +543,7 @@ def make_latex_tables(
     if not ablation.ablation_df.empty:
         ablation_tex = _df_to_latex(
             ablation.ablation_df,
-            caption="Rank stability under component ablations.",
+            caption="Rank stability under table-level ranking perturbations.",
             label="tab:ablation_results",
         )
         parts.append(ablation_tex)

@@ -1,7 +1,9 @@
-stage,actives,decoys,background,active_survival_pct
-input,50,1500,30000,100.0
-stage0_pass,31,1500,28832,62.0
-stage1_pass,23,279,82,46.0
-stage3_shortlist,15,5,0,30.0
-native_pool,15,5,0,30.0
-final_ranked,15,5,0,30.0
+system,policy,stage,total,actives,decoys,background,active_survival_pct
+ntsr1,floor1000,input,31550,50,1500,30000,100.0
+ntsr1,floor1000,stage0_pass,31364,48,1500,29816,96.0
+ntsr1,floor1000,stage012_pass,398,35,279,84,70.0
+ntsr1,floor1000,shortlist,398,35,279,84,70.0
+ntsr1,floor1000,stage3_success,397,35,279,83,70.0
+ntsr1,floor1000,native_selected,343,35,252,56,70.0
+ntsr1,floor1000,native_success,343,35,252,56,70.0
+ntsr1,floor1000,final_ranked,343,35,252,56,70.0

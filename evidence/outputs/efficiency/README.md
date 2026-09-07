@@ -1,0 +1,1 @@
+Current efficiency/retention results are actual paired executions in `../absolute_floor/`. Inferred native counts from the earlier shortlist sweep are superseded. The percentage denominator is the Stage-1/2 candidate pool in these production benchmarks.

@@ -1,23 +1,26 @@
 {
   "n": 10,
-  "median_delta": -1.1320000000000006,
-  "iqr_low": -1.2282499999999996,
-  "iqr_high": -0.6437500000000003,
+  "n_selected": 10,
+  "n_zero_differences": 0,
+  "test_method": "exact signed-rank permutation; exhaustive sign flips, average ranks for ties, zero differences excluded",
+  "median_delta": -1.1649999999999996,
+  "iqr_low": -1.3664999999999996,
+  "iqr_high": -1.09275,
   "n_favoring_active": 10,
   "wilcoxon_W": 0.0,
   "p_two_sided": 0.001953125,
   "p_one_sided_less": 0.0009765625,
   "source": "evidence\\outputs\\revision\\docking_top10_summary.csv",
   "ligands": [
+    "ZINCk700000Gfz1H",
     "ZINCk700001bQgxo",
     "ZINCk500000BlHKL",
-    "ZINCk600000BmX8e",
-    "ZINCj600000wL7Dt",
     "ZINCj600000JWMq0",
     "ZINCk500000gdMQW",
     "ZINCk600000EmAGZ",
-    "ZINCk6000004c4yV",
     "ZINCk5000003XjkE",
-    "ZINCk800000gvPBH"
+    "ZINCk800000gvPBH",
+    "ZINCk600000Ja5bY",
+    "ZINCk600000y8tEo"
   ]
 }

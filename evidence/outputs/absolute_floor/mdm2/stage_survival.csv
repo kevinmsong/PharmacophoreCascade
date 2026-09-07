@@ -1,0 +1,17 @@
+system,policy,stage,total,actives,decoys,background
+mdm2,percentage,input,31550,50,1500,30000
+mdm2,percentage,stage0_pass,31366,50,1500,29816
+mdm2,percentage,stage012_pass,31314,50,1500,29764
+mdm2,percentage,shortlist,1566,43,1498,25
+mdm2,percentage,stage3_success,1566,43,1498,25
+mdm2,percentage,native_selected,1152,43,1099,10
+mdm2,percentage,native_success,1152,43,1099,10
+mdm2,percentage,final_ranked,1000,43,951,6
+mdm2,floor1000,input,31550,50,1500,30000
+mdm2,floor1000,stage0_pass,31366,50,1500,29816
+mdm2,floor1000,stage012_pass,31314,50,1500,29764
+mdm2,floor1000,shortlist,1566,43,1498,25
+mdm2,floor1000,stage3_success,1566,43,1498,25
+mdm2,floor1000,native_selected,1152,43,1099,10
+mdm2,floor1000,native_success,1152,43,1099,10
+mdm2,floor1000,final_ranked,1000,43,951,6

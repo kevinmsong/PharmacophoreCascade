@@ -1,0 +1,8 @@
+{
+  "after_production_workers": 4,
+  "after_headline_workers": 8,
+  "after_docking_workers": 12,
+  "scope": "Future jobs in this revision's benchmark queue only; original configuration files remain unchanged",
+  "provenance": "Each run writes benchmark_execution.json with requested and effective workers and its full effective configuration",
+  "scientific_parameters_changed": false
+}

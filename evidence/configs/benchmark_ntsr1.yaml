@@ -7,11 +7,11 @@ output_dir: evidence/outputs
 data:
   stage3_audit: results/screening_full_1M_topological_hashed.csv
   final_ranked: results/top_1000_glp1_mimetics_full_1M_topological_hashed_native_final.csv
-  native_scored: GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/analysis/microstate_native_mapping.csv
-  feature_matches: GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/analysis/microstate_native_feature_matches.csv
-  reference_features: GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/analysis/native_reference_features.csv
-  rank_comparison: GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/analysis/native_rank_comparison.csv
-  hotspot_compat: GLP1_top_ligand_analysis/derived_top1000_full_1M_native_no_docking/analysis/ligand_hotspot_compatibility.csv
+  native_scored: results/absolute_floor_1000/screening_full_1M_floor1000_native_terminal_bundle/analysis/microstate_native_mapping.csv
+  feature_matches: results/absolute_floor_1000/screening_full_1M_floor1000_native_terminal_bundle/analysis/microstate_native_feature_matches.csv
+  reference_features: results/absolute_floor_1000/screening_full_1M_floor1000_native_terminal_bundle/analysis/native_reference_features.csv
+  rank_comparison: results/absolute_floor_1000/screening_full_1M_floor1000_native_terminal_bundle/analysis/native_rank_comparison.csv
+  hotspot_compat: results/absolute_floor_1000/screening_full_1M_floor1000_native_terminal_bundle/analysis/ligand_hotspot_compatibility.csv
   actives_csv: null
   decoys_csv: null
   docking_csv: null
@@ -34,7 +34,7 @@ benchmark:
   rerank_score_mode: stage3_only
   hotspot_min_exact: 3
   hotspot_min_groups: 2
-  chemistry_gate_mode: strict
+  chemistry_gate_mode: warn_only
   native_support_max_residues: 0
   native_candidate_pool_k: 999999
   native_selection_top_k: 999999

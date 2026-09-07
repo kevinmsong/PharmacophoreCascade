@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "production_aliases": [
+    {
+      "path": "evidence\\outputs\\production_glp1r",
+      "source": "evidence\\outputs\\absolute_floor\\glp1r",
+      "policy": "floor1000"
+    },
+    {
+      "path": "evidence\\outputs\\production_ghsr",
+      "source": "evidence\\outputs\\absolute_floor\\ghsr",
+      "policy": "floor1000"
+    },
+    {
+      "path": "evidence\\outputs\\production_ntsr1",
+      "source": "evidence\\outputs\\absolute_floor\\ntsr1",
+      "policy": "floor1000"
+    },
+    {
+      "path": "evidence\\outputs\\production_mdm2",
+      "source": "evidence\\outputs\\absolute_floor\\mdm2",
+      "policy": "floor1000"
+    }
+  ],
+  "root_report_source": "fresh GLP-1R full benchmark plus fresh headline diagnostics",
+  "native_only_stage3_diagnostics": "not applicable; excluded from current outputs"
+}

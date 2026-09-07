@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "source_sha256": "db37ec37751d8dea5a363f60c6c52624876866d64732ec8cf489e1e2ae733e17",
+  "source": "results\\absolute_floor_1000\\screening_full_1M_floor1000.csv",
+  "molecular_scores_changed": false,
+  "canonical_outputs": {
+    "results\\pharmacophore_3d_full_1M_topological_hashed.pdf": "f19ee05319531dba734c7a43ab4984b56175660132eae12d075efdb2f6119bf7",
+    "results\\pharmacophore_3d_full_1M_topological_hashed.png": "95bd57374cdf1a3773f3fcc41cfb0cab4efe1d608b4378810075a3a596b6bdbe",
+    "results\\property_distributions_full_1M_topological_hashed.pdf": "4a2ac37a381c01da8cf9334856b79bb29cb8c2f1038503a23e537da6540cbafb",
+    "results\\property_distributions_full_1M_topological_hashed.png": "3284bb416df541c6446a4e61ae26fc88cc842e3dc4a204a48ed5bd7a4f6d6f4b",
+    "results\\top_20_glp1_mimetics_full_1M_topological_hashed.pdf": "10f7305cf43b4c876d36e1d4514dc5bf7811f07b3eee8a13332ecad3106f40c1",
+    "results\\top_20_glp1_mimetics_full_1M_topological_hashed.png": "ae008ae0dc56714cfdacbe788223577393c5045193918b272b506e7576466d29",
+    "results\\top_20_glp1_mimetics_full_1M_topological_hashed.svg": "5c93053168de739a68fd2f0282e3f0498bf932d438d61d28b82055191f9d772f",
+    "results\\top_100_glp1_mimetics_full_1M_topological_hashed.csv": "42755d1d17f5e71df9b7b89fa9b8e6e2fe18bdfb8a649b701ebde7380e0fd342",
+    "results\\screening_full_1M_topological_hashed_external_run.log": "3ebd90e8f6d6e20b8200f05467c7a7df5931f5050aa595f28488191c1deb4f8f"
+  }
+}

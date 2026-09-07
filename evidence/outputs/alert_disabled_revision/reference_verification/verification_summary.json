@@ -1,0 +1,32 @@
+{
+  "gate": {
+    "n": 310,
+    "stage0_agreement": 1.0,
+    "stage1_agreement": 1.0,
+    "stage0_survivors": 310
+  },
+  "continuous": {
+    "n": 500,
+    "engine_H": {
+      "pearson_r": 0.9943493589982539,
+      "mean_abs_difference": 0.04637258775079544,
+      "max_abs_difference": 2.586892328174926
+    },
+    "engine_O": {
+      "pearson_r": 0.9995371842488708,
+      "mean_abs_difference": 0.00753301345869588,
+      "max_abs_difference": 0.7573474301459875
+    },
+    "engine_cascade": {
+      "pearson_r": 0.9965508807486372,
+      "mean_abs_difference": 0.017926438454893508,
+      "max_abs_difference": 1.4508705580869083
+    },
+    "equation_max_abs_error": 1.0658141036401503e-14
+  },
+  "benchmark_source": "evidence\\outputs\\benchmark_glp1r_full\\benchmark_external\\benchmark_evaluation.csv",
+  "score_source": "results\\absolute_floor_1000\\screening_full_1M_floor1000_shortlist.csv",
+  "seed": 42,
+  "chemistry_gate_mode": "non-excluding alerts",
+  "feature_caps": "fixed"
+}

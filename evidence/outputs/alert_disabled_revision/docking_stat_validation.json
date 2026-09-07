@@ -1,0 +1,22 @@
+[
+  {
+    "case": "untied vs SciPy exact",
+    "passed": true
+  },
+  {
+    "case": "untied vs SciPy exact",
+    "passed": true
+  },
+  {
+    "case": "equal-rank exact null, 2/16",
+    "passed": true
+  },
+  {
+    "case": "all zero differences",
+    "passed": true
+  },
+  {
+    "case": "missing pair and zero excluded",
+    "passed": true
+  }
+]

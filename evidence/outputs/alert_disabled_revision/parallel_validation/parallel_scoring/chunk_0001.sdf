@@ -1,0 +1,6735 @@
+ZINCk500000BlHFg_m02_t01
+     RDKit          3D
+
+ 45 48  0  0  0  0  0  0  0  0999 V2000
+    2.2802   -1.0548   -2.3189 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5138   -0.9833   -1.7380 N   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6410   -0.4993   -0.4571 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5386   -0.1015    0.2043 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2106   -0.2049   -0.4848 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1236    0.1930    0.1020 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0931    0.0981   -0.7198 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2561    0.8157   -0.0058 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -2.5754    0.1446    1.3698 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0240    0.3200    1.8126 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.0819    0.3058    0.7026 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -4.4933   -0.2723   -0.5944 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.5017    0.8333   -0.9393 N   0  0  1  0  0  0  0  0  0  0  0  0
+   -4.3372    2.1015   -0.7770 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3677    1.7539    0.3004 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1664   -0.7163   -1.7595 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0028   -0.3268    0.1345 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0588   -1.4264   -0.1489 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.5326   -1.2754    1.2355 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2195   -0.7322    1.6152 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3011   -1.4441   -3.3513 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.3278   -1.0978   -2.3360 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5346    0.3395    1.1924 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3562   -0.9532   -0.8909 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9422    0.5862   -1.6915 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9774    1.8629    0.1591 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4179   -0.9388    1.3237 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9500    0.5503    2.1711 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1163    1.1659    2.4009 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.2403   -0.4423    2.4803 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.9538   -0.2253    1.0915 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.2222   -0.3259   -1.4100 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9593   -1.2206   -0.4917 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.2000    0.7647   -1.9279 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6866    2.9402   -0.5162 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.8140    2.2907   -1.7443 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.3730    1.8308   -0.1314 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3281    2.4555    1.1401 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3894    0.6802   -0.0807 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8158   -1.1747   -0.8962 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6707   -2.4335   -0.3397 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.7901   -2.1577    1.6998 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.3128   -0.6095    1.3402 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2824    0.0939    2.3283 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5547   -1.5102    2.0075 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  2  3
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 13 14  1  0
+ 14 15  1  0
+  5 16  1  0
+  3 17  1  0
+ 17 18  1  0
+ 18 19  1  0
+ 19 20  1  0
+ 16  1  2  0
+ 20 17  1  0
+ 13  8  1  0
+ 15 11  1  0
+  1 21  1  0
+  2 22  1  0
+  4 23  1  0
+  7 24  1  0
+  7 25  1  0
+  8 26  1  1
+  9 27  1  0
+  9 28  1  0
+ 10 29  1  0
+ 10 30  1  0
+ 11 31  1  1
+ 12 32  1  0
+ 12 33  1  0
+ 13 34  1  6
+ 14 35  1  0
+ 14 36  1  0
+ 15 37  1  0
+ 15 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+ 18 41  1  0
+ 19 42  1  0
+ 19 43  1  0
+ 20 44  1  0
+ 20 45  1  0
+M  CHG  3  10   1  13   1  19   1
+M  END
+>  <ligand_id>  (1) 
+ZINCk500000BlHFg
+
+>  <microstate_id>  (1) 
+ZINCk500000BlHFg_m02_t01
+
+>  <input_smiles>  (1) 
+c1nc(C2CNC2)cc(=NC[C@@H]2CN[C@H]3CCN2C3)[nH]1
+
+>  <standard_smiles>  (1) 
+c1nc(=NC[C@@H]2C[NH2+][C@H]3CC[NH+]2C3)cc(C2C[NH2+]C2)[nH]1
+
+>  <canonical_smiles>  (1) 
+c1nc(=NC[C@@H]2C[NH2+][C@H]3CC[NH+]2C3)cc(C2C[NH2+]C2)[nH]1
+
+>  <murcko_scaffold>  (1) 
+c1nc(=NCC2C[NH2+]C3CC[NH+]2C3)cc(C2C[NH2+]C2)[nH]1
+
+>  <pains_hit>  (1) 
+
+
+>  <reactive_flags>  (1) 
+
+
+>  <embed_ok>  (1) 
+True
+
+>  <minimized_energy>  (1) 
+258.9475
+
+>  <microstate_index>  (1) 
+2
+
+>  <tautomer_index>  (1) 
+1
+
+>  <mw>  (1) 
+277.396
+
+>  <logp>  (1) 
+-4.4262
+
+>  <tpsa>  (1) 
+78.7
+
+>  <formal_charge>  (1) 
+3
+
+>  <hbd>  (1) 
+4
+
+>  <hba>  (1) 
+2
+
+>  <rotatable_bonds>  (1) 
+3
+
+>  <heavy_atoms>  (1) 
+20
+
+>  <stage3_screen_rank>  (1) 
+4
+
+>  <zinc_id>  (1) 
+ZINCk500000BlHFg
+
+>  <smiles>  (1) 
+c1nc(C2CNC2)cc(=NC[C@@H]2CN[C@H]3CCN2C3)[nH]1
+
+>  <coverage_pct>  (1) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (1) 
+12.545621350695384
+
+>  <geometry_penalty_factor>  (1) 
+0.9808141616683976
+
+>  <weighted_coverage_pct>  (1) 
+12.30492308769144
+
+>  <features_matched>  (1) 
+3
+
+>  <lipinski>  (1) 
+1
+
+>  <chemistry_flagged>  (1) 
+nan
+
+>  <pains_alert>  (1) 
+nan
+
+>  <hotspot_weighted_pct>  (1) 
+32.391143412755326
+
+>  <hotspot_bits_matched>  (1) 
+11
+
+>  <hotspot_exact_matches>  (1) 
+6
+
+>  <hotspot_compatible_matches>  (1) 
+5
+
+>  <hotspot_exact_residue_count>  (1) 
+6
+
+>  <hotspot_group_count>  (1) 
+4
+
+>  <hotspot_required_groups_pass>  (1) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (1) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (1) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (1) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (1) 
+nan
+
+>  <pair_hash_overlap_pct>  (1) 
+18.122342766793636
+
+>  <pair_hash_recall_pct>  (1) 
+11.372026159736524
+
+>  <pair_hash_precision_pct>  (1) 
+44.59123916608105
+
+>  <cascade_score_pct>  (1) 
+21.68954292828406
+
+>  <shortlist_rank>  (1) 
+7
+
+>  <rerank_conformers>  (1) 
+16
+
+>  <best_conformer_id>  (1) 
+4
+
+>  <fit_rmsd_angstrom>  (1) 
+0.2600734999636376
+
+>  <mean_pair_distance_error_angstrom>  (1) 
+0.303357326548527
+
+>  <reference_feature_span_angstrom>  (1) 
+7.715355273738214
+
+>  <ligand_feature_span_angstrom>  (1) 
+7.857534462622745
+
+>  <rerank_query_feature_count>  (1) 
+28
+
+>  <pool_source_stage3_rank>  (1) 
+1
+
+>  <pool_source_hotspot_breadth>  (1) 
+1
+
+>  <pool_source_native_support>  (1) 
+1
+
+>  <pool_primary_source>  (1) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (1) 
+3
+
+>  <native_selection_rank>  (1) 
+3
+
+>  <source_input_rank>  (1) 
+3
+
+$$$$
+ZINCk500000BlHFg_m02_t02
+     RDKit          3D
+
+ 45 48  0  0  0  0  0  0  0  0999 V2000
+   -2.8901    0.2242   -2.1650 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8385    0.0798   -1.2910 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4329   -0.0318    0.0289 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1522   -0.0033    0.4552 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0855    0.1722   -0.5860 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1419    0.2116   -0.1672 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2278    0.4217   -1.1376 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4825    0.9002   -0.3585 C   0  0  2  0  0  0  0  0  0  0  0  0
+    3.8146    0.8494   -1.1756 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6285   -0.4229   -0.9644 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5346   -1.0748    0.4204 C   0  0  2  0  0  0  0  0  0  0  0  0
+    3.0596   -1.3333    0.7402 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5932    0.0936    0.9571 N   0  0  1  0  0  0  0  0  0  0  0  0
+    3.6389    0.6559    1.9041 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9361   -0.0599    1.4957 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5566    0.2729   -1.8714 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.5336   -0.1894    1.0453 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6267   -1.2303    0.6961 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.4331   -0.1410    0.1211 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6921    0.8339    0.9384 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1154    0.3202   -3.2409 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8515   -0.0877    1.4913 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4365   -0.5159   -1.6641 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9712    1.1851   -1.8810 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2924    1.9348   -0.0452 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4703    1.6642   -0.8500 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6489    0.9498   -2.2524 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.3888   -1.1211   -1.6895 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6246   -0.2153   -1.1671 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1583   -1.9713    0.3926 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4867   -1.7946   -0.0672 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9110   -1.8766    1.6793 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6382    0.1039    1.3698 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3275    0.3870    2.9185 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6794    1.7433    1.7977 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3460   -0.5777    2.3709 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6998    0.6459    1.1528 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9234    0.3833   -2.6492 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1514   -0.2987    2.0680 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.1139   -1.6900    1.5634 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3650   -2.0088   -0.0258 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -7.4439   -0.1931    0.2932 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.2467   -0.0174   -0.8875 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.2006    1.0496    1.8848 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.4843    1.7725    0.4173 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  2  3
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 13 14  1  0
+ 14 15  1  0
+  5 16  1  0
+  3 17  1  0
+ 17 18  1  0
+ 18 19  1  0
+ 19 20  1  0
+ 16  1  1  0
+ 20 17  1  0
+ 13  8  1  0
+ 15 11  1  0
+  1 21  1  0
+  4 22  1  0
+  7 23  1  0
+  7 24  1  0
+  8 25  1  1
+  9 26  1  0
+  9 27  1  0
+ 10 28  1  0
+ 10 29  1  0
+ 11 30  1  6
+ 12 31  1  0
+ 12 32  1  0
+ 13 33  1  1
+ 14 34  1  0
+ 14 35  1  0
+ 15 36  1  0
+ 15 37  1  0
+ 16 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+ 18 41  1  0
+ 19 42  1  0
+ 19 43  1  0
+ 20 44  1  0
+ 20 45  1  0
+M  CHG  3  10   1  13   1  19   1
+M  END
+>  <ligand_id>  (2) 
+ZINCk500000BlHFg
+
+>  <microstate_id>  (2) 
+ZINCk500000BlHFg_m02_t02
+
+>  <input_smiles>  (2) 
+c1nc(C2CNC2)cc(=NC[C@@H]2CN[C@H]3CCN2C3)[nH]1
+
+>  <standard_smiles>  (2) 
+c1nc(C2C[NH2+]C2)cc(=NC[C@@H]2C[NH2+][C@H]3CC[NH+]2C3)[nH]1
+
+>  <canonical_smiles>  (2) 
+c1nc(C2C[NH2+]C2)cc(=NC[C@@H]2C[NH2+][C@H]3CC[NH+]2C3)[nH]1
+
+>  <murcko_scaffold>  (2) 
+c1nc(C2C[NH2+]C2)cc(=NCC2C[NH2+]C3CC[NH+]2C3)[nH]1
+
+>  <pains_hit>  (2) 
+
+
+>  <reactive_flags>  (2) 
+
+
+>  <embed_ok>  (2) 
+True
+
+>  <minimized_energy>  (2) 
+228.9628
+
+>  <microstate_index>  (2) 
+2
+
+>  <tautomer_index>  (2) 
+2
+
+>  <mw>  (2) 
+277.396
+
+>  <logp>  (2) 
+-4.4262
+
+>  <tpsa>  (2) 
+78.7
+
+>  <formal_charge>  (2) 
+3
+
+>  <hbd>  (2) 
+4
+
+>  <hba>  (2) 
+2
+
+>  <rotatable_bonds>  (2) 
+3
+
+>  <heavy_atoms>  (2) 
+20
+
+>  <stage3_screen_rank>  (2) 
+4
+
+>  <zinc_id>  (2) 
+ZINCk500000BlHFg
+
+>  <smiles>  (2) 
+c1nc(C2CNC2)cc(=NC[C@@H]2CN[C@H]3CCN2C3)[nH]1
+
+>  <coverage_pct>  (2) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (2) 
+12.545621350695384
+
+>  <geometry_penalty_factor>  (2) 
+0.9808141616683976
+
+>  <weighted_coverage_pct>  (2) 
+12.30492308769144
+
+>  <features_matched>  (2) 
+3
+
+>  <lipinski>  (2) 
+1
+
+>  <chemistry_flagged>  (2) 
+nan
+
+>  <pains_alert>  (2) 
+nan
+
+>  <hotspot_weighted_pct>  (2) 
+32.391143412755326
+
+>  <hotspot_bits_matched>  (2) 
+11
+
+>  <hotspot_exact_matches>  (2) 
+6
+
+>  <hotspot_compatible_matches>  (2) 
+5
+
+>  <hotspot_exact_residue_count>  (2) 
+6
+
+>  <hotspot_group_count>  (2) 
+4
+
+>  <hotspot_required_groups_pass>  (2) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (2) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (2) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (2) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (2) 
+nan
+
+>  <pair_hash_overlap_pct>  (2) 
+18.122342766793636
+
+>  <pair_hash_recall_pct>  (2) 
+11.372026159736524
+
+>  <pair_hash_precision_pct>  (2) 
+44.59123916608105
+
+>  <cascade_score_pct>  (2) 
+21.68954292828406
+
+>  <shortlist_rank>  (2) 
+7
+
+>  <rerank_conformers>  (2) 
+16
+
+>  <best_conformer_id>  (2) 
+4
+
+>  <fit_rmsd_angstrom>  (2) 
+0.2600734999636376
+
+>  <mean_pair_distance_error_angstrom>  (2) 
+0.303357326548527
+
+>  <reference_feature_span_angstrom>  (2) 
+7.715355273738214
+
+>  <ligand_feature_span_angstrom>  (2) 
+7.857534462622745
+
+>  <rerank_query_feature_count>  (2) 
+28
+
+>  <pool_source_stage3_rank>  (2) 
+1
+
+>  <pool_source_hotspot_breadth>  (2) 
+1
+
+>  <pool_source_native_support>  (2) 
+1
+
+>  <pool_primary_source>  (2) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (2) 
+3
+
+>  <native_selection_rank>  (2) 
+3
+
+>  <source_input_rank>  (2) 
+3
+
+$$$$
+ZINCk500000BlHFg_m02_t03
+     RDKit          3D
+
+ 45 48  0  0  0  0  0  0  0  0999 V2000
+    1.7790    0.8412    1.7738 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0191    0.8141    1.2602 N   0  0  0  0  0  0  0  0  0  0  0  0
+    3.2222    0.0516    0.1699 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1723   -0.6720   -0.3829 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9317   -0.6158    0.2402 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1544   -1.3387   -0.3179 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2734   -1.5601    0.6298 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2125   -0.3253    0.7217 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -3.6111   -0.6463    1.3442 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.7001   -0.9481    0.3187 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.5941   -0.2227   -1.0280 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -3.2136   -0.5039   -1.6286 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3549    0.3162   -0.6859 N   0  0  1  0  0  0  0  0  0  0  0  0
+   -3.0679    1.6548   -0.6464 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.5537    1.2913   -0.7955 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7141    0.1728    1.2988 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7040    0.0657   -0.3504 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8324   -0.3451    0.6271 C   0  0  0  0  0  0  0  0  0  0  0  0
+    6.6728    0.7211    0.0589 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4655    1.4117   -0.4236 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6261    1.4623    2.6523 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3318   -1.2829   -1.2650 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2288   -2.2458   -0.6111 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9156   -1.8573    1.6239 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8479   -2.4148    0.2527 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7320    0.4398    1.3401 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.5781   -1.4930    2.0364 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9728    0.2308    1.8919 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.7616   -1.9686    0.1568 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6216   -0.7297    0.7426 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.4339   -0.5620   -1.6388 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.9041   -1.5509   -1.6015 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.0892   -0.0898   -2.6346 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3843    0.3967   -1.0500 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8283    2.1688    0.2884 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7037    2.2354   -1.4999 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.9624    1.8189   -1.6654 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.1390    1.6053    0.0751 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7928   -0.4820   -1.3019 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2443   -1.3466    0.4784 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6303   -0.1846    1.6916 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.3103    0.4078   -0.6863 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.2130    1.2510    0.7574 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1390    2.1948    0.2689 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5807    1.8340   -1.4253 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 13 14  1  0
+ 14 15  1  0
+  5 16  2  0
+  3 17  1  0
+ 17 18  1  0
+ 18 19  1  0
+ 19 20  1  0
+ 16  1  1  0
+ 20 17  1  0
+ 13  8  1  0
+ 15 11  1  0
+  1 21  1  0
+  4 22  1  0
+  6 23  1  0
+  7 24  1  0
+  7 25  1  0
+  8 26  1  1
+  9 27  1  0
+  9 28  1  0
+ 10 29  1  0
+ 10 30  1  0
+ 11 31  1  6
+ 12 32  1  0
+ 12 33  1  0
+ 13 34  1  6
+ 14 35  1  0
+ 14 36  1  0
+ 15 37  1  0
+ 15 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+ 18 41  1  0
+ 19 42  1  0
+ 19 43  1  0
+ 20 44  1  0
+ 20 45  1  0
+M  CHG  3  10   1  13   1  19   1
+M  END
+>  <ligand_id>  (3) 
+ZINCk500000BlHFg
+
+>  <microstate_id>  (3) 
+ZINCk500000BlHFg_m02_t03
+
+>  <input_smiles>  (3) 
+c1nc(C2CNC2)cc(=NC[C@@H]2CN[C@H]3CCN2C3)[nH]1
+
+>  <standard_smiles>  (3) 
+c1nc(NC[C@@H]2C[NH2+][C@H]3CC[NH+]2C3)cc(C2C[NH2+]C2)n1
+
+>  <canonical_smiles>  (3) 
+c1nc(NC[C@@H]2C[NH2+][C@H]3CC[NH+]2C3)cc(C2C[NH2+]C2)n1
+
+>  <murcko_scaffold>  (3) 
+c1nc(NCC2C[NH2+]C3CC[NH+]2C3)cc(C2C[NH2+]C2)n1
+
+>  <pains_hit>  (3) 
+
+
+>  <reactive_flags>  (3) 
+
+
+>  <embed_ok>  (3) 
+True
+
+>  <minimized_energy>  (3) 
+215.7478
+
+>  <microstate_index>  (3) 
+2
+
+>  <tautomer_index>  (3) 
+3
+
+>  <mw>  (3) 
+277.396
+
+>  <logp>  (3) 
+-3.8481
+
+>  <tpsa>  (3) 
+75.47
+
+>  <formal_charge>  (3) 
+3
+
+>  <hbd>  (3) 
+4
+
+>  <hba>  (3) 
+3
+
+>  <rotatable_bonds>  (3) 
+4
+
+>  <heavy_atoms>  (3) 
+20
+
+>  <stage3_screen_rank>  (3) 
+4
+
+>  <zinc_id>  (3) 
+ZINCk500000BlHFg
+
+>  <smiles>  (3) 
+c1nc(C2CNC2)cc(=NC[C@@H]2CN[C@H]3CCN2C3)[nH]1
+
+>  <coverage_pct>  (3) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (3) 
+12.545621350695384
+
+>  <geometry_penalty_factor>  (3) 
+0.9808141616683976
+
+>  <weighted_coverage_pct>  (3) 
+12.30492308769144
+
+>  <features_matched>  (3) 
+3
+
+>  <lipinski>  (3) 
+1
+
+>  <chemistry_flagged>  (3) 
+nan
+
+>  <pains_alert>  (3) 
+nan
+
+>  <hotspot_weighted_pct>  (3) 
+32.391143412755326
+
+>  <hotspot_bits_matched>  (3) 
+11
+
+>  <hotspot_exact_matches>  (3) 
+6
+
+>  <hotspot_compatible_matches>  (3) 
+5
+
+>  <hotspot_exact_residue_count>  (3) 
+6
+
+>  <hotspot_group_count>  (3) 
+4
+
+>  <hotspot_required_groups_pass>  (3) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (3) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (3) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (3) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (3) 
+nan
+
+>  <pair_hash_overlap_pct>  (3) 
+18.122342766793636
+
+>  <pair_hash_recall_pct>  (3) 
+11.372026159736524
+
+>  <pair_hash_precision_pct>  (3) 
+44.59123916608105
+
+>  <cascade_score_pct>  (3) 
+21.68954292828406
+
+>  <shortlist_rank>  (3) 
+7
+
+>  <rerank_conformers>  (3) 
+16
+
+>  <best_conformer_id>  (3) 
+4
+
+>  <fit_rmsd_angstrom>  (3) 
+0.2600734999636376
+
+>  <mean_pair_distance_error_angstrom>  (3) 
+0.303357326548527
+
+>  <reference_feature_span_angstrom>  (3) 
+7.715355273738214
+
+>  <ligand_feature_span_angstrom>  (3) 
+7.857534462622745
+
+>  <rerank_query_feature_count>  (3) 
+28
+
+>  <pool_source_stage3_rank>  (3) 
+1
+
+>  <pool_source_hotspot_breadth>  (3) 
+1
+
+>  <pool_source_native_support>  (3) 
+1
+
+>  <pool_primary_source>  (3) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (3) 
+3
+
+>  <native_selection_rank>  (3) 
+3
+
+>  <source_input_rank>  (3) 
+3
+
+$$$$
+ZINCi700000BlIxa_m01_t01
+     RDKit          3D
+
+ 38 38  0  0  0  0  0  0  0  0999 V2000
+    6.0844    1.5573    0.8194 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0632    0.8483    0.3214 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2414    0.0106    1.1956 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.2103   -0.7024    0.7013 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8826   -0.6554   -0.7242 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7367   -1.4841   -1.2395 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4064   -0.9910   -0.7404 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4833   -1.6139    0.0479 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2888   -2.8731    0.5465 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6851   -1.1023    0.4573 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9746    0.3143    0.6674 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4833    0.5408    0.8831 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -3.6897    1.8665    1.3987 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.2810    0.3884   -0.4276 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -5.7850    0.3987   -0.1779 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9691    1.5028   -1.2790 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6551    0.1198   -1.5102 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7107    0.8495   -1.0143 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3346    1.5356    1.8747 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.6991    2.1820    0.1815 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4707   -0.0251    2.2552 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5996   -1.3123    1.3587 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7103   -1.4486   -2.3366 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9177   -2.5344   -0.9896 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1583    0.0052   -1.0999 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5644   -3.2110    0.2407 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0442   -1.6987    1.2019 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6305    0.9264   -0.1738 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4250    0.6650    1.5497 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8535   -0.1646    1.6360 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6734    2.4438    0.6071 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0025   -0.5351   -0.9466 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.0825   -0.4205    0.4836 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.3280    0.2949   -1.1237 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.1096    1.3464    0.2650 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.4043    1.3334   -2.1339 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5001    0.2191   -2.5794 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2478    1.4238   -1.6514 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  2  3
+  8  9  1  0
+  8 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 12 14  1  0
+ 14 15  1  0
+ 14 16  1  0
+  5 17  2  0
+ 17 18  1  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  3 21  1  0
+  4 22  1  0
+  6 23  1  0
+  6 24  1  0
+  7 25  1  0
+  9 26  1  0
+ 10 27  1  0
+ 11 28  1  0
+ 11 29  1  0
+ 12 30  1  1
+ 13 31  1  0
+ 14 32  1  6
+ 15 33  1  0
+ 15 34  1  0
+ 15 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 18 38  1  0
+M  END
+>  <ligand_id>  (4) 
+ZINCi700000BlIxa
+
+>  <microstate_id>  (4) 
+ZINCi700000BlIxa_m01_t01
+
+>  <input_smiles>  (4) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <standard_smiles>  (4) 
+C=C1C=CC(CC=C(O)NC[C@@H](O)[C@@H](C)O)=CN1
+
+>  <canonical_smiles>  (4) 
+C=C1C=CC(CC=C(O)NC[C@@H](O)[C@@H](C)O)=CN1
+
+>  <murcko_scaffold>  (4) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (4) 
+
+
+>  <reactive_flags>  (4) 
+
+
+>  <embed_ok>  (4) 
+True
+
+>  <minimized_energy>  (4) 
+-3.385
+
+>  <microstate_index>  (4) 
+1
+
+>  <tautomer_index>  (4) 
+1
+
+>  <mw>  (4) 
+252.314
+
+>  <logp>  (4) 
+0.6642
+
+>  <tpsa>  (4) 
+84.75
+
+>  <formal_charge>  (4) 
+0
+
+>  <hbd>  (4) 
+5
+
+>  <hba>  (4) 
+5
+
+>  <rotatable_bonds>  (4) 
+6
+
+>  <heavy_atoms>  (4) 
+18
+
+>  <stage3_screen_rank>  (4) 
+7
+
+>  <zinc_id>  (4) 
+ZINCi700000BlIxa
+
+>  <smiles>  (4) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <coverage_pct>  (4) 
+14.285714285714286
+
+>  <anchor_weighted_pct>  (4) 
+16.628609428741346
+
+>  <geometry_penalty_factor>  (4) 
+0.7292548231353096
+
+>  <weighted_coverage_pct>  (4) 
+12.126493627942912
+
+>  <features_matched>  (4) 
+4
+
+>  <lipinski>  (4) 
+1
+
+>  <chemistry_flagged>  (4) 
+nan
+
+>  <pains_alert>  (4) 
+nan
+
+>  <hotspot_weighted_pct>  (4) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (4) 
+11
+
+>  <hotspot_exact_matches>  (4) 
+7
+
+>  <hotspot_compatible_matches>  (4) 
+4
+
+>  <hotspot_exact_residue_count>  (4) 
+7
+
+>  <hotspot_group_count>  (4) 
+4
+
+>  <hotspot_required_groups_pass>  (4) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (4) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (4) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (4) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (4) 
+nan
+
+>  <pair_hash_overlap_pct>  (4) 
+17.827044956125768
+
+>  <pair_hash_recall_pct>  (4) 
+11.064599710611962
+
+>  <pair_hash_precision_pct>  (4) 
+45.848915482423344
+
+>  <cascade_score_pct>  (4) 
+21.32139778028405
+
+>  <shortlist_rank>  (4) 
+8
+
+>  <rerank_conformers>  (4) 
+16
+
+>  <best_conformer_id>  (4) 
+6
+
+>  <fit_rmsd_angstrom>  (4) 
+1.0863767333355854
+
+>  <mean_pair_distance_error_angstrom>  (4) 
+1.3403140284100588
+
+>  <reference_feature_span_angstrom>  (4) 
+9.711946045978635
+
+>  <ligand_feature_span_angstrom>  (4) 
+8.40295191186786
+
+>  <rerank_query_feature_count>  (4) 
+28
+
+>  <pool_source_stage3_rank>  (4) 
+1
+
+>  <pool_source_hotspot_breadth>  (4) 
+1
+
+>  <pool_source_native_support>  (4) 
+1
+
+>  <pool_primary_source>  (4) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (4) 
+4
+
+>  <native_selection_rank>  (4) 
+4
+
+>  <source_input_rank>  (4) 
+4
+
+$$$$
+ZINCi700000BlIxa_m01_t02
+     RDKit          3D
+
+ 38 38  0  0  0  0  0  0  0  0999 V2000
+    2.2614   -0.7082   -4.5578 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9950   -1.2602   -3.3670 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2092   -0.5059   -2.1316 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9369   -1.0533   -0.9308 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4103   -2.4125   -0.8305 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1181   -2.9904    0.5301 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2499   -2.5697    1.0693 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2430   -1.2042    1.7288 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7606   -0.6775    2.1989 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4970   -0.6347    1.8141 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6565    0.7297    2.2955 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3713    1.7504    1.1811 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -2.4214    1.6465    0.2007 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3334    3.1876    1.7321 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -0.9489    4.1989    0.6583 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.6414    3.5203    2.2171 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2403   -3.0958   -1.9792 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5170   -2.5467   -3.2097 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.6377    0.3052   -4.6462 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1082   -1.2583   -5.4791 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.6003    0.5038   -2.1929 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1147   -0.4917   -0.0192 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1256   -4.0862    0.4542 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9245   -2.7383    1.2295 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0047   -2.5998    0.2747 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5600   -3.2825    1.8435 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2025   -0.9556    1.1617 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9830    0.8836    3.1454 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.6916    0.8093    2.6443 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4260    1.5142    0.6799 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1659    2.1580    0.5774 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6289    3.2529    2.5687 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6867    4.2225   -0.1509 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9188    5.2091    1.0809 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0339    3.9722    0.2341 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5946    4.4277    2.5694 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8694   -4.1146   -2.0118 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3623   -3.1057   -4.0385 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  2  0
+  8 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 12 14  1  0
+ 14 15  1  0
+ 14 16  1  0
+  5 17  2  0
+ 17 18  1  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  3 21  1  0
+  4 22  1  0
+  6 23  1  0
+  6 24  1  0
+  7 25  1  0
+  7 26  1  0
+ 10 27  1  0
+ 11 28  1  0
+ 11 29  1  0
+ 12 30  1  6
+ 13 31  1  0
+ 14 32  1  1
+ 15 33  1  0
+ 15 34  1  0
+ 15 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 18 38  1  0
+M  END
+>  <ligand_id>  (5) 
+ZINCi700000BlIxa
+
+>  <microstate_id>  (5) 
+ZINCi700000BlIxa_m01_t02
+
+>  <input_smiles>  (5) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <standard_smiles>  (5) 
+C=C1C=CC(CCC(=O)NC[C@@H](O)[C@@H](C)O)=CN1
+
+>  <canonical_smiles>  (5) 
+C=C1C=CC(CCC(=O)NC[C@@H](O)[C@@H](C)O)=CN1
+
+>  <murcko_scaffold>  (5) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (5) 
+
+
+>  <reactive_flags>  (5) 
+
+
+>  <embed_ok>  (5) 
+True
+
+>  <minimized_energy>  (5) 
+10.2365
+
+>  <microstate_index>  (5) 
+1
+
+>  <tautomer_index>  (5) 
+2
+
+>  <mw>  (5) 
+252.314
+
+>  <logp>  (5) 
+0.1815
+
+>  <tpsa>  (5) 
+81.59
+
+>  <formal_charge>  (5) 
+0
+
+>  <hbd>  (5) 
+4
+
+>  <hba>  (5) 
+4
+
+>  <rotatable_bonds>  (5) 
+6
+
+>  <heavy_atoms>  (5) 
+18
+
+>  <stage3_screen_rank>  (5) 
+7
+
+>  <zinc_id>  (5) 
+ZINCi700000BlIxa
+
+>  <smiles>  (5) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <coverage_pct>  (5) 
+14.285714285714286
+
+>  <anchor_weighted_pct>  (5) 
+16.628609428741346
+
+>  <geometry_penalty_factor>  (5) 
+0.7292548231353096
+
+>  <weighted_coverage_pct>  (5) 
+12.126493627942912
+
+>  <features_matched>  (5) 
+4
+
+>  <lipinski>  (5) 
+1
+
+>  <chemistry_flagged>  (5) 
+nan
+
+>  <pains_alert>  (5) 
+nan
+
+>  <hotspot_weighted_pct>  (5) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (5) 
+11
+
+>  <hotspot_exact_matches>  (5) 
+7
+
+>  <hotspot_compatible_matches>  (5) 
+4
+
+>  <hotspot_exact_residue_count>  (5) 
+7
+
+>  <hotspot_group_count>  (5) 
+4
+
+>  <hotspot_required_groups_pass>  (5) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (5) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (5) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (5) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (5) 
+nan
+
+>  <pair_hash_overlap_pct>  (5) 
+17.827044956125768
+
+>  <pair_hash_recall_pct>  (5) 
+11.064599710611962
+
+>  <pair_hash_precision_pct>  (5) 
+45.848915482423344
+
+>  <cascade_score_pct>  (5) 
+21.32139778028405
+
+>  <shortlist_rank>  (5) 
+8
+
+>  <rerank_conformers>  (5) 
+16
+
+>  <best_conformer_id>  (5) 
+6
+
+>  <fit_rmsd_angstrom>  (5) 
+1.0863767333355854
+
+>  <mean_pair_distance_error_angstrom>  (5) 
+1.3403140284100588
+
+>  <reference_feature_span_angstrom>  (5) 
+9.711946045978635
+
+>  <ligand_feature_span_angstrom>  (5) 
+8.40295191186786
+
+>  <rerank_query_feature_count>  (5) 
+28
+
+>  <pool_source_stage3_rank>  (5) 
+1
+
+>  <pool_source_hotspot_breadth>  (5) 
+1
+
+>  <pool_source_native_support>  (5) 
+1
+
+>  <pool_primary_source>  (5) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (5) 
+4
+
+>  <native_selection_rank>  (5) 
+4
+
+>  <source_input_rank>  (5) 
+4
+
+$$$$
+ZINCi700000BlIxa_m01_t03
+     RDKit          3D
+
+ 38 38  0  0  0  0  0  0  0  0999 V2000
+    5.3882    0.3608    2.0292 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4630    0.2563    1.0666 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1507   -0.3244    1.3539 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2142   -0.4269    0.3904 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4826    0.0458   -0.9664 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4143   -0.1016   -2.0171 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4813    1.1053   -2.1106 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3988    1.2480   -0.9010 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2449    2.4297   -0.2808 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2184    0.3321   -0.5360 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0532    0.5185    0.6440 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.9360   -0.7202    0.8713 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -3.6879   -0.5197    2.0761 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8799   -1.0236   -0.3196 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -4.8687   -2.1382    0.0021 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.6406    0.1224   -0.7147 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7030    0.5594   -1.2132 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6646    0.6696   -0.2360 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1999    0.0246    3.0431 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3639    0.7875    1.8265 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9438   -0.6811    2.3570 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2484   -0.8709    0.6068 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8939   -0.2357   -2.9959 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8419   -1.0217   -1.8429 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0571    2.0260   -2.2623 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1764    0.9924   -2.9807 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7935    2.5106    0.5104 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.6833    1.4115    0.5506 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4268    0.6643    1.5335 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3007   -1.5999    1.0341 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.0620   -0.5338    2.8192 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.2847   -1.3299   -1.1880 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.5681   -1.8378    0.7897 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3520   -3.0505    0.3150 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.4775   -2.3692   -0.8791 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0230    0.7260   -1.1616 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0047    0.9233   -2.1897 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5611    1.0712   -0.4793 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  8 10  2  3
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 12 14  1  0
+ 14 15  1  0
+ 14 16  1  0
+  5 17  2  0
+ 17 18  1  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  3 21  1  0
+  4 22  1  0
+  6 23  1  0
+  6 24  1  0
+  7 25  1  0
+  7 26  1  0
+  9 27  1  0
+ 11 28  1  0
+ 11 29  1  0
+ 12 30  1  1
+ 13 31  1  0
+ 14 32  1  6
+ 15 33  1  0
+ 15 34  1  0
+ 15 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 18 38  1  0
+M  END
+>  <ligand_id>  (6) 
+ZINCi700000BlIxa
+
+>  <microstate_id>  (6) 
+ZINCi700000BlIxa_m01_t03
+
+>  <input_smiles>  (6) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <standard_smiles>  (6) 
+C=C1C=CC(CCC(O)=NC[C@@H](O)[C@@H](C)O)=CN1
+
+>  <canonical_smiles>  (6) 
+C=C1C=CC(CCC(O)=NC[C@@H](O)[C@@H](C)O)=CN1
+
+>  <murcko_scaffold>  (6) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (6) 
+
+
+>  <reactive_flags>  (6) 
+
+
+>  <embed_ok>  (6) 
+True
+
+>  <minimized_energy>  (6) 
+28.3593
+
+>  <microstate_index>  (6) 
+1
+
+>  <tautomer_index>  (6) 
+3
+
+>  <mw>  (6) 
+252.314
+
+>  <logp>  (6) 
+1.0218
+
+>  <tpsa>  (6) 
+85.08
+
+>  <formal_charge>  (6) 
+0
+
+>  <hbd>  (6) 
+4
+
+>  <hba>  (6) 
+4
+
+>  <rotatable_bonds>  (6) 
+6
+
+>  <heavy_atoms>  (6) 
+18
+
+>  <stage3_screen_rank>  (6) 
+7
+
+>  <zinc_id>  (6) 
+ZINCi700000BlIxa
+
+>  <smiles>  (6) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <coverage_pct>  (6) 
+14.285714285714286
+
+>  <anchor_weighted_pct>  (6) 
+16.628609428741346
+
+>  <geometry_penalty_factor>  (6) 
+0.7292548231353096
+
+>  <weighted_coverage_pct>  (6) 
+12.126493627942912
+
+>  <features_matched>  (6) 
+4
+
+>  <lipinski>  (6) 
+1
+
+>  <chemistry_flagged>  (6) 
+nan
+
+>  <pains_alert>  (6) 
+nan
+
+>  <hotspot_weighted_pct>  (6) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (6) 
+11
+
+>  <hotspot_exact_matches>  (6) 
+7
+
+>  <hotspot_compatible_matches>  (6) 
+4
+
+>  <hotspot_exact_residue_count>  (6) 
+7
+
+>  <hotspot_group_count>  (6) 
+4
+
+>  <hotspot_required_groups_pass>  (6) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (6) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (6) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (6) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (6) 
+nan
+
+>  <pair_hash_overlap_pct>  (6) 
+17.827044956125768
+
+>  <pair_hash_recall_pct>  (6) 
+11.064599710611962
+
+>  <pair_hash_precision_pct>  (6) 
+45.848915482423344
+
+>  <cascade_score_pct>  (6) 
+21.32139778028405
+
+>  <shortlist_rank>  (6) 
+8
+
+>  <rerank_conformers>  (6) 
+16
+
+>  <best_conformer_id>  (6) 
+6
+
+>  <fit_rmsd_angstrom>  (6) 
+1.0863767333355854
+
+>  <mean_pair_distance_error_angstrom>  (6) 
+1.3403140284100588
+
+>  <reference_feature_span_angstrom>  (6) 
+9.711946045978635
+
+>  <ligand_feature_span_angstrom>  (6) 
+8.40295191186786
+
+>  <rerank_query_feature_count>  (6) 
+28
+
+>  <pool_source_stage3_rank>  (6) 
+1
+
+>  <pool_source_hotspot_breadth>  (6) 
+1
+
+>  <pool_source_native_support>  (6) 
+1
+
+>  <pool_primary_source>  (6) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (6) 
+4
+
+>  <native_selection_rank>  (6) 
+4
+
+>  <source_input_rank>  (6) 
+4
+
+$$$$
+ZINCi700000BlIxa_m01_t04
+     RDKit          3D
+
+ 38 38  0  0  0  0  0  0  0  0999 V2000
+    5.4780   -2.3247    1.3111 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5322   -1.5821    0.4162 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.1951   -2.1029   -0.8296 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3150   -1.3913   -1.6417 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7948   -0.1753   -1.1970 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8320    0.6303   -2.0266 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4141    0.4760   -1.5561 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3367    1.4549   -1.0391 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1662    2.7196   -0.9329 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6359    1.3014   -0.6289 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1111    1.8039    0.6725 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.5814    1.3957    0.9010 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -4.3591    1.8342   -0.2231 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7557   -0.1261    1.1092 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -5.2188   -0.5075    1.3100 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.2448   -0.8456   -0.0232 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1841    0.2618    0.0649 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0362   -0.4097    0.8743 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6375   -1.7805    2.2476 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.4477   -2.4466    0.8186 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0716   -3.3111    1.5553 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6088   -3.0476   -1.1666 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0417   -1.7883   -2.6156 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1576    1.6776   -2.0275 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8857    0.3087   -3.0745 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0092   -0.5199   -1.6545 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6288    3.2779   -0.9223 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9354    0.3199   -0.7306 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0501    2.8981    0.6719 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4796    1.4219    1.4827 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9622    1.9215    1.7838 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8500    1.5338   -1.0043 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1740   -0.4397    1.9834 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3080   -1.5806    1.5117 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.8090   -0.3113    0.4085 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6601    0.0385    2.1491 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4940   -1.7807    0.0922 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8058    1.1958    0.4744 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  2  0
+  3  4  1  0
+  4  5  2  0
+  5  6  1  0
+  6  7  1  0
+  7  8  2  3
+  8  9  1  0
+  8 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 12 14  1  0
+ 14 15  1  0
+ 14 16  1  0
+  5 17  1  0
+ 17 18  2  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  3 22  1  0
+  4 23  1  0
+  6 24  1  0
+  6 25  1  0
+  7 26  1  0
+  9 27  1  0
+ 10 28  1  0
+ 11 29  1  0
+ 11 30  1  0
+ 12 31  1  1
+ 13 32  1  0
+ 14 33  1  1
+ 15 34  1  0
+ 15 35  1  0
+ 15 36  1  0
+ 16 37  1  0
+ 17 38  1  0
+M  END
+>  <ligand_id>  (7) 
+ZINCi700000BlIxa
+
+>  <microstate_id>  (7) 
+ZINCi700000BlIxa_m01_t04
+
+>  <input_smiles>  (7) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <standard_smiles>  (7) 
+Cc1ccc(CC=C(O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <canonical_smiles>  (7) 
+Cc1ccc(CC=C(O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <murcko_scaffold>  (7) 
+c1ccncc1
+
+>  <pains_hit>  (7) 
+
+
+>  <reactive_flags>  (7) 
+
+
+>  <embed_ok>  (7) 
+True
+
+>  <minimized_energy>  (7) 
+5.2402
+
+>  <microstate_index>  (7) 
+1
+
+>  <tautomer_index>  (7) 
+4
+
+>  <mw>  (7) 
+252.314
+
+>  <logp>  (7) 
+0.6632
+
+>  <tpsa>  (7) 
+85.61
+
+>  <formal_charge>  (7) 
+0
+
+>  <hbd>  (7) 
+4
+
+>  <hba>  (7) 
+5
+
+>  <rotatable_bonds>  (7) 
+6
+
+>  <heavy_atoms>  (7) 
+18
+
+>  <stage3_screen_rank>  (7) 
+7
+
+>  <zinc_id>  (7) 
+ZINCi700000BlIxa
+
+>  <smiles>  (7) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <coverage_pct>  (7) 
+14.285714285714286
+
+>  <anchor_weighted_pct>  (7) 
+16.628609428741346
+
+>  <geometry_penalty_factor>  (7) 
+0.7292548231353096
+
+>  <weighted_coverage_pct>  (7) 
+12.126493627942912
+
+>  <features_matched>  (7) 
+4
+
+>  <lipinski>  (7) 
+1
+
+>  <chemistry_flagged>  (7) 
+nan
+
+>  <pains_alert>  (7) 
+nan
+
+>  <hotspot_weighted_pct>  (7) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (7) 
+11
+
+>  <hotspot_exact_matches>  (7) 
+7
+
+>  <hotspot_compatible_matches>  (7) 
+4
+
+>  <hotspot_exact_residue_count>  (7) 
+7
+
+>  <hotspot_group_count>  (7) 
+4
+
+>  <hotspot_required_groups_pass>  (7) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (7) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (7) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (7) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (7) 
+nan
+
+>  <pair_hash_overlap_pct>  (7) 
+17.827044956125768
+
+>  <pair_hash_recall_pct>  (7) 
+11.064599710611962
+
+>  <pair_hash_precision_pct>  (7) 
+45.848915482423344
+
+>  <cascade_score_pct>  (7) 
+21.32139778028405
+
+>  <shortlist_rank>  (7) 
+8
+
+>  <rerank_conformers>  (7) 
+16
+
+>  <best_conformer_id>  (7) 
+6
+
+>  <fit_rmsd_angstrom>  (7) 
+1.0863767333355854
+
+>  <mean_pair_distance_error_angstrom>  (7) 
+1.3403140284100588
+
+>  <reference_feature_span_angstrom>  (7) 
+9.711946045978635
+
+>  <ligand_feature_span_angstrom>  (7) 
+8.40295191186786
+
+>  <rerank_query_feature_count>  (7) 
+28
+
+>  <pool_source_stage3_rank>  (7) 
+1
+
+>  <pool_source_hotspot_breadth>  (7) 
+1
+
+>  <pool_source_native_support>  (7) 
+1
+
+>  <pool_primary_source>  (7) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (7) 
+4
+
+>  <native_selection_rank>  (7) 
+4
+
+>  <source_input_rank>  (7) 
+4
+
+$$$$
+ZINCi700000BlIxa_m01_t05
+     RDKit          3D
+
+ 38 38  0  0  0  0  0  0  0  0999 V2000
+    6.7105    0.2375   -0.4254 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2590   -0.1312   -0.4915 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.8149   -1.3240    0.0705 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4608   -1.6409   -0.0060 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5815   -0.7664   -0.6448 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1088   -1.0569   -0.7285 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3578   -0.4955    0.4760 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1251   -0.7885    0.3938 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6523   -1.3749   -0.5446 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8251   -0.3208    1.4808 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.2751   -0.3941    1.5708 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9627    0.8894    1.0865 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -3.3909    2.0116    1.7905 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8628    1.1622   -0.4259 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -4.6230    0.1526   -1.2730 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.4280    2.4684   -0.6524 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1167    0.4024   -1.1740 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4253    0.7365   -1.1104 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8907    1.2009   -0.9131 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.0331    0.3179    0.6173 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.3165   -0.5197   -0.9326 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5086   -1.9988    0.5613 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1007   -2.5687    0.4313 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7057   -0.6372   -1.6594 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9541   -2.1412   -0.8030 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7449   -0.9329    1.4044 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4904    0.5918    0.5341 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3854    0.3634    2.0867 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4887   -0.5300    2.6370 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6424   -1.2760    1.0379 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.0202    0.8579    1.3760 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7319    2.7920    1.3048 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8159    1.2255   -0.7392 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.2235   -0.8587   -1.1687 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.5751    0.4308   -2.3316 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6846    0.1390   -1.0029 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3569    2.6453   -1.6079 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4897    1.1315   -1.6806 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  2  0
+  3  4  1  0
+  4  5  2  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  2  0
+  8 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 12 14  1  0
+ 14 15  1  0
+ 14 16  1  0
+  5 17  1  0
+ 17 18  2  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  3 22  1  0
+  4 23  1  0
+  6 24  1  0
+  6 25  1  0
+  7 26  1  0
+  7 27  1  0
+ 10 28  1  0
+ 11 29  1  0
+ 11 30  1  0
+ 12 31  1  1
+ 13 32  1  0
+ 14 33  1  6
+ 15 34  1  0
+ 15 35  1  0
+ 15 36  1  0
+ 16 37  1  0
+ 17 38  1  0
+M  END
+>  <ligand_id>  (8) 
+ZINCi700000BlIxa
+
+>  <microstate_id>  (8) 
+ZINCi700000BlIxa_m01_t05
+
+>  <input_smiles>  (8) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <standard_smiles>  (8) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <canonical_smiles>  (8) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <murcko_scaffold>  (8) 
+c1ccncc1
+
+>  <pains_hit>  (8) 
+
+
+>  <reactive_flags>  (8) 
+
+
+>  <embed_ok>  (8) 
+True
+
+>  <minimized_energy>  (8) 
+26.5371
+
+>  <microstate_index>  (8) 
+1
+
+>  <tautomer_index>  (8) 
+5
+
+>  <mw>  (8) 
+252.314
+
+>  <logp>  (8) 
+0.1805
+
+>  <tpsa>  (8) 
+82.45
+
+>  <formal_charge>  (8) 
+0
+
+>  <hbd>  (8) 
+3
+
+>  <hba>  (8) 
+4
+
+>  <rotatable_bonds>  (8) 
+6
+
+>  <heavy_atoms>  (8) 
+18
+
+>  <stage3_screen_rank>  (8) 
+7
+
+>  <zinc_id>  (8) 
+ZINCi700000BlIxa
+
+>  <smiles>  (8) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <coverage_pct>  (8) 
+14.285714285714286
+
+>  <anchor_weighted_pct>  (8) 
+16.628609428741346
+
+>  <geometry_penalty_factor>  (8) 
+0.7292548231353096
+
+>  <weighted_coverage_pct>  (8) 
+12.126493627942912
+
+>  <features_matched>  (8) 
+4
+
+>  <lipinski>  (8) 
+1
+
+>  <chemistry_flagged>  (8) 
+nan
+
+>  <pains_alert>  (8) 
+nan
+
+>  <hotspot_weighted_pct>  (8) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (8) 
+11
+
+>  <hotspot_exact_matches>  (8) 
+7
+
+>  <hotspot_compatible_matches>  (8) 
+4
+
+>  <hotspot_exact_residue_count>  (8) 
+7
+
+>  <hotspot_group_count>  (8) 
+4
+
+>  <hotspot_required_groups_pass>  (8) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (8) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (8) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (8) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (8) 
+nan
+
+>  <pair_hash_overlap_pct>  (8) 
+17.827044956125768
+
+>  <pair_hash_recall_pct>  (8) 
+11.064599710611962
+
+>  <pair_hash_precision_pct>  (8) 
+45.848915482423344
+
+>  <cascade_score_pct>  (8) 
+21.32139778028405
+
+>  <shortlist_rank>  (8) 
+8
+
+>  <rerank_conformers>  (8) 
+16
+
+>  <best_conformer_id>  (8) 
+6
+
+>  <fit_rmsd_angstrom>  (8) 
+1.0863767333355854
+
+>  <mean_pair_distance_error_angstrom>  (8) 
+1.3403140284100588
+
+>  <reference_feature_span_angstrom>  (8) 
+9.711946045978635
+
+>  <ligand_feature_span_angstrom>  (8) 
+8.40295191186786
+
+>  <rerank_query_feature_count>  (8) 
+28
+
+>  <pool_source_stage3_rank>  (8) 
+1
+
+>  <pool_source_hotspot_breadth>  (8) 
+1
+
+>  <pool_source_native_support>  (8) 
+1
+
+>  <pool_primary_source>  (8) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (8) 
+4
+
+>  <native_selection_rank>  (8) 
+4
+
+>  <source_input_rank>  (8) 
+4
+
+$$$$
+ZINCi700000BlIxa_m01_t06
+     RDKit          3D
+
+ 38 38  0  0  0  0  0  0  0  0999 V2000
+    6.4862   -1.3135   -1.9125 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2173   -0.9552   -1.1993 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.3766   -1.9565   -0.7235 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.2041   -1.5941   -0.0650 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8981   -0.2442    0.1088 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6334    0.1911    0.7936 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4795    0.3338   -0.1917 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7577    0.7571    0.5405 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8614    2.0906    0.6620 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6124   -0.0904    0.9888 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7100    0.3701    1.8542 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9141    0.8948    1.0569 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -3.4914    2.0558    0.3189 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.5098   -0.1627    0.1047 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -5.8215    0.3036   -0.5138 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.5936   -0.3975   -0.9704 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7955    0.6847   -0.4056 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9397    0.3606   -1.0492 N   0  0  0  0  0  0  0  0  0  0  0  0
+    7.0296   -0.4134   -2.2176 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2631   -1.8977   -2.8106 H   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1373   -1.8981   -1.2551 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6259   -3.0033   -0.8622 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5365   -2.3667    0.3079 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3762   -0.5307    1.5800 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8077    1.1402    1.3174 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7084    1.0725   -0.9690 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2789   -0.6156   -0.7026 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7822    2.3558    0.8574 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3494    1.1392    2.5490 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.0253   -0.4773    2.4737 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.6790    1.2229    1.7697 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.3964    1.7467   -0.6089 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.6765   -1.1083    0.6324 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.2143   -0.4626   -1.1912 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6821    1.2083   -1.1153 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.5731    0.5048    0.2555 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7598   -0.6978   -0.5488 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6160    1.7529   -0.3148 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  2  0
+  3  4  1  0
+  4  5  2  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  8 10  2  3
+ 10 11  1  0
+ 11 12  1  0
+ 12 13  1  0
+ 12 14  1  0
+ 14 15  1  0
+ 14 16  1  0
+  5 17  1  0
+ 17 18  2  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  3 22  1  0
+  4 23  1  0
+  6 24  1  0
+  6 25  1  0
+  7 26  1  0
+  7 27  1  0
+  9 28  1  0
+ 11 29  1  0
+ 11 30  1  0
+ 12 31  1  1
+ 13 32  1  0
+ 14 33  1  1
+ 15 34  1  0
+ 15 35  1  0
+ 15 36  1  0
+ 16 37  1  0
+ 17 38  1  0
+M  END
+>  <ligand_id>  (9) 
+ZINCi700000BlIxa
+
+>  <microstate_id>  (9) 
+ZINCi700000BlIxa_m01_t06
+
+>  <input_smiles>  (9) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <standard_smiles>  (9) 
+Cc1ccc(CCC(O)=NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <canonical_smiles>  (9) 
+Cc1ccc(CCC(O)=NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <murcko_scaffold>  (9) 
+c1ccncc1
+
+>  <pains_hit>  (9) 
+
+
+>  <reactive_flags>  (9) 
+
+
+>  <embed_ok>  (9) 
+True
+
+>  <minimized_energy>  (9) 
+31.9642
+
+>  <microstate_index>  (9) 
+1
+
+>  <tautomer_index>  (9) 
+6
+
+>  <mw>  (9) 
+252.314
+
+>  <logp>  (9) 
+1.0208
+
+>  <tpsa>  (9) 
+85.94
+
+>  <formal_charge>  (9) 
+0
+
+>  <hbd>  (9) 
+3
+
+>  <hba>  (9) 
+4
+
+>  <rotatable_bonds>  (9) 
+6
+
+>  <heavy_atoms>  (9) 
+18
+
+>  <stage3_screen_rank>  (9) 
+7
+
+>  <zinc_id>  (9) 
+ZINCi700000BlIxa
+
+>  <smiles>  (9) 
+Cc1ccc(CCC(=O)NC[C@@H](O)[C@@H](C)O)cn1
+
+>  <coverage_pct>  (9) 
+14.285714285714286
+
+>  <anchor_weighted_pct>  (9) 
+16.628609428741346
+
+>  <geometry_penalty_factor>  (9) 
+0.7292548231353096
+
+>  <weighted_coverage_pct>  (9) 
+12.126493627942912
+
+>  <features_matched>  (9) 
+4
+
+>  <lipinski>  (9) 
+1
+
+>  <chemistry_flagged>  (9) 
+nan
+
+>  <pains_alert>  (9) 
+nan
+
+>  <hotspot_weighted_pct>  (9) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (9) 
+11
+
+>  <hotspot_exact_matches>  (9) 
+7
+
+>  <hotspot_compatible_matches>  (9) 
+4
+
+>  <hotspot_exact_residue_count>  (9) 
+7
+
+>  <hotspot_group_count>  (9) 
+4
+
+>  <hotspot_required_groups_pass>  (9) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (9) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (9) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (9) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (9) 
+nan
+
+>  <pair_hash_overlap_pct>  (9) 
+17.827044956125768
+
+>  <pair_hash_recall_pct>  (9) 
+11.064599710611962
+
+>  <pair_hash_precision_pct>  (9) 
+45.848915482423344
+
+>  <cascade_score_pct>  (9) 
+21.32139778028405
+
+>  <shortlist_rank>  (9) 
+8
+
+>  <rerank_conformers>  (9) 
+16
+
+>  <best_conformer_id>  (9) 
+6
+
+>  <fit_rmsd_angstrom>  (9) 
+1.0863767333355854
+
+>  <mean_pair_distance_error_angstrom>  (9) 
+1.3403140284100588
+
+>  <reference_feature_span_angstrom>  (9) 
+9.711946045978635
+
+>  <ligand_feature_span_angstrom>  (9) 
+8.40295191186786
+
+>  <rerank_query_feature_count>  (9) 
+28
+
+>  <pool_source_stage3_rank>  (9) 
+1
+
+>  <pool_source_hotspot_breadth>  (9) 
+1
+
+>  <pool_source_native_support>  (9) 
+1
+
+>  <pool_primary_source>  (9) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (9) 
+4
+
+>  <native_selection_rank>  (9) 
+4
+
+>  <source_input_rank>  (9) 
+4
+
+$$$$
+ZINCi700000BlIsp_m01_t01
+     RDKit          3D
+
+ 39 39  0  0  0  0  0  0  0  0999 V2000
+    5.2574   -0.1490    2.8135 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4608   -0.2818    1.5501 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7273   -1.2275    0.6277 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9102   -1.2978   -0.5690 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9000   -0.4289   -0.7627 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5991    0.6097    0.2257 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6056    1.5068    0.0814 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6348    1.6721   -1.0595 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8305    1.4480   -0.6436 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0656    0.0536   -0.2434 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4568   -0.2375    0.0898 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -2.8469    0.5854    1.1813 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4875   -0.1174   -1.0979 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -2.9604   -0.7568   -2.3223 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.8672   -0.6263   -0.6721 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6100   -1.5502   -1.2941 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.4034   -0.0476    0.4732 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4193    0.6102    1.3458 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7233    0.8405    2.8668 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6086   -0.2738    3.6867 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0536   -0.8980    2.8781 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5310   -1.9448    0.7465 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.1332   -2.0695   -1.2970 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3016   -0.5094   -1.6604 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4635    2.2325    0.8799 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7332    2.7015   -1.4273 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8733    1.0301   -1.9124 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4618    1.7180   -1.4971 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0762    2.1300    0.1789 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8465   -0.5307   -1.0554 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4835   -1.2719    0.4555 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0306    0.6139    1.7150 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6210    0.9490   -1.3229 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.9297   -1.7642   -2.1701 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6315   -0.5982   -3.0730 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.5836   -1.8197   -0.8940 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.2959   -2.0569   -2.1973 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.6887    0.4527    0.9282 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.2416    1.3035    2.0607 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  2  0
+  3  4  1  0
+  4  5  2  0
+  5  6  1  0
+  6  7  2  3
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 11 13  1  0
+ 13 14  1  0
+ 13 15  1  0
+ 15 16  2  0
+ 15 17  1  0
+  6 18  1  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  3 22  1  0
+  4 23  1  0
+  5 24  1  0
+  7 25  1  0
+  8 26  1  0
+  8 27  1  0
+  9 28  1  0
+  9 29  1  0
+ 10 30  1  0
+ 11 31  1  1
+ 12 32  1  0
+ 13 33  1  6
+ 14 34  1  0
+ 14 35  1  0
+ 16 36  1  0
+ 16 37  1  0
+ 17 38  1  0
+ 18 39  1  0
+M  END
+>  <ligand_id>  (10) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (10) 
+ZINCi700000BlIsp_m01_t01
+
+>  <input_smiles>  (10) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (10) 
+C=C(O)C(N)C(O)NCCC=C1C=CC=C(C)N1
+
+>  <canonical_smiles>  (10) 
+C=C(O)C(N)C(O)NCCC=C1C=CC=C(C)N1
+
+>  <murcko_scaffold>  (10) 
+[CH]=C1C=CC=CN1
+
+>  <pains_hit>  (10) 
+
+
+>  <reactive_flags>  (10) 
+
+
+>  <embed_ok>  (10) 
+True
+
+>  <minimized_energy>  (10) 
+29.9686
+
+>  <microstate_index>  (10) 
+1
+
+>  <tautomer_index>  (10) 
+1
+
+>  <mw>  (10) 
+251.33
+
+>  <logp>  (10) 
+0.6306
+
+>  <tpsa>  (10) 
+90.54
+
+>  <formal_charge>  (10) 
+0
+
+>  <hbd>  (10) 
+5
+
+>  <hba>  (10) 
+5
+
+>  <rotatable_bonds>  (10) 
+6
+
+>  <heavy_atoms>  (10) 
+18
+
+>  <stage3_screen_rank>  (10) 
+5
+
+>  <zinc_id>  (10) 
+ZINCi700000BlIsp
+
+>  <smiles>  (10) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (10) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (10) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (10) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (10) 
+12.293956789344508
+
+>  <features_matched>  (10) 
+3
+
+>  <lipinski>  (10) 
+1
+
+>  <chemistry_flagged>  (10) 
+nan
+
+>  <pains_alert>  (10) 
+nan
+
+>  <hotspot_weighted_pct>  (10) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (10) 
+11
+
+>  <hotspot_exact_matches>  (10) 
+7
+
+>  <hotspot_compatible_matches>  (10) 
+4
+
+>  <hotspot_exact_residue_count>  (10) 
+7
+
+>  <hotspot_group_count>  (10) 
+4
+
+>  <hotspot_required_groups_pass>  (10) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (10) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (10) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (10) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (10) 
+nan
+
+>  <pair_hash_overlap_pct>  (10) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (10) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (10) 
+38.88888888888887
+
+>  <cascade_score_pct>  (10) 
+19.387998533478072
+
+>  <shortlist_rank>  (10) 
+14
+
+>  <rerank_conformers>  (10) 
+16
+
+>  <best_conformer_id>  (10) 
+15
+
+>  <fit_rmsd_angstrom>  (10) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (10) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (10) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (10) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (10) 
+28
+
+>  <pool_source_stage3_rank>  (10) 
+1
+
+>  <pool_source_hotspot_breadth>  (10) 
+1
+
+>  <pool_source_native_support>  (10) 
+1
+
+>  <pool_primary_source>  (10) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (10) 
+5
+
+>  <native_selection_rank>  (10) 
+5
+
+>  <source_input_rank>  (10) 
+5
+
+$$$$
+ZINCi700000BlIsp_m01_t02
+     RDKit          3D
+
+ 39 39  0  0  0  0  0  0  0  0999 V2000
+    4.9731   -0.0066    2.0277 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4173   -0.2189    0.6519 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1138    0.2388   -0.4611 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5695    0.0285   -1.7231 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3512   -0.6310   -1.8387 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7135   -1.0653   -0.6811 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3807   -1.7632   -0.7538 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2009   -0.7992   -0.9091 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0073    0.1007    0.3177 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1637    0.9745    0.1591 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4116    0.2961    0.5293 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -2.5053    0.3355    1.9429 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6347    1.0449   -0.1269 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -3.3732    1.3427   -1.5650 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.9043    0.2194   -0.0618 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7747    0.2180    0.9521 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.1875   -0.5144   -1.2018 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.2294   -0.8621    0.5553 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.9468   -0.4974    2.1222 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0879    1.0632    2.2282 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.3051   -0.4258    2.7870 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0635    0.7517   -0.3511 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0903    0.3774   -2.6099 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9095   -0.7997   -2.8153 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3929   -2.4631   -1.5986 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2423   -2.3757    0.1459 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3378   -0.1776   -1.8033 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6994   -1.4009   -1.0803 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0544   -0.4900    1.2395 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8819    0.7529    0.4205 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0720    1.7233    0.8483 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4088   -0.7502    0.2008 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.2266   -0.2742    2.1783 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7870    1.9952    0.4019 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7889    2.2530   -1.7663 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3567    1.5037   -1.6131 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6172    0.8153    1.8433 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.6805   -0.3780    0.8950 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.5683   -0.1413   -1.8733 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  2  0
+  3  4  1  0
+  4  5  2  0
+  5  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 11 13  1  0
+ 13 14  1  0
+ 13 15  1  0
+ 15 16  2  0
+ 15 17  1  0
+  6 18  2  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  3 22  1  0
+  4 23  1  0
+  5 24  1  0
+  7 25  1  0
+  7 26  1  0
+  8 27  1  0
+  8 28  1  0
+  9 29  1  0
+  9 30  1  0
+ 10 31  1  0
+ 11 32  1  6
+ 12 33  1  0
+ 13 34  1  1
+ 14 35  1  0
+ 14 36  1  0
+ 16 37  1  0
+ 16 38  1  0
+ 17 39  1  0
+M  END
+>  <ligand_id>  (11) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (11) 
+ZINCi700000BlIsp_m01_t02
+
+>  <input_smiles>  (11) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (11) 
+C=C(O)C(N)C(O)NCCCc1cccc(C)n1
+
+>  <canonical_smiles>  (11) 
+C=C(O)C(N)C(O)NCCCc1cccc(C)n1
+
+>  <murcko_scaffold>  (11) 
+c1ccncc1
+
+>  <pains_hit>  (11) 
+
+
+>  <reactive_flags>  (11) 
+
+
+>  <embed_ok>  (11) 
+True
+
+>  <minimized_energy>  (11) 
+28.5864
+
+>  <microstate_index>  (11) 
+1
+
+>  <tautomer_index>  (11) 
+2
+
+>  <mw>  (11) 
+251.33
+
+>  <logp>  (11) 
+0.6296
+
+>  <tpsa>  (11) 
+91.4
+
+>  <formal_charge>  (11) 
+0
+
+>  <hbd>  (11) 
+4
+
+>  <hba>  (11) 
+5
+
+>  <rotatable_bonds>  (11) 
+7
+
+>  <heavy_atoms>  (11) 
+18
+
+>  <stage3_screen_rank>  (11) 
+5
+
+>  <zinc_id>  (11) 
+ZINCi700000BlIsp
+
+>  <smiles>  (11) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (11) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (11) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (11) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (11) 
+12.293956789344508
+
+>  <features_matched>  (11) 
+3
+
+>  <lipinski>  (11) 
+1
+
+>  <chemistry_flagged>  (11) 
+nan
+
+>  <pains_alert>  (11) 
+nan
+
+>  <hotspot_weighted_pct>  (11) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (11) 
+11
+
+>  <hotspot_exact_matches>  (11) 
+7
+
+>  <hotspot_compatible_matches>  (11) 
+4
+
+>  <hotspot_exact_residue_count>  (11) 
+7
+
+>  <hotspot_group_count>  (11) 
+4
+
+>  <hotspot_required_groups_pass>  (11) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (11) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (11) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (11) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (11) 
+nan
+
+>  <pair_hash_overlap_pct>  (11) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (11) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (11) 
+38.88888888888887
+
+>  <cascade_score_pct>  (11) 
+19.387998533478072
+
+>  <shortlist_rank>  (11) 
+14
+
+>  <rerank_conformers>  (11) 
+16
+
+>  <best_conformer_id>  (11) 
+15
+
+>  <fit_rmsd_angstrom>  (11) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (11) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (11) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (11) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (11) 
+28
+
+>  <pool_source_stage3_rank>  (11) 
+1
+
+>  <pool_source_hotspot_breadth>  (11) 
+1
+
+>  <pool_source_native_support>  (11) 
+1
+
+>  <pool_primary_source>  (11) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (11) 
+5
+
+>  <native_selection_rank>  (11) 
+5
+
+>  <source_input_rank>  (11) 
+5
+
+$$$$
+ZINCi700000BlIsp_m01_t03
+     RDKit          3D
+
+ 39 39  0  0  0  0  0  0  0  0999 V2000
+    6.3806   -0.6998   -0.3922 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2771    0.0531   -0.4902 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3314    1.3725   -1.1144 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2214    2.1258   -1.2154 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9498    1.6408   -0.7058 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8820    0.4238   -0.1239 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6204   -0.1959    0.4477 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3486    0.6622    0.4091 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8409   -0.0329    1.0731 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2040   -1.2260    0.3188 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2712   -1.2694   -0.3877 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4692   -2.4347   -1.0332 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.3936   -0.2716   -0.6398 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -2.8497    1.0499   -1.0403 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3445   -0.1471    0.5704 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -5.0426   -1.4604    0.9080 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3581    0.8254    0.2557 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0388   -0.3440   -0.0246 N   0  0  0  0  0  0  0  0  0  0  0  0
+    7.3398   -0.3602   -0.7678 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3521   -1.6803    0.0690 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2782    1.7377   -1.4965 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.2480    3.1063   -1.6769 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0899    2.2896   -0.8188 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4364   -1.1338   -0.0919 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8228   -0.4673    1.4924 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5295    1.6068    0.9365 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0977    0.9075   -0.6298 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6590    0.6801    1.1914 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5691   -0.3389    2.0902 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7000   -2.9942   -0.8288 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9804   -0.6225   -1.4993 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4741    0.9722   -1.9844 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6522    1.6830   -1.0988 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8102    0.2141    1.4552 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3308   -2.2302    1.2190 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6122   -1.8322    0.0492 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.7627   -1.3123    1.7202 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.8847    0.9602    1.0629 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9646   -1.2574    0.4047 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  2  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  2  3
+ 11 12  1  0
+ 11 13  1  0
+ 13 14  1  0
+ 13 15  1  0
+ 15 16  1  0
+ 15 17  1  0
+  6 18  1  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  3 21  1  0
+  4 22  1  0
+  5 23  1  0
+  7 24  1  0
+  7 25  1  0
+  8 26  1  0
+  8 27  1  0
+  9 28  1  0
+  9 29  1  0
+ 12 30  1  0
+ 13 31  1  6
+ 14 32  1  0
+ 14 33  1  0
+ 15 34  1  1
+ 16 35  1  0
+ 16 36  1  0
+ 16 37  1  0
+ 17 38  1  0
+ 18 39  1  0
+M  END
+>  <ligand_id>  (12) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (12) 
+ZINCi700000BlIsp_m01_t03
+
+>  <input_smiles>  (12) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (12) 
+C=C1C=CC=C(CCCN=C(O)C(N)C(C)O)N1
+
+>  <canonical_smiles>  (12) 
+C=C1C=CC=C(CCCN=C(O)C(N)C(C)O)N1
+
+>  <murcko_scaffold>  (12) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (12) 
+
+
+>  <reactive_flags>  (12) 
+
+
+>  <embed_ok>  (12) 
+True
+
+>  <minimized_energy>  (12) 
+41.7877
+
+>  <microstate_index>  (12) 
+1
+
+>  <tautomer_index>  (12) 
+3
+
+>  <mw>  (12) 
+251.33
+
+>  <logp>  (12) 
+0.9882
+
+>  <tpsa>  (12) 
+90.87
+
+>  <formal_charge>  (12) 
+0
+
+>  <hbd>  (12) 
+4
+
+>  <hba>  (12) 
+4
+
+>  <rotatable_bonds>  (12) 
+6
+
+>  <heavy_atoms>  (12) 
+18
+
+>  <stage3_screen_rank>  (12) 
+5
+
+>  <zinc_id>  (12) 
+ZINCi700000BlIsp
+
+>  <smiles>  (12) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (12) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (12) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (12) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (12) 
+12.293956789344508
+
+>  <features_matched>  (12) 
+3
+
+>  <lipinski>  (12) 
+1
+
+>  <chemistry_flagged>  (12) 
+nan
+
+>  <pains_alert>  (12) 
+nan
+
+>  <hotspot_weighted_pct>  (12) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (12) 
+11
+
+>  <hotspot_exact_matches>  (12) 
+7
+
+>  <hotspot_compatible_matches>  (12) 
+4
+
+>  <hotspot_exact_residue_count>  (12) 
+7
+
+>  <hotspot_group_count>  (12) 
+4
+
+>  <hotspot_required_groups_pass>  (12) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (12) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (12) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (12) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (12) 
+nan
+
+>  <pair_hash_overlap_pct>  (12) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (12) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (12) 
+38.88888888888887
+
+>  <cascade_score_pct>  (12) 
+19.387998533478072
+
+>  <shortlist_rank>  (12) 
+14
+
+>  <rerank_conformers>  (12) 
+16
+
+>  <best_conformer_id>  (12) 
+15
+
+>  <fit_rmsd_angstrom>  (12) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (12) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (12) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (12) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (12) 
+28
+
+>  <pool_source_stage3_rank>  (12) 
+1
+
+>  <pool_source_hotspot_breadth>  (12) 
+1
+
+>  <pool_source_native_support>  (12) 
+1
+
+>  <pool_primary_source>  (12) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (12) 
+5
+
+>  <native_selection_rank>  (12) 
+5
+
+>  <source_input_rank>  (12) 
+5
+
+$$$$
+ZINCi700000BlIsp_m01_t04
+     RDKit          3D
+
+ 39 39  0  0  0  0  0  0  0  0999 V2000
+    5.4293   -1.0087    1.6704 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7818   -0.4452    0.6422 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4666   -0.2073   -0.6255 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.8150    0.3587   -1.6574 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4194    0.7431   -1.5290 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7709    0.5308   -0.3634 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3201    0.8841   -0.1003 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5509    1.5541   -1.2471 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8827    1.9087   -0.8590 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7290    0.7413   -0.7283 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1004    0.8713   -0.6407 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6885    1.9371   -0.8198 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8529   -0.4543   -0.3431 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -5.3084   -0.1774   -0.3070 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.3241   -1.0794    0.9712 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -4.1891   -2.2209    1.5008 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9957   -1.5937    0.7514 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4571   -0.0561    0.6956 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.4707   -1.3035    1.5981 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9321   -1.1901    2.6164 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.5082   -0.4924   -0.7253 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3125    0.5408   -2.6032 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9497    1.1933   -2.3949 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8028   -0.0396    0.1876 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2876    1.5484    0.7735 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0648    2.4811   -1.5303 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5404    0.8997   -2.1274 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3179    2.5585   -1.6271 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9132    2.4566    0.0895 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3488   -0.0831   -0.2621 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6518   -1.1293   -1.1843 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.5472    0.2805   -1.1922 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.4623    0.5697    0.3766 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.2379   -0.3086    1.7462 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3157   -3.0016    0.7425 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.1777   -1.8710    1.8120 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7071   -2.6946    2.3631 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0862   -2.4921    0.3814 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9566   -0.2088    1.5621 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  2  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  2  0
+ 11 13  1  0
+ 13 14  1  0
+ 13 15  1  0
+ 15 16  1  0
+ 15 17  1  0
+  6 18  1  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  3 21  1  0
+  4 22  1  0
+  5 23  1  0
+  7 24  1  0
+  7 25  1  0
+  8 26  1  0
+  8 27  1  0
+  9 28  1  0
+  9 29  1  0
+ 10 30  1  0
+ 13 31  1  6
+ 14 32  1  0
+ 14 33  1  0
+ 15 34  1  1
+ 16 35  1  0
+ 16 36  1  0
+ 16 37  1  0
+ 17 38  1  0
+ 18 39  1  0
+M  END
+>  <ligand_id>  (13) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (13) 
+ZINCi700000BlIsp_m01_t04
+
+>  <input_smiles>  (13) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (13) 
+C=C1C=CC=C(CCCNC(=O)C(N)C(C)O)N1
+
+>  <canonical_smiles>  (13) 
+C=C1C=CC=C(CCCNC(=O)C(N)C(C)O)N1
+
+>  <murcko_scaffold>  (13) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (13) 
+
+
+>  <reactive_flags>  (13) 
+
+
+>  <embed_ok>  (13) 
+True
+
+>  <minimized_energy>  (13) 
+38.8333
+
+>  <microstate_index>  (13) 
+1
+
+>  <tautomer_index>  (13) 
+4
+
+>  <mw>  (13) 
+251.33
+
+>  <logp>  (13) 
+0.1479
+
+>  <tpsa>  (13) 
+87.38
+
+>  <formal_charge>  (13) 
+0
+
+>  <hbd>  (13) 
+4
+
+>  <hba>  (13) 
+4
+
+>  <rotatable_bonds>  (13) 
+6
+
+>  <heavy_atoms>  (13) 
+18
+
+>  <stage3_screen_rank>  (13) 
+5
+
+>  <zinc_id>  (13) 
+ZINCi700000BlIsp
+
+>  <smiles>  (13) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (13) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (13) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (13) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (13) 
+12.293956789344508
+
+>  <features_matched>  (13) 
+3
+
+>  <lipinski>  (13) 
+1
+
+>  <chemistry_flagged>  (13) 
+nan
+
+>  <pains_alert>  (13) 
+nan
+
+>  <hotspot_weighted_pct>  (13) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (13) 
+11
+
+>  <hotspot_exact_matches>  (13) 
+7
+
+>  <hotspot_compatible_matches>  (13) 
+4
+
+>  <hotspot_exact_residue_count>  (13) 
+7
+
+>  <hotspot_group_count>  (13) 
+4
+
+>  <hotspot_required_groups_pass>  (13) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (13) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (13) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (13) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (13) 
+nan
+
+>  <pair_hash_overlap_pct>  (13) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (13) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (13) 
+38.88888888888887
+
+>  <cascade_score_pct>  (13) 
+19.387998533478072
+
+>  <shortlist_rank>  (13) 
+14
+
+>  <rerank_conformers>  (13) 
+16
+
+>  <best_conformer_id>  (13) 
+15
+
+>  <fit_rmsd_angstrom>  (13) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (13) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (13) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (13) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (13) 
+28
+
+>  <pool_source_stage3_rank>  (13) 
+1
+
+>  <pool_source_hotspot_breadth>  (13) 
+1
+
+>  <pool_source_native_support>  (13) 
+1
+
+>  <pool_primary_source>  (13) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (13) 
+5
+
+>  <native_selection_rank>  (13) 
+5
+
+>  <source_input_rank>  (13) 
+5
+
+$$$$
+ZINCi700000BlIsp_m01_t05
+     RDKit          3D
+
+ 39 39  0  0  0  0  0  0  0  0999 V2000
+    5.7416   -1.8735    0.4344 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9824   -0.8396    0.0488 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5132    0.1729   -0.8598 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7471    1.2067   -1.2519 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3787    1.3341   -0.7791 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8730    0.4086    0.0649 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4661    0.4242    0.6302 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5617    1.5874    0.2016 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8089    1.5336    0.8781 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5660    0.3716    0.4152 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7996    0.0334    0.9166 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8885    0.1064    2.2901 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8892   -0.4004    0.2446 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.0586   -0.7490    0.9247 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9667   -0.4890   -1.2748 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -3.9263   -1.9277   -1.7703 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.2031    0.1027   -1.6999 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6781   -0.6536    0.4649 N   0  0  0  0  0  0  0  0  0  0  0  0
+    6.7632   -1.9930    0.0899 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3588   -2.6318    1.1080 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.5335    0.0805   -1.2158 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1301    1.9639   -1.9267 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8122    2.1857   -1.1343 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9851   -0.5224    0.3516 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5429    0.4283    1.7256 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0363    2.5389    0.4714 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4351    1.5817   -0.8883 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3667    2.4436    0.6276 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6805    1.5124    1.9661 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5203    0.2761   -0.5960 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9866   -0.1056    2.5802 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.0692   -0.3525    1.8645 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.8971   -0.5674    0.3760 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1704    0.0815   -1.7613 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.9975   -2.4264   -1.4755 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0033   -1.9538   -2.8629 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.7731   -2.5080   -1.3867 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.2450    0.9694   -1.2600 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.2777   -1.3495    1.0815 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  2  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 11 13  2  3
+ 13 14  1  0
+ 13 15  1  0
+ 15 16  1  0
+ 15 17  1  0
+  6 18  1  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  3 21  1  0
+  4 22  1  0
+  5 23  1  0
+  7 24  1  0
+  7 25  1  0
+  8 26  1  0
+  8 27  1  0
+  9 28  1  0
+  9 29  1  0
+ 10 30  1  0
+ 12 31  1  0
+ 14 32  1  0
+ 14 33  1  0
+ 15 34  1  6
+ 16 35  1  0
+ 16 36  1  0
+ 16 37  1  0
+ 17 38  1  0
+ 18 39  1  0
+M  END
+>  <ligand_id>  (14) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (14) 
+ZINCi700000BlIsp_m01_t05
+
+>  <input_smiles>  (14) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (14) 
+C=C1C=CC=C(CCCNC(O)=C(N)C(C)O)N1
+
+>  <canonical_smiles>  (14) 
+C=C1C=CC=C(CCCNC(O)=C(N)C(C)O)N1
+
+>  <murcko_scaffold>  (14) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (14) 
+
+
+>  <reactive_flags>  (14) 
+
+
+>  <embed_ok>  (14) 
+True
+
+>  <minimized_energy>  (14) 
+-17.5692
+
+>  <microstate_index>  (14) 
+1
+
+>  <tautomer_index>  (14) 
+5
+
+>  <mw>  (14) 
+251.33
+
+>  <logp>  (14) 
+0.9798
+
+>  <tpsa>  (14) 
+90.54
+
+>  <formal_charge>  (14) 
+0
+
+>  <hbd>  (14) 
+5
+
+>  <hba>  (14) 
+5
+
+>  <rotatable_bonds>  (14) 
+6
+
+>  <heavy_atoms>  (14) 
+18
+
+>  <stage3_screen_rank>  (14) 
+5
+
+>  <zinc_id>  (14) 
+ZINCi700000BlIsp
+
+>  <smiles>  (14) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (14) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (14) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (14) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (14) 
+12.293956789344508
+
+>  <features_matched>  (14) 
+3
+
+>  <lipinski>  (14) 
+1
+
+>  <chemistry_flagged>  (14) 
+nan
+
+>  <pains_alert>  (14) 
+nan
+
+>  <hotspot_weighted_pct>  (14) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (14) 
+11
+
+>  <hotspot_exact_matches>  (14) 
+7
+
+>  <hotspot_compatible_matches>  (14) 
+4
+
+>  <hotspot_exact_residue_count>  (14) 
+7
+
+>  <hotspot_group_count>  (14) 
+4
+
+>  <hotspot_required_groups_pass>  (14) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (14) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (14) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (14) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (14) 
+nan
+
+>  <pair_hash_overlap_pct>  (14) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (14) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (14) 
+38.88888888888887
+
+>  <cascade_score_pct>  (14) 
+19.387998533478072
+
+>  <shortlist_rank>  (14) 
+14
+
+>  <rerank_conformers>  (14) 
+16
+
+>  <best_conformer_id>  (14) 
+15
+
+>  <fit_rmsd_angstrom>  (14) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (14) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (14) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (14) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (14) 
+28
+
+>  <pool_source_stage3_rank>  (14) 
+1
+
+>  <pool_source_hotspot_breadth>  (14) 
+1
+
+>  <pool_source_native_support>  (14) 
+1
+
+>  <pool_primary_source>  (14) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (14) 
+5
+
+>  <native_selection_rank>  (14) 
+5
+
+>  <source_input_rank>  (14) 
+5
+
+$$$$
+ZINCi700000BlIsp_m01_t06
+     RDKit          3D
+
+ 39 39  0  0  0  0  0  0  0  0999 V2000
+    6.3472   -0.8799    1.1285 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4163   -0.1662    0.4818 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8036    0.8349   -0.5085 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.8672    1.5449   -1.1633 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4550    1.3284   -0.8974 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0791    0.4092    0.0182 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6432    0.0889    0.3886 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5507    0.9337   -0.2817 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8570    0.6046    0.2316 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2258   -0.7790   -0.0917 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.6088   -1.1143    0.2503 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -2.8091   -0.9118    1.6207 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.5957   -0.3698   -0.6711 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.2801   -0.0773   -1.9047 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.9910   -0.0619   -0.1339 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -5.8485   -1.3142   -0.1353 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.6043    0.9068   -0.9880 O   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0589   -0.3150    0.6910 N   0  0  0  0  0  0  0  0  0  0  0  0
+    7.4065   -0.7408    0.9417 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0718   -1.6260    1.8650 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8564    0.9981   -0.7111 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1418    2.2895   -1.9018 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7485    1.9249   -1.4611 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4705   -0.9706    0.1606 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5442    0.1983    1.4768 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7390    1.9969   -0.0858 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5838    0.7972   -1.3702 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5564    1.3154   -0.2225 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8830    0.7659    1.3154 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1788   -0.8704   -1.1146 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7584   -2.1818    0.0528 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9349   -1.1120    1.9992 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1119    0.3602   -2.3381 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.9237    0.3610    0.8728 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.4343   -2.0854    0.5213 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.9290   -1.7339   -1.1446 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.8669   -1.0826    0.1943 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.1438    1.7506   -0.8275 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7577   -1.0163    1.3557 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  2  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 11 13  1  0
+ 13 14  2  3
+ 13 15  1  0
+ 15 16  1  0
+ 15 17  1  0
+  6 18  1  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  3 21  1  0
+  4 22  1  0
+  5 23  1  0
+  7 24  1  0
+  7 25  1  0
+  8 26  1  0
+  8 27  1  0
+  9 28  1  0
+  9 29  1  0
+ 10 30  1  0
+ 11 31  1  1
+ 12 32  1  0
+ 14 33  1  0
+ 15 34  1  1
+ 16 35  1  0
+ 16 36  1  0
+ 16 37  1  0
+ 17 38  1  0
+ 18 39  1  0
+M  END
+>  <ligand_id>  (15) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (15) 
+ZINCi700000BlIsp_m01_t06
+
+>  <input_smiles>  (15) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (15) 
+C=C1C=CC=C(CCCNC(O)C(=N)C(C)O)N1
+
+>  <canonical_smiles>  (15) 
+C=C1C=CC=C(CCCNC(O)C(=N)C(C)O)N1
+
+>  <murcko_scaffold>  (15) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (15) 
+
+
+>  <reactive_flags>  (15) 
+
+
+>  <embed_ok>  (15) 
+True
+
+>  <minimized_energy>  (15) 
+24.3116
+
+>  <microstate_index>  (15) 
+1
+
+>  <tautomer_index>  (15) 
+6
+
+>  <mw>  (15) 
+251.33
+
+>  <logp>  (15) 
+0.6322
+
+>  <tpsa>  (15) 
+88.37
+
+>  <formal_charge>  (15) 
+0
+
+>  <hbd>  (15) 
+5
+
+>  <hba>  (15) 
+5
+
+>  <rotatable_bonds>  (15) 
+7
+
+>  <heavy_atoms>  (15) 
+18
+
+>  <stage3_screen_rank>  (15) 
+5
+
+>  <zinc_id>  (15) 
+ZINCi700000BlIsp
+
+>  <smiles>  (15) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (15) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (15) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (15) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (15) 
+12.293956789344508
+
+>  <features_matched>  (15) 
+3
+
+>  <lipinski>  (15) 
+1
+
+>  <chemistry_flagged>  (15) 
+nan
+
+>  <pains_alert>  (15) 
+nan
+
+>  <hotspot_weighted_pct>  (15) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (15) 
+11
+
+>  <hotspot_exact_matches>  (15) 
+7
+
+>  <hotspot_compatible_matches>  (15) 
+4
+
+>  <hotspot_exact_residue_count>  (15) 
+7
+
+>  <hotspot_group_count>  (15) 
+4
+
+>  <hotspot_required_groups_pass>  (15) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (15) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (15) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (15) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (15) 
+nan
+
+>  <pair_hash_overlap_pct>  (15) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (15) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (15) 
+38.88888888888887
+
+>  <cascade_score_pct>  (15) 
+19.387998533478072
+
+>  <shortlist_rank>  (15) 
+14
+
+>  <rerank_conformers>  (15) 
+16
+
+>  <best_conformer_id>  (15) 
+15
+
+>  <fit_rmsd_angstrom>  (15) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (15) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (15) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (15) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (15) 
+28
+
+>  <pool_source_stage3_rank>  (15) 
+1
+
+>  <pool_source_hotspot_breadth>  (15) 
+1
+
+>  <pool_source_native_support>  (15) 
+1
+
+>  <pool_primary_source>  (15) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (15) 
+5
+
+>  <native_selection_rank>  (15) 
+5
+
+>  <source_input_rank>  (15) 
+5
+
+$$$$
+ZINCi700000BlIsp_m01_t07
+     RDKit          3D
+
+ 39 39  0  0  0  0  0  0  0  0999 V2000
+    6.0789    0.7184    1.3449 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0151    1.1698    0.6677 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1640    2.2248   -0.3309 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0952    2.6743   -1.0132 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7749    2.1185   -0.7688 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.6187    1.1435    0.1529 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2993    0.4818    0.5026 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0496    1.0068   -0.2180 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2423    0.3341    0.2633 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2367   -1.0940   -0.0541 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3893   -1.8305    0.4305 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -2.3531   -1.8046    1.8505 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7553   -1.3061   -0.0214 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.4992   -0.5490    0.9132 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3183   -1.5845   -1.2136 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7345   -2.3774   -2.3377 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.5993   -1.1096   -1.4613 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7329    0.6895    0.8524 N   0  0  0  0  0  0  0  0  0  0  0  0
+    7.0742    1.1157    1.1773 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.9813   -0.0643    2.0885 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1477    2.6417   -0.5167 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.1932    3.4566   -1.7573 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9551    2.5190   -1.3520 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4046   -0.5924    0.3038 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1447    0.5891    1.5845 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0478    2.0856   -0.0418 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1528    0.8667   -1.3017 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0826    0.8338   -0.2317 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3442    0.4966    1.3425 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2005   -1.2021   -1.0674 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2892   -2.8827    0.1424 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4009   -1.8792    2.0325 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.2366    0.4321    0.8039 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1042   -0.7949    1.8351 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3651   -3.2467   -2.5503 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7259   -2.7415   -2.1280 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6830   -1.7621   -3.2418 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.8741   -0.7274   -0.5986 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6000   -0.0496    1.5310 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  2  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 11 13  1  0
+ 13 14  1  0
+ 13 15  2  3
+ 15 16  1  0
+ 15 17  1  0
+  6 18  1  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  3 21  1  0
+  4 22  1  0
+  5 23  1  0
+  7 24  1  0
+  7 25  1  0
+  8 26  1  0
+  8 27  1  0
+  9 28  1  0
+  9 29  1  0
+ 10 30  1  0
+ 11 31  1  1
+ 12 32  1  0
+ 14 33  1  0
+ 14 34  1  0
+ 16 35  1  0
+ 16 36  1  0
+ 16 37  1  0
+ 17 38  1  0
+ 18 39  1  0
+M  END
+>  <ligand_id>  (16) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (16) 
+ZINCi700000BlIsp_m01_t07
+
+>  <input_smiles>  (16) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (16) 
+C=C1C=CC=C(CCCNC(O)C(N)=C(C)O)N1
+
+>  <canonical_smiles>  (16) 
+C=C1C=CC=C(CCCNC(O)C(N)=C(C)O)N1
+
+>  <murcko_scaffold>  (16) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (16) 
+
+
+>  <reactive_flags>  (16) 
+
+
+>  <embed_ok>  (16) 
+True
+
+>  <minimized_energy>  (16) 
+-23.8824
+
+>  <microstate_index>  (16) 
+1
+
+>  <tautomer_index>  (16) 
+7
+
+>  <mw>  (16) 
+251.33
+
+>  <logp>  (16) 
+0.9798
+
+>  <tpsa>  (16) 
+90.54
+
+>  <formal_charge>  (16) 
+0
+
+>  <hbd>  (16) 
+5
+
+>  <hba>  (16) 
+5
+
+>  <rotatable_bonds>  (16) 
+6
+
+>  <heavy_atoms>  (16) 
+18
+
+>  <stage3_screen_rank>  (16) 
+5
+
+>  <zinc_id>  (16) 
+ZINCi700000BlIsp
+
+>  <smiles>  (16) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (16) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (16) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (16) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (16) 
+12.293956789344508
+
+>  <features_matched>  (16) 
+3
+
+>  <lipinski>  (16) 
+1
+
+>  <chemistry_flagged>  (16) 
+nan
+
+>  <pains_alert>  (16) 
+nan
+
+>  <hotspot_weighted_pct>  (16) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (16) 
+11
+
+>  <hotspot_exact_matches>  (16) 
+7
+
+>  <hotspot_compatible_matches>  (16) 
+4
+
+>  <hotspot_exact_residue_count>  (16) 
+7
+
+>  <hotspot_group_count>  (16) 
+4
+
+>  <hotspot_required_groups_pass>  (16) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (16) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (16) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (16) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (16) 
+nan
+
+>  <pair_hash_overlap_pct>  (16) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (16) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (16) 
+38.88888888888887
+
+>  <cascade_score_pct>  (16) 
+19.387998533478072
+
+>  <shortlist_rank>  (16) 
+14
+
+>  <rerank_conformers>  (16) 
+16
+
+>  <best_conformer_id>  (16) 
+15
+
+>  <fit_rmsd_angstrom>  (16) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (16) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (16) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (16) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (16) 
+28
+
+>  <pool_source_stage3_rank>  (16) 
+1
+
+>  <pool_source_hotspot_breadth>  (16) 
+1
+
+>  <pool_source_native_support>  (16) 
+1
+
+>  <pool_primary_source>  (16) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (16) 
+5
+
+>  <native_selection_rank>  (16) 
+5
+
+>  <source_input_rank>  (16) 
+5
+
+$$$$
+ZINCi700000BlIsp_m01_t08
+     RDKit          3D
+
+ 39 39  0  0  0  0  0  0  0  0999 V2000
+    6.1351   -0.7882    1.7271 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3050   -0.4389    0.7357 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8035   -0.2736   -0.6271 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9679    0.0774   -1.6214 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5559    0.2983   -1.3574 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0782    0.1503   -0.1027 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6310    0.3500    0.3076 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6512    0.7724   -0.7961 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7693    1.0104   -0.2689 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3485   -0.2253    0.2542 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7354   -0.0706    0.7073 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -2.8190    1.0031    1.6342 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8044    0.0878   -0.4567 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -3.4908   -0.7491   -1.6373 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.2243   -0.1498    0.0699 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.1287   -0.9853   -0.4625 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.5520    0.6057    1.1869 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9543   -0.2136    0.9156 N   0  0  0  0  0  0  0  0  0  0  0  0
+    7.1924   -0.9583    1.5551 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7756   -0.9132    2.7421 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8565   -0.4370   -0.8278 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3260    0.2038   -2.6368 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9334    0.5787   -2.1978 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2829   -0.5890    0.7567 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6069    1.1081    1.1016 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9999    1.7052   -1.2570 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6248    0.0133   -1.5884 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3752    1.4034   -1.0928 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7288    1.7804    0.5100 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3084   -0.9593   -0.4462 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.9751   -0.9859    1.2630 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7713    1.0931    1.8352 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7821    1.1331   -0.7932 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.2989   -1.6962   -1.3150 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.6238   -0.4031   -2.0440 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -7.1233   -1.1078   -0.0494 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.9028   -1.5692   -1.3502 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.4941    0.4584    1.3909 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5757   -0.3196    1.8487 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0
+  2  3  1  0
+  3  4  2  0
+  4  5  1  0
+  5  6  2  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  1  0
+ 11 12  1  0
+ 11 13  1  0
+ 13 14  1  0
+ 13 15  1  0
+ 15 16  2  0
+ 15 17  1  0
+  6 18  1  0
+ 18  2  1  0
+  1 19  1  0
+  1 20  1  0
+  3 21  1  0
+  4 22  1  0
+  5 23  1  0
+  7 24  1  0
+  7 25  1  0
+  8 26  1  0
+  8 27  1  0
+  9 28  1  0
+  9 29  1  0
+ 10 30  1  0
+ 11 31  1  1
+ 12 32  1  0
+ 13 33  1  6
+ 14 34  1  0
+ 14 35  1  0
+ 16 36  1  0
+ 16 37  1  0
+ 17 38  1  0
+ 18 39  1  0
+M  END
+>  <ligand_id>  (17) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (17) 
+ZINCi700000BlIsp_m01_t08
+
+>  <input_smiles>  (17) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (17) 
+C=C1C=CC=C(CCCNC(O)C(N)C(=C)O)N1
+
+>  <canonical_smiles>  (17) 
+C=C1C=CC=C(CCCNC(O)C(N)C(=C)O)N1
+
+>  <murcko_scaffold>  (17) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (17) 
+
+
+>  <reactive_flags>  (17) 
+
+
+>  <embed_ok>  (17) 
+True
+
+>  <minimized_energy>  (17) 
+22.5539
+
+>  <microstate_index>  (17) 
+1
+
+>  <tautomer_index>  (17) 
+8
+
+>  <mw>  (17) 
+251.33
+
+>  <logp>  (17) 
+0.6306
+
+>  <tpsa>  (17) 
+90.54
+
+>  <formal_charge>  (17) 
+0
+
+>  <hbd>  (17) 
+5
+
+>  <hba>  (17) 
+5
+
+>  <rotatable_bonds>  (17) 
+7
+
+>  <heavy_atoms>  (17) 
+18
+
+>  <stage3_screen_rank>  (17) 
+5
+
+>  <zinc_id>  (17) 
+ZINCi700000BlIsp
+
+>  <smiles>  (17) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (17) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (17) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (17) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (17) 
+12.293956789344508
+
+>  <features_matched>  (17) 
+3
+
+>  <lipinski>  (17) 
+1
+
+>  <chemistry_flagged>  (17) 
+nan
+
+>  <pains_alert>  (17) 
+nan
+
+>  <hotspot_weighted_pct>  (17) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (17) 
+11
+
+>  <hotspot_exact_matches>  (17) 
+7
+
+>  <hotspot_compatible_matches>  (17) 
+4
+
+>  <hotspot_exact_residue_count>  (17) 
+7
+
+>  <hotspot_group_count>  (17) 
+4
+
+>  <hotspot_required_groups_pass>  (17) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (17) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (17) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (17) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (17) 
+nan
+
+>  <pair_hash_overlap_pct>  (17) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (17) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (17) 
+38.88888888888887
+
+>  <cascade_score_pct>  (17) 
+19.387998533478072
+
+>  <shortlist_rank>  (17) 
+14
+
+>  <rerank_conformers>  (17) 
+16
+
+>  <best_conformer_id>  (17) 
+15
+
+>  <fit_rmsd_angstrom>  (17) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (17) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (17) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (17) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (17) 
+28
+
+>  <pool_source_stage3_rank>  (17) 
+1
+
+>  <pool_source_hotspot_breadth>  (17) 
+1
+
+>  <pool_source_native_support>  (17) 
+1
+
+>  <pool_primary_source>  (17) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (17) 
+5
+
+>  <native_selection_rank>  (17) 
+5
+
+>  <source_input_rank>  (17) 
+5
+
+$$$$
+ZINCi700000BlIsp_m02_t01
+     RDKit          3D
+
+ 40 40  0  0  0  0  0  0  0  0999 V2000
+   -5.0437   -1.8455   -2.1766 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0758   -0.7568   -1.7319 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -3.0185   -1.3058   -0.7520 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -1.6988   -0.5454   -0.8519 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1200   -0.5946   -2.0588 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2203    0.0357    0.1906 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0590    0.7427    0.0878 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4437    1.2503    1.4780 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6983    2.1335    1.4696 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9008    1.4647    0.8505 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4787    1.9347   -0.2749 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6307    1.2438   -0.8263 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1361    0.1601   -0.2088 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5357   -0.3404    1.0263 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4112    0.3323    1.4702 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0754   -1.3837    1.6698 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.5667   -1.1284    0.6463 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.8374    0.2510   -1.0318 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.5692   -2.2815   -1.3199 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.8121   -1.4273   -2.8357 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.5221   -2.6435   -2.7137 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6171   -0.2876   -2.6085 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8034   -2.3707   -0.8882 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2628   -0.1361   -2.0938 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8328    0.0619   -0.2841 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0366    1.5896   -0.6017 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5900    0.3949    2.1499 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3874    1.8292    1.9006 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9409    2.4208    2.5003 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4672    3.0670    0.9403 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1242    2.8227   -0.7862 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0803    1.6318   -1.7339 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0075   -0.3440   -0.6139 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0686    0.0970    2.3938 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.9643   -1.8856    1.3011 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6479   -1.7626    2.5911 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7966   -0.8200    1.2621 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.2324   -0.3355    0.5891 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0465   -1.9461    1.0254 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.4258    0.6774   -1.6907 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  4  6  2  3
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  2  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  1  0
+ 14 16  2  0
+  3 17  1  0
+  2 18  1  0
+ 15 10  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  2 22  1  6
+  3 23  1  6
+  5 24  1  0
+  7 25  1  0
+  7 26  1  0
+  8 27  1  0
+  8 28  1  0
+  9 29  1  0
+  9 30  1  0
+ 11 31  1  0
+ 12 32  1  0
+ 13 33  1  0
+ 15 34  1  0
+ 16 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 17 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+M  CHG  1  17   1
+M  END
+>  <ligand_id>  (18) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (18) 
+ZINCi700000BlIsp_m02_t01
+
+>  <input_smiles>  (18) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (18) 
+C=C1C=CC=C(CCCN=C(O)C([NH3+])[C@@H](C)O)N1
+
+>  <canonical_smiles>  (18) 
+C=C1C=CC=C(CCCN=C(O)C([NH3+])[C@@H](C)O)N1
+
+>  <murcko_scaffold>  (18) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (18) 
+
+
+>  <reactive_flags>  (18) 
+
+
+>  <embed_ok>  (18) 
+True
+
+>  <minimized_energy>  (18) 
+23.5498
+
+>  <microstate_index>  (18) 
+2
+
+>  <tautomer_index>  (18) 
+1
+
+>  <mw>  (18) 
+252.338
+
+>  <logp>  (18) 
+0.2714
+
+>  <tpsa>  (18) 
+92.49
+
+>  <formal_charge>  (18) 
+1
+
+>  <hbd>  (18) 
+4
+
+>  <hba>  (18) 
+3
+
+>  <rotatable_bonds>  (18) 
+6
+
+>  <heavy_atoms>  (18) 
+18
+
+>  <stage3_screen_rank>  (18) 
+5
+
+>  <zinc_id>  (18) 
+ZINCi700000BlIsp
+
+>  <smiles>  (18) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (18) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (18) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (18) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (18) 
+12.293956789344508
+
+>  <features_matched>  (18) 
+3
+
+>  <lipinski>  (18) 
+1
+
+>  <chemistry_flagged>  (18) 
+nan
+
+>  <pains_alert>  (18) 
+nan
+
+>  <hotspot_weighted_pct>  (18) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (18) 
+11
+
+>  <hotspot_exact_matches>  (18) 
+7
+
+>  <hotspot_compatible_matches>  (18) 
+4
+
+>  <hotspot_exact_residue_count>  (18) 
+7
+
+>  <hotspot_group_count>  (18) 
+4
+
+>  <hotspot_required_groups_pass>  (18) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (18) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (18) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (18) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (18) 
+nan
+
+>  <pair_hash_overlap_pct>  (18) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (18) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (18) 
+38.88888888888887
+
+>  <cascade_score_pct>  (18) 
+19.387998533478072
+
+>  <shortlist_rank>  (18) 
+14
+
+>  <rerank_conformers>  (18) 
+16
+
+>  <best_conformer_id>  (18) 
+15
+
+>  <fit_rmsd_angstrom>  (18) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (18) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (18) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (18) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (18) 
+28
+
+>  <pool_source_stage3_rank>  (18) 
+1
+
+>  <pool_source_hotspot_breadth>  (18) 
+1
+
+>  <pool_source_native_support>  (18) 
+1
+
+>  <pool_primary_source>  (18) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (18) 
+5
+
+>  <native_selection_rank>  (18) 
+5
+
+>  <source_input_rank>  (18) 
+5
+
+$$$$
+ZINCi700000BlIsp_m02_t02
+     RDKit          3D
+
+ 40 40  0  0  0  0  0  0  0  0999 V2000
+   -3.8683    1.6030    0.6072 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1550    0.1979    0.0983 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -3.4576   -0.1023   -1.2458 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -2.0786   -0.7313   -1.0404 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9621   -1.9518   -1.1587 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0459    0.1168   -0.7393 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3068   -0.3722   -0.5058 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4900   -0.8260    0.9416 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8831   -1.3968    1.2289 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9895   -0.4019    0.9853 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3780    0.4752    1.9343 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4497    1.4103    1.6440 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0759    1.3815    0.4532 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6893    0.4097   -0.5678 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6223   -0.4132   -0.2510 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.3581    0.3395   -1.7262 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3392   -1.0989   -1.9739 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.5755    0.0505   -0.1124 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1937    2.3560   -0.1189 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.4276    1.7965    1.5290 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8054    1.7499    0.8152 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8641   -0.5365    0.8584 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.4042    0.7740   -1.8987 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1680    1.1222   -0.6895 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5094   -1.1985   -1.1961 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9773    0.4565   -0.7519 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2552   -1.5945    1.1826 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2856    0.0161    1.6157 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0479   -2.2976    0.6244 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9148   -1.7310    2.2741 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.9212    0.5092    2.9170 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7388    2.1191    2.4123 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.8867    2.0719    0.2448 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4540   -1.1980   -0.8687 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0904   -0.3796   -2.4918 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1970    0.9934   -1.9424 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.2782   -1.0267   -2.9925 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0492   -2.0517   -1.7007 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3118   -0.9469   -1.6545 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.0263    0.3062    0.7203 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  2  0
+  4  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  2  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  1  0
+ 14 16  2  0
+  3 17  1  0
+  2 18  1  0
+ 15 10  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  2 22  1  1
+  3 23  1  6
+  6 24  1  0
+  7 25  1  0
+  7 26  1  0
+  8 27  1  0
+  8 28  1  0
+  9 29  1  0
+  9 30  1  0
+ 11 31  1  0
+ 12 32  1  0
+ 13 33  1  0
+ 15 34  1  0
+ 16 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 17 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+M  CHG  1  17   1
+M  END
+>  <ligand_id>  (19) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (19) 
+ZINCi700000BlIsp_m02_t02
+
+>  <input_smiles>  (19) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (19) 
+C=C1C=CC=C(CCCNC(=O)C([NH3+])[C@@H](C)O)N1
+
+>  <canonical_smiles>  (19) 
+C=C1C=CC=C(CCCNC(=O)C([NH3+])[C@@H](C)O)N1
+
+>  <murcko_scaffold>  (19) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (19) 
+
+
+>  <reactive_flags>  (19) 
+
+
+>  <embed_ok>  (19) 
+True
+
+>  <minimized_energy>  (19) 
+23.5917
+
+>  <microstate_index>  (19) 
+2
+
+>  <tautomer_index>  (19) 
+2
+
+>  <mw>  (19) 
+252.338
+
+>  <logp>  (19) 
+-0.5689
+
+>  <tpsa>  (19) 
+89.0
+
+>  <formal_charge>  (19) 
+1
+
+>  <hbd>  (19) 
+4
+
+>  <hba>  (19) 
+3
+
+>  <rotatable_bonds>  (19) 
+6
+
+>  <heavy_atoms>  (19) 
+18
+
+>  <stage3_screen_rank>  (19) 
+5
+
+>  <zinc_id>  (19) 
+ZINCi700000BlIsp
+
+>  <smiles>  (19) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (19) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (19) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (19) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (19) 
+12.293956789344508
+
+>  <features_matched>  (19) 
+3
+
+>  <lipinski>  (19) 
+1
+
+>  <chemistry_flagged>  (19) 
+nan
+
+>  <pains_alert>  (19) 
+nan
+
+>  <hotspot_weighted_pct>  (19) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (19) 
+11
+
+>  <hotspot_exact_matches>  (19) 
+7
+
+>  <hotspot_compatible_matches>  (19) 
+4
+
+>  <hotspot_exact_residue_count>  (19) 
+7
+
+>  <hotspot_group_count>  (19) 
+4
+
+>  <hotspot_required_groups_pass>  (19) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (19) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (19) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (19) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (19) 
+nan
+
+>  <pair_hash_overlap_pct>  (19) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (19) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (19) 
+38.88888888888887
+
+>  <cascade_score_pct>  (19) 
+19.387998533478072
+
+>  <shortlist_rank>  (19) 
+14
+
+>  <rerank_conformers>  (19) 
+16
+
+>  <best_conformer_id>  (19) 
+15
+
+>  <fit_rmsd_angstrom>  (19) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (19) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (19) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (19) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (19) 
+28
+
+>  <pool_source_stage3_rank>  (19) 
+1
+
+>  <pool_source_hotspot_breadth>  (19) 
+1
+
+>  <pool_source_native_support>  (19) 
+1
+
+>  <pool_primary_source>  (19) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (19) 
+5
+
+>  <native_selection_rank>  (19) 
+5
+
+>  <source_input_rank>  (19) 
+5
+
+$$$$
+ZINCi700000BlIsp_m02_t03
+     RDKit          3D
+
+ 40 40  0  0  0  0  0  0  0  0999 V2000
+   -4.5832   -0.5717    1.7500 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.6227   -0.0760    0.3127 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -3.2515    0.2862   -0.2033 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3700   -0.5562   -0.7759 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.6602   -1.8842   -0.8995 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1718   -0.1273   -1.3238 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1237   -0.4784   -0.6953 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3316    0.2915    0.6097 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6462   -0.0580    1.3191 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8632    0.2119    0.4728 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4218    1.4382    0.4022 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5889    1.6419   -0.4364 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1336    0.6112   -1.1084 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5627   -0.7299   -1.0045 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4123   -0.8453   -0.2416 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1519   -1.7670   -1.6140 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8750    1.6640   -0.2284 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.3902    1.1411    0.2624 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1550    0.1837    2.4190 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.5979   -0.7695    2.1122 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9973   -1.4917    1.8423 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.1082   -0.8065   -0.3433 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8951   -2.3234   -1.3095 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1160   -0.4728   -2.2901 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1758   -1.5597   -0.5229 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9071   -0.2214   -1.4157 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4926    0.0811    1.3023 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2939    1.3697    0.4070 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6301   -1.1103    1.6298 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7088    0.5244    2.2475 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0355    2.2883    0.9530 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.0155    2.6373   -0.4971 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0153    0.7636   -1.7227 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1304   -1.7875    0.0013 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7490   -2.7708   -1.5434 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0588   -1.6464   -2.1984 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4612    1.9621    0.6581 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1826    1.8224   -0.9753 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7182    2.2346   -0.3964 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.3075    0.9009    0.5043 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  2  3
+  4  5  1  0
+  4  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  2  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  1  0
+ 14 16  2  0
+  3 17  1  0
+  2 18  1  0
+ 15 10  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  2 22  1  6
+  5 23  1  0
+  6 24  1  0
+  7 25  1  0
+  7 26  1  0
+  8 27  1  0
+  8 28  1  0
+  9 29  1  0
+  9 30  1  0
+ 11 31  1  0
+ 12 32  1  0
+ 13 33  1  0
+ 15 34  1  0
+ 16 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 17 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+M  CHG  1  17   1
+M  END
+>  <ligand_id>  (20) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (20) 
+ZINCi700000BlIsp_m02_t03
+
+>  <input_smiles>  (20) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (20) 
+C=C1C=CC=C(CCCNC(O)=C([NH3+])[C@@H](C)O)N1
+
+>  <canonical_smiles>  (20) 
+C=C1C=CC=C(CCCNC(O)=C([NH3+])[C@@H](C)O)N1
+
+>  <murcko_scaffold>  (20) 
+C=C1C=CC=CN1
+
+>  <pains_hit>  (20) 
+
+
+>  <reactive_flags>  (20) 
+
+
+>  <embed_ok>  (20) 
+True
+
+>  <minimized_energy>  (20) 
+-5.5949
+
+>  <microstate_index>  (20) 
+2
+
+>  <tautomer_index>  (20) 
+3
+
+>  <mw>  (20) 
+252.338
+
+>  <logp>  (20) 
+0.263
+
+>  <tpsa>  (20) 
+92.16
+
+>  <formal_charge>  (20) 
+1
+
+>  <hbd>  (20) 
+5
+
+>  <hba>  (20) 
+4
+
+>  <rotatable_bonds>  (20) 
+6
+
+>  <heavy_atoms>  (20) 
+18
+
+>  <stage3_screen_rank>  (20) 
+5
+
+>  <zinc_id>  (20) 
+ZINCi700000BlIsp
+
+>  <smiles>  (20) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (20) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (20) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (20) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (20) 
+12.293956789344508
+
+>  <features_matched>  (20) 
+3
+
+>  <lipinski>  (20) 
+1
+
+>  <chemistry_flagged>  (20) 
+nan
+
+>  <pains_alert>  (20) 
+nan
+
+>  <hotspot_weighted_pct>  (20) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (20) 
+11
+
+>  <hotspot_exact_matches>  (20) 
+7
+
+>  <hotspot_compatible_matches>  (20) 
+4
+
+>  <hotspot_exact_residue_count>  (20) 
+7
+
+>  <hotspot_group_count>  (20) 
+4
+
+>  <hotspot_required_groups_pass>  (20) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (20) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (20) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (20) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (20) 
+nan
+
+>  <pair_hash_overlap_pct>  (20) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (20) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (20) 
+38.88888888888887
+
+>  <cascade_score_pct>  (20) 
+19.387998533478072
+
+>  <shortlist_rank>  (20) 
+14
+
+>  <rerank_conformers>  (20) 
+16
+
+>  <best_conformer_id>  (20) 
+15
+
+>  <fit_rmsd_angstrom>  (20) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (20) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (20) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (20) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (20) 
+28
+
+>  <pool_source_stage3_rank>  (20) 
+1
+
+>  <pool_source_hotspot_breadth>  (20) 
+1
+
+>  <pool_source_native_support>  (20) 
+1
+
+>  <pool_primary_source>  (20) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (20) 
+5
+
+>  <native_selection_rank>  (20) 
+5
+
+>  <source_input_rank>  (20) 
+5
+
+$$$$
+ZINCi700000BlIsp_m02_t04
+     RDKit          3D
+
+ 40 40  0  0  0  0  0  0  0  0999 V2000
+    3.9836   -1.2935   -0.6800 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4554   -0.2869    0.3563 C   0  0  2  0  0  0  0  0  0  0  0  0
+    3.3686    0.6204    0.9751 C   0  0  2  0  0  0  0  0  0  0  0  0
+    2.3217    1.1295   -0.0221 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4149    2.4613   -0.2367 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4315    0.3674   -0.5265 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4268    0.8304   -1.4847 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8092    1.3895   -0.7711 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5645    0.3258   -0.0202 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8166   -0.1254   -0.2243 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.6956    0.3764   -1.2842 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.9398   -0.1133   -1.4421 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.4425   -1.1532   -0.5654 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.6470   -1.6281    0.4128 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.3657   -1.1205    0.5721 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.0973   -2.7041    1.3561 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.1133    1.7976    1.5759 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4710    0.5724   -0.2025 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6619   -0.8000   -1.6027 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.8108   -1.9534   -0.9651 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1706   -1.9148   -0.2934 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9433   -0.8326    1.1733 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8409    0.1247    1.7966 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7493    2.7764   -0.8727 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1401   -0.0202   -2.1151 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8419    1.5765   -2.1717 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5087    2.1628   -0.0538 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4361    1.8908   -1.5128 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0003   -0.1239    0.7945 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.3535    1.1498   -1.9588 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.5944    0.2539   -2.2251 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.4499   -1.5209   -0.7253 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7998   -1.5090    1.3148 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.0683   -2.3405    2.3886 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.1200   -3.0340    1.1456 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.4409   -3.5770    1.2777 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5344    2.6459    1.5210 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9248    1.9549    0.9490 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4595    1.6367    2.5242 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.0858    0.0079   -0.7176 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  4  6  2  3
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  2  3
+ 10 11  1  0
+ 11 12  2  0
+ 12 13  1  0
+ 13 14  2  0
+ 14 15  1  0
+ 14 16  1  0
+  3 17  1  0
+  2 18  1  0
+ 15 10  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  2 22  1  1
+  3 23  1  1
+  5 24  1  0
+  7 25  1  0
+  7 26  1  0
+  8 27  1  0
+  8 28  1  0
+  9 29  1  0
+ 11 30  1  0
+ 12 31  1  0
+ 13 32  1  0
+ 15 33  1  0
+ 16 34  1  0
+ 16 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 17 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+M  CHG  1  17   1
+M  END
+>  <ligand_id>  (21) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (21) 
+ZINCi700000BlIsp_m02_t04
+
+>  <input_smiles>  (21) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (21) 
+CC1=CC=CC(=CCCN=C(O)C([NH3+])[C@@H](C)O)N1
+
+>  <canonical_smiles>  (21) 
+CC1=CC=CC(=CCCN=C(O)C([NH3+])[C@@H](C)O)N1
+
+>  <murcko_scaffold>  (21) 
+[CH]=C1C=CC=CN1
+
+>  <pains_hit>  (21) 
+
+
+>  <reactive_flags>  (21) 
+
+
+>  <embed_ok>  (21) 
+True
+
+>  <minimized_energy>  (21) 
+44.7691
+
+>  <microstate_index>  (21) 
+2
+
+>  <tautomer_index>  (21) 
+4
+
+>  <mw>  (21) 
+252.338
+
+>  <logp>  (21) 
+0.2714
+
+>  <tpsa>  (21) 
+92.49
+
+>  <formal_charge>  (21) 
+1
+
+>  <hbd>  (21) 
+4
+
+>  <hba>  (21) 
+3
+
+>  <rotatable_bonds>  (21) 
+5
+
+>  <heavy_atoms>  (21) 
+18
+
+>  <stage3_screen_rank>  (21) 
+5
+
+>  <zinc_id>  (21) 
+ZINCi700000BlIsp
+
+>  <smiles>  (21) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (21) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (21) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (21) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (21) 
+12.293956789344508
+
+>  <features_matched>  (21) 
+3
+
+>  <lipinski>  (21) 
+1
+
+>  <chemistry_flagged>  (21) 
+nan
+
+>  <pains_alert>  (21) 
+nan
+
+>  <hotspot_weighted_pct>  (21) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (21) 
+11
+
+>  <hotspot_exact_matches>  (21) 
+7
+
+>  <hotspot_compatible_matches>  (21) 
+4
+
+>  <hotspot_exact_residue_count>  (21) 
+7
+
+>  <hotspot_group_count>  (21) 
+4
+
+>  <hotspot_required_groups_pass>  (21) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (21) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (21) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (21) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (21) 
+nan
+
+>  <pair_hash_overlap_pct>  (21) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (21) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (21) 
+38.88888888888887
+
+>  <cascade_score_pct>  (21) 
+19.387998533478072
+
+>  <shortlist_rank>  (21) 
+14
+
+>  <rerank_conformers>  (21) 
+16
+
+>  <best_conformer_id>  (21) 
+15
+
+>  <fit_rmsd_angstrom>  (21) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (21) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (21) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (21) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (21) 
+28
+
+>  <pool_source_stage3_rank>  (21) 
+1
+
+>  <pool_source_hotspot_breadth>  (21) 
+1
+
+>  <pool_source_native_support>  (21) 
+1
+
+>  <pool_primary_source>  (21) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (21) 
+5
+
+>  <native_selection_rank>  (21) 
+5
+
+>  <source_input_rank>  (21) 
+5
+
+$$$$
+ZINCi700000BlIsp_m02_t05
+     RDKit          3D
+
+ 40 40  0  0  0  0  0  0  0  0999 V2000
+    4.9179   -0.9291   -0.9290 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.7628    0.4133   -0.2298 C   0  0  2  0  0  0  0  0  0  0  0  0
+    4.0256    0.3341    1.1214 C   0  0  2  0  0  0  0  0  0  0  0  0
+    2.6760   -0.4045    1.0663 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3661   -1.1997    1.9473 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8110    0.0053    0.0729 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5146   -0.6361   -0.1100 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5305   -0.1290    0.8862 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8663   -0.7737    0.6522 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.9366   -0.2698    0.0104 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.9478    1.0544   -0.6177 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0457    1.5110   -1.2493 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.2470    0.7011   -1.3225 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.2507   -0.5212   -0.7554 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1143   -0.9905   -0.1132 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.4560   -1.4140   -0.7872 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7765    1.7513    1.5860 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0601    1.3426   -1.0728 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9536   -1.3332   -1.2528 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.5200   -0.8129   -1.8368 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4099   -1.6594   -0.2797 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.7585    0.8403   -0.0587 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6540   -0.1432    1.8811 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1811    0.5156   -0.7278 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6477   -1.7204   -0.0163 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1996   -0.4216   -1.1375 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2162   -0.3558    1.9124 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5892    0.9636    0.8413 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9543   -1.7749    1.0731 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0666    1.6805   -0.5813 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0635    2.4895   -1.7162 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.1138    1.1061   -1.8328 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1674   -1.9030    0.3229 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -7.2963   -0.9514   -1.3155 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.7859   -1.6433    0.2314 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.2184   -2.3548   -1.2946 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6395    2.2389    1.8460 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1247    1.7662    2.3816 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3436    2.2639    0.8017 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5238    1.3638   -1.9378 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  2  0
+  4  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  2  3
+ 10 11  1  0
+ 11 12  2  0
+ 12 13  1  0
+ 13 14  2  0
+ 14 15  1  0
+ 14 16  1  0
+  3 17  1  0
+  2 18  1  0
+ 15 10  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  2 22  1  1
+  3 23  1  1
+  6 24  1  0
+  7 25  1  0
+  7 26  1  0
+  8 27  1  0
+  8 28  1  0
+  9 29  1  0
+ 11 30  1  0
+ 12 31  1  0
+ 13 32  1  0
+ 15 33  1  0
+ 16 34  1  0
+ 16 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 17 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+M  CHG  1  17   1
+M  END
+>  <ligand_id>  (22) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (22) 
+ZINCi700000BlIsp_m02_t05
+
+>  <input_smiles>  (22) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (22) 
+CC1=CC=CC(=CCCNC(=O)C([NH3+])[C@@H](C)O)N1
+
+>  <canonical_smiles>  (22) 
+CC1=CC=CC(=CCCNC(=O)C([NH3+])[C@@H](C)O)N1
+
+>  <murcko_scaffold>  (22) 
+[CH]=C1C=CC=CN1
+
+>  <pains_hit>  (22) 
+
+
+>  <reactive_flags>  (22) 
+
+
+>  <embed_ok>  (22) 
+True
+
+>  <minimized_energy>  (22) 
+42.5607
+
+>  <microstate_index>  (22) 
+2
+
+>  <tautomer_index>  (22) 
+5
+
+>  <mw>  (22) 
+252.338
+
+>  <logp>  (22) 
+-0.5689
+
+>  <tpsa>  (22) 
+89.0
+
+>  <formal_charge>  (22) 
+1
+
+>  <hbd>  (22) 
+4
+
+>  <hba>  (22) 
+3
+
+>  <rotatable_bonds>  (22) 
+5
+
+>  <heavy_atoms>  (22) 
+18
+
+>  <stage3_screen_rank>  (22) 
+5
+
+>  <zinc_id>  (22) 
+ZINCi700000BlIsp
+
+>  <smiles>  (22) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (22) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (22) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (22) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (22) 
+12.293956789344508
+
+>  <features_matched>  (22) 
+3
+
+>  <lipinski>  (22) 
+1
+
+>  <chemistry_flagged>  (22) 
+nan
+
+>  <pains_alert>  (22) 
+nan
+
+>  <hotspot_weighted_pct>  (22) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (22) 
+11
+
+>  <hotspot_exact_matches>  (22) 
+7
+
+>  <hotspot_compatible_matches>  (22) 
+4
+
+>  <hotspot_exact_residue_count>  (22) 
+7
+
+>  <hotspot_group_count>  (22) 
+4
+
+>  <hotspot_required_groups_pass>  (22) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (22) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (22) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (22) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (22) 
+nan
+
+>  <pair_hash_overlap_pct>  (22) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (22) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (22) 
+38.88888888888887
+
+>  <cascade_score_pct>  (22) 
+19.387998533478072
+
+>  <shortlist_rank>  (22) 
+14
+
+>  <rerank_conformers>  (22) 
+16
+
+>  <best_conformer_id>  (22) 
+15
+
+>  <fit_rmsd_angstrom>  (22) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (22) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (22) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (22) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (22) 
+28
+
+>  <pool_source_stage3_rank>  (22) 
+1
+
+>  <pool_source_hotspot_breadth>  (22) 
+1
+
+>  <pool_source_native_support>  (22) 
+1
+
+>  <pool_primary_source>  (22) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (22) 
+5
+
+>  <native_selection_rank>  (22) 
+5
+
+>  <source_input_rank>  (22) 
+5
+
+$$$$
+ZINCi700000BlIsp_m02_t06
+     RDKit          3D
+
+ 40 40  0  0  0  0  0  0  0  0999 V2000
+    5.9066   -0.7338   -0.1225 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9421    0.1487    0.6568 C   0  0  2  0  0  0  0  0  0  0  0  0
+    3.7128    0.5375   -0.1444 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.6746   -0.2807   -0.4127 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7517   -1.5735    0.0409 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5408    0.0329   -1.1298 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2204   -0.6015   -1.0009 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4438   -0.2312    0.3293 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8130   -0.8367    0.4493 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.0047   -0.2545    0.2201 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1479    1.1318   -0.2338 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3645    1.6657   -0.4519 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.5653    0.8799   -0.2411 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.4502   -0.3977    0.1713 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1942   -0.9460    0.3867 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.6465   -1.2700    0.4145 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6443    1.8941   -0.5870 N   0  0  0  0  0  0  0  0  0  0  0  0
+    5.6086    1.3971    0.9504 O   0  0  0  0  0  0  0  0  0  0  0  0
+    6.2279   -0.2454   -1.0498 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.8138   -0.9156    0.4641 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.4615   -1.7007   -0.3750 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6565   -0.3100    1.6095 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1894   -2.1097   -0.5445 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4510    0.9890   -1.4563 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2960   -1.6887   -1.1137 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3997   -0.2497   -1.8346 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1644   -0.5977    1.1660 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4675    0.8574    0.4477 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8145   -1.8774    0.7719 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2718    1.7432   -0.4008 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.4812    2.6906   -0.7868 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.5276    1.3469   -0.4199 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.1552   -1.9004    0.7234 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -7.5862   -0.7437    0.2163 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.6649   -1.6078    1.4559 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -6.6124   -2.1509   -0.2350 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8266    2.3838   -0.2125 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.6860    1.9767   -1.6073 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.4800    2.3745   -0.1973 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.3562    1.1737    1.5431 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  2  3
+  4  5  1  0
+  4  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  2  3
+ 10 11  1  0
+ 11 12  2  0
+ 12 13  1  0
+ 13 14  2  0
+ 14 15  1  0
+ 14 16  1  0
+  3 17  1  0
+  2 18  1  0
+ 15 10  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  2 22  1  1
+  5 23  1  0
+  6 24  1  0
+  7 25  1  0
+  7 26  1  0
+  8 27  1  0
+  8 28  1  0
+  9 29  1  0
+ 11 30  1  0
+ 12 31  1  0
+ 13 32  1  0
+ 15 33  1  0
+ 16 34  1  0
+ 16 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 17 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+M  CHG  1  17   1
+M  END
+>  <ligand_id>  (23) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (23) 
+ZINCi700000BlIsp_m02_t06
+
+>  <input_smiles>  (23) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (23) 
+CC1=CC=CC(=CCCNC(O)=C([NH3+])[C@@H](C)O)N1
+
+>  <canonical_smiles>  (23) 
+CC1=CC=CC(=CCCNC(O)=C([NH3+])[C@@H](C)O)N1
+
+>  <murcko_scaffold>  (23) 
+[CH]=C1C=CC=CN1
+
+>  <pains_hit>  (23) 
+
+
+>  <reactive_flags>  (23) 
+
+
+>  <embed_ok>  (23) 
+True
+
+>  <minimized_energy>  (23) 
+12.4911
+
+>  <microstate_index>  (23) 
+2
+
+>  <tautomer_index>  (23) 
+6
+
+>  <mw>  (23) 
+252.338
+
+>  <logp>  (23) 
+0.263
+
+>  <tpsa>  (23) 
+92.16
+
+>  <formal_charge>  (23) 
+1
+
+>  <hbd>  (23) 
+5
+
+>  <hba>  (23) 
+4
+
+>  <rotatable_bonds>  (23) 
+5
+
+>  <heavy_atoms>  (23) 
+18
+
+>  <stage3_screen_rank>  (23) 
+5
+
+>  <zinc_id>  (23) 
+ZINCi700000BlIsp
+
+>  <smiles>  (23) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (23) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (23) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (23) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (23) 
+12.293956789344508
+
+>  <features_matched>  (23) 
+3
+
+>  <lipinski>  (23) 
+1
+
+>  <chemistry_flagged>  (23) 
+nan
+
+>  <pains_alert>  (23) 
+nan
+
+>  <hotspot_weighted_pct>  (23) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (23) 
+11
+
+>  <hotspot_exact_matches>  (23) 
+7
+
+>  <hotspot_compatible_matches>  (23) 
+4
+
+>  <hotspot_exact_residue_count>  (23) 
+7
+
+>  <hotspot_group_count>  (23) 
+4
+
+>  <hotspot_required_groups_pass>  (23) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (23) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (23) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (23) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (23) 
+nan
+
+>  <pair_hash_overlap_pct>  (23) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (23) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (23) 
+38.88888888888887
+
+>  <cascade_score_pct>  (23) 
+19.387998533478072
+
+>  <shortlist_rank>  (23) 
+14
+
+>  <rerank_conformers>  (23) 
+16
+
+>  <best_conformer_id>  (23) 
+15
+
+>  <fit_rmsd_angstrom>  (23) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (23) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (23) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (23) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (23) 
+28
+
+>  <pool_source_stage3_rank>  (23) 
+1
+
+>  <pool_source_hotspot_breadth>  (23) 
+1
+
+>  <pool_source_native_support>  (23) 
+1
+
+>  <pool_primary_source>  (23) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (23) 
+5
+
+>  <native_selection_rank>  (23) 
+5
+
+>  <source_input_rank>  (23) 
+5
+
+$$$$
+ZINCi700000BlIsp_m02_t07
+     RDKit          3D
+
+ 40 40  0  0  0  0  0  0  0  0999 V2000
+   -3.3866   -2.4434    0.3691 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.0911   -1.0391   -0.1417 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -3.3514    0.0277    0.9439 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -2.4447    1.2425    0.7538 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1294    2.4077    0.7171 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1759    1.1424    0.6819 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3104    2.3014    0.5099 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1341    1.8151    0.3961 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3815    1.0503   -0.9074 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7500    0.4229   -0.9263 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.8563    1.1419   -1.3669 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.1025    0.5261   -1.3473 C   0  0  0  0  0  0  0  0  0  0  0  0
+    5.2102   -0.7813   -0.8872 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0611   -1.4360   -0.4573 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8388   -0.8506   -0.4696 N   0  0  0  0  0  0  0  0  0  0  0  0
+    4.1451   -2.8455    0.0470 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.8021    0.4337    0.8270 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9972   -0.7678   -1.2352 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7327   -2.7055    1.2062 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.2402   -3.1783   -0.4298 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.4290   -2.5364    0.6926 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0678   -0.9945   -0.5286 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1970   -0.3435    1.9625 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5292    3.1686    0.6171 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5841    2.8691   -0.3869 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3932    2.9610    1.3813 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3749    1.1793    1.2581 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8073    2.6801    0.4435 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6377    0.2537   -1.0324 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2647    1.7177   -1.7700 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7579    2.1627   -1.7203 H   0  0  0  0  0  0  0  0  0  0  0  0
+    5.9851    1.0608   -1.6872 H   0  0  0  0  0  0  0  0  0  0  0  0
+    6.1754   -1.2773   -0.8649 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.8034   -2.8963    0.9198 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1571   -3.2125    0.3433 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.5328   -3.5048   -0.7357 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.8989    1.4366    1.0367 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.0465    0.2998   -0.1723 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.4374   -0.1318    1.3938 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7312   -1.3566   -1.9740 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  1  0
+  4  6  2  3
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  2  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  2  0
+ 14 16  1  0
+  3 17  1  0
+  2 18  1  0
+ 15 10  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  2 22  1  6
+  3 23  1  1
+  5 24  1  0
+  7 25  1  0
+  7 26  1  0
+  8 27  1  0
+  8 28  1  0
+  9 29  1  0
+  9 30  1  0
+ 11 31  1  0
+ 12 32  1  0
+ 13 33  1  0
+ 16 34  1  0
+ 16 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 17 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+M  CHG  1  17   1
+M  END
+>  <ligand_id>  (24) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (24) 
+ZINCi700000BlIsp_m02_t07
+
+>  <input_smiles>  (24) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (24) 
+Cc1cccc(CCCN=C(O)C([NH3+])[C@@H](C)O)n1
+
+>  <canonical_smiles>  (24) 
+Cc1cccc(CCCN=C(O)C([NH3+])[C@@H](C)O)n1
+
+>  <murcko_scaffold>  (24) 
+c1ccncc1
+
+>  <pains_hit>  (24) 
+
+
+>  <reactive_flags>  (24) 
+
+
+>  <embed_ok>  (24) 
+True
+
+>  <minimized_energy>  (24) 
+45.5367
+
+>  <microstate_index>  (24) 
+2
+
+>  <tautomer_index>  (24) 
+7
+
+>  <mw>  (24) 
+252.338
+
+>  <logp>  (24) 
+0.2704
+
+>  <tpsa>  (24) 
+93.35
+
+>  <formal_charge>  (24) 
+1
+
+>  <hbd>  (24) 
+3
+
+>  <hba>  (24) 
+3
+
+>  <rotatable_bonds>  (24) 
+6
+
+>  <heavy_atoms>  (24) 
+18
+
+>  <stage3_screen_rank>  (24) 
+5
+
+>  <zinc_id>  (24) 
+ZINCi700000BlIsp
+
+>  <smiles>  (24) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (24) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (24) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (24) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (24) 
+12.293956789344508
+
+>  <features_matched>  (24) 
+3
+
+>  <lipinski>  (24) 
+1
+
+>  <chemistry_flagged>  (24) 
+nan
+
+>  <pains_alert>  (24) 
+nan
+
+>  <hotspot_weighted_pct>  (24) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (24) 
+11
+
+>  <hotspot_exact_matches>  (24) 
+7
+
+>  <hotspot_compatible_matches>  (24) 
+4
+
+>  <hotspot_exact_residue_count>  (24) 
+7
+
+>  <hotspot_group_count>  (24) 
+4
+
+>  <hotspot_required_groups_pass>  (24) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (24) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (24) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (24) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (24) 
+nan
+
+>  <pair_hash_overlap_pct>  (24) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (24) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (24) 
+38.88888888888887
+
+>  <cascade_score_pct>  (24) 
+19.387998533478072
+
+>  <shortlist_rank>  (24) 
+14
+
+>  <rerank_conformers>  (24) 
+16
+
+>  <best_conformer_id>  (24) 
+15
+
+>  <fit_rmsd_angstrom>  (24) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (24) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (24) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (24) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (24) 
+28
+
+>  <pool_source_stage3_rank>  (24) 
+1
+
+>  <pool_source_hotspot_breadth>  (24) 
+1
+
+>  <pool_source_native_support>  (24) 
+1
+
+>  <pool_primary_source>  (24) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (24) 
+5
+
+>  <native_selection_rank>  (24) 
+5
+
+>  <source_input_rank>  (24) 
+5
+
+$$$$
+ZINCi700000BlIsp_m02_t08
+     RDKit          3D
+
+ 40 40  0  0  0  0  0  0  0  0999 V2000
+   -1.2119   -1.8532    1.9762 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6463   -1.2668    0.6396 C   0  0  2  0  0  0  0  0  0  0  0  0
+   -2.2917    0.1241    0.8121 C   0  0  1  0  0  0  0  0  0  0  0  0
+   -2.1662    0.9834   -0.4530 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.1934    1.3617   -1.0200 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9042    1.3138   -0.8540 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6532    2.0541   -2.0710 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8346    2.1578   -2.4018 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5153    0.7979   -2.6208 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0182    0.0889   -1.3757 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8769   -0.9965   -1.5312 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4098   -1.6031   -0.3999 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0917   -1.1023    0.8559 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2126   -0.0297    0.9431 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6346    0.5397   -0.1480 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9240    0.5904    2.2787 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.7669   -0.1009    1.0722 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.6524   -2.1460    0.0920 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4751   -1.2158    2.4707 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7719   -2.8457    1.8312 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0675   -1.9858    2.6475 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7999   -1.2450   -0.0534 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8913    0.6959    1.6556 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0753    1.0641   -0.3070 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1983    1.5669   -2.8878 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0801    3.0553   -1.9445 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3578    2.7330   -1.6283 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9190    2.7345   -3.3317 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8469    0.1224   -3.1681 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3895    0.9753   -3.2613 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.1579   -1.3499   -2.5195 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.1017   -2.4359   -0.4998 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.5445   -1.5317    1.7447 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7009   -0.1805    3.0227 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7878    1.1721    2.6145 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0592    1.2588    2.2148 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0309   -0.1607    2.0566 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.3060    0.6297    0.5784 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.0000   -0.9942    0.5993 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2003   -2.9761   -0.1693 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  2  3  1  0
+  3  4  1  0
+  4  5  2  0
+  4  6  1  0
+  6  7  1  0
+  7  8  1  0
+  8  9  1  0
+  9 10  1  0
+ 10 11  2  0
+ 11 12  1  0
+ 12 13  2  0
+ 13 14  1  0
+ 14 15  2  0
+ 14 16  1  0
+  3 17  1  0
+  2 18  1  0
+ 15 10  1  0
+  1 19  1  0
+  1 20  1  0
+  1 21  1  0
+  2 22  1  6
+  3 23  1  1
+  6 24  1  0
+  7 25  1  0
+  7 26  1  0
+  8 27  1  0
+  8 28  1  0
+  9 29  1  0
+  9 30  1  0
+ 11 31  1  0
+ 12 32  1  0
+ 13 33  1  0
+ 16 34  1  0
+ 16 35  1  0
+ 16 36  1  0
+ 17 37  1  0
+ 17 38  1  0
+ 17 39  1  0
+ 18 40  1  0
+M  CHG  1  17   1
+M  END
+>  <ligand_id>  (25) 
+ZINCi700000BlIsp
+
+>  <microstate_id>  (25) 
+ZINCi700000BlIsp_m02_t08
+
+>  <input_smiles>  (25) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <standard_smiles>  (25) 
+Cc1cccc(CCCNC(=O)C([NH3+])[C@@H](C)O)n1
+
+>  <canonical_smiles>  (25) 
+Cc1cccc(CCCNC(=O)C([NH3+])[C@@H](C)O)n1
+
+>  <murcko_scaffold>  (25) 
+c1ccncc1
+
+>  <pains_hit>  (25) 
+
+
+>  <reactive_flags>  (25) 
+
+
+>  <embed_ok>  (25) 
+True
+
+>  <minimized_energy>  (25) 
+31.8187
+
+>  <microstate_index>  (25) 
+2
+
+>  <tautomer_index>  (25) 
+8
+
+>  <mw>  (25) 
+252.338
+
+>  <logp>  (25) 
+-0.5699
+
+>  <tpsa>  (25) 
+89.86
+
+>  <formal_charge>  (25) 
+1
+
+>  <hbd>  (25) 
+3
+
+>  <hba>  (25) 
+3
+
+>  <rotatable_bonds>  (25) 
+6
+
+>  <heavy_atoms>  (25) 
+18
+
+>  <stage3_screen_rank>  (25) 
+5
+
+>  <zinc_id>  (25) 
+ZINCi700000BlIsp
+
+>  <smiles>  (25) 
+Cc1cccc(CCCNC(=O)[C@H](N)[C@@H](C)O)n1
+
+>  <coverage_pct>  (25) 
+10.714285714285714
+
+>  <anchor_weighted_pct>  (25) 
+13.397478468997424
+
+>  <geometry_penalty_factor>  (25) 
+0.917632136360097
+
+>  <weighted_coverage_pct>  (25) 
+12.293956789344508
+
+>  <features_matched>  (25) 
+3
+
+>  <lipinski>  (25) 
+1
+
+>  <chemistry_flagged>  (25) 
+nan
+
+>  <pains_alert>  (25) 
+nan
+
+>  <hotspot_weighted_pct>  (25) 
+31.8044562527589
+
+>  <hotspot_bits_matched>  (25) 
+11
+
+>  <hotspot_exact_matches>  (25) 
+7
+
+>  <hotspot_compatible_matches>  (25) 
+4
+
+>  <hotspot_exact_residue_count>  (25) 
+7
+
+>  <hotspot_group_count>  (25) 
+4
+
+>  <hotspot_required_groups_pass>  (25) 
+1
+
+>  <native_supported_hotspot_bits_matched>  (25) 
+nan
+
+>  <native_supported_hotspot_exact_matches>  (25) 
+nan
+
+>  <native_supported_hotspot_exact_residue_count>  (25) 
+nan
+
+>  <native_supported_hotspot_weighted_pct>  (25) 
+nan
+
+>  <pair_hash_overlap_pct>  (25) 
+15.249179293717797
+
+>  <pair_hash_recall_pct>  (25) 
+9.48403856119232
+
+>  <pair_hash_precision_pct>  (25) 
+38.88888888888887
+
+>  <cascade_score_pct>  (25) 
+19.387998533478072
+
+>  <shortlist_rank>  (25) 
+14
+
+>  <rerank_conformers>  (25) 
+16
+
+>  <best_conformer_id>  (25) 
+15
+
+>  <fit_rmsd_angstrom>  (25) 
+0.4289165663391752
+
+>  <mean_pair_distance_error_angstrom>  (25) 
+0.6982171112376196
+
+>  <reference_feature_span_angstrom>  (25) 
+5.971881696751884
+
+>  <ligand_feature_span_angstrom>  (25) 
+5.451353968257624
+
+>  <rerank_query_feature_count>  (25) 
+28
+
+>  <pool_source_stage3_rank>  (25) 
+1
+
+>  <pool_source_hotspot_breadth>  (25) 
+1
+
+>  <pool_source_native_support>  (25) 
+1
+
+>  <pool_primary_source>  (25) 
+stage3_rank
+
+>  <native_candidate_pool_rank>  (25) 
+5
+
+>  <native_selection_rank>  (25) 
+5
+
+>  <source_input_rank>  (25) 
+5
+
+$$$$

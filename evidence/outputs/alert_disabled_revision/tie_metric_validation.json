@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "exhaustive_orderings": [
+    6,
+    20,
+    3,
+    1
+  ],
+  "bootstrap_expansion_checks": 20,
+  "sklearn_roc_and_average_precision": true,
+  "identifier_and_row_order_invariance": true
+}

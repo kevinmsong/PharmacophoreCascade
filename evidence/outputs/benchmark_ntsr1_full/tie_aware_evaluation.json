@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "source_sha256": {
+    "evidence\\reevaluate_tied_benchmarks.py": "dc3fce368b3d1dd77720f5011f55e058207b2e67c5b724389c9808127c771771",
+    "evidence\\tie_aware_metrics.py": "20bd3482ff574326b244c09a3dc28ec7a87a6eddae28b1304d698dd3e3b15d12",
+    "evidence\\data\\ntsr1_external_benchmark_library.csv": "d92f192d7b218bea15d6596fefb2f02dd17a10852c63e9f646f0a4e5ea808fec",
+    "evidence\\outputs\\benchmark_ntsr1_full\\benchmark_external\\full_cascade_ranking.csv": "5a6fa738504a57973340237a66ea14d7cffd0259839716cc862889e1df97a0a4",
+    "evidence\\outputs\\benchmark_ntsr1_full\\benchmark_external\\native_only_ranking.csv": "9c6a8caaca380df21d3f0dab76e329e26b49bf45ecd33bc193bbf42ab0b75f21",
+    "evidence\\outputs\\benchmark_ntsr1_full\\benchmark_external\\stage3_only_ranking.csv": "0cc4638303e90e427a886ec7c048194f94e6c4029d9464724a3b719538d61287",
+    "evidence\\outputs\\benchmark_ntsr1_full\\benchmark_external\\standard_3d_pharmacophore_ranking.csv": "99700d5f3cab1fd40c143d22f92f3fcfb07ce7260147bf5564f8081d96c0b5be"
+  },
+  "summary_sha256": "fe328c948133f8048e116f9f3aadf1b4b7a72af15805ef482b9d72d6961770d0",
+  "bootstrap_iterations": 5000,
+  "seed": 42,
+  "completed_utc": "2026-09-06T21:58:42.284939+00:00",
+  "rule": "Equal status and score are tied; missing scores tie within failure status. ROC-AUC and average precision preserve ties. EF, BEDROC and top-k recovery average over all within-tie permutations.",
+  "enrichment_factor_normalization": "Expected active prevalence within the actual ceil(fraction*N) selected positions divided by the full-library active prevalence; the old nominal-fraction denominator is superseded.",
+  "unchanged": "Molecular scores, original total-order ranking files, candidate selections, and production floor retention.",
+  "original_summary_archive": "evidence\\outputs\\alert_disabled_revision\\identifier_order_evaluation\\benchmark_ntsr1_full",
+  "scope": "Primary enrichment metrics and paired bootstrap. Pairwise original-list correlations remain descriptive total-order diagnostics; scaffold enrichment based on identifier tie breaks is omitted."
+}

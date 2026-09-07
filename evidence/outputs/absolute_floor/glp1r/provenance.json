@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "system": "glp1r",
+  "started_utc": "2026-09-06T19:24:57.777005+00:00",
+  "scientific_settings": {
+    "shortlist_fraction": 0.05,
+    "shortlist_floor": 1000,
+    "shortlist_basis": "stage012_candidates",
+    "cascade_weights": {
+      "hotspot": 0.25,
+      "pair_hash": 0.75
+    },
+    "type_caps": {
+      "anion": 2,
+      "cation": 2,
+      "donor": 4,
+      "acceptor": 6,
+      "aromatic": 6,
+      "hydrophobe": 6
+    },
+    "required_groups": [
+      "ECD anchoring",
+      "Upper TMD activation pocket"
+    ],
+    "stage3_conformers": 16,
+    "native_config": "GLP1_top_ligand_analysis\\configs\\study_top1000_full_1M_native_tuned_no_docking.yaml",
+    "native_max_per_scaffold": 8
+  },
+  "workers": 2,
+  "native_workers": 2,
+  "chemistry_gate_mode": "warn_only",
+  "native_pains_filter": false,
+  "source_sha256": "a25f473f161df0ff39ae685d0e3648ec5f405628eb545c2faba975febfa91820",
+  "config_sha256": "204df0562c70d6c8d9ea36b59e93431f3820b9f294561fe09cccf970d549c78f",
+  "engine_sha256": "a0a74edf143bef20dcf2e9c670fda1c7ae7a2cf31f54fa97c42cc8c4d34de60b",
+  "native_config_sha256": "511b18a148237c0b80fc7dbccd826ee57d31f7bf12ffd36dd9b16434edc2c998",
+  "pharmacophore_sha256": "d6e672f429fa7906cc2a4cda7d6a2c5e0ed6e9d706d1886fe60be08616aaefb8",
+  "cached_scores_used": false,
+  "completed_utc": "2026-09-06T19:57:09.571389+00:00",
+  "elapsed_seconds": 1931.7659949
+}

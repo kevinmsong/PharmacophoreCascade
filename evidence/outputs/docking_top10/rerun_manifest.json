@@ -1,0 +1,40 @@
+{
+  "input_sha256": {
+    "evidence\\outputs\\revision\\top10_for_docking.csv": "658571b93e3e897c6011f9134fe2bafd267bc08842af07e7ddcde74739d4008a",
+    "evidence\\outputs\\revision\\docking_boxes.csv": "dcd4ee28fbb7164e2fcea4a6ef76a4542430cb00678acc5af29269ce08074a20",
+    "GLP1_top_ligand_analysis\\derived_715_topological\\receptors\\6X18_conf01.pdbqt": "910f936eb338334b2234e85f12716f91d0813f72b6c0d57ba0dc28d1b448e239",
+    "GLP1_top_ligand_analysis\\derived_715_topological\\receptors\\6LN2_conf01.pdbqt": "4dfb77a4787cff0351245e49d51859708cc0d1fbc4db8005dac8145ca4da9c72",
+    "GLP1_top_ligand_analysis\\derived_715_topological\\receptors\\5VEW_conf01.pdbqt": "9f3f46ad72dc7d41621cba3a48c760038f79db6a266e35cb582c8e2466bee1ea",
+    "GLP1_top_ligand_analysis\\derived_715_topological\\receptors\\7KI0_conf01.pdbqt": "770dbc61e854568c461812bdf7e123236ef6f77729287c492b2afc0250b01944",
+    "GLP1_top_ligand_analysis\\derived_715_topological\\receptors\\7LCJ_conf01.pdbqt": "107c9edf35e503861de80f92991fd775e0aa81859147f31f98bc9fec6ccd561d"
+  },
+  "vina_version": "AutoDock Vina v1.2.7",
+  "ligand_ids": [
+    "ZINCk700000Gfz1H",
+    "ZINCk700001bQgxo",
+    "ZINCk500000BlHKL",
+    "ZINCj600000JWMq0",
+    "ZINCk500000gdMQW",
+    "ZINCk600000EmAGZ",
+    "ZINCk5000003XjkE",
+    "ZINCk800000gvPBH",
+    "ZINCk600000Ja5bY",
+    "ZINCk600000y8tEo"
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "exhaustiveness": 16,
+  "num_modes": 9,
+  "etkdg_seed": 20260313,
+  "mmff_max_iters": 400,
+  "requested_jobs": 150,
+  "job_status_counts": {
+    "scored": 150
+  },
+  "ligands_with_both_states": 10,
+  "cached_ligand_scores_used": false,
+  "elapsed_seconds": 2673.849881899998
+}

@@ -1,0 +1,52 @@
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}p{.13\textwidth}p{.25\textwidth}>{\raggedleft\arraybackslash}p{.16\textwidth}>{\raggedleft\arraybackslash}p{.10\textwidth}>{\raggedleft\arraybackslash}p{.16\textwidth}>{\raggedleft\arraybackslash}p{.10\textwidth}@{}}
+\caption{\textbf{Stage-by-stage counts for each pair of shortlist rules.} Entries are total ligands and in-domain actives, respectively. All systems use the same 30,000-molecule background, fixed 0.25/0.75 production-benchmark weights, and the candidate count as the percentage denominator.}\label{tab:floor-survival}\\
+\toprule
+ & & \multicolumn{2}{c}{5\% only} & \multicolumn{2}{c}{5\% + min.\ 1,000} \\
+System & Stage & Total & Actives & Total & Actives \\
+\midrule
+\endfirsthead
+\toprule
+System & Stage & Total & Actives & Total & Actives \\
+\midrule
+\endhead
+GLP-1R & Input & 30,310 & 10 & 30,310 & 10 \\
+GLP-1R & Stage 0 & 30,126 & 10 & 30,126 & 10 \\
+GLP-1R & Stages 1/2 & 29,274 & 9 & 29,274 & 9 \\
+GLP-1R & Shortlist & 1,464 & 8 & 1,464 & 8 \\
+GLP-1R & Successful 3D & 1,462 & 8 & 1,462 & 8 \\
+GLP-1R & Native selection & 647 & 8 & 647 & 8 \\
+GLP-1R & Successful native & 647 & 8 & 647 & 8 \\
+GLP-1R & Final ranking & 647 & 8 & 647 & 8 \\
+\midrule
+GHSR & Input & 31,550 & 50 & 31,550 & 50 \\
+GHSR & Stage 0 & 31,366 & 50 & 31,366 & 50 \\
+GHSR & Stages 1/2 & 277 & 39 & 277 & 39 \\
+GHSR & Shortlist & 14 & 9 & 277 & 39 \\
+GHSR & Successful 3D & 14 & 9 & 277 & 39 \\
+GHSR & Native selection & 14 & 9 & 271 & 39 \\
+GHSR & Successful native & 14 & 9 & 271 & 39 \\
+GHSR & Final ranking & 14 & 9 & 271 & 39 \\
+\midrule
+NTSR1 & Input & 31,550 & 50 & 31,550 & 50 \\
+NTSR1 & Stage 0 & 31,364 & 48 & 31,364 & 48 \\
+NTSR1 & Stages 1/2 & 398 & 35 & 398 & 35 \\
+NTSR1 & Shortlist & 20 & 18 & 398 & 35 \\
+NTSR1 & Successful 3D & 20 & 18 & 397 & 35 \\
+NTSR1 & Native selection & 20 & 18 & 343 & 35 \\
+NTSR1 & Successful native & 20 & 18 & 343 & 35 \\
+NTSR1 & Final ranking & 20 & 18 & 343 & 35 \\
+\midrule
+MDM2--p53 & Input & 31,550 & 50 & 31,550 & 50 \\
+MDM2--p53 & Stage 0 & 31,366 & 50 & 31,366 & 50 \\
+MDM2--p53 & Stages 1/2 & 31,314 & 50 & 31,314 & 50 \\
+MDM2--p53 & Shortlist & 1,566 & 43 & 1,566 & 43 \\
+MDM2--p53 & Successful 3D & 1,566 & 43 & 1,566 & 43 \\
+MDM2--p53 & Native selection & 1,152 & 43 & 1,152 & 43 \\
+MDM2--p53 & Successful native & 1,152 & 43 & 1,152 & 43 \\
+MDM2--p53 & Final ranking & 1,000 & 43 & 1,000 & 43 \\
+\midrule
+\end{longtable}
+\setlength{\tabcolsep}{6pt}
+\normalsize

@@ -1,0 +1,21 @@
+\begin{table}[tbp]
+\centering
+\caption{\textbf{What shortlist depth changes under production constraints.} Each matched pair of shortlist rules shares one evaluation of Stages 0--2 and the Stage-3 union. Native preparation and scoring are repeated when the shortlist differs. The 1,000-molecule minimum is capped by the number of eligible candidates. Native counts are successful ligand scores; final retention additionally reflects scaffold selection and the final top-1,000 limit.}
+\label{tab:efficiency}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+System & Shortlist rule & Shortlist & Native & Shortlist actives & Final actives \\
+\midrule
+GLP-1R & 5\% only & 1,464 & 647 & 8/10 & 8/10 \\
+GLP-1R & 5\% + min.\ 1,000 & 1,464 & 647 & 8/10 & 8/10 \\
+GHSR & 5\% only & 14 & 14 & 9/50 & 9/50 \\
+GHSR & 5\% + min.\ 1,000 & 277 & 271 & 39/50 & 39/50 \\
+NTSR1 & 5\% only & 20 & 20 & 18/50 & 18/50 \\
+NTSR1 & 5\% + min.\ 1,000 & 398 & 343 & 35/50 & 35/50 \\
+MDM2--p53 & 5\% only & 1,566 & 1,152 & 43/50 & 43/50 \\
+MDM2--p53 & 5\% + min.\ 1,000 & 1,566 & 1,152 & 43/50 & 43/50 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "source_sha256": {
+    "evidence\\reevaluate_tied_benchmarks.py": "dc3fce368b3d1dd77720f5011f55e058207b2e67c5b724389c9808127c771771",
+    "evidence\\tie_aware_metrics.py": "20bd3482ff574326b244c09a3dc28ec7a87a6eddae28b1304d698dd3e3b15d12",
+    "evidence\\data\\replicates\\glp1r_decoyset3.csv": "a0caa38f8a79b72a9e278852c40213224f6f14cfde814a6313c3b6661f5abbe2",
+    "evidence\\outputs\\decoy_replicates\\glp1r_seed3\\benchmark_external\\full_cascade_ranking.csv": "d81513dec44aad65dc0470680dcc42771a9dc94ab5d29656c857f0c39ab93e2e",
+    "evidence\\outputs\\decoy_replicates\\glp1r_seed3\\benchmark_external\\stage3_only_ranking.csv": "d13783ecb9e0a217d0caa224cf4d79f87ab49ec9550a76d2821e0246c1229111",
+    "evidence\\outputs\\decoy_replicates\\glp1r_seed3\\benchmark_external\\standard_3d_pharmacophore_ranking.csv": "a8b7deda5a309bb4c694061c0254ab09952a5b64f827657a6a791c9b722df484"
+  },
+  "summary_sha256": "7c64345e25c514edd1702578997202cf463426f2849f7268612067106fdde7b0",
+  "bootstrap_iterations": 0,
+  "seed": 42,
+  "completed_utc": "2026-09-06T23:46:35.774316+00:00",
+  "rule": "Equal status and score are tied; missing scores tie within failure status. ROC-AUC and average precision preserve ties. EF, BEDROC and top-k recovery average over all within-tie permutations.",
+  "enrichment_factor_normalization": "Expected active prevalence within the actual ceil(fraction*N) selected positions divided by the full-library active prevalence; the old nominal-fraction denominator is superseded.",
+  "unchanged": "Molecular scores, original total-order ranking files, candidate selections, and production floor retention.",
+  "original_summary_archive": "evidence\\outputs\\alert_disabled_revision\\identifier_order_evaluation\\glp1r_seed3",
+  "scope": "Primary enrichment metrics and paired bootstrap. Pairwise original-list correlations remain descriptive total-order diagnostics; scaffold enrichment based on identifier tie breaks is omitted."
+}

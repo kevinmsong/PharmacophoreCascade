@@ -1,51 +1,93 @@
 {
   "background_size": 30000,
   "shortlist_fraction": 0.05,
-  "n_candidates": 30322,
-  "n_shortlist": 1517,
-  "actives_in_final": 39,
+  "shortlist_floor": 1000,
+  "chemistry_gate_mode": "warn_only",
+  "native_pains_filter": false,
+  "n_candidates": 31314,
+  "n_shortlist": 1566,
+  "actives_in_final": 43,
   "stage_survival": [
     {
+      "system": "mdm2",
+      "policy": "floor1000",
       "stage": "input",
+      "total": 31550,
       "actives": 50,
       "decoys": 1500,
       "background": 30000,
       "active_survival_pct": 100.0
     },
     {
+      "system": "mdm2",
+      "policy": "floor1000",
       "stage": "stage0_pass",
-      "actives": 42,
+      "total": 31366,
+      "actives": 50,
       "decoys": 1500,
-      "background": 28832,
-      "active_survival_pct": 84.0
+      "background": 29816,
+      "active_survival_pct": 100.0
     },
     {
-      "stage": "stage1_pass",
-      "actives": 42,
+      "system": "mdm2",
+      "policy": "floor1000",
+      "stage": "stage012_pass",
+      "total": 31314,
+      "actives": 50,
       "decoys": 1500,
-      "background": 28780,
-      "active_survival_pct": 84.0
+      "background": 29764,
+      "active_survival_pct": 100.0
     },
     {
-      "stage": "stage3_shortlist",
-      "actives": 39,
-      "decoys": 1469,
-      "background": 9,
-      "active_survival_pct": 78.0
+      "system": "mdm2",
+      "policy": "floor1000",
+      "stage": "shortlist",
+      "total": 1566,
+      "actives": 43,
+      "decoys": 1498,
+      "background": 25,
+      "active_survival_pct": 86.0
     },
     {
-      "stage": "native_pool",
-      "actives": 39,
-      "decoys": 1075,
-      "background": 3,
-      "active_survival_pct": 78.0
+      "system": "mdm2",
+      "policy": "floor1000",
+      "stage": "stage3_success",
+      "total": 1566,
+      "actives": 43,
+      "decoys": 1498,
+      "background": 25,
+      "active_survival_pct": 86.0
     },
     {
+      "system": "mdm2",
+      "policy": "floor1000",
+      "stage": "native_selected",
+      "total": 1152,
+      "actives": 43,
+      "decoys": 1099,
+      "background": 10,
+      "active_survival_pct": 86.0
+    },
+    {
+      "system": "mdm2",
+      "policy": "floor1000",
+      "stage": "native_success",
+      "total": 1152,
+      "actives": 43,
+      "decoys": 1099,
+      "background": 10,
+      "active_survival_pct": 86.0
+    },
+    {
+      "system": "mdm2",
+      "policy": "floor1000",
       "stage": "final_ranked",
-      "actives": 39,
-      "decoys": 960,
-      "background": 1,
-      "active_survival_pct": 78.0
+      "total": 1000,
+      "actives": 43,
+      "decoys": 951,
+      "background": 6,
+      "active_survival_pct": 86.0
     }
-  ]
+  ],
+  "current_source": "evidence\\outputs\\absolute_floor\\mdm2"
 }

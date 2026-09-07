@@ -1,0 +1,859 @@
+{
+  "status": "passed",
+  "reviewed_utc": "2026-09-07T00:22:44.934686+00:00",
+  "documents": [
+    {
+      "path": "ACS_Omega_resubmission/main.docx",
+      "sha256": "20bddcf079241503f4387ff9e44880ebf4dc0ef991703979ce67eb6e0b8cb789",
+      "page_count": 23,
+      "pages": [
+        {
+          "page": 1,
+          "image_sha256": "8ace02d134d88a207545439910c3fa00e30a5cdf07816a2cd170969b520559a2",
+          "visual_review": "passed"
+        },
+        {
+          "page": 2,
+          "image_sha256": "4a4bfd6d4211c86b44adad8bb34a695edbfe2d784633aafb56904941eeb090b6",
+          "visual_review": "passed"
+        },
+        {
+          "page": 3,
+          "image_sha256": "abf2b3ae194debb0332e38792f798f8482bec7e631071ea2e21cb0349c25293b",
+          "visual_review": "passed"
+        },
+        {
+          "page": 4,
+          "image_sha256": "d83da0847bd559fceeb0a683950223f703585155dca72157659b641d0b2a16fa",
+          "visual_review": "passed"
+        },
+        {
+          "page": 5,
+          "image_sha256": "3e5bab0155d5e1922a864e6ba36591a9421c11a57ea1564f5c9d905c9032ae8b",
+          "visual_review": "passed"
+        },
+        {
+          "page": 6,
+          "image_sha256": "69d10c54ed31d5ed6d04314f6b869f60b0ffdbceaafecd2a767f02f23b1995cc",
+          "visual_review": "passed"
+        },
+        {
+          "page": 7,
+          "image_sha256": "bc4be85cfcecd719ec67fe0c4e561491f9b40953de100c2f89e6960537b30bd7",
+          "visual_review": "passed"
+        },
+        {
+          "page": 8,
+          "image_sha256": "bbc39bd80e6c14eebcabb31ee874fd80e225289f9a690c790e2bb6d48629a1c4",
+          "visual_review": "passed"
+        },
+        {
+          "page": 9,
+          "image_sha256": "202b916dfe5321e2cdfeed88c4bc5ded07b337e58917292a11505b11908171d5",
+          "visual_review": "passed"
+        },
+        {
+          "page": 10,
+          "image_sha256": "02f6392d59a47aa62d0dc7ed497c9e3728db7f962d10b291f84d795111168a5e",
+          "visual_review": "passed"
+        },
+        {
+          "page": 11,
+          "image_sha256": "d095b8f87f98ab4e6b612086209a8625ce0d685e4c2ad276111715287d7bcac7",
+          "visual_review": "passed"
+        },
+        {
+          "page": 12,
+          "image_sha256": "97c050b98f1372e4c3ead6b5496555da8ec273103dfd019754d84931ae0f3b45",
+          "visual_review": "passed"
+        },
+        {
+          "page": 13,
+          "image_sha256": "2929c94b32458b5cc58550f62c8997dc4195b16c3702301890196e9cf85c4673",
+          "visual_review": "passed"
+        },
+        {
+          "page": 14,
+          "image_sha256": "a3a3d3cbd3d0a67c2006abe1daaa217c2dfd29ce0721a4b6c40b54a16068a2b2",
+          "visual_review": "passed"
+        },
+        {
+          "page": 15,
+          "image_sha256": "0c7c1d158d8b329a8e65d0e0a9794f632169743e990dfe7fc1805d04377d205d",
+          "visual_review": "passed"
+        },
+        {
+          "page": 16,
+          "image_sha256": "c23a38e18f113eefdd6092392371b2fd3fe1ed826b3e85a0afef3ce760323cda",
+          "visual_review": "passed"
+        },
+        {
+          "page": 17,
+          "image_sha256": "1ccdf0e6dadc58b40f04598f8395a54528225288be6d33224473024afcb0d339",
+          "visual_review": "passed"
+        },
+        {
+          "page": 18,
+          "image_sha256": "e1307309e78d3f61beef1eb17d137d091a1f903a2abae9825bdb14c17e7a3f4b",
+          "visual_review": "passed"
+        },
+        {
+          "page": 19,
+          "image_sha256": "f8f60ab8e612be402f22fc2304ef99837719a977907f716407ac2417fc74d9ca",
+          "visual_review": "passed"
+        },
+        {
+          "page": 20,
+          "image_sha256": "bdf6c18e32d0b9dff9e258897302c9abe4aa26da4db06ad4226fcec609629cb2",
+          "visual_review": "passed"
+        },
+        {
+          "page": 21,
+          "image_sha256": "7ebf8232ba029b2a18dbf7e051c1c754fd36ee36a0c4736ddbfe7c05003b47ba",
+          "visual_review": "passed"
+        },
+        {
+          "page": 22,
+          "image_sha256": "41b2fa6377b1f9385e63ce2724e5e91ecec345054cf4e129c6b70e8ff6963310",
+          "visual_review": "passed"
+        },
+        {
+          "page": 23,
+          "image_sha256": "1e91ae290b374e7b3cedbd2cea210fafb443d0744d49082e99fb1fd57157307b",
+          "visual_review": "passed"
+        }
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission/main.pdf",
+      "sha256": "a9634c286ae1429d02933d67711ffe9552171929d2a134367560cd3269960ab3",
+      "page_count": 25,
+      "pages": [
+        {
+          "page": 1,
+          "image_sha256": "61243a6c169187a6c3274d50556f519a1f9ea642537c873a2957c6fc475c3c1a",
+          "visual_review": "passed"
+        },
+        {
+          "page": 2,
+          "image_sha256": "19adff18cc861c4af1f916fb24b79d748c9b7cd4bd3884488905aa85b8c72b90",
+          "visual_review": "passed"
+        },
+        {
+          "page": 3,
+          "image_sha256": "e5c502fe62b668e0304975cecaee008c3e7d90e02ab8c49081d5671ab6efdd97",
+          "visual_review": "passed"
+        },
+        {
+          "page": 4,
+          "image_sha256": "521a3dda1be4c71f10e00769cab08897362df7a6fa3bab611ff815fdcce56505",
+          "visual_review": "passed"
+        },
+        {
+          "page": 5,
+          "image_sha256": "254d531e02e4c1e63019d53d43d4466834022e1defbe4a67472af041eefb35ec",
+          "visual_review": "passed"
+        },
+        {
+          "page": 6,
+          "image_sha256": "57568829aa351d02cde6493df318dfbf3dfb6fa0eee90097ab32f0eb38ca5be9",
+          "visual_review": "passed"
+        },
+        {
+          "page": 7,
+          "image_sha256": "4add33c39aba2e2089273733e06f831c5d69b543f028cc280391b250bc5f7451",
+          "visual_review": "passed"
+        },
+        {
+          "page": 8,
+          "image_sha256": "8013b0f39073f6966fe17b026e50540c2411d6bf08390792e2753c1516b2542c",
+          "visual_review": "passed"
+        },
+        {
+          "page": 9,
+          "image_sha256": "d012b140c57a33924251a3bff4da954926331b1240c0a8b0fbc01e462816ba27",
+          "visual_review": "passed"
+        },
+        {
+          "page": 10,
+          "image_sha256": "f5fa2dbaddb7408d069683634272bbb7dfcdd4a257ea12ac3567297a58b650d1",
+          "visual_review": "passed"
+        },
+        {
+          "page": 11,
+          "image_sha256": "d5f21208994f23f94d92b31e1baa2352cd67b2c28e2b971f546f56eff3a4168d",
+          "visual_review": "passed"
+        },
+        {
+          "page": 12,
+          "image_sha256": "bd046b4c60f33427ed474ee5ee28bcc0af2976439170bd446fab63b219311e8e",
+          "visual_review": "passed"
+        },
+        {
+          "page": 13,
+          "image_sha256": "0694e03c07874a0b67282743ec4e92bc0669d2b8dc52bcdaf2fb0f038f591a5a",
+          "visual_review": "passed"
+        },
+        {
+          "page": 14,
+          "image_sha256": "bde11cc558f68a36dc6377aa7245d96d00e4165c562628899630f607069a2c6f",
+          "visual_review": "passed"
+        },
+        {
+          "page": 15,
+          "image_sha256": "f9f88234ff49c57c23a6c0a70ad4096f764553e4ee01872c8ff0dd5935b441cc",
+          "visual_review": "passed"
+        },
+        {
+          "page": 16,
+          "image_sha256": "1ff6c8ec2ec9ac849072afb0c3f2fbeb95c97656d8af8a99218ec398f013bc57",
+          "visual_review": "passed"
+        },
+        {
+          "page": 17,
+          "image_sha256": "dc12deb8cc4b4889fe83e71578852f671d6f1ed6f353cf6ae8667ebd67761202",
+          "visual_review": "passed"
+        },
+        {
+          "page": 18,
+          "image_sha256": "2e45f4468b53466f1913bf1bd666111207f1b9143ff0cec712ca923f76c90316",
+          "visual_review": "passed"
+        },
+        {
+          "page": 19,
+          "image_sha256": "7ffdb54409164a10aa4a9e67a7ed46cc967cc35e0c0d922e40754f831b3085f4",
+          "visual_review": "passed"
+        },
+        {
+          "page": 20,
+          "image_sha256": "3e7f3ab1fd6eda2c8c8969e68b2bfae20ae52a86d0f1724456fe63d2d71afb30",
+          "visual_review": "passed"
+        },
+        {
+          "page": 21,
+          "image_sha256": "e7dbfd198fe6ab9c1033f64bed5a2e6a10cff1a44781b0a5170ad2783b952e7d",
+          "visual_review": "passed"
+        },
+        {
+          "page": 22,
+          "image_sha256": "aaa8c1e3f195a637f1f5081b6152327458c3c10724574fc2856fc9ef6843b856",
+          "visual_review": "passed"
+        },
+        {
+          "page": 23,
+          "image_sha256": "47c974e7fb29e6bdd25da13e84b8fd1f7a324df85cc715904d3dbed2f42aaa35",
+          "visual_review": "passed"
+        },
+        {
+          "page": 24,
+          "image_sha256": "cd2da1487475e02bc8568aa20978bcd737ed58d444b645cd32f0309dc2b275db",
+          "visual_review": "passed"
+        },
+        {
+          "page": 25,
+          "image_sha256": "9267d8b956447b20e89674462636f60b911b306d6ec7aad590f4dc2c65c488ac",
+          "visual_review": "passed"
+        }
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission/main_highlighted.docx",
+      "sha256": "6e5ffe4a7fe78b7b9ba2b4b0c682c9813b82ad4661e8b166a0791c4260cfbba0",
+      "page_count": 24,
+      "pages": [
+        {
+          "page": 1,
+          "image_sha256": "eda00b2785c5a14cfcabf3901c904eaf13642d973b6a4bab3d4287335c219e51",
+          "visual_review": "passed"
+        },
+        {
+          "page": 2,
+          "image_sha256": "1b620384be1107f802ec94620e41b2c3d2100e1e5dc799625c7a4e62cfe90e0a",
+          "visual_review": "passed"
+        },
+        {
+          "page": 3,
+          "image_sha256": "4db70dcfa3aa7b65146d763d1cedf789c57965729c7fdfeb51b8d456f0a71245",
+          "visual_review": "passed"
+        },
+        {
+          "page": 4,
+          "image_sha256": "d51bbbd31737bdd02686d31cf8e3b879b23393b452b65b9448216d6c0df34f29",
+          "visual_review": "passed"
+        },
+        {
+          "page": 5,
+          "image_sha256": "3e035a8abb005f378f1fc16c3e6a3f8e78987d40e739aba60870a9fb82e65625",
+          "visual_review": "passed"
+        },
+        {
+          "page": 6,
+          "image_sha256": "34c2929968026f92258a3319c5e67ba9d0e9a77d99526c1202f5d0325a3c365e",
+          "visual_review": "passed"
+        },
+        {
+          "page": 7,
+          "image_sha256": "b80b17da226c9117ffc4d69594af17ac05141eac83c2aedb8483468b70833472",
+          "visual_review": "passed"
+        },
+        {
+          "page": 8,
+          "image_sha256": "5d2e94a891aa4ffccfaa239e94235d1b4d9ca6dcdebaeb46d775e9abee775068",
+          "visual_review": "passed"
+        },
+        {
+          "page": 9,
+          "image_sha256": "b18afd786d61f423e4018b3408c35c1c12d4778d13c2f8679ec7cd89d1fb9b60",
+          "visual_review": "passed"
+        },
+        {
+          "page": 10,
+          "image_sha256": "c8fa2e4d4e9c7af7f1b728010cbf1c4fdb5a2bf5cb54dd077bf6a57da06c7ca1",
+          "visual_review": "passed"
+        },
+        {
+          "page": 11,
+          "image_sha256": "83a783bbde7d3100c0e02d775e1016a5a90b6bad0fe3e2320fad02194287ab39",
+          "visual_review": "passed"
+        },
+        {
+          "page": 12,
+          "image_sha256": "192b2888520ab1ee819aed9edcb5415ff19b42a4df3c109aebbf04c05133f2e9",
+          "visual_review": "passed"
+        },
+        {
+          "page": 13,
+          "image_sha256": "e437fcf20bf27587f810f92cc0661c9f49011263dfe742878cb9c4d252297bc1",
+          "visual_review": "passed"
+        },
+        {
+          "page": 14,
+          "image_sha256": "1bd17ba8ded30a23fdc424babc3d0fe8b30ecbd9daf14486425897e7042d0226",
+          "visual_review": "passed"
+        },
+        {
+          "page": 15,
+          "image_sha256": "00b2fca5bc23d178e9362cba08eb7cd58fac7c9efc09c1163a32a5a65ca068ae",
+          "visual_review": "passed"
+        },
+        {
+          "page": 16,
+          "image_sha256": "948963642e06c1cb4d62fc94334ad788b21564fff39650c4be8de3cb8174e074",
+          "visual_review": "passed"
+        },
+        {
+          "page": 17,
+          "image_sha256": "4badb7efef1b5b7acad0665e82297eef4cd90275e8e5807f6225a5d083a648f2",
+          "visual_review": "passed"
+        },
+        {
+          "page": 18,
+          "image_sha256": "94a5656fc8aae87dcecabe93c8eea8810acf5a8dc19bfdfd1b05cc089690ac23",
+          "visual_review": "passed"
+        },
+        {
+          "page": 19,
+          "image_sha256": "5c0c1e6e15fd04e0309bfa4e9afc62f26ae287c07c722fcb169b7f8c60970337",
+          "visual_review": "passed"
+        },
+        {
+          "page": 20,
+          "image_sha256": "02e5d5a69e0f25adb54d6a3d5c36f195035dc9a6fa351afa7f6c5267d6b0d26b",
+          "visual_review": "passed"
+        },
+        {
+          "page": 21,
+          "image_sha256": "efb762e80adbfe7af4852c79b69c0b5dbfc131c8faedfb25685b1d256a38818b",
+          "visual_review": "passed"
+        },
+        {
+          "page": 22,
+          "image_sha256": "9eaff67c6219363ef3915209864979a025c4a05b58771fcccea4668e3a1abcc7",
+          "visual_review": "passed"
+        },
+        {
+          "page": 23,
+          "image_sha256": "0938f45b8efa9b139689990c9ee0a7070020b25b74c3768b39a211a4c2c8de67",
+          "visual_review": "passed"
+        },
+        {
+          "page": 24,
+          "image_sha256": "73f8f06917aa30fa73f3b8d1c3abd72c41e6cc46a76855798e89391fa3690863",
+          "visual_review": "passed"
+        }
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission/main_highlighted.pdf",
+      "sha256": "b0e214768062366ec0c62c3b1d0f0251634d101b4345bbbfb0f69429fac950bb",
+      "page_count": 27,
+      "pages": [
+        {
+          "page": 1,
+          "image_sha256": "283628f38a8dcf693741b59faa6d4fe5a643fd753b9144b0febf803d12276931",
+          "visual_review": "passed"
+        },
+        {
+          "page": 2,
+          "image_sha256": "e2e1e007e69d2f804da86d097d85954ba7c66ddeb29cba174579c74523392a7b",
+          "visual_review": "passed"
+        },
+        {
+          "page": 3,
+          "image_sha256": "64d219a82a5781e6874daab7e38a0a378a4930853f4462e516c20a854c2fd361",
+          "visual_review": "passed"
+        },
+        {
+          "page": 4,
+          "image_sha256": "3524ed33590e008190e2b907cb380a52b8511e256f08fc204e57ae404da7a836",
+          "visual_review": "passed"
+        },
+        {
+          "page": 5,
+          "image_sha256": "92c205526fc55484e34fd434e95c1048336656897eb158ba971d8b9960e71114",
+          "visual_review": "passed"
+        },
+        {
+          "page": 6,
+          "image_sha256": "695834b2130a0070f93e5cf8e69205438b4f4ba26ec93466b1dcb121c4db4e8f",
+          "visual_review": "passed"
+        },
+        {
+          "page": 7,
+          "image_sha256": "8d99f4f5269d30bb2b18b31715264631294760afe4ab77805ad711b9c0530043",
+          "visual_review": "passed"
+        },
+        {
+          "page": 8,
+          "image_sha256": "817ae83e098599f635591a880f7adbefe21b64e995ef9349bd9d2210cc63ff3c",
+          "visual_review": "passed"
+        },
+        {
+          "page": 9,
+          "image_sha256": "57732903c4bec4526c70e8ccb5d4364344b6b2e7c4bb004d22d24d89267061a1",
+          "visual_review": "passed"
+        },
+        {
+          "page": 10,
+          "image_sha256": "3267de23dca47f149c21ba7e2dbd4db7896c8738bc1506a757f766e87e1c94ca",
+          "visual_review": "passed"
+        },
+        {
+          "page": 11,
+          "image_sha256": "67e821537e9466b63f5d9c84e9e9b06cbe18758c810a7dc2688b5caec938cab4",
+          "visual_review": "passed"
+        },
+        {
+          "page": 12,
+          "image_sha256": "467ca5848ea4060637155196247e30b057a976f3f754a4e71389cee90e82fa8f",
+          "visual_review": "passed"
+        },
+        {
+          "page": 13,
+          "image_sha256": "35baee599faa7468d78aab49e68e2564c566c9b27edc6a94ff28f6ebc18653ee",
+          "visual_review": "passed"
+        },
+        {
+          "page": 14,
+          "image_sha256": "5d9e9c29601254dd8e87d7ac6853fd45f21db05b4ce2a07bb746ae8dbb1c1ff2",
+          "visual_review": "passed"
+        },
+        {
+          "page": 15,
+          "image_sha256": "b2d9dd47507eac97db1356eeb07a58b36ae2c6712250d3edfb2fe155b93861bc",
+          "visual_review": "passed"
+        },
+        {
+          "page": 16,
+          "image_sha256": "b48898b9ffed56d24b3d66c7289ef98994a90421ea867306f6798cfdb7209189",
+          "visual_review": "passed"
+        },
+        {
+          "page": 17,
+          "image_sha256": "ecea94bfb9a50552a4f903a4e8a2dfe93a9f7e8b8a450830c18bb171398c8a04",
+          "visual_review": "passed"
+        },
+        {
+          "page": 18,
+          "image_sha256": "a579a2f039c67df135d84ddbe4ce95f03ca61032f75720ace837129a33fecb43",
+          "visual_review": "passed"
+        },
+        {
+          "page": 19,
+          "image_sha256": "3e6aac4ad49e64ac9463da8c7e25d7eb21c769f7853ee679495b6481126ecd88",
+          "visual_review": "passed"
+        },
+        {
+          "page": 20,
+          "image_sha256": "69e3511a71a92d29ce9a1894dfdd577060b113a0343515b27190deb9b26ded5c",
+          "visual_review": "passed"
+        },
+        {
+          "page": 21,
+          "image_sha256": "b5d5c27f7baad3a26a96a1cc1a2bc7b895ac39394e3e6558fbc18ed95c789f5c",
+          "visual_review": "passed"
+        },
+        {
+          "page": 22,
+          "image_sha256": "4f00fd974862535d3fc6032296ba4bad620759e2bf84e79954b2a61cd9171572",
+          "visual_review": "passed"
+        },
+        {
+          "page": 23,
+          "image_sha256": "e358d004c4341535ac1bca508cf111612b0a8bfd689f753671eabdddea38dcb2",
+          "visual_review": "passed"
+        },
+        {
+          "page": 24,
+          "image_sha256": "c75b464b38a9fa42027fc674e149e1800c3423ca202a76270776dd1b34b2c674",
+          "visual_review": "passed"
+        },
+        {
+          "page": 25,
+          "image_sha256": "50fcd03b739ce23ea4be4486921a12319594eed5e9d68fd203ac32392f4d5eae",
+          "visual_review": "passed"
+        },
+        {
+          "page": 26,
+          "image_sha256": "dde3af3c96b181573254acc7ef36c2ffe1c0a2980eaea0cc3616ef4842631d20",
+          "visual_review": "passed"
+        },
+        {
+          "page": 27,
+          "image_sha256": "1b73328fcb3e011b6b1613531ed45e497386b54207899648578c2c0e6cca6be7",
+          "visual_review": "passed"
+        }
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission/supporting_information.docx",
+      "sha256": "6f227d1c5852fcef11d17fbcc4db260f227e2f67f11f13488aba5ffedc3d41f1",
+      "page_count": 22,
+      "pages": [
+        {
+          "page": 1,
+          "image_sha256": "7ae7b4144498a0fb9467285b9f1119f5998d7b22a68ec918df8b31213143a5bb",
+          "visual_review": "passed"
+        },
+        {
+          "page": 2,
+          "image_sha256": "014432ba0e0e2d166a48a74b5ce2c89347ce9fe8293d8d9ef0ae7529bd105299",
+          "visual_review": "passed"
+        },
+        {
+          "page": 3,
+          "image_sha256": "682e46fb8df8a73bfe2d881033d2dd4dea3c45fee4b0b9ce6de0ad6d130c9176",
+          "visual_review": "passed"
+        },
+        {
+          "page": 4,
+          "image_sha256": "867dcb8100090358b8b396911a8c385c791ef76f696dbb124d1fc3692d7dc6f1",
+          "visual_review": "passed"
+        },
+        {
+          "page": 5,
+          "image_sha256": "3344d3ff5d542d618d73020440e488acc2f7a5dbd0c665a3b66f48754e7267ff",
+          "visual_review": "passed"
+        },
+        {
+          "page": 6,
+          "image_sha256": "96ef8724931637a8a96724362bdafb2ee51d32044601ca6a338322353c0e9f9f",
+          "visual_review": "passed"
+        },
+        {
+          "page": 7,
+          "image_sha256": "f909e28b75ebcc040cf308f8c0e2299758d4e336bf25b7d27e2eda75251f13d3",
+          "visual_review": "passed"
+        },
+        {
+          "page": 8,
+          "image_sha256": "4e9c88eb58d28ed705ef4a739ad961d650cb990e7b914c6aec28ac8fa6c7a3fe",
+          "visual_review": "passed"
+        },
+        {
+          "page": 9,
+          "image_sha256": "5a77da0c7c63180f2d2cd8e91697bb6e5ee8bef3dd3923a61cea1078ac316756",
+          "visual_review": "passed"
+        },
+        {
+          "page": 10,
+          "image_sha256": "bc549ece4707cfaee1e5560aec79050d1e23c17e98a0579a1b571f216a8b8a1c",
+          "visual_review": "passed"
+        },
+        {
+          "page": 11,
+          "image_sha256": "6a6c7367bd062ecb5d411a72ecff98d98c1ff6667fbe92c6d0755fe8e2d55a73",
+          "visual_review": "passed"
+        },
+        {
+          "page": 12,
+          "image_sha256": "fc4a12e42c376bb09412033fdc31144df12c2b5b7e4634cd0acd32ab6df0e8d7",
+          "visual_review": "passed"
+        },
+        {
+          "page": 13,
+          "image_sha256": "babd942ee1ac30472241adb7f777b188a95461d9b249afffd2da581188c0662e",
+          "visual_review": "passed"
+        },
+        {
+          "page": 14,
+          "image_sha256": "9a4c7079c991e98c9e1272e1cdac57d6800ace830a490c9aa6257d12f3217c66",
+          "visual_review": "passed"
+        },
+        {
+          "page": 15,
+          "image_sha256": "e872bbb1175380e3b0196c7555ce2959ee933162753347f76114d8da94270365",
+          "visual_review": "passed"
+        },
+        {
+          "page": 16,
+          "image_sha256": "0cc03778ee7141119e96992484a6c86ab118f029c7ab7ebe02e897c4e4a4beef",
+          "visual_review": "passed"
+        },
+        {
+          "page": 17,
+          "image_sha256": "9a2533fcefd3ebdd0f50e05d08eb3c25b0e8383f63d3b2acafe4d85e6e707a01",
+          "visual_review": "passed"
+        },
+        {
+          "page": 18,
+          "image_sha256": "2dcc17ce14286743c45ce1b41e27f1f8df9c9664f871d1537616c41ab0aaf1ff",
+          "visual_review": "passed"
+        },
+        {
+          "page": 19,
+          "image_sha256": "a1f8d0b9844991abc78542ba181e4a194e04d1ce12012d04f3adca9b4a64d241",
+          "visual_review": "passed"
+        },
+        {
+          "page": 20,
+          "image_sha256": "000d5e98c4dbf1ef28556997bb15077f79383441b8fffc8667cfe52e0e1b435e",
+          "visual_review": "passed"
+        },
+        {
+          "page": 21,
+          "image_sha256": "e2563882101af2f52438184be699033ba4121e6cf17c662c0ef3290f440d1b49",
+          "visual_review": "passed"
+        },
+        {
+          "page": 22,
+          "image_sha256": "b3a8f95b3746aa7b31df973d0aae2cfcbd090b55fd8c9323fe7dd7893555000b",
+          "visual_review": "passed"
+        }
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission/supporting_information.pdf",
+      "sha256": "11a3816f3ff04d3cdedf5dbac7dfb3ae55f50040ed4c944341cf4fce3e6009c2",
+      "page_count": 20,
+      "pages": [
+        {
+          "page": 1,
+          "image_sha256": "73b34b6ba3da0c3e8b7006097b22c7baa2dcecdc7585308ab94ad97a0a7cd360",
+          "visual_review": "passed"
+        },
+        {
+          "page": 2,
+          "image_sha256": "2b8bab3b3484fd24bc5a746778c67a5d8c8be6bf70f7c603bb5caceb467717be",
+          "visual_review": "passed"
+        },
+        {
+          "page": 3,
+          "image_sha256": "bfb786513767463a901ee87e31d9dd5d7dfee17f18617ed30c58f6aa6c2a3086",
+          "visual_review": "passed"
+        },
+        {
+          "page": 4,
+          "image_sha256": "714d03f1998d773915e88b889cf286170033522ccdd732297ea6dac0e2bfabb3",
+          "visual_review": "passed"
+        },
+        {
+          "page": 5,
+          "image_sha256": "d5ffeda52b9157521b2e85296c43dcad86bf72daf7931138df163ea31871e4e1",
+          "visual_review": "passed"
+        },
+        {
+          "page": 6,
+          "image_sha256": "6c60a499a91c6f99dd9e0c09014f935ef81c20fb6e0e8ddfb0fc1081a412ef78",
+          "visual_review": "passed"
+        },
+        {
+          "page": 7,
+          "image_sha256": "b88cb8955adc7b6afd915b98d44dd21fd31d88178f17e2d5902dc9831aa1fd86",
+          "visual_review": "passed"
+        },
+        {
+          "page": 8,
+          "image_sha256": "fe4f4a53fc1f9d87e834c2ad25dd5f42be07f2497bd343ee10e98bee44bb4ea5",
+          "visual_review": "passed"
+        },
+        {
+          "page": 9,
+          "image_sha256": "6e39eb581da1aa47d3f2d03fe3a48571336b64b97d24df8b91c33afa98054702",
+          "visual_review": "passed"
+        },
+        {
+          "page": 10,
+          "image_sha256": "f6d9a02432a7c82e14f0e218763d291f1a4e1af87f7e0a8c4dc306ab79a68de8",
+          "visual_review": "passed"
+        },
+        {
+          "page": 11,
+          "image_sha256": "70cb86dffe7dcf1090b6ac9fea645fab71ffa2385dc13c601cc2b8b120badeff",
+          "visual_review": "passed"
+        },
+        {
+          "page": 12,
+          "image_sha256": "698ea85f12ab270081cbdacd20b20d0d0ed34709e7ce7d78c2134e949fc7b517",
+          "visual_review": "passed"
+        },
+        {
+          "page": 13,
+          "image_sha256": "2c01884a14d22062259099390be4178991eaecb9fbccf74cc852cec5669d8554",
+          "visual_review": "passed"
+        },
+        {
+          "page": 14,
+          "image_sha256": "17b8804101827fc5229fb2219bca838d6b8444221f8093cc6ab178c6117e7d16",
+          "visual_review": "passed"
+        },
+        {
+          "page": 15,
+          "image_sha256": "78c92a850a09212db62bf525edef72e21003aeb6a34eec8f90c77ad5b38f0068",
+          "visual_review": "passed"
+        },
+        {
+          "page": 16,
+          "image_sha256": "a888d8b8b49d06110e56a93858d2fa919862356341bf263093ce623e0ca51282",
+          "visual_review": "passed"
+        },
+        {
+          "page": 17,
+          "image_sha256": "8659db7806ebc9e5654a17ceab9c1150939772db442da1a8a48ab989cd38702f",
+          "visual_review": "passed"
+        },
+        {
+          "page": 18,
+          "image_sha256": "c49860fb17330f704864b79efa304c838adafc463f0c858ed75f9f1ff9d88b6f",
+          "visual_review": "passed"
+        },
+        {
+          "page": 19,
+          "image_sha256": "9212aae114725a3ba3ea0d0649c0f488c6c288ac02d8efeb3e51c8e60879674e",
+          "visual_review": "passed"
+        },
+        {
+          "page": 20,
+          "image_sha256": "71fe8ed7256f72b3140ff07010041c8bc17bf2333caa0a850a3bc493d1c0fda6",
+          "visual_review": "passed"
+        }
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission/response_to_reviewers.docx",
+      "sha256": "2b4ddac91541b0b90de35d348f8e430299dc1b7e89ab51cdcd4743b2a2155dc1",
+      "page_count": 8,
+      "pages": [
+        {
+          "page": 1,
+          "image_sha256": "3e0121f17e1ec95ed9d5f94ef2029faa64c6b2b75c7960a518f8d91f1c210177",
+          "visual_review": "passed"
+        },
+        {
+          "page": 2,
+          "image_sha256": "b8e8c233e8a80a1a738351fd63ded13ddfb67b7d005b1ac9e55dcd39f63fcde5",
+          "visual_review": "passed"
+        },
+        {
+          "page": 3,
+          "image_sha256": "ea8122affd687c6f017097975a86ffe596e353f7b367d3bdf257ac3320bac8c0",
+          "visual_review": "passed"
+        },
+        {
+          "page": 4,
+          "image_sha256": "915110208944e25f9ea6fa8274beb5808e55777b3480c89c54fdc6dfe950c91d",
+          "visual_review": "passed"
+        },
+        {
+          "page": 5,
+          "image_sha256": "233acd1cf36fbfac70ff927e370669156074de25598e3b40424d4574570902aa",
+          "visual_review": "passed"
+        },
+        {
+          "page": 6,
+          "image_sha256": "d986e887074d773eab9e40b153980528cf18730b9630d9624d695f556fb95985",
+          "visual_review": "passed"
+        },
+        {
+          "page": 7,
+          "image_sha256": "0069737beac9891ff8ed5101c3d1ec143a2c1fef45f04462df14ccbf1594fcc4",
+          "visual_review": "passed"
+        },
+        {
+          "page": 8,
+          "image_sha256": "3d3b3217a6b776651185a6d273a147e8e0df3a3bcc749a8ae3cc606405cba18d",
+          "visual_review": "passed"
+        }
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission/response_to_reviewers.pdf",
+      "sha256": "a2e4db6153038646cf2eec4fd5ee2f0022a71f5fc938b5fe97d674ad777b7712",
+      "page_count": 7,
+      "pages": [
+        {
+          "page": 1,
+          "image_sha256": "aa4bc6da857ecfa6c3c1d6d9a61a33088e02aa3730bcc89ad420c95e7beeac14",
+          "visual_review": "passed"
+        },
+        {
+          "page": 2,
+          "image_sha256": "edb45c919b88527c6a6d902c7071fc0ba8c358e99971f8329f2fe40a5579f03f",
+          "visual_review": "passed"
+        },
+        {
+          "page": 3,
+          "image_sha256": "2a62a5908f305c423e34cd2b60a3e7ef274616a90d3e7f9cc84cd362a21aa70d",
+          "visual_review": "passed"
+        },
+        {
+          "page": 4,
+          "image_sha256": "dcf26ce520f5068b2aefabf48710ff514a7505dc4ffbd7df23410d401415efc5",
+          "visual_review": "passed"
+        },
+        {
+          "page": 5,
+          "image_sha256": "d03a48c5074d1dc1874a0cd653c72cd9a73c2d60d5ab2661fd5458e5d3e4e722",
+          "visual_review": "passed"
+        },
+        {
+          "page": 6,
+          "image_sha256": "0f282e603a817f238cf043dd42582a1b3fd36211cb1336ebed067bc737fa40b3",
+          "visual_review": "passed"
+        },
+        {
+          "page": 7,
+          "image_sha256": "f9ae224769d1993d89d9f2050e55919d3fbe3d53cf1979c21187ca83041a3714",
+          "visual_review": "passed"
+        }
+      ]
+    }
+  ],
+  "method": "All pages visually inspected in rendered page sheets; individual pages and standalone figure assets inspected where needed. Native Microsoft Word used for DOCX rendering; LaTeX PDFs separately rendered and reviewed.",
+  "resolved_findings": [
+    "SI contents includes Table S15",
+    "\u00c5 units and equations preserved in Word",
+    "LaTeX continuation headers no longer duplicated in Word",
+    "All 192 S13 data cells match source",
+    "References restored before separate TOC graphic page",
+    "Table highlighting and heading pagination corrected",
+    "PDF rasterizer pattern cache cleared between pages"
+  ],
+  "scientific_checks": {
+    "manuscript_values": 133,
+    "independent_metric_comparisons": 112,
+    "reviewer_coverage_checks": 49,
+    "word_floor_cells": 192
+  },
+  "figure_checks": "All 21 embedded images meet 600-dpi effective resolution; current raster exports have 600-dpi metadata; colorblind-safe palettes and redundant markers/hatching were visually checked; graphical abstract is 3.25 x 1.75 inches."
+}

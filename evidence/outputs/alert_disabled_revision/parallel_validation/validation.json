@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "ligands": 5,
+  "prepared_microstates": 51,
+  "prepared_sdf_byte_identical": true,
+  "numeric_tolerance": 1e-12,
+  "structural_alert_exclusions": false,
+  "cached_scores_used": false,
+  "source_input_sha256": "4c3e2178ed83eabec5465a077f26324e0c74daccdaca0c4704c9beaf02810994",
+  "parallel_source_sha256": "a2da2d4783705403848f3a741a2c480ca92ef2da4ba12bece63a7d204b812419"
+}

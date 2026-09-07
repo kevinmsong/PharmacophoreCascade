@@ -1,16 +1,17 @@
 \begin{table}[htbp]
 \centering
 \normalsize
-\caption{Retrospective external benchmark performance on the GLP-1R active-vs-decoy set. Metrics summarize discrimination and early enrichment for the full cascade and the simpler baseline methods. BEDROC used alpha=20.}
+\caption{Retrospective external benchmark performance on the GLP-1R active-vs-decoy set. Metrics summarize discrimination and early enrichment for the full cascade and the simpler baseline methods. Equal-status/equal-score outcomes remain tied; early-retrieval metrics average over within-tie orderings. BEDROC used alpha=20.}
 \label{tab:benchmark_summary_core}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{lrrrrrr}
 \toprule
 Method & Ranked & EF1\% & EF5\% & ROC-AUC & PR-AUC & BEDROC \\
 \midrule
-Full cascade & 310.000 & 30.000 & 10.000 & 0.800 & 0.465 & 0.546 \\
-Stage-3 only & 310.000 & 20.000 & 6.000 & 0.742 & 0.286 & 0.358 \\
-Standard 3D pharmacophore & 310.000 & 20.000 & 4.000 & 0.727 & 0.261 & 0.304 \\
+Full cascade & 310 & 23.250 & 7.926 & 0.753 & 0.363 & 0.480 \\
+Native-only & 310 & 23.250 & 7.893 & 0.758 & 0.361 & 0.477 \\
+Stage-3 only & 310 & 15.500 & 5.812 & 0.727 & 0.284 & 0.357 \\
+Standard 3D pharmacophore & 310 & 15.500 & 3.875 & 0.717 & 0.259 & 0.300 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -18,16 +19,17 @@ Standard 3D pharmacophore & 310.000 & 20.000 & 4.000 & 0.727 & 0.261 & 0.304 \\
 \begin{table}[htbp]
 \centering
 \normalsize
-\caption{Early active and scaffold recovery on the retrospective GLP-1R benchmark. Values denote the fraction of benchmark actives or active Murcko scaffolds recovered within the top-k ranked molecules.}
+\caption{Expected early active recovery on the retrospective GLP-1R benchmark, averaged over within-score-tie orderings. Values denote the fraction of benchmark actives recovered within the top-k positions.}
 \label{tab:benchmark_summary_recovery}
 \setlength{\tabcolsep}{4pt}
-\begin{tabular}{lrrrrrr}
+\begin{tabular}{lrrr}
 \toprule
-Method & Act@10 & Act@25 & Act@50 & Scaf@10 & Scaf@25 & Scaf@50 \\
+Method & Act@10 & Act@25 & Act@50 \\
 \midrule
-Full cascade & 0.500 & 0.500 & 0.500 & 0.500 & 0.500 & 0.500 \\
-Stage-3 only & 0.300 & 0.300 & 0.400 & 0.300 & 0.300 & 0.400 \\
-Standard 3D pharmacophore & 0.200 & 0.300 & 0.400 & 0.200 & 0.300 & 0.400 \\
+Full cascade & 0.401 & 0.421 & 0.453 \\
+Native-only & 0.401 & 0.417 & 0.443 \\
+Stage-3 only & 0.300 & 0.300 & 0.400 \\
+Standard 3D pharmacophore & 0.200 & 0.300 & 0.400 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -41,9 +43,12 @@ Standard 3D pharmacophore & 0.200 & 0.300 & 0.400 & 0.200 & 0.300 & 0.400 \\
 \toprule
 Method A & Method B & Kendall tau & Spearman r & jaccard\_top10 & jaccard\_top25 & jaccard\_top50 \\
 \midrule
-Full cascade & Stage-3 only & 0.585 & 0.741 & 0.176 & 0.136 & 0.250 \\
-Full cascade & Std. 3D pharm. & 0.169 & 0.229 & 0.111 & 0.111 & 0.163 \\
-Stage-3 only & Std. 3D pharm. & 0.584 & 0.548 & 0.429 & 0.351 & 0.515 \\
+Full cascade & Stage-3 only & 0.574 & 0.731 & 0.176 & 0.136 & 0.235 \\
+Full cascade & Std. 3D pharm. & 0.151 & 0.206 & 0.111 & 0.111 & 0.163 \\
+Full cascade & Native-only & 0.667 & 0.689 & 1.000 & 0.852 & 0.695 \\
+Stage-3 only & Std. 3D pharm. & 0.576 & 0.538 & 0.333 & 0.316 & 0.493 \\
+Stage-3 only & Native-only & 0.242 & 0.346 & 0.176 & 0.111 & 0.190 \\
+Std. 3D pharm. & Native-only & 0.266 & 0.381 & 0.111 & 0.087 & 0.136 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -57,30 +62,33 @@ Stage-3 only & Std. 3D pharm. & 0.584 & 0.548 & 0.429 & 0.351 & 0.515 \\
 \toprule
 Method & Metric & Delta mean & 95\% CI low & 95\% CI high \\
 \midrule
-Stage-3 only & bedroc & -0.182 & -0.436 & -0.000 \\
-Std. 3D pharm. & bedroc & -0.239 & -0.512 & -0.017 \\
-Stage-3 only & ef\_01pct & -8.800 & -100.000 & 0.000 \\
-Std. 3D pharm. & ef\_01pct & -8.800 & -100.000 & 0.000 \\
-Stage-3 only & ef\_1pct & -11.900 & -30.000 & 0.000 \\
-Std. 3D pharm. & ef\_1pct & -12.120 & -30.000 & 0.000 \\
-Stage-3 only & ef\_5pct & -3.908 & -10.000 & 0.000 \\
-Std. 3D pharm. & ef\_5pct & -5.608 & -12.000 & 0.000 \\
-Stage-3 only & pr\_auc & -0.177 & -0.430 & -0.011 \\
-Std. 3D pharm. & pr\_auc & -0.205 & -0.463 & -0.026 \\
-Stage-3 only & roc\_auc & -0.057 & -0.137 & 0.017 \\
-Std. 3D pharm. & roc\_auc & -0.069 & -0.209 & 0.091 \\
-Stage-3 only & scaffold\_recovery\_top10 & -0.199 & -0.400 & 0.000 \\
-Std. 3D pharm. & scaffold\_recovery\_top10 & -0.264 & -0.500 & 0.000 \\
-Stage-3 only & scaffold\_recovery\_top25 & -0.170 & -0.368 & 0.000 \\
-Std. 3D pharm. & scaffold\_recovery\_top25 & -0.202 & -0.400 & 0.000 \\
-Stage-3 only & scaffold\_recovery\_top50 & -0.039 & -0.200 & 0.167 \\
-Std. 3D pharm. & scaffold\_recovery\_top50 & -0.109 & -0.286 & 0.000 \\
-Stage-3 only & top10\_recovery & -0.198 & -0.500 & 0.000 \\
-Std. 3D pharm. & top10\_recovery & -0.260 & -0.500 & 0.000 \\
-Stage-3 only & top25\_recovery & -0.173 & -0.400 & 0.000 \\
-Std. 3D pharm. & top25\_recovery & -0.204 & -0.500 & 0.000 \\
-Stage-3 only & top50\_recovery & -0.041 & -0.300 & 0.200 \\
-Std. 3D pharm. & top50\_recovery & -0.109 & -0.300 & 0.000 \\
+Native-only & roc\_auc & 0.007 & -0.065 & 0.119 \\
+Native-only & pr\_auc & -0.003 & -0.013 & 0.008 \\
+Native-only & ef\_1pct & -0.006 & -0.090 & 0.000 \\
+Native-only & ef\_5pct & -0.045 & -0.246 & 0.000 \\
+Native-only & ef\_01pct & -0.001 & 0.000 & 0.000 \\
+Native-only & top10\_recovery & -0.001 & -0.006 & 0.000 \\
+Native-only & top25\_recovery & -0.005 & -0.022 & 0.000 \\
+Native-only & top50\_recovery & -0.012 & -0.050 & 0.000 \\
+Native-only & bedroc & -0.004 & -0.018 & -0.000 \\
+Stage-3 only & roc\_auc & -0.026 & -0.085 & 0.024 \\
+Stage-3 only & pr\_auc & -0.091 & -0.311 & 0.063 \\
+Stage-3 only & ef\_1pct & -7.405 & -23.250 & 6.200 \\
+Stage-3 only & ef\_5pct & -2.023 & -6.004 & 0.000 \\
+Stage-3 only & ef\_01pct & -2.961 & -31.000 & 0.000 \\
+Stage-3 only & top10\_recovery & -0.139 & -0.400 & 0.000 \\
+Stage-3 only & top25\_recovery & -0.083 & -0.300 & 0.132 \\
+Stage-3 only & top50\_recovery & -0.001 & -0.300 & 0.233 \\
+Stage-3 only & bedroc & -0.115 & -0.328 & 0.018 \\
+Std. 3D pharm. & roc\_auc & -0.035 & -0.145 & 0.088 \\
+Std. 3D pharm. & pr\_auc & -0.123 & -0.359 & 0.047 \\
+Std. 3D pharm. & ef\_1pct & -7.909 & -23.357 & 6.200 \\
+Std. 3D pharm. & ef\_5pct & -3.472 & -7.836 & 0.000 \\
+Std. 3D pharm. & ef\_01pct & -2.999 & -31.000 & 0.000 \\
+Std. 3D pharm. & top10\_recovery & -0.197 & -0.409 & 0.000 \\
+Std. 3D pharm. & top25\_recovery & -0.136 & -0.329 & 0.000 \\
+Std. 3D pharm. & top50\_recovery & -0.087 & -0.300 & 0.100 \\
+Std. 3D pharm. & bedroc & -0.173 & -0.397 & -0.001 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -88,17 +96,17 @@ Std. 3D pharm. & top50\_recovery & -0.109 & -0.300 & 0.000 \\
 \begin{table}[htbp]
 \centering
 \small
-\caption{Rank stability under component ablations.}
+\caption{Rank stability under table-level ranking perturbations.}
 \label{tab:ablation_results}
-\begin{tabular}{lrrrrrrr}
+\begin{tabular}{lrrrrrrrrrrr}
 \toprule
-Method & n\_shared & Kendall tau & Spearman r & jaccard\_top10 & jaccard\_top50 & jaccard\_top100 & jaccard\_top500 \\
+Method & n\_shared & tau\_shared & Kendall tau & Spearman r & n\_common & tau\_common & rho\_common & jaccard\_top10 & jaccard\_top50 & jaccard\_top100 & jaccard\_top500 \\
 \midrule
-remove stage1 & 1000 & 0.118 & 0.176 & 0.000 & 0.010 & 0.010 & 0.038 \\
-remove stage2 & 1000 & -0.020 & -0.030 & 0.000 & 0.000 & 0.000 & 0.000 \\
-remove stage3 & 80 & 0.018 & 0.031 & 0.000 & 0.010 & 0.015 & 0.026 \\
-native top stage3 only & 52 & 0.431 & 0.608 & 0.053 & 0.031 & 0.026 & 0.028 \\
-alternative tiebreak & 80 & 0.022 & 0.026 & 0.000 & 0.010 & 0.005 & 0.016 \\
+Hotspot-score ordering & 1000 & -0.023 & -0.023 & -0.034 & 49757 & 0.057 & 0.070 & 0.000 & 0.000 & 0.000 & 0.000 \\
+Pair-overlap ordering & 1000 & 0.107 & 0.107 & 0.160 & 49757 & 0.066 & 0.081 & 0.000 & 0.010 & 0.010 & 0.032 \\
+Cascade score only within native pool & 1000 & 0.055 & 0.055 & 0.081 & 49757 & 0.420 & 0.433 & 0.000 & 0.020 & 0.015 & 0.098 \\
+Observed Stage-3 top-5,000 subset & 424 & 1.000 & 0.230 & 1.000 & 49757 & 0.282 & 0.285 & 0.111 & 0.299 & 0.274 & 0.269 \\
+Native-fit RMSD ordering & 1000 & 0.681 & 0.681 & 0.667 & 49757 & 0.417 & 0.427 & 0.000 & 0.000 & 0.000 & 0.020 \\
 \bottomrule
 \end{tabular}
 \end{table}

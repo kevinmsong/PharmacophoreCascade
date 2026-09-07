@@ -1,0 +1,247 @@
+{
+  "status": "passed",
+  "benchmark_runs_checked": 26,
+  "benchmarks": [
+    {
+      "job": "benchmark_glp1r_full",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\benchmark_glp1r_full\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json",
+        "evidence\\outputs\\benchmark_glp1r_full\\benchmark_external\\native_only_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "benchmark_ghsr_full",
+      "evaluated_molecules": 1550,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\benchmark_ghsr_full\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json",
+        "evidence\\outputs\\benchmark_ghsr_full\\benchmark_external\\native_only_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "benchmark_ntsr1_full",
+      "evaluated_molecules": 1550,
+      "property_exclusions": 2,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\benchmark_ntsr1_full\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json",
+        "evidence\\outputs\\benchmark_ntsr1_full\\benchmark_external\\native_only_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "benchmark_mdm2_full",
+      "evaluated_molecules": 1550,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\benchmark_mdm2_full\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json",
+        "evidence\\outputs\\benchmark_mdm2_full\\benchmark_external\\native_only_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "benchmark_glp1r_automated",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\benchmark_glp1r_automated\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "benchmark_glp1r_7ki0",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\benchmark_glp1r_7ki0\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json",
+        "evidence\\outputs\\benchmark_glp1r_7ki0\\benchmark_external\\native_only_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "glp1r_seed1",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\glp1r_seed1\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "glp1r_seed2",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\glp1r_seed2\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "glp1r_seed3",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\glp1r_seed3\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "glp1r_seed4",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\glp1r_seed4\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "glp1r_seed5",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\glp1r_seed5\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "ghsr_seed1",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\ghsr_seed1\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "ghsr_seed2",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\ghsr_seed2\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "ghsr_seed3",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "ghsr_seed4",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\ghsr_seed4\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "ghsr_seed5",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\ghsr_seed5\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "ntsr1_seed1",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\ntsr1_seed1\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "ntsr1_seed2",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\ntsr1_seed2\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "ntsr1_seed3",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\ntsr1_seed3\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "ntsr1_seed4",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\ntsr1_seed4\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "ntsr1_seed5",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\ntsr1_seed5\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "mdm2_seed1",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\mdm2_seed1\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "mdm2_seed2",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\mdm2_seed2\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "mdm2_seed3",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\mdm2_seed3\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "mdm2_seed4",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\mdm2_seed4\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    },
+    {
+      "job": "mdm2_seed5",
+      "evaluated_molecules": 310,
+      "property_exclusions": 0,
+      "structural_alert_exclusions": 0,
+      "native_execution_manifests": [
+        "evidence\\outputs\\decoy_replicates\\mdm2_seed5\\benchmark_external\\benchmark_native_bundle\\manifests\\analysis_manifest.json"
+      ]
+    }
+  ],
+  "headline_native_structural_alert_exclusions": 0,
+  "production_checks": "Per-system independent_output_audit.json files under evidence/outputs/absolute_floor"
+}

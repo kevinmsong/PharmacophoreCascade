@@ -1,0 +1,8 @@
+{
+  "system": "glp1r",
+  "input_molecules": 30310,
+  "shortlist_percentage": 1464,
+  "shortlist_floor": 1464,
+  "identical_policy_outputs": true,
+  "all_stage_memberships_and_label_counts_verified": true
+}

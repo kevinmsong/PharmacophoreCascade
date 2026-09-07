@@ -1,0 +1,29 @@
+\begin{table}[tbp]
+\centering
+\caption{\textbf{Retrospective enrichment across all four systems.} Each method ranks the same labeled universe: 10 GLP-1R actives or 50 actives per other system, with 30 matched decoys per active. Structural alerts are recorded without exclusion. Equal scores remain tied: EF and BEDROC average over within-tie orders. BEDROC uses $\alpha=20$. Bold indicates the highest value within each system.}
+\label{tab:crosssystem}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+System & Method & ROC-AUC & PR-AUC & EF1\% & BEDROC \\
+\midrule
+GLP-1R & Full cascade & 0.753 & \textbf{0.363} & \textbf{23.2} & \textbf{0.480} \\
+ & Native-only & \textbf{0.758} & 0.361 & \textbf{23.2} & 0.477 \\
+ & Stage-3 only & 0.727 & 0.284 & 15.5 & 0.357 \\
+ & Single-pass 3D & 0.717 & 0.259 & 15.5 & 0.300 \\
+GHSR & Full cascade & 0.867 & 0.610 & \textbf{31.0} & 0.740 \\
+ & Native-only & \textbf{0.926} & \textbf{0.680} & \textbf{31.0} & \textbf{0.748} \\
+ & Stage-3 only & 0.852 & 0.408 & 19.4 & 0.589 \\
+ & Single-pass 3D & 0.794 & 0.231 & 15.5 & 0.364 \\
+NTSR1 & Full cascade & \textbf{0.785} & \textbf{0.390} & \textbf{25.2} & \textbf{0.561} \\
+ & Native-only & 0.690 & 0.127 & 8.2 & 0.312 \\
+ & Stage-3 only & 0.778 & 0.362 & 19.4 & 0.525 \\
+ & Single-pass 3D & 0.560 & 0.142 & 13.6 & 0.250 \\
+MDM2--p53 & Full cascade & \textbf{0.945} & \textbf{0.705} & \textbf{31.0} & \textbf{0.820} \\
+ & Native-only & \textbf{0.945} & \textbf{0.705} & \textbf{31.0} & \textbf{0.820} \\
+ & Stage-3 only & 0.339 & 0.023 & 0.0 & 0.028 \\
+ & Single-pass 3D & 0.339 & 0.023 & 0.0 & 0.028 \\
+\bottomrule
+\end{tabular}
+\end{table}

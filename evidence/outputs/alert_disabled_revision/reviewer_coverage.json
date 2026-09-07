@@ -1,0 +1,247 @@
+[
+  {
+    "comment": "1.1",
+    "check": "bypassing\\s+Stages\\s+0--3",
+    "passed": true
+  },
+  {
+    "comment": "1.1",
+    "check": "native-only",
+    "passed": true
+  },
+  {
+    "comment": "1.1",
+    "check": "end-to-end\\s+wall\\s+time",
+    "passed": true
+  },
+  {
+    "comment": "1.1",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "1.2",
+    "check": "minimum\\s+of\\s+1,000",
+    "passed": true
+  },
+  {
+    "comment": "1.2",
+    "check": "paired\\s+production",
+    "passed": true
+  },
+  {
+    "comment": "1.2",
+    "check": "(?:floor|minimum)\\s+(?:is\\s+nonbinding|does\\s+not\\s+change|is\\s+inactive)",
+    "passed": true
+  },
+  {
+    "comment": "1.2",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "1.3",
+    "check": "10\\s+in-domain\\s+actives|only\\s+10\\s+in-domain",
+    "passed": true
+  },
+  {
+    "comment": "1.3",
+    "check": "ChEMBL.*?ZINC",
+    "passed": true
+  },
+  {
+    "comment": "1.3",
+    "check": "source-related\\s+bias",
+    "passed": true
+  },
+  {
+    "comment": "1.3",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "2.1",
+    "check": "4,960",
+    "passed": true
+  },
+  {
+    "comment": "2.1",
+    "check": "158/160|158\\s+pass\\s+Stage\\s+0",
+    "passed": true
+  },
+  {
+    "comment": "2.1",
+    "check": "Table~S10",
+    "passed": true
+  },
+  {
+    "comment": "2.1",
+    "check": "Table~S11",
+    "passed": true
+  },
+  {
+    "comment": "2.1",
+    "check": "first\\s+limiting\\s+stage",
+    "passed": true
+  },
+  {
+    "comment": "2.1",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "2.2",
+    "check": "TOST",
+    "passed": true
+  },
+  {
+    "comment": "2.2",
+    "check": "\\\\pm\\s*0\\.05",
+    "passed": true
+  },
+  {
+    "comment": "2.2",
+    "check": "90\\\\%",
+    "passed": true
+  },
+  {
+    "comment": "2.2",
+    "check": "non-significant\\s+difference.*?insufficient|non-significant\\s+difference\\s+is\\s+not",
+    "passed": true
+  },
+  {
+    "comment": "2.2",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "2.3",
+    "check": "MDM2--p53",
+    "passed": true
+  },
+  {
+    "comment": "2.3",
+    "check": "insufficient\\s+to\\s+establish\\s+a\\s+general\\s+rule|cannot\\s+establish\\s+a\\s+general",
+    "passed": true
+  },
+  {
+    "comment": "2.3",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "2.4",
+    "check": "exact\\s+signed-rank",
+    "passed": true
+  },
+  {
+    "comment": "2.4",
+    "check": "preparation\\s+and\\s+docking\\s+failures",
+    "passed": true
+  },
+  {
+    "comment": "2.4",
+    "check": "do\\s+not\\s+establish|not\\s+evidence\\s+of\\s+agonism",
+    "passed": true
+  },
+  {
+    "comment": "2.4",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "2.5",
+    "check": "independent\\s+implementation",
+    "passed": true
+  },
+  {
+    "comment": "2.5",
+    "check": "residual\\s+differences",
+    "passed": true
+  },
+  {
+    "comment": "2.5",
+    "check": "Stages\\s+0--2",
+    "passed": true
+  },
+  {
+    "comment": "2.5",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "2.6a",
+    "check": "glossary|tab:terms",
+    "passed": true
+  },
+  {
+    "comment": "2.6a",
+    "check": "structural\\s+alerts\\s+as\\s+annotations|alerts\\s+recorded",
+    "passed": true
+  },
+  {
+    "comment": "2.6a",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "2.6b",
+    "check": "table-level\\s+ranking",
+    "passed": true
+  },
+  {
+    "comment": "2.6b",
+    "check": "common\\s+support",
+    "passed": true
+  },
+  {
+    "comment": "2.6b",
+    "check": "unranked.*?tied",
+    "passed": true
+  },
+  {
+    "comment": "2.6b",
+    "check": "not\\s+independent\\s+end-to-end|do\\s+not\\s+rerun",
+    "passed": true
+  },
+  {
+    "comment": "2.6b",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "2.6c",
+    "check": "7KI0",
+    "passed": true
+  },
+  {
+    "comment": "2.6c",
+    "check": "reference.*?BEDROC",
+    "passed": true
+  },
+  {
+    "comment": "2.6c",
+    "check": "receptor\\s+conformations|conformational",
+    "passed": true
+  },
+  {
+    "comment": "2.6c",
+    "check": "response and changes pointer",
+    "passed": true
+  },
+  {
+    "comment": "all",
+    "check": "reviewer quotations preserved verbatim",
+    "passed": true
+  },
+  {
+    "comment": "all",
+    "check": "removed superseded claim: did not re-run the headline screen",
+    "passed": true
+  },
+  {
+    "comment": "all",
+    "check": "removed superseded claim: 31 CPU-days",
+    "passed": true
+  }
+]

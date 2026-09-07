@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "canonical_alias_sha256": {
+    "screening_full_1M_topological_hashed.csv": "db37ec37751d8dea5a363f60c6c52624876866d64732ec8cf489e1e2ae733e17",
+    "screening_full_1M_topological_hashed_shortlist.csv": "0bdec6f56a7921d50b8c8829ab53817c9a29d09b71c1d92dc43969e77f81a0b2",
+    "screening_full_1M_topological_hashed_native_scored_top5000.csv": "57488f7977e2874cacfe58a6cd3f6ad3c74cb9644e4e8cc6b978e1e929d08955",
+    "top_1000_glp1_mimetics_full_1M_topological_hashed_native_final.csv": "1cb77843555ce62d3c7593bb89e70ecf57f7bd80740d790d4c744737e5da124a",
+    "screening_full_1M_topological_hashed_run_summary.json": "e832497b5f8c1f40e292d1e07cb67ac61dc771d7c997ce700724dd40dde8c73a"
+  },
+  "headline_source": "results\\absolute_floor_1000",
+  "new_top10": [
+    "ZINCk700000Gfz1H",
+    "ZINCk700001bQgxo",
+    "ZINCk500000BlHKL",
+    "ZINCj600000JWMq0",
+    "ZINCk500000gdMQW",
+    "ZINCk600000EmAGZ",
+    "ZINCk5000003XjkE",
+    "ZINCk800000gvPBH",
+    "ZINCk600000Ja5bY",
+    "ZINCk600000y8tEo"
+  ]
+}

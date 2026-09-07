@@ -1,51 +1,93 @@
 {
   "background_size": 30000,
   "shortlist_fraction": 0.05,
-  "n_candidates": 28297,
-  "n_shortlist": 1415,
+  "shortlist_floor": 1000,
+  "chemistry_gate_mode": "warn_only",
+  "native_pains_filter": false,
+  "n_candidates": 29274,
+  "n_shortlist": 1464,
   "actives_in_final": 8,
   "stage_survival": [
     {
+      "system": "glp1r",
+      "policy": "floor1000",
       "stage": "input",
+      "total": 30310,
       "actives": 10,
       "decoys": 300,
       "background": 30000,
       "active_survival_pct": 100.0
     },
     {
+      "system": "glp1r",
+      "policy": "floor1000",
       "stage": "stage0_pass",
+      "total": 30126,
       "actives": 10,
-      "decoys": 294,
-      "background": 28832,
+      "decoys": 300,
+      "background": 29816,
       "active_survival_pct": 100.0
     },
     {
-      "stage": "stage1_pass",
+      "system": "glp1r",
+      "policy": "floor1000",
+      "stage": "stage012_pass",
+      "total": 29274,
       "actives": 9,
-      "decoys": 231,
-      "background": 28057,
+      "decoys": 235,
+      "background": 29030,
       "active_survival_pct": 90.0
     },
     {
-      "stage": "stage3_shortlist",
+      "system": "glp1r",
+      "policy": "floor1000",
+      "stage": "shortlist",
+      "total": 1464,
       "actives": 8,
       "decoys": 19,
-      "background": 1388,
+      "background": 1437,
       "active_survival_pct": 80.0
     },
     {
-      "stage": "native_pool",
+      "system": "glp1r",
+      "policy": "floor1000",
+      "stage": "stage3_success",
+      "total": 1462,
       "actives": 8,
-      "decoys": 14,
-      "background": 618,
+      "decoys": 19,
+      "background": 1435,
       "active_survival_pct": 80.0
     },
     {
+      "system": "glp1r",
+      "policy": "floor1000",
+      "stage": "native_selected",
+      "total": 647,
+      "actives": 8,
+      "decoys": 11,
+      "background": 628,
+      "active_survival_pct": 80.0
+    },
+    {
+      "system": "glp1r",
+      "policy": "floor1000",
+      "stage": "native_success",
+      "total": 647,
+      "actives": 8,
+      "decoys": 11,
+      "background": 628,
+      "active_survival_pct": 80.0
+    },
+    {
+      "system": "glp1r",
+      "policy": "floor1000",
       "stage": "final_ranked",
+      "total": 647,
       "actives": 8,
-      "decoys": 14,
-      "background": 618,
+      "decoys": 11,
+      "background": 628,
       "active_survival_pct": 80.0
     }
-  ]
+  ],
+  "current_source": "evidence\\outputs\\absolute_floor\\glp1r"
 }

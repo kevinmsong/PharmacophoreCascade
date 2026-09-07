@@ -1,0 +1,80 @@
+{
+  "comparison_scope": "Archived strict-filter run versus fresh alert-disabled floor run; differences are not attributed to the floor alone.",
+  "chemistry_gate_mode": "warn_only",
+  "archived_counts": {
+    "total_scanned": 1000000,
+    "invalid_molecules": 0,
+    "property_filtered": 2410,
+    "chemistry_filtered": 41350,
+    "warn_only_flagged": 0,
+    "no_typed_features": 0,
+    "property_pass": 956240,
+    "hotspot_filtered": 7269,
+    "hotspot_pass": 948971,
+    "shortlist_size": 47812,
+    "shortlist_heap_capacity": 50000,
+    "rerank_candidates": 47812,
+    "final_hits": 47689
+  },
+  "rerun_counts": {
+    "total_scanned": 1000000,
+    "invalid_molecules": 0,
+    "property_filtered": 2410,
+    "chemistry_filtered": 0,
+    "warn_only_flagged": 41220,
+    "no_typed_features": 0,
+    "property_pass": 997590,
+    "hotspot_filtered": 7399,
+    "hotspot_pass": 990191,
+    "shortlist_size": 49880,
+    "shortlist_basis_count": 997590,
+    "percentage_only_shortlist_size": 49880,
+    "shortlist_heap_capacity": 50000,
+    "rerank_candidates": 49880,
+    "final_hits": 49757
+  },
+  "rerun_native_counts": {
+    "candidate_pool_size": 20000,
+    "selected_ligands": 5000,
+    "chemistry_excluded_selected_ligands": 0,
+    "prepared_microstates": 43545,
+    "prep_failures": 0,
+    "scored_microstates": 43473,
+    "scoring_failures": 72,
+    "successful_best_ligands": 4997,
+    "scored_summary_rows": 5000,
+    "final_rows": 1000
+  },
+  "shortlist_ids_same_order_as_archive": false,
+  "shortlist_overlap_with_archive": 47358,
+  "final_ids_same_order_as_archive": false,
+  "final_overlap_with_archive": 915,
+  "native_score_max_abs_delta_common_final": 4.984720192169334e-09,
+  "floor_changes_current_run_shortlist_size": false,
+  "rerun_wall_seconds": 12338.0101697,
+  "pipeline_wall_seconds": 12336.7125471,
+  "full_cohort_checks": {
+    "stage3": {
+      "archived_n": 47689,
+      "fresh_n": 49757,
+      "common_n": 47237,
+      "same_order": false,
+      "max_abs_deltas": {
+        "weighted_coverage_pct": 0.0,
+        "fit_rmsd_angstrom": 0.0,
+        "mean_pair_distance_error_angstrom": 0.0
+      }
+    },
+    "all_native": {
+      "archived_n": 5000,
+      "fresh_n": 5000,
+      "common_n": 4617,
+      "same_order": false,
+      "max_abs_deltas": {
+        "native_weighted_coverage_pct": 4.881405329498936,
+        "native_fit_rmsd_angstrom": 0.5163131140262398,
+        "native_mean_pair_distance_error_angstrom": 0.9114375968349862
+      }
+    }
+  }
+}

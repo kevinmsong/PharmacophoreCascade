@@ -24,7 +24,7 @@ ligands:
   max_tautomers_per_microstate: 8
   max_microstates_per_ligand: 2
   embed_conformers: 4
-  pains_filter: true
+  pains_filter: false
 
 pocket:
   reference_structure: references/7KI0.pdb

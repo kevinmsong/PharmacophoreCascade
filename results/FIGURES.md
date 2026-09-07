@@ -1,0 +1,1 @@
+These diagnostics describe the freshly scored Stage-3 cohort and its top 20, not the final native top 20. The legacy pharmacophore_3d filename now contains the labeled PCA projection of the same receptor features. Native-ranked structures are in ACS_Omega_resubmission/figA4_top20_structures. All raster figures are rendered at 600 dpi; vector counterparts are supplied.

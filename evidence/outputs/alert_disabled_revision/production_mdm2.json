@@ -1,0 +1,37 @@
+{
+  "job": "production_mdm2",
+  "status": "completed",
+  "started_utc": "2026-09-06T19:57:10.072416+00:00",
+  "command": [
+    "C:\\Users\\kevin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-u",
+    "evidence/run_absolute_floor_benchmarks.py",
+    "--system",
+    "mdm2",
+    "--workers",
+    "2"
+  ],
+  "settings": {
+    "chemistry_gate_mode": "warn_only",
+    "native_pains_filter": false,
+    "workers": 2,
+    "policies": [
+      "5% only",
+      "5% + floor 1000"
+    ]
+  },
+  "cached_scores_used": false,
+  "input_sha256": {
+    "evidence\\data\\production_frozen\\mdm2.csv": "cefbc948101e4e842a304903124c482378f62589ce53aae525952b02a719a4b9",
+    "evidence\\configs\\benchmark_mdm2_full.yaml": "888122819c42e99dd2d21fc66f65dfd5092c3803527efc855485a7e51592e28e"
+  },
+  "source_sha256": {
+    "run_optimized_1M_topological_hashed_screening.py": "a0a74edf143bef20dcf2e9c670fda1c7ae7a2cf31f54fa97c42cc8c4d34de60b",
+    "evidence\\src\\benchmark_runner.py": "c2985691e8d66ea4ba3b12b6222d0aace6ced8501974f73fa6a9bffc727ae339",
+    "evidence\\parallel_native.py": "a2da2d4783705403848f3a741a2c480ca92ef2da4ba12bece63a7d204b812419",
+    "evidence\\run_alert_disabled_suite.py": "91ee230b2b1d269d6f3a795689aa56312024209a9660cad96c051295f01df54d"
+  },
+  "returncode": 0,
+  "elapsed_seconds": 4259.983497499999,
+  "completed_utc": "2026-09-06T21:08:10.080313+00:00"
+}

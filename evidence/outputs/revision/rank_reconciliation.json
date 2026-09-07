@@ -1,22 +1,33 @@
 {
-  "source": "results/screening_full_1M_topological_hashed_native_terminal_bundle (headline 1M run; matches Table S1, the top-ligand figures, and Fig S2)",
-  "pearson_screen_native_cov": 0.057,
-  "spearman_screen_native_cov": 0.061,
-  "median_abs_final_rank_shift_top1000": 1926,
-  "screen_native_top10_overlap": 0,
-  "n_native_scored": 4997,
-  "ZINCj700000JVICU_final_native_rank": 18,
-  "ZINCj700000JVICU": {
-    "ligand_id": "ZINCj700000JVICU",
-    "screen_rank": 4895,
-    "final_native_rank": 18,
-    "rank_shift": 4877,
-    "weighted_coverage_pct": 12.08,
-    "native_weighted_coverage_pct": 29.15
-  },
-  "rank_definitions": {
-    "screen_rank": "Stage-3 cascade-score rank within the screen",
-    "native_score_rank": "rank by native weighted coverage only (coarse ties); native_rank in native_rank_comparison.csv (e.g. JVICU=6) - NOT used in the manuscript",
-    "final_native_rank": "final lexicographic rank used everywhere: native weighted coverage, then matched features, then fit RMSD, then mean pair-distance error (e.g. JVICU=18)"
+  "n": 4997,
+  "coverage_median": 24.648176553600397,
+  "coverage_q25": 23.254822119168495,
+  "coverage_q75": 24.866510090916968,
+  "coverage_min": 15.094331082370816,
+  "coverage_max": 29.970825929635016,
+  "rank_spearman": 0.05672956385909202,
+  "top1000_median_absolute_cohort_rank_shift": 1940.5,
+  "top10_overlap": 0,
+  "upstream_correlations": {
+    "screen_weighted_coverage_pct": {
+      "pearson_r": 0.04906312428353751,
+      "spearman_rho": 0.05498247369181546
+    },
+    "pair_hash_overlap_pct": {
+      "pearson_r": 0.27413609469542705,
+      "spearman_rho": 0.2518861098196749
+    },
+    "pair_hash_recall_pct": {
+      "pearson_r": 0.28993859847980724,
+      "spearman_rho": 0.2624064180488645
+    },
+    "hotspot_compatible_matches": {
+      "pearson_r": 0.31907075718969713,
+      "spearman_rho": 0.24787652163029555
+    },
+    "cascade_score_pct": {
+      "pearson_r": 0.1087673277526021,
+      "spearman_rho": 0.10475565499099215
+    }
   }
 }

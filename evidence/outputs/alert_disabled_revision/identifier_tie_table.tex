@@ -1,0 +1,29 @@
+\begin{table}[tbp]
+\centering
+\caption{\textbf{Sensitivity of benchmark enrichment to how equal scores are ordered.} The ID columns order molecules with equal scores by ligand identifier; the tied columns, used throughout this work, leave them tied and average over the possible within-tie orders. Molecules with equal status and score are tied, including unscored molecules within a failure status. Both columns evaluate the same molecular scores on the same molecules.}
+\label{tab:identifier_ties}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+System & Method & ROC ID & ROC tied & PR ID & PR tied \\
+\midrule
+GLP-1R & Full cascade & 0.796 & 0.753 & 0.464 & 0.363 \\
+ & Native-only & 0.809 & 0.758 & 0.463 & 0.361 \\
+ & Stage-3 only & 0.738 & 0.727 & 0.285 & 0.284 \\
+ & Single-pass 3D & 0.717 & 0.717 & 0.259 & 0.259 \\
+GHSR & Full cascade & 0.965 & 0.867 & 0.732 & 0.610 \\
+ & Native-only & 0.952 & 0.926 & 0.819 & 0.680 \\
+ & Stage-3 only & 0.947 & 0.852 & 0.440 & 0.408 \\
+ & Single-pass 3D & 0.794 & 0.794 & 0.231 & 0.231 \\
+NTSR1 & Full cascade & 0.899 & 0.785 & 0.523 & 0.390 \\
+ & Native-only & 0.744 & 0.690 & 0.385 & 0.127 \\
+ & Stage-3 only & 0.884 & 0.778 & 0.388 & 0.362 \\
+ & Single-pass 3D & 0.560 & 0.560 & 0.142 & 0.142 \\
+MDM2--p53 & Full cascade & 0.960 & 0.945 & 0.910 & 0.705 \\
+ & Native-only & 0.960 & 0.945 & 0.910 & 0.705 \\
+ & Stage-3 only & 0.339 & 0.339 & 0.023 & 0.023 \\
+ & Single-pass 3D & 0.339 & 0.339 & 0.023 & 0.023 \\
+\bottomrule
+\end{tabular}
+\end{table}

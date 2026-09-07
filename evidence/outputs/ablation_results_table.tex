@@ -1,17 +1,17 @@
 \begin{table}[htbp]
 \centering
 \small
-\caption{Rank stability under component ablations.}
+\caption{Rank stability under table-level ranking perturbations.}
 \label{tab:ablation_results}
-\begin{tabular}{lrrrrrrr}
+\begin{tabular}{lrrrrrrrrrrr}
 \toprule
-Method & n\_shared & Kendall tau & Spearman r & jaccard\_top10 & jaccard\_top50 & jaccard\_top100 & jaccard\_top500 \\
+Method & n\_shared & tau\_shared & Kendall tau & Spearman r & n\_common & tau\_common & rho\_common & jaccard\_top10 & jaccard\_top50 & jaccard\_top100 & jaccard\_top500 \\
 \midrule
-remove stage1 & 1000 & 0.118 & 0.176 & 0.000 & 0.010 & 0.010 & 0.038 \\
-remove stage2 & 1000 & -0.020 & -0.030 & 0.000 & 0.000 & 0.000 & 0.000 \\
-remove stage3 & 80 & 0.018 & 0.031 & 0.000 & 0.010 & 0.015 & 0.026 \\
-native top stage3 only & 52 & 0.431 & 0.608 & 0.053 & 0.031 & 0.026 & 0.028 \\
-alternative tiebreak & 80 & 0.022 & 0.026 & 0.000 & 0.010 & 0.005 & 0.016 \\
+Hotspot-score ordering & 1000 & -0.023 & -0.023 & -0.034 & 49757 & 0.057 & 0.070 & 0.000 & 0.000 & 0.000 & 0.000 \\
+Pair-overlap ordering & 1000 & 0.107 & 0.107 & 0.160 & 49757 & 0.066 & 0.081 & 0.000 & 0.010 & 0.010 & 0.032 \\
+Cascade score only within native pool & 1000 & 0.055 & 0.055 & 0.081 & 49757 & 0.420 & 0.433 & 0.000 & 0.020 & 0.015 & 0.098 \\
+Observed Stage-3 top-5,000 subset & 424 & 1.000 & 0.230 & 1.000 & 49757 & 0.282 & 0.285 & 0.111 & 0.299 & 0.274 & 0.269 \\
+Native-fit RMSD ordering & 1000 & 0.681 & 0.681 & 0.667 & 49757 & 0.417 & 0.427 & 0.000 & 0.000 & 0.000 & 0.020 \\
 \bottomrule
 \end{tabular}
 \end{table}

@@ -1,0 +1,259 @@
+{
+  "status": "passed",
+  "images": [
+    {
+      "document": "main",
+      "image": 1,
+      "pixels": [
+        3046,
+        2796
+      ],
+      "effective_dpi": [
+        599.9988367366326,
+        599.9988735334814
+      ]
+    },
+    {
+      "document": "main",
+      "image": 2,
+      "pixels": [
+        3774,
+        1651
+      ],
+      "effective_dpi": [
+        599.9988524906256,
+        599.9988076922924
+      ]
+    },
+    {
+      "document": "main",
+      "image": 3,
+      "pixels": [
+        3788,
+        1135
+      ],
+      "effective_dpi": [
+        599.9988567316765,
+        599.9989593829835
+      ]
+    },
+    {
+      "document": "main",
+      "image": 4,
+      "pixels": [
+        3804,
+        1388
+      ],
+      "effective_dpi": [
+        599.998861540367,
+        599.9988654177438
+      ]
+    },
+    {
+      "document": "main",
+      "image": 5,
+      "pixels": [
+        3780,
+        1456
+      ],
+      "effective_dpi": [
+        599.9988543120656,
+        599.9989184063799
+      ]
+    },
+    {
+      "document": "main",
+      "image": 6,
+      "pixels": [
+        3776,
+        1713
+      ],
+      "effective_dpi": [
+        599.9988530984155,
+        599.9988508463708
+      ]
+    },
+    {
+      "document": "main",
+      "image": 7,
+      "pixels": [
+        3814,
+        1273
+      ],
+      "effective_dpi": [
+        599.9988645253105,
+        599.9990721912524
+      ]
+    },
+    {
+      "document": "main",
+      "image": 8,
+      "pixels": [
+        1950,
+        1050
+      ],
+      "effective_dpi": [
+        599.9989905125,
+        599.9988751427162
+      ]
+    },
+    {
+      "document": "main_highlighted",
+      "image": 1,
+      "pixels": [
+        3046,
+        2796
+      ],
+      "effective_dpi": [
+        599.9988367366326,
+        599.9988735334814
+      ]
+    },
+    {
+      "document": "main_highlighted",
+      "image": 2,
+      "pixels": [
+        3774,
+        1651
+      ],
+      "effective_dpi": [
+        599.9988524906256,
+        599.9988076922924
+      ]
+    },
+    {
+      "document": "main_highlighted",
+      "image": 3,
+      "pixels": [
+        3788,
+        1135
+      ],
+      "effective_dpi": [
+        599.9988567316765,
+        599.9989593829835
+      ]
+    },
+    {
+      "document": "main_highlighted",
+      "image": 4,
+      "pixels": [
+        3804,
+        1388
+      ],
+      "effective_dpi": [
+        599.998861540367,
+        599.9988654177438
+      ]
+    },
+    {
+      "document": "main_highlighted",
+      "image": 5,
+      "pixels": [
+        3780,
+        1456
+      ],
+      "effective_dpi": [
+        599.9988543120656,
+        599.9989184063799
+      ]
+    },
+    {
+      "document": "main_highlighted",
+      "image": 6,
+      "pixels": [
+        3776,
+        1713
+      ],
+      "effective_dpi": [
+        599.9988530984155,
+        599.9988508463708
+      ]
+    },
+    {
+      "document": "main_highlighted",
+      "image": 7,
+      "pixels": [
+        3814,
+        1273
+      ],
+      "effective_dpi": [
+        599.9988645253105,
+        599.9990721912524
+      ]
+    },
+    {
+      "document": "main_highlighted",
+      "image": 8,
+      "pixels": [
+        1950,
+        1050
+      ],
+      "effective_dpi": [
+        599.9989905125,
+        599.9988751427162
+      ]
+    },
+    {
+      "document": "supporting_information",
+      "image": 1,
+      "pixels": [
+        3780,
+        2498
+      ],
+      "effective_dpi": [
+        599.9988543120656,
+        599.9988967572281
+      ]
+    },
+    {
+      "document": "supporting_information",
+      "image": 2,
+      "pixels": [
+        3785,
+        1239
+      ],
+      "effective_dpi": [
+        599.998855825521,
+        599.9990467308429
+      ]
+    },
+    {
+      "document": "supporting_information",
+      "image": 3,
+      "pixels": [
+        2679,
+        1889
+      ],
+      "effective_dpi": [
+        599.9988243373916,
+        599.998957913966
+      ]
+    },
+    {
+      "document": "supporting_information",
+      "image": 4,
+      "pixels": [
+        3900,
+        4250
+      ],
+      "effective_dpi": [
+        600.0,
+        600.0
+      ]
+    },
+    {
+      "document": "supporting_information",
+      "image": 5,
+      "pixels": [
+        3816,
+        2733
+      ],
+      "effective_dpi": [
+        599.9988651204219,
+        599.9988475666851
+      ]
+    }
+  ],
+  "clean_highlighted_scientific_text": "identical",
+  "visual_review": "separate page-by-page review required"
+}

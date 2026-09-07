@@ -1,0 +1,28 @@
+job,method,metric,identifier_ordered,tie_aware,correction
+glp1r_seed5,full_cascade,roc_auc,0.7786666666666666,0.7363333333333333,tie handling
+glp1r_seed5,full_cascade,pr_auc,0.4813474177196812,0.43124175788462316,tie handling
+glp1r_seed5,full_cascade,ef_1pct,40.0,31.0,tie handling plus actual-cutoff EF normalization
+glp1r_seed5,full_cascade,ef_5pct,10.0,7.926136363636363,tie handling plus actual-cutoff EF normalization
+glp1r_seed5,full_cascade,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
+glp1r_seed5,full_cascade,top10_recovery,0.5,0.4012987012987013,tie handling
+glp1r_seed5,full_cascade,top25_recovery,0.5,0.4207792207792208,tie handling
+glp1r_seed5,full_cascade,top50_recovery,0.5,0.4532467532467533,tie handling
+glp1r_seed5,full_cascade,bedroc,0.55254756057059,0.4939789581438997,tie handling
+glp1r_seed5,stage3_only,roc_auc,0.6953333333333334,0.6881666666666667,tie handling
+glp1r_seed5,stage3_only,pr_auc,0.2741453660098585,0.27362221346831045,tie handling
+glp1r_seed5,stage3_only,ef_1pct,20.0,15.5,tie handling plus actual-cutoff EF normalization
+glp1r_seed5,stage3_only,ef_5pct,5.999999999999999,5.8125,tie handling plus actual-cutoff EF normalization
+glp1r_seed5,stage3_only,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
+glp1r_seed5,stage3_only,top10_recovery,0.3,0.3,tie handling
+glp1r_seed5,stage3_only,top25_recovery,0.3,0.3,tie handling
+glp1r_seed5,stage3_only,top50_recovery,0.4,0.4,tie handling
+glp1r_seed5,stage3_only,bedroc,0.3418181780806621,0.34181817483330373,tie handling
+glp1r_seed5,standard_3d_pharmacophore,roc_auc,0.7073333333333334,0.7073333333333334,tie handling
+glp1r_seed5,standard_3d_pharmacophore,pr_auc,0.2673214578113334,0.26732145781133343,tie handling
+glp1r_seed5,standard_3d_pharmacophore,ef_1pct,20.0,15.5,tie handling plus actual-cutoff EF normalization
+glp1r_seed5,standard_3d_pharmacophore,ef_5pct,5.999999999999999,5.8125,tie handling plus actual-cutoff EF normalization
+glp1r_seed5,standard_3d_pharmacophore,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
+glp1r_seed5,standard_3d_pharmacophore,top10_recovery,0.2,0.2,tie handling
+glp1r_seed5,standard_3d_pharmacophore,top25_recovery,0.3,0.3,tie handling
+glp1r_seed5,standard_3d_pharmacophore,top50_recovery,0.4,0.4,tie handling
+glp1r_seed5,standard_3d_pharmacophore,bedroc,0.3269232429002608,0.32692324290026076,tie handling

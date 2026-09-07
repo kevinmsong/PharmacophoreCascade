@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\caption{\textbf{Measured native-branch wall times for each pair of shortlist rules.} Values cover native selection, ligand preparation, scoring, and output generation. Stages 0--2 and the larger Stage-3 union are shared within each pair and are excluded here. Identical shortlists share one native execution. These runs execute alongside the million-compound screen, so the elapsed times are workload-specific measurements rather than portable speedup estimates.}
+\label{tab:floor-timing}
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+System & 5\% only (min) & 5\% + min.\ 1,000 (min) & Native execution \\
+\midrule
+GLP-1R & 17.59 & 17.59 & Shared (identical input) \\
+GHSR & 2.35 & 8.83 & Separate per policy \\
+NTSR1 & 3.26 & 8.88 & Separate per policy \\
+MDM2--p53 & 41.66 & 41.66 & Shared (identical input) \\
+\bottomrule
+\end{tabular}
+\end{table}

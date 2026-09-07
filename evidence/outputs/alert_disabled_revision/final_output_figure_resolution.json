@@ -1,0 +1,1688 @@
+{
+  "status": "passed",
+  "figures": [
+    {
+      "path": "ACS_Omega_resubmission\\fig1_cascade.png",
+      "pixels": [
+        3046,
+        2796
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\fig2_pharmacophore.png",
+      "pixels": [
+        3774,
+        1651
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\fig3_glp1r_benchmark.png",
+      "pixels": [
+        3788,
+        1135
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\fig4_cross_system.png",
+      "pixels": [
+        3804,
+        1388
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\fig5_attrition.png",
+      "pixels": [
+        3780,
+        1456
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\fig6_efficiency.png",
+      "pixels": [
+        3776,
+        1713
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\fig7_docking.png",
+      "pixels": [
+        3814,
+        1273
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\figA1_upstream_vs_native.png",
+      "pixels": [
+        3780,
+        2498
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\figA2_coverage_profile.png",
+      "pixels": [
+        3785,
+        1239
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\figA3_top_ligand_overlay.png",
+      "pixels": [
+        2679,
+        1889
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\figA4_top20_structures.png",
+      "pixels": [
+        3900,
+        4250
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\figA5_floor_survival.png",
+      "pixels": [
+        3816,
+        2733
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "ACS_Omega_resubmission\\toc_graphic.png",
+      "pixels": [
+        1950,
+        1050
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\ablation_sensitivity.png",
+      "pixels": [
+        3665,
+        2408
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ghsr\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ghsr\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2599,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ghsr\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ghsr\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\glp1r\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\glp1r\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\glp1r\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\glp1r\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\mdm2\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\mdm2\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2707,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\mdm2\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\mdm2\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2630,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3818,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_ghsr_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_ghsr_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_ghsr_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3817,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_ghsr_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_7ki0\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_7ki0\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_7ki0\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3817,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_7ki0\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_automated\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_automated\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2630,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_automated\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_automated\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3817,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_glp1r_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_mdm2_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_mdm2_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2794,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_mdm2_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_mdm2_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_ntsr1_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_ntsr1_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_ntsr1_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_ntsr1_full\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\benchmark_plots.png",
+      "pixels": [
+        8942,
+        6862
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2599,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2599,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2599,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2599,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2599,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ghsr_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2662,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\glp1r_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2711,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2711,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2711,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2711,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2711,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\mdm2_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2605,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed1\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2599,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3817,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed2\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2624,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed3\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2624,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3817,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed4\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2624,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "evidence\\outputs\\decoy_replicates\\ntsr1_seed5\\benchmark_external\\benchmark_native_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "results\\absolute_floor_1000\\pharmacophore_3d_full_1M_floor1000.png",
+      "pixels": [
+        3774,
+        1651
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "results\\absolute_floor_1000\\property_distributions_full_1M_floor1000.png",
+      "pixels": [
+        3776,
+        2470
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "results\\absolute_floor_1000\\screening_full_1M_floor1000_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+      "pixels": [
+        3776,
+        2404
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "results\\absolute_floor_1000\\screening_full_1M_floor1000_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+      "pixels": [
+        2716,
+        2493
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "results\\absolute_floor_1000\\screening_full_1M_floor1000_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+      "pixels": [
+        3819,
+        1823
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "results\\absolute_floor_1000\\screening_full_1M_floor1000_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+      "pixels": [
+        3776,
+        2494
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "results\\absolute_floor_1000\\top_20_glp1_mimetics_full_1M_floor1000.png",
+      "pixels": [
+        3900,
+        4250
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "results\\pharmacophore_3d_full_1M_topological_hashed.png",
+      "pixels": [
+        3774,
+        1651
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "results\\property_distributions_full_1M_topological_hashed.png",
+      "pixels": [
+        3776,
+        2470
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "results\\top_20_glp1_mimetics_full_1M_topological_hashed.png",
+      "pixels": [
+        3900,
+        4250
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    }
+  ]
+}

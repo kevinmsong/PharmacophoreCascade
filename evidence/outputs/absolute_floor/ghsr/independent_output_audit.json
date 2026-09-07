@@ -1,0 +1,8 @@
+{
+  "system": "ghsr",
+  "input_molecules": 31550,
+  "shortlist_percentage": 14,
+  "shortlist_floor": 277,
+  "identical_policy_outputs": false,
+  "all_stage_memberships_and_label_counts_verified": true
+}

@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "created_utc": "2026-09-07T00:22:45.511528+00:00",
+  "archive": "ACS_Omega_resubmission.zip",
+  "bytes": 12910644,
+  "sha256": "37f47b07669f2a56a3b2426d69083dd417f73b74da4a31d5f3cb10ed085fb2da",
+  "files": [
+    {
+      "path": "ACS_Omega_resubmission/ablation_curation_table.tex",
+      "bytes": 795,
+      "sha256": "281eb25305027363d367feb29c73671f90d092355ce82907ca4808c9b9085e8f"
+    },
+    {
+      "path": "ACS_Omega_resubmission/ablation_table.tex",
+      "bytes": 1416,
+      "sha256": "234c0a5f6dac66887fbd032fe6f1fd0e50d004ec93bb8c78bd8255d41e40f0c6"
+    },
+    {
+      "path": "ACS_Omega_resubmission/abstract.txt",
+      "bytes": 1502,
+      "sha256": "8d7589820aeb76337fad45180e27ca65557b5c48cb2cf1b183863e5b7b57391d"
+    },
+    {
+      "path": "ACS_Omega_resubmission/acs.csl",
+      "bytes": 5362,
+      "sha256": "699b36834684ea0ecf6e0f43df1613951eb10ec656867d07fe40935bbead5cb2"
+    },
+    {
+      "path": "ACS_Omega_resubmission/acs_preamble.tex",
+      "bytes": 2833,
+      "sha256": "a900ccc0938e406d737374e9151f16744e56e08e3293ec7e120c977e4b2b0f4e"
+    },
+    {
+      "path": "ACS_Omega_resubmission/attrition_full_table.tex",
+      "bytes": 3724,
+      "sha256": "6609b52343f1363a9bde60f6715e74c0ad0942a7450dea92b4b70701fd5d19b3"
+    },
+    {
+      "path": "ACS_Omega_resubmission/attrition_table.tex",
+      "bytes": 819,
+      "sha256": "83f3b037e3986ec164fc7199ed8df81e647c4af94c50b49bdde8fb35ab51fdb0"
+    },
+    {
+      "path": "ACS_Omega_resubmission/crosssystem_table.tex",
+      "bytes": 1688,
+      "sha256": "59584c686df819040904c99adfd6ee46ca96ce427645e7dd1ae43d01c7c60a5b"
+    },
+    {
+      "path": "ACS_Omega_resubmission/current_rank_shift_table.tex",
+      "bytes": 1237,
+      "sha256": "7f2e9bb0566ba639b669f7e98f9f40970d2b97d2328902bb2e94b0ad268cf3d6"
+    },
+    {
+      "path": "ACS_Omega_resubmission/current_run_config_table.tex",
+      "bytes": 2279,
+      "sha256": "868a784ff91b382b457bb8f3f1a0b70ca4aa4ad69275ea887383c14b79634306"
+    },
+    {
+      "path": "ACS_Omega_resubmission/decoy_robustness_table.tex",
+      "bytes": 866,
+      "sha256": "fa4d2e5ea002c9b35487b0785d090f55f30c480d6e2cfb95928e339ddb45bd43"
+    },
+    {
+      "path": "ACS_Omega_resubmission/efficiency_table.tex",
+      "bytes": 1112,
+      "sha256": "23a02a9d69f7d0a04d7b41c0db600e4082638607b3768acb48b90f86d71369f8"
+    },
+    {
+      "path": "ACS_Omega_resubmission/evidence_table.tex",
+      "bytes": 820,
+      "sha256": "645ca5f1ef2a0ba79d615674b074b747e67890e653f0a82e92ec815f5819b721"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig1_cascade.pdf",
+      "bytes": 72307,
+      "sha256": "5f2f66bb661083ec5440a44b424e60f356c5f3b1d0927a991e481dbd8d08728a"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig1_cascade.png",
+      "bytes": 502223,
+      "sha256": "07a3b02d2ee40c4f7014f66ca7e546eb1adf3f3131efcc5e71414c1f4b08251a"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig2_pharmacophore.pdf",
+      "bytes": 69596,
+      "sha256": "f19ee05319531dba734c7a43ab4984b56175660132eae12d075efdb2f6119bf7"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig2_pharmacophore.png",
+      "bytes": 435534,
+      "sha256": "95bd57374cdf1a3773f3fcc41cfb0cab4efe1d608b4378810075a3a596b6bdbe"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig3_glp1r_benchmark.pdf",
+      "bytes": 63620,
+      "sha256": "77c6b1c857937a14fc4534483b56e42175de56732068f50cd3f0e5c515d1a1ae"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig3_glp1r_benchmark.png",
+      "bytes": 177672,
+      "sha256": "21d38759f084e12b9b4ec357bb91c01a656b5fd9d5caa5d99d8d40459d27cea0"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig4_cross_system.pdf",
+      "bytes": 55146,
+      "sha256": "4a5e8bf449e4a6aa152324f39f6e8af826b746fa06670749ce07e6f809274e94"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig4_cross_system.png",
+      "bytes": 197926,
+      "sha256": "cd0df995f9f5b8d695711a92410f81b532a2034e75267bef94b4ef6e1e282de9"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig5_attrition.pdf",
+      "bytes": 64615,
+      "sha256": "57fea39043d0901943cb21fad276cd48f18e5951907051304a15c4adf7cf4fa9"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig5_attrition.png",
+      "bytes": 149629,
+      "sha256": "7f41e02cc3398de8e21d47fee8282fd33bb2c8e01cbeaadc1e3de0d9773037e6"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig6_efficiency.pdf",
+      "bytes": 49707,
+      "sha256": "ef21767f470b2909722b579ef052dde5c90c3325c48d873a4408d1d2708d2d5d"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig6_efficiency.png",
+      "bytes": 183658,
+      "sha256": "31338ec5b8ed88a829e19c5c3a752a2d3853a7eeed4f9e89ed3d5e8ce0285605"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig7_docking.pdf",
+      "bytes": 60881,
+      "sha256": "f507732fa8f144114511df7d28cda1600e44d899038a74a056490bf101594ba9"
+    },
+    {
+      "path": "ACS_Omega_resubmission/fig7_docking.png",
+      "bytes": 237338,
+      "sha256": "0de2ea4b3f589394af1b8b94f7ff34c03addc4ffb64c52a2b4629036a0291e9a"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA1_upstream_vs_native.pdf",
+      "bytes": 72058,
+      "sha256": "a404949d41cd007eda479660f35247776895ea5d4cd61672f40de4b16e710b4a"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA1_upstream_vs_native.png",
+      "bytes": 587894,
+      "sha256": "2214ea2350e86e53ea772113cbd194d0156ca29ed4f97c83008b9ba4f5776308"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA2_coverage_profile.pdf",
+      "bytes": 49341,
+      "sha256": "347967bdbbe41850f740a02c2c0c15d4f7415c953627a55137669e51324a955a"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA2_coverage_profile.png",
+      "bytes": 208418,
+      "sha256": "0f422d7299bd6e712e2cd5d5fb2a1ab548b39be0fabd8a13f30e5ef0c4228cc8"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA3_top_ligand_overlay.pdf",
+      "bytes": 54378,
+      "sha256": "82a3ee7b05f58989cdfa2f4d4e1331c5b038313982b30c6310de011330b66f35"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA3_top_ligand_overlay.png",
+      "bytes": 222319,
+      "sha256": "11ea17824d7db295e9040b37a688e3545aeee289c931c9500aba3b2c7f2b6262"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA4_top20_structures.pdf",
+      "bytes": 193982,
+      "sha256": "2cce2ba508cb0f1d4e9660d20fe6cfc118549a743bf4323d9855af9ca69b4426"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA4_top20_structures.png",
+      "bytes": 908834,
+      "sha256": "033bdb733b42f2017ec553fc5d7179615827348d25a11db41666bd1e7ac55c34"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA4_top20_structures.svg",
+      "bytes": 627979,
+      "sha256": "0bc12c9b8d5918be1b8092172337a71c4a77504a9f86e51d8790201171fca9e0"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA5_floor_survival.pdf",
+      "bytes": 50122,
+      "sha256": "dd7db8c66a8552c6d5131382002a260689674ad6a615424d464f2b1ab814aa23"
+    },
+    {
+      "path": "ACS_Omega_resubmission/figA5_floor_survival.png",
+      "bytes": 299151,
+      "sha256": "a13e9802b3ed62e907672e29b92ccf1bab7f38bb45748ef5870f5b1dffd472e4"
+    },
+    {
+      "path": "ACS_Omega_resubmission/floor_headline_table.tex",
+      "bytes": 1026,
+      "sha256": "982301fea274f8387735261731a3b4812f85fef362af9e0326e223409cbd0926"
+    },
+    {
+      "path": "ACS_Omega_resubmission/floor_survival_table.tex",
+      "bytes": 2563,
+      "sha256": "2b92fc1ad5820096833f5a37e34d17a0d0be6698060db2930e4199f159617daf"
+    },
+    {
+      "path": "ACS_Omega_resubmission/floor_timing_table.tex",
+      "bytes": 845,
+      "sha256": "f1e8710e72f9382f05f47dccb970d5785bd217912b5af8eb43d8eb1e6992f1ff"
+    },
+    {
+      "path": "ACS_Omega_resubmission/identifier_tie_table.tex",
+      "bytes": 1492,
+      "sha256": "32ac1c2300741bd37628bc7cc8f3016ebba6c45399b562aca459422c038303df"
+    },
+    {
+      "path": "ACS_Omega_resubmission/main.docx",
+      "bytes": 1861883,
+      "sha256": "20bddcf079241503f4387ff9e44880ebf4dc0ef991703979ce67eb6e0b8cb789"
+    },
+    {
+      "path": "ACS_Omega_resubmission/main.pdf",
+      "bytes": 800638,
+      "sha256": "a9634c286ae1429d02933d67711ffe9552171929d2a134367560cd3269960ab3"
+    },
+    {
+      "path": "ACS_Omega_resubmission/main.tex",
+      "bytes": 946,
+      "sha256": "308200635b9dd96d508b2570fea5157deac26aa110c390ff6b11f7546bee3219"
+    },
+    {
+      "path": "ACS_Omega_resubmission/main_highlighted.docx",
+      "bytes": 1863530,
+      "sha256": "6e5ffe4a7fe78b7b9ba2b4b0c682c9813b82ad4661e8b166a0791c4260cfbba0"
+    },
+    {
+      "path": "ACS_Omega_resubmission/main_highlighted.pdf",
+      "bytes": 804475,
+      "sha256": "b0e214768062366ec0c62c3b1d0f0251634d101b4345bbbfb0f69429fac950bb"
+    },
+    {
+      "path": "ACS_Omega_resubmission/main_highlighted.tex",
+      "bytes": 3097,
+      "sha256": "47007999bc72907c915f3e11c3010873bc6baf3faa8b18ba6f8b25fce80c62ca"
+    },
+    {
+      "path": "ACS_Omega_resubmission/manuscript_body.tex",
+      "bytes": 52577,
+      "sha256": "234aac8667fdcda5a6dbae196c10184631ab4f6c12c8d641f2173b47245fd2a3"
+    },
+    {
+      "path": "ACS_Omega_resubmission/production_survival_table.tex",
+      "bytes": 805,
+      "sha256": "acbc357724ca25af14a395b98d9ca2916d8299f04d8832cdba8deca7bc18156c"
+    },
+    {
+      "path": "ACS_Omega_resubmission/README.md",
+      "bytes": 2008,
+      "sha256": "cb81c4096617c6689592ccaadedcf91d44eb5a3ddd99c351feea630cf1f77569"
+    },
+    {
+      "path": "ACS_Omega_resubmission/references.bib",
+      "bytes": 14580,
+      "sha256": "c8188661eefde31d0715b90f55fdc9bd4b3035280917a63a0a054352e0cee763"
+    },
+    {
+      "path": "ACS_Omega_resubmission/response_to_reviewers.docx",
+      "bytes": 21222,
+      "sha256": "2b4ddac91541b0b90de35d348f8e430299dc1b7e89ab51cdcd4743b2a2155dc1"
+    },
+    {
+      "path": "ACS_Omega_resubmission/response_to_reviewers.pdf",
+      "bytes": 182649,
+      "sha256": "a2e4db6153038646cf2eec4fd5ee2f0022a71f5fc938b5fe97d674ad777b7712"
+    },
+    {
+      "path": "ACS_Omega_resubmission/response_to_reviewers.tex",
+      "bytes": 24924,
+      "sha256": "e207e9170b8015b1472dbe7eda23a9c33df688fef9782aa37c514ea261aaf983"
+    },
+    {
+      "path": "ACS_Omega_resubmission/si_new_systems_actives_table.tex",
+      "bytes": 8093,
+      "sha256": "fbb443e8fe0c8bb515ae1f68215c3f1bfe4aee6671e00f19387fd4029156336d"
+    },
+    {
+      "path": "ACS_Omega_resubmission/si_new_systems_counts_table.tex",
+      "bytes": 714,
+      "sha256": "5e1d4d34369a3cf78c6637f030e4738f10ff3598b098a22a0f0b3f44d8045b7c"
+    },
+    {
+      "path": "ACS_Omega_resubmission/supporting_information.docx",
+      "bytes": 2012100,
+      "sha256": "6f227d1c5852fcef11d17fbcc4db260f227e2f67f11f13488aba5ffedc3d41f1"
+    },
+    {
+      "path": "ACS_Omega_resubmission/supporting_information.pdf",
+      "bytes": 598512,
+      "sha256": "11a3816f3ff04d3cdedf5dbac7dfb3ae55f50040ed4c944341cf4fce3e6009c2"
+    },
+    {
+      "path": "ACS_Omega_resubmission/supporting_information.tex",
+      "bytes": 20127,
+      "sha256": "2214580660ad687dffaa437a73e240adbed775d85ddd1308bfabe58ccc8f53d2"
+    },
+    {
+      "path": "ACS_Omega_resubmission/terminology_table.tex",
+      "bytes": 2571,
+      "sha256": "a94b8e4fa37e3dc4eb6eb077782164d1d8ad48d3a1b1dd8e9b85156f50342f7f"
+    },
+    {
+      "path": "ACS_Omega_resubmission/toc_graphic.pdf",
+      "bytes": 55370,
+      "sha256": "86d7805ef79202056c8bb23fb170e3a3e319d6b116295d062005e9b8f6dcb522"
+    },
+    {
+      "path": "ACS_Omega_resubmission/toc_graphic.png",
+      "bytes": 157594,
+      "sha256": "51278c788d6ea8c854089cf409637c5a022a1bc80e7f537fc89c4eae67403e2b"
+    },
+    {
+      "path": "ACS_Omega_resubmission/top10_docking_table.tex",
+      "bytes": 1094,
+      "sha256": "6f8bc376c13c1454cd0b93eddfa3cfaf17dcd7a706f1e49da8b0d9c2e4e170bf"
+    },
+    {
+      "path": "ACS_Omega_resubmission/top10_table.tex",
+      "bytes": 1374,
+      "sha256": "a4039fb60f350425968092cf1032cd7ccf9a3929cb76fb91b931289b10112105"
+    },
+    {
+      "path": "ACS_Omega_resubmission/tost_table.tex",
+      "bytes": 766,
+      "sha256": "1766269833bd134b583c5f847543ab1048351906d08358fc596c4598b337dff8"
+    }
+  ],
+  "scope": "Current journal documents, figure assets, and LaTeX sources. Scientific run data remain in the project output directories."
+}

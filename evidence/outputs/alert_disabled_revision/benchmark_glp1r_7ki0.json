@@ -1,0 +1,42 @@
+{
+  "job": "benchmark_glp1r_7ki0",
+  "status": "completed",
+  "started_utc": "2026-09-06T22:52:36.844788+00:00",
+  "command": [
+    "C:\\Users\\kevin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-u",
+    "evidence/run_target_benchmark.py",
+    "--benchmark-config",
+    "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\alert_disabled_revision\\configs\\benchmark_glp1r_7ki0.yaml",
+    "--output-dir",
+    "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\benchmark_glp1r_7ki0",
+    "--native-rerank-config",
+    "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\GLP1_top_ligand_analysis\\configs\\study_glp1r_7ki0.yaml"
+  ],
+  "settings": {
+    "chemistry_gate_mode": "warn_only",
+    "native_pains_filter": false,
+    "workers": 2,
+    "cascade_hotspot_weight": 0.25,
+    "feature_caps": "fixed",
+    "required_groups": null,
+    "variant": "7ki0",
+    "decoy_seed": null
+  },
+  "cached_scores_used": false,
+  "input_sha256": {
+    "evidence\\outputs\\alert_disabled_revision\\configs\\benchmark_glp1r_7ki0.yaml": "d1a5dae7eca03127fc9f406ccfb3d358ab3c28477f63d70b74feaeeb07a44036",
+    "evidence\\data\\glp1r_external_benchmark_library.csv": "fec19adec54bc88b2847d982428531e42ebd149c1d697bfee0408c67eb671dc4",
+    "maps\\pharmacophore_rigorous.json": "d6e672f429fa7906cc2a4cda7d6a2c5e0ed6e9d706d1886fe60be08616aaefb8",
+    "GLP1_top_ligand_analysis\\configs\\study_glp1r_7ki0.yaml": "001979d6549ba0ca5c2a95f8e90c6845366ec50c2264516ad01d92949fbf6bcf"
+  },
+  "source_sha256": {
+    "run_optimized_1M_topological_hashed_screening.py": "a0a74edf143bef20dcf2e9c670fda1c7ae7a2cf31f54fa97c42cc8c4d34de60b",
+    "evidence\\src\\benchmark_runner.py": "c2985691e8d66ea4ba3b12b6222d0aace6ced8501974f73fa6a9bffc727ae339",
+    "evidence\\parallel_native.py": "a2da2d4783705403848f3a741a2c480ca92ef2da4ba12bece63a7d204b812419",
+    "evidence\\run_alert_disabled_suite.py": "91ee230b2b1d269d6f3a795689aa56312024209a9660cad96c051295f01df54d"
+  },
+  "returncode": 0,
+  "elapsed_seconds": 240.2073390000005,
+  "completed_utc": "2026-09-06T22:56:37.072941+00:00"
+}

@@ -1,0 +1,37 @@
+job,method,metric,identifier_ordered,tie_aware,correction
+benchmark_glp1r_full,full_cascade,roc_auc,0.7963333333333333,0.7531666666666667,tie handling
+benchmark_glp1r_full,full_cascade,pr_auc,0.4639784234593172,0.3634136567058649,tie handling
+benchmark_glp1r_full,full_cascade,ef_1pct,30.0,23.25,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,full_cascade,ef_5pct,10.0,7.926136363636363,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,full_cascade,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,full_cascade,top10_recovery,0.5,0.4012987012987013,tie handling
+benchmark_glp1r_full,full_cascade,top25_recovery,0.5,0.4207792207792208,tie handling
+benchmark_glp1r_full,full_cascade,top50_recovery,0.5,0.4532467532467533,tie handling
+benchmark_glp1r_full,full_cascade,bedroc,0.5460972499356791,0.480058876356489,tie handling
+benchmark_glp1r_full,native_only,roc_auc,0.809,0.7578333333333334,tie handling
+benchmark_glp1r_full,native_only,pr_auc,0.4628104114184583,0.3611375198797034,tie handling
+benchmark_glp1r_full,native_only,ef_1pct,30.0,23.25,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,native_only,ef_5pct,10.0,7.892763157894736,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,native_only,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,native_only,top10_recovery,0.5,0.4010526315789473,tie handling
+benchmark_glp1r_full,native_only,top25_recovery,0.5,0.41684210526315785,tie handling
+benchmark_glp1r_full,native_only,top50_recovery,0.5,0.4431578947368421,tie handling
+benchmark_glp1r_full,native_only,bedroc,0.5454819223370311,0.47681518575476767,tie handling
+benchmark_glp1r_full,stage3_only,roc_auc,0.7376666666666667,0.7268333333333333,tie handling
+benchmark_glp1r_full,stage3_only,pr_auc,0.2847261639713181,0.28387033776986986,tie handling
+benchmark_glp1r_full,stage3_only,ef_1pct,20.0,15.5,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,stage3_only,ef_5pct,5.999999999999999,5.8125,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,stage3_only,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,stage3_only,top10_recovery,0.3,0.3,tie handling
+benchmark_glp1r_full,stage3_only,top25_recovery,0.3,0.3,tie handling
+benchmark_glp1r_full,stage3_only,top50_recovery,0.4,0.4,tie handling
+benchmark_glp1r_full,stage3_only,bedroc,0.3574038142562001,0.35740379968949565,tie handling
+benchmark_glp1r_full,standard_3d_pharmacophore,roc_auc,0.717,0.717,tie handling
+benchmark_glp1r_full,standard_3d_pharmacophore,pr_auc,0.2588374676799775,0.2588374676799775,tie handling
+benchmark_glp1r_full,standard_3d_pharmacophore,ef_1pct,20.0,15.5,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,standard_3d_pharmacophore,ef_5pct,4.0,3.875,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,standard_3d_pharmacophore,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_full,standard_3d_pharmacophore,top10_recovery,0.2,0.2,tie handling
+benchmark_glp1r_full,standard_3d_pharmacophore,top25_recovery,0.3,0.3,tie handling
+benchmark_glp1r_full,standard_3d_pharmacophore,top50_recovery,0.4,0.4,tie handling
+benchmark_glp1r_full,standard_3d_pharmacophore,bedroc,0.3002438799308357,0.3002438799308356,tie handling

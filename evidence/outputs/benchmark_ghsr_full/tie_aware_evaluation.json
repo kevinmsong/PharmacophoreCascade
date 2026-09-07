@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "source_sha256": {
+    "evidence\\reevaluate_tied_benchmarks.py": "dc3fce368b3d1dd77720f5011f55e058207b2e67c5b724389c9808127c771771",
+    "evidence\\tie_aware_metrics.py": "20bd3482ff574326b244c09a3dc28ec7a87a6eddae28b1304d698dd3e3b15d12",
+    "evidence\\data\\ghsr_external_benchmark_library.csv": "a4e5313f9e711619e25068acc1edb39283dbc9434cfe9573f5fe4b8279584eed",
+    "evidence\\outputs\\benchmark_ghsr_full\\benchmark_external\\full_cascade_ranking.csv": "3a060944dc7da7e9e71d45f285fdf059c4ab10c510b4ffa4354634832ebbc433",
+    "evidence\\outputs\\benchmark_ghsr_full\\benchmark_external\\native_only_ranking.csv": "008dd40f9d964c5f938ebdf03c1b335014f59808ac4a99c9cb6d9033427195f9",
+    "evidence\\outputs\\benchmark_ghsr_full\\benchmark_external\\stage3_only_ranking.csv": "7e9d1dfa9bff029ca8bf9ad352653bbd9cd2d39c0d50331566ecb266783fd021",
+    "evidence\\outputs\\benchmark_ghsr_full\\benchmark_external\\standard_3d_pharmacophore_ranking.csv": "f6d8576395a020bfb28978b507362d146e0052a1c510172fb834a96d2305884e"
+  },
+  "summary_sha256": "15a6ca562b1011c531bc752f604396ed03848cec66a5ae5740bbc4edf7175fce",
+  "bootstrap_iterations": 5000,
+  "seed": 42,
+  "completed_utc": "2026-09-06T21:33:46.729777+00:00",
+  "rule": "Equal status and score are tied; missing scores tie within failure status. ROC-AUC and average precision preserve ties. EF, BEDROC and top-k recovery average over all within-tie permutations.",
+  "enrichment_factor_normalization": "Expected active prevalence within the actual ceil(fraction*N) selected positions divided by the full-library active prevalence; the old nominal-fraction denominator is superseded.",
+  "unchanged": "Molecular scores, original total-order ranking files, candidate selections, and production floor retention.",
+  "original_summary_archive": "evidence\\outputs\\alert_disabled_revision\\identifier_order_evaluation\\benchmark_ghsr_full",
+  "scope": "Primary enrichment metrics and paired bootstrap. Pairwise original-list correlations remain descriptive total-order diagnostics; scaffold enrichment based on identifier tie breaks is omitted."
+}

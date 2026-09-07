@@ -1,0 +1,10 @@
+stage,archived,floor_rerun
+Input compounds,1000000,1000000
+Stage-0 survivors,956240,997590
+Stage-1/2 candidates,948971,990191
+Stage-3 shortlist,47812,49880
+Successful Stage-3 scores,47689,49757
+Native candidate pool,20000,20000
+Selected for native scoring,5000,5000
+Successful native ligand scores,4997,4997
+Final ranking,1000,1000

@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "system": "ghsr",
+  "started_utc": "2026-09-06T18:47:19.259208+00:00",
+  "scientific_settings": {
+    "shortlist_fraction": 0.05,
+    "shortlist_floor": 1000,
+    "shortlist_basis": "stage012_candidates",
+    "cascade_weights": {
+      "hotspot": 0.25,
+      "pair_hash": 0.75
+    },
+    "type_caps": {
+      "anion": 2,
+      "cation": 2,
+      "donor": 4,
+      "acceptor": 6,
+      "aromatic": 6,
+      "hydrophobe": 6
+    },
+    "required_groups": [],
+    "stage3_conformers": 16,
+    "native_config": "GLP1_top_ligand_analysis\\configs\\study_ghsr_benchmark.yaml",
+    "native_max_per_scaffold": 8
+  },
+  "workers": 2,
+  "native_workers": 2,
+  "chemistry_gate_mode": "warn_only",
+  "native_pains_filter": false,
+  "source_sha256": "abe6b77cefd399bfcfe6973bf6d2780dc0abd8cef10fa271dcb6164bbf2372ad",
+  "config_sha256": "0bdb03849a2bfc02d5db9ac6f110d46d836738c1644039b2faf3e6fc20e5d194",
+  "engine_sha256": "a0a74edf143bef20dcf2e9c670fda1c7ae7a2cf31f54fa97c42cc8c4d34de60b",
+  "native_config_sha256": "bd101bc2612c0c41d8749ae0ffa74b5f397ed5fb5f39a6b6f71d1290e91a4a0d",
+  "pharmacophore_sha256": "3eef2c954273c7fe2ff28af547d73c1ea68a1166ab5de3740187143540419774",
+  "cached_scores_used": false,
+  "completed_utc": "2026-09-06T19:04:19.543393+00:00",
+  "elapsed_seconds": 1020.2427759000002
+}

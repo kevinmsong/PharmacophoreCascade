@@ -1,0 +1,10 @@
+{
+  "source_sha256": "5588260c1dd779c2c79c875689e3bcd74a8622d07c0dbae92277e4b5ef447610",
+  "presentation_script_sha256": "f3ee10befa792aa647171edb486d488179d39585693bc9d88d5307491844820c",
+  "figure_module_sha256": "1a77210b4fb6e7432cfa78bfb9acab3fbb26a06ccb9136317b75bd6b3561311e",
+  "raster_dpi": 600,
+  "vector_pdf": true,
+  "palette": "Okabe-Ito blue/vermillion; orange-white-blue signed rank shifts",
+  "numerical_csv_comparison": "unchanged to 1e-12",
+  "ligands": 271
+}

@@ -1,0 +1,19 @@
+\begin{table}[tbp]
+\centering
+\caption{\textbf{Cascade performance with and without manual curation (GLP-1R).} Both columns use the same 10 actives and 300 decoys, with structural alerts recorded rather than excluding. The automated model removes hand-assigned contact groups, weight bonuses, native-supported expansion, and curated rescue. Top-10 values are expected active counts under score ties.}
+\label{tab:ablation_curation}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Metric & Curated & Automated \\
+\midrule
+ROC-AUC & 0.753 & 0.577 \\
+PR-AUC & 0.363 & 0.154 \\
+EF1\% & 23.2 & 11.6 \\
+BEDROC ($\alpha=20$) & 0.480 & 0.254 \\
+Actives in top 10 & 4.01 of 10 & 2.00 of 10 \\
+Single-pass 3D ROC-AUC & 0.717 & 0.594 \\
+\bottomrule
+\end{tabular}
+\end{table}

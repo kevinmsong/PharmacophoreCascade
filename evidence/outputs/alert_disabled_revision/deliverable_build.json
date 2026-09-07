@@ -1,0 +1,220 @@
+{
+  "tie_aware_evaluation": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/reevaluate_tied_benchmarks.py"
+    ],
+    "elapsed_seconds": 1.752129700002115,
+    "finished_utc": "2026-09-06T23:46:36.860194+00:00"
+  },
+  "validate_floor": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/validate_floor_outputs.py"
+    ],
+    "elapsed_seconds": 2.2797171999991406,
+    "finished_utc": "2026-09-06T23:46:39.139996+00:00"
+  },
+  "floor_analysis": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/analyze_absolute_floor.py"
+    ],
+    "elapsed_seconds": 3.7607097000000067,
+    "finished_utc": "2026-09-06T23:46:42.901393+00:00"
+  },
+  "attrition": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/analyze_alert_disabled_attrition.py"
+    ],
+    "elapsed_seconds": 1.4786733000000822,
+    "finished_utc": "2026-09-06T23:46:44.380773+00:00"
+  },
+  "replicate_aggregate": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/aggregate_replicates.py"
+    ],
+    "elapsed_seconds": 0.633228999999119,
+    "finished_utc": "2026-09-06T23:46:45.014980+00:00"
+  },
+  "machine_readable": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/export_machine_readable.py"
+    ],
+    "elapsed_seconds": 0.9047748000011779,
+    "finished_utc": "2026-09-06T23:46:45.920129+00:00"
+  },
+  "equivalence": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/analyze_equivalence.py"
+    ],
+    "elapsed_seconds": 1.7915834999985236,
+    "finished_utc": "2026-09-06T23:46:47.713073+00:00"
+  },
+  "ranking_perturbations": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/analyze_ablation_common_support.py"
+    ],
+    "elapsed_seconds": 1.2802056000000448,
+    "finished_utc": "2026-09-06T23:46:48.993796+00:00"
+  },
+  "collect_results": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/collect_alert_disabled_results.py"
+    ],
+    "elapsed_seconds": 1.7518849000007322,
+    "finished_utc": "2026-09-06T23:46:50.746467+00:00"
+  },
+  "publication_tables": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/write_alert_disabled_tables.py"
+    ],
+    "elapsed_seconds": 0.6020655000029365,
+    "finished_utc": "2026-09-06T23:46:51.349025+00:00"
+  },
+  "manuscript": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/write_alert_disabled_manuscript.py"
+    ],
+    "elapsed_seconds": 0.5649167999981728,
+    "finished_utc": "2026-09-06T23:46:51.915326+00:00"
+  },
+  "supporting_information": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/write_alert_disabled_si.py"
+    ],
+    "elapsed_seconds": 0.5822378999982902,
+    "finished_utc": "2026-09-06T23:46:52.498453+00:00"
+  },
+  "reviewer_response": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/write_alert_disabled_response.py"
+    ],
+    "elapsed_seconds": 0.533139699997264,
+    "finished_utc": "2026-09-06T23:46:53.031714+00:00"
+  },
+  "root_outputs": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/refresh_alert_disabled_outputs.py",
+      "--resume-after-root-report"
+    ],
+    "finished_utc": "2026-09-06T23:48:51.545608+00:00",
+    "recovery": "Explicit UTF-8 read; resumed after verified fresh root reports and caches without repeating archival operations",
+    "initial_attempt": {
+      "status": "failed",
+      "returncode": 1,
+      "command": [
+        "evidence/refresh_alert_disabled_outputs.py"
+      ],
+      "elapsed_seconds": 6.407507500000065,
+      "finished_utc": "2026-09-06T23:46:59.440781+00:00"
+    }
+  },
+  "independent_metrics": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "reproduce/reproduce_benchmarks.py"
+    ],
+    "elapsed_seconds": 1.1046432000002824,
+    "finished_utc": "2026-09-06T23:48:53.078876+00:00"
+  },
+  "main_figures": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/make_ieee_figures.py",
+      "--target",
+      "acs"
+    ],
+    "elapsed_seconds": 7.750632899998891,
+    "finished_utc": "2026-09-06T23:49:00.829784+00:00"
+  },
+  "si_figures": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/make_ieee_appendix_figures.py",
+      "--target",
+      "acs"
+    ],
+    "elapsed_seconds": 6.105458300000464,
+    "finished_utc": "2026-09-06T23:49:06.936750+00:00"
+  },
+  "graphical_abstract": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/make_floor_toc_graphic.py"
+    ],
+    "elapsed_seconds": 1.3363061000018206,
+    "finished_utc": "2026-09-06T23:49:08.274146+00:00"
+  },
+  "manuscript_numbers": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/check_manuscript_numbers.py",
+      "--dir",
+      "ACS_Omega_resubmission"
+    ],
+    "elapsed_seconds": 0.7029593999977806,
+    "finished_utc": "2026-09-06T23:49:08.977405+00:00"
+  },
+  "reviewer_coverage": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/check_reviewer_coverage.py",
+      "--dir",
+      "ACS_Omega_resubmission"
+    ],
+    "elapsed_seconds": 0.08045950000087032,
+    "finished_utc": "2026-09-06T23:49:09.059038+00:00"
+  },
+  "figure_accessibility": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/check_figure_accessibility.py",
+      "--dir",
+      "ACS_Omega_resubmission"
+    ],
+    "elapsed_seconds": 2.973121999999421,
+    "finished_utc": "2026-09-06T23:49:12.032892+00:00"
+  },
+  "headline_diagnostic_figures": {
+    "status": "completed",
+    "returncode": 0,
+    "command": [
+      "evidence/refresh_headline_diagnostic_figures.py"
+    ],
+    "finished_utc": "2026-09-07T00:01:43.864288+00:00",
+    "reason": "Extended 600-dpi audit identified three legacy headline diagnostics; regenerated from fresh Stage-3 data and refreshed canonical aliases"
+  }
+}

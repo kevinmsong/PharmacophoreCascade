@@ -1,0 +1,28 @@
+job,method,metric,identifier_ordered,tie_aware,correction
+benchmark_glp1r_automated,full_cascade,roc_auc,0.9546666666666668,0.5765,tie handling
+benchmark_glp1r_automated,full_cascade,pr_auc,0.4156809366157192,0.1543778801843318,tie handling
+benchmark_glp1r_automated,full_cascade,ef_1pct,20.0,11.625,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_automated,full_cascade,ef_5pct,4.0,3.875,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_automated,full_cascade,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_automated,full_cascade,top10_recovery,0.2,0.2,tie handling
+benchmark_glp1r_automated,full_cascade,top25_recovery,0.8,0.21649484536082472,tie handling
+benchmark_glp1r_automated,full_cascade,top50_recovery,1.0,0.2852233676975945,tie handling
+benchmark_glp1r_automated,full_cascade,bedroc,0.5035405007948524,0.25388328120422593,tie handling
+benchmark_glp1r_automated,stage3_only,roc_auc,0.9493333333333334,0.572,tie handling
+benchmark_glp1r_automated,stage3_only,pr_auc,0.3267920477268303,0.13691756272401434,tie handling
+benchmark_glp1r_automated,stage3_only,ef_1pct,10.0,7.75,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_automated,stage3_only,ef_5pct,2.0,1.9375,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_automated,stage3_only,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_automated,stage3_only,top10_recovery,0.1,0.1,tie handling
+benchmark_glp1r_automated,stage3_only,top25_recovery,0.8,0.21649484536082472,tie handling
+benchmark_glp1r_automated,stage3_only,top50_recovery,1.0,0.2852233676975945,tie handling
+benchmark_glp1r_automated,stage3_only,bedroc,0.4242199742060759,0.19227748402990535,tie handling
+benchmark_glp1r_automated,standard_3d_pharmacophore,roc_auc,0.5943333333333333,0.5943333333333334,tie handling
+benchmark_glp1r_automated,standard_3d_pharmacophore,pr_auc,0.2241507542877547,0.2241507542877547,tie handling
+benchmark_glp1r_automated,standard_3d_pharmacophore,ef_1pct,20.0,15.5,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_automated,standard_3d_pharmacophore,ef_5pct,5.999999999999999,5.8125,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_automated,standard_3d_pharmacophore,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
+benchmark_glp1r_automated,standard_3d_pharmacophore,top10_recovery,0.2,0.2,tie handling
+benchmark_glp1r_automated,standard_3d_pharmacophore,top25_recovery,0.3,0.3,tie handling
+benchmark_glp1r_automated,standard_3d_pharmacophore,top50_recovery,0.5,0.5,tie handling
+benchmark_glp1r_automated,standard_3d_pharmacophore,bedroc,0.3117199794767362,0.3117199794767361,tie handling

@@ -164,6 +164,12 @@ def claim2_frontend_enriches_not_determines(tables: Dict[str, pd.DataFrame]) -> 
         verdict = "inconclusive"
         narrative = "rank_comparison table required for Claim 2 evaluation."
 
+    # The observed native cohort excludes upstream failures. Its internal rank
+    # distribution cannot establish frontend enrichment relative to those failures.
+    verdict = "inconclusive"
+    narrative += " These are within-cohort rank diagnostics; no native scores for excluded molecules were measured, so frontend enrichment is not established by this analysis."
+    narrative = narrative.replace("the frontend enriches but does not constrain native performance.",
+                                  "native ordering draws from a broad range of observed screen ranks.")
     return {"evidence_df": evidence_df, "verdict": verdict, "narrative": narrative}
 
 
@@ -319,6 +325,11 @@ def claim4_diversified_pool_reduces_collapse(tables: Dict[str, pd.DataFrame]) ->
             "the benefit of diversity routing is not clearly resolved."
         )
 
+    verdict = "inconclusive"
+    narrative = (f"Among the final-ranked ligands, the diversified-route group has median native coverage "
+                 f"{median_div:.2f}% (n={len(diversified)}) and the Stage-3-only route group "
+                 f"{median_s3:.2f}% (n={len(stage3_only)}). This observational comparison does not "
+                 "test a different full native pool or establish prevention of score collapse.")
     return {"evidence_df": evidence_df, "verdict": verdict, "narrative": narrative}
 
 
@@ -350,12 +361,20 @@ def claim5_residue_motif_convergence(
     fm = tables["feature_matches"]
     fr = tables["final_ranked"]
 
-    # Best microstate per ligand (highest-weight match set — use first occurrence
-    # since native_scored is already best-microstate-first)
-    fm_best = fm.drop_duplicates(subset=["ligand_id", "reference_residue_label"], keep="first")
+    # Select the actual best state before counting residues; unioning matches
+    # across all states would falsely attribute different states to one overlay.
+    if "best_native" in tables:
+        best=tables['best_native'][['zinc_id','native_microstate_id']].rename(
+            columns={'zinc_id':'ligand_id','native_microstate_id':'microstate_id'})
+    else:
+        best=tables['native_scored'].sort_values(
+            ['native_weighted_coverage_pct','fit_rmsd_angstrom'],ascending=[False,True],kind='stable'
+            ).drop_duplicates('ligand_id')[['ligand_id','microstate_id']]
+    fm_best = fm.merge(best,on=['ligand_id','microstate_id'],how='inner',validate='many_to_one')
+    fm_best = fm_best.drop_duplicates(subset=["ligand_id", "reference_residue_label"])
 
     # Residue frequency across full native pool
-    all_ligands = fm_best["ligand_id"].unique()
+    all_ligands = best["ligand_id"].unique()
     n_all = len(all_ligands)
 
     # Residue frequency in top-k of final ranked

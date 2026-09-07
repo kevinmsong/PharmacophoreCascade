@@ -1,0 +1,232 @@
+[
+  {
+    "system": "ntsr1",
+    "policy": "percentage",
+    "n_input": 31550,
+    "n_candidates": 398,
+    "n_shortlist": 20,
+    "stage012_sec": 182.07995719999963,
+    "union_stage3_sec": 317.02232470000035,
+    "native_wall_sec": 195.67910849999953,
+    "native_results_shared_with_percentage": false,
+    "native_summary": {
+      "enabled": true,
+      "config_path": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\GLP1_top_ligand_analysis\\configs\\study_ntsr1_benchmark.yaml",
+      "final_rank_mode": "native_first",
+      "pair_tolerance_angstrom": 3.0,
+      "pains_filter_enabled": false,
+      "embed_conformers": 4,
+      "final_sort_contract": [
+        {
+          "field": "native_weighted_coverage_pct",
+          "direction": "desc"
+        },
+        {
+          "field": "native_matched_reference_features",
+          "direction": "desc"
+        },
+        {
+          "field": "native_fit_rmsd_angstrom",
+          "direction": "asc"
+        },
+        {
+          "field": "native_mean_pair_distance_error_angstrom",
+          "direction": "asc"
+        },
+        {
+          "field": "stage3_screen_rank",
+          "direction": "asc"
+        },
+        {
+          "field": "zinc_id",
+          "direction": "asc"
+        }
+      ],
+      "pool_strategy": {
+        "strategy": "deduplicated_union_with_stage3_backfill",
+        "requested_pool_k": 20000,
+        "requested_source_quotas": {
+          "stage3_rank": 12000,
+          "hotspot_breadth": 4000,
+          "native_supported_hotspot_score": 4000
+        },
+        "realized_source_counts": {
+          "total_unique_candidates": 20,
+          "stage3_rank": 12,
+          "hotspot_breadth": 4,
+          "native_supported_hotspot_score": 4
+        }
+      },
+      "selection_strategy": {
+        "selection_top_k": 5000,
+        "max_per_scaffold": 8,
+        "scaffold_key": "Murcko"
+      },
+      "counts": {
+        "candidate_pool_size": 20,
+        "selected_ligands": 20,
+        "chemistry_excluded_selected_ligands": 0,
+        "prepared_microstates": 154,
+        "prep_failures": 0,
+        "scored_microstates": 154,
+        "scoring_failures": 0,
+        "successful_best_ligands": 20,
+        "scored_summary_rows": 20,
+        "final_rows": 20
+      },
+      "timings": {
+        "selection_sec": 0.05146650000006048,
+        "library_prepare_sec": 58.08027250000032,
+        "reference_setup_sec": 2.6778439999998227,
+        "scoring_sec": 121.91409010000007,
+        "artifact_generation_sec": 8.025307199999588,
+        "total_sec": 190.91848019999998
+      },
+      "output_paths": {
+        "native_scored": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_scored_top5000.csv",
+        "native_final": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\top_1000_glp1_mimetics_production_native_final.csv",
+        "bundle_root": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle",
+        "bundle_manifest": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\manifests\\analysis_manifest.json"
+      },
+      "diagnostics": {
+        "status": "generated",
+        "always_on": true,
+        "diagnostics": [
+          "correlation",
+          "quartiles",
+          "rank_shift",
+          "residuals"
+        ],
+        "outputs": {
+          "summary_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\analysis\\ligand_best_native_mapping_summary.csv",
+          "analysis_label": "Top 20 native-scored ligands",
+          "bootstrap_iterations": 2000,
+          "metrics_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\analysis\\native_correlation_metrics.csv",
+          "quartiles_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\analysis\\native_correlation_quartiles.csv",
+          "rank_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\analysis\\native_rank_comparison.csv",
+          "scatter_png": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+          "quartile_png": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+          "rank_png": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+          "residual_png": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+          "report_md": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_analysis.md",
+          "ligand_count": 20
+        }
+      }
+    }
+  },
+  {
+    "system": "ntsr1",
+    "policy": "floor1000",
+    "n_input": 31550,
+    "n_candidates": 398,
+    "n_shortlist": 398,
+    "stage012_sec": 182.07995719999963,
+    "union_stage3_sec": 317.02232470000035,
+    "native_wall_sec": 532.9872887000001,
+    "native_results_shared_with_percentage": false,
+    "native_summary": {
+      "enabled": true,
+      "config_path": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\GLP1_top_ligand_analysis\\configs\\study_ntsr1_benchmark.yaml",
+      "final_rank_mode": "native_first",
+      "pair_tolerance_angstrom": 3.0,
+      "pains_filter_enabled": false,
+      "embed_conformers": 4,
+      "final_sort_contract": [
+        {
+          "field": "native_weighted_coverage_pct",
+          "direction": "desc"
+        },
+        {
+          "field": "native_matched_reference_features",
+          "direction": "desc"
+        },
+        {
+          "field": "native_fit_rmsd_angstrom",
+          "direction": "asc"
+        },
+        {
+          "field": "native_mean_pair_distance_error_angstrom",
+          "direction": "asc"
+        },
+        {
+          "field": "stage3_screen_rank",
+          "direction": "asc"
+        },
+        {
+          "field": "zinc_id",
+          "direction": "asc"
+        }
+      ],
+      "pool_strategy": {
+        "strategy": "deduplicated_union_with_stage3_backfill",
+        "requested_pool_k": 20000,
+        "requested_source_quotas": {
+          "stage3_rank": 12000,
+          "hotspot_breadth": 4000,
+          "native_supported_hotspot_score": 4000
+        },
+        "realized_source_counts": {
+          "total_unique_candidates": 397,
+          "stage3_rank": 238,
+          "hotspot_breadth": 79,
+          "native_supported_hotspot_score": 80
+        }
+      },
+      "selection_strategy": {
+        "selection_top_k": 5000,
+        "max_per_scaffold": 8,
+        "scaffold_key": "Murcko"
+      },
+      "counts": {
+        "candidate_pool_size": 397,
+        "selected_ligands": 343,
+        "chemistry_excluded_selected_ligands": 0,
+        "prepared_microstates": 1447,
+        "prep_failures": 0,
+        "scored_microstates": 1442,
+        "scoring_failures": 5,
+        "successful_best_ligands": 343,
+        "scored_summary_rows": 343,
+        "final_rows": 343
+      },
+      "timings": {
+        "selection_sec": 0.30464300000039657,
+        "library_prepare_sec": 192.33028959999956,
+        "reference_setup_sec": 2.5103515999999217,
+        "scoring_sec": 327.9799903000003,
+        "artifact_generation_sec": 8.497321199999533,
+        "total_sec": 532.9141800000007
+      },
+      "output_paths": {
+        "native_scored": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_scored_top5000.csv",
+        "native_final": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\top_1000_glp1_mimetics_production_native_final.csv",
+        "bundle_root": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle",
+        "bundle_manifest": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\manifests\\analysis_manifest.json"
+      },
+      "diagnostics": {
+        "status": "generated",
+        "always_on": true,
+        "diagnostics": [
+          "correlation",
+          "quartiles",
+          "rank_shift",
+          "residuals"
+        ],
+        "outputs": {
+          "summary_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\analysis\\ligand_best_native_mapping_summary.csv",
+          "analysis_label": "Top 343 native-scored ligands",
+          "bootstrap_iterations": 2000,
+          "metrics_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\analysis\\native_correlation_metrics.csv",
+          "quartiles_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\analysis\\native_correlation_quartiles.csv",
+          "rank_csv": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\analysis\\native_rank_comparison.csv",
+          "scatter_png": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+          "quartile_png": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+          "rank_png": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+          "residual_png": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+          "report_md": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\absolute_floor\\ntsr1\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_analysis.md",
+          "ligand_count": 343
+        }
+      }
+    }
+  }
+]
