@@ -32,15 +32,24 @@ from stage_scoring_reference import evaluate, load_hotspots  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 BENCH = ROOT / "evidence" / "data" / "machine_readable" / "glp1r_benchmark_scored.csv"
-AUDIT = ROOT / "results" / "screening_full_1M_topological_hashed.csv"
+# The 49,880-molecule headline shortlist, which is the population the figures
+# quoted in the manuscript and in this directory's README were computed over.
+# Sampling the full million-molecule table instead gives similar but different
+# correlations, so the default here is the documented one.
+AUDIT = ROOT / "results" / "screening_full_1M_topological_hashed_shortlist.csv"
 PHARM = ROOT / "maps" / "pharmacophore_rigorous.json"
 
 
 def check_stage_status(ph: dict) -> None:
     """Stage-0 / Stage-1 pass-fail agreement on the released benchmark."""
     df = pd.read_csv(BENCH)
-    if 'topology_status' in df:
-        df=df.rename(columns={'topology_status':'full_cascade_status','smiles':'canonical_smiles'})
+    # Older releases of this table named these columns differently. Rename only
+    # what is actually missing: the current table carries topology_status as a
+    # column of its own alongside full_cascade_status, and renaming it blindly
+    # produces two columns of the same name.
+    legacy = {'topology_status': 'full_cascade_status', 'smiles': 'canonical_smiles'}
+    df = df.rename(columns={old: new for old, new in legacy.items()
+                            if old in df.columns and new not in df.columns})
     status = df["full_cascade_status"].astype(str)
 
     rows = []
@@ -140,7 +149,7 @@ def check_continuous(ph: dict, n: int, seed: int) -> None:
 def main() -> None:
     global BENCH,AUDIT
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--n", type=int, default=300, help="molecules for the continuous check")
+    ap.add_argument("--n", type=int, default=500, help="molecules for the continuous check")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument('--benchmark-evaluation',type=Path)
     ap.add_argument('--audit',type=Path)
