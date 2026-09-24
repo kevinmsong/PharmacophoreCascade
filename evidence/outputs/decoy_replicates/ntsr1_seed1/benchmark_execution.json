@@ -1,9 +1,9 @@
 {
   "status": "completed",
-  "requested_workers": 2,
+  "requested_workers": 4,
   "effective_workers": 12,
   "allocation_reason": "headline and docking completed",
-  "input_config_sha256": "46899e064cfbcd67102ee323e0d8c936053766e9413485d88346eefdaec2a3ca",
+  "input_config_sha256": "6b7130f3f6d72463502213fd2dafe3dfef05dd622e83b7a7f99b7fbaa16de421",
   "driver_source_sha256": "85f6d5f79d7945afcf9a16ce411ef86889717588c8cff47ddb72157519e29142",
   "effective_configuration": {
     "random_seed": 42,
@@ -91,8 +91,8 @@
       "requested_workers": 12,
       "actual_workers": 12,
       "reason": "headline and docking completed",
-      "started_utc": "2026-09-06T23:13:26.863953+00:00"
+      "started_utc": "2026-09-20T14:05:34.494766+00:00"
     }
   ],
-  "elapsed_seconds": 97.08225160000075
+  "elapsed_seconds": 806.2617099999989
 }

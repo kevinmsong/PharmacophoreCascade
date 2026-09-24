@@ -23,7 +23,7 @@ benchmark:
   docking_raw_csv: null
   bootstrap_iterations: 0
   bootstrap_seed: 42
-  workers: 2
+  workers: 4
   top_hotspots: 25
   pair_features: 24
   rerank_query_features: 28
@@ -43,7 +43,7 @@ benchmark:
   native_rerank_pair_tolerance: 3.0
   final_rank_mode: native_first
   include_native_only: false
-  native_workers: 2
+  native_workers: 4
   cascade_hotspot_weight: 0.25
   feature_cap_mode: fixed
 cascade_weights:

@@ -1,28 +1,28 @@
 job,method,metric,identifier_ordered,tie_aware,correction
-mdm2_seed2,full_cascade,roc_auc,1.0,1.0,tie handling
-mdm2_seed2,full_cascade,pr_auc,1.0,1.0,tie handling
-mdm2_seed2,full_cascade,ef_1pct,40.0,31.0,tie handling plus actual-cutoff EF normalization
-mdm2_seed2,full_cascade,ef_5pct,20.0,19.375,tie handling plus actual-cutoff EF normalization
-mdm2_seed2,full_cascade,ef_01pct,100.0,31.0,tie handling plus actual-cutoff EF normalization
-mdm2_seed2,full_cascade,top10_recovery,1.0,1.0,tie handling
-mdm2_seed2,full_cascade,top25_recovery,1.0,1.0,tie handling
-mdm2_seed2,full_cascade,top50_recovery,1.0,1.0,tie handling
-mdm2_seed2,full_cascade,bedroc,1.0,1.0,tie handling
-mdm2_seed2,stage3_only,roc_auc,0.6736666666666666,0.6736666666666666,tie handling
-mdm2_seed2,stage3_only,pr_auc,0.0693862202698795,0.06938622026987958,tie handling
-mdm2_seed2,stage3_only,ef_1pct,0.0,0.0,tie handling plus actual-cutoff EF normalization
-mdm2_seed2,stage3_only,ef_5pct,2.0,1.9375,tie handling plus actual-cutoff EF normalization
+mdm2_seed2,full_cascade,roc_auc,0.9885924932975872,0.986461126005362,tie handling
+mdm2_seed2,full_cascade,pr_auc,0.9621008658008658,0.9352831776198304,tie handling
+mdm2_seed2,full_cascade,ef_1pct,32.0,30.84,tie handling plus actual-cutoff EF normalization
+mdm2_seed2,full_cascade,ef_5pct,19.2,18.614707692307693,tie handling plus actual-cutoff EF normalization
+mdm2_seed2,full_cascade,ef_01pct,40.0,30.84,tie handling plus actual-cutoff EF normalization
+mdm2_seed2,full_cascade,top10_recovery,0.2,0.2,tie handling
+mdm2_seed2,full_cascade,top25_recovery,0.5,0.5,tie handling
+mdm2_seed2,full_cascade,top50_recovery,0.94,0.94,tie handling
+mdm2_seed2,full_cascade,bedroc,0.9733242357537524,0.9635935588846234,tie handling
+mdm2_seed2,stage3_only,roc_auc,0.6265281501340483,0.6265281501340483,tie handling
+mdm2_seed2,stage3_only,pr_auc,0.0546619821388472,0.054661982138847265,tie handling
+mdm2_seed2,stage3_only,ef_1pct,2.0,1.9275,tie handling plus actual-cutoff EF normalization
+mdm2_seed2,stage3_only,ef_5pct,1.6,1.5815384615384616,tie handling plus actual-cutoff EF normalization
 mdm2_seed2,stage3_only,ef_01pct,0.0,0.0,tie handling plus actual-cutoff EF normalization
-mdm2_seed2,stage3_only,top10_recovery,0.1,0.1,tie handling
-mdm2_seed2,stage3_only,top25_recovery,0.1,0.1,tie handling
-mdm2_seed2,stage3_only,top50_recovery,0.4,0.4,tie handling
-mdm2_seed2,stage3_only,bedroc,0.1258670361835796,0.12586703618357956,tie handling
-mdm2_seed2,standard_3d_pharmacophore,roc_auc,0.6736666666666666,0.6736666666666666,tie handling
-mdm2_seed2,standard_3d_pharmacophore,pr_auc,0.0693862202698795,0.06938622026987958,tie handling
-mdm2_seed2,standard_3d_pharmacophore,ef_1pct,0.0,0.0,tie handling plus actual-cutoff EF normalization
-mdm2_seed2,standard_3d_pharmacophore,ef_5pct,2.0,1.9375,tie handling plus actual-cutoff EF normalization
+mdm2_seed2,stage3_only,top10_recovery,0.02,0.02,tie handling
+mdm2_seed2,stage3_only,top25_recovery,0.04,0.04,tie handling
+mdm2_seed2,stage3_only,top50_recovery,0.06,0.06,tie handling
+mdm2_seed2,stage3_only,bedroc,0.1089463604754603,0.10894636047545989,tie handling
+mdm2_seed2,standard_3d_pharmacophore,roc_auc,0.626514745308311,0.626514745308311,tie handling
+mdm2_seed2,standard_3d_pharmacophore,pr_auc,0.0546615535532141,0.054661553553214136,tie handling
+mdm2_seed2,standard_3d_pharmacophore,ef_1pct,2.0,1.9275,tie handling plus actual-cutoff EF normalization
+mdm2_seed2,standard_3d_pharmacophore,ef_5pct,1.6,1.5815384615384616,tie handling plus actual-cutoff EF normalization
 mdm2_seed2,standard_3d_pharmacophore,ef_01pct,0.0,0.0,tie handling plus actual-cutoff EF normalization
-mdm2_seed2,standard_3d_pharmacophore,top10_recovery,0.1,0.1,tie handling
-mdm2_seed2,standard_3d_pharmacophore,top25_recovery,0.1,0.1,tie handling
-mdm2_seed2,standard_3d_pharmacophore,top50_recovery,0.4,0.4,tie handling
-mdm2_seed2,standard_3d_pharmacophore,bedroc,0.1258670361835796,0.12586703618357956,tie handling
+mdm2_seed2,standard_3d_pharmacophore,top10_recovery,0.02,0.02,tie handling
+mdm2_seed2,standard_3d_pharmacophore,top25_recovery,0.04,0.04,tie handling
+mdm2_seed2,standard_3d_pharmacophore,top50_recovery,0.06,0.06,tie handling
+mdm2_seed2,standard_3d_pharmacophore,bedroc,0.1089463604745775,0.10894636047457716,tie handling

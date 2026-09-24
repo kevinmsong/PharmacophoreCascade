@@ -1,0 +1,232 @@
+[
+  {
+    "system": "ghsr",
+    "policy": "percentage",
+    "n_input": 31550,
+    "n_candidates": 267,
+    "n_shortlist": 14,
+    "stage012_sec": 56.594858000000386,
+    "union_stage3_sec": 93.82937210000091,
+    "native_wall_sec": 93.52466699999786,
+    "native_results_shared_with_percentage": false,
+    "native_summary": {
+      "enabled": true,
+      "config_path": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\GLP1_top_ligand_analysis\\configs\\study_ghsr_benchmark_strict_alerts.yaml",
+      "final_rank_mode": "native_first",
+      "pair_tolerance_angstrom": 3.0,
+      "pains_filter_enabled": true,
+      "embed_conformers": 4,
+      "final_sort_contract": [
+        {
+          "field": "native_weighted_coverage_pct",
+          "direction": "desc"
+        },
+        {
+          "field": "native_matched_reference_features",
+          "direction": "desc"
+        },
+        {
+          "field": "native_fit_rmsd_angstrom",
+          "direction": "asc"
+        },
+        {
+          "field": "native_mean_pair_distance_error_angstrom",
+          "direction": "asc"
+        },
+        {
+          "field": "stage3_screen_rank",
+          "direction": "asc"
+        },
+        {
+          "field": "zinc_id",
+          "direction": "asc"
+        }
+      ],
+      "pool_strategy": {
+        "strategy": "deduplicated_union_with_stage3_backfill",
+        "requested_pool_k": 20000,
+        "requested_source_quotas": {
+          "stage3_rank": 12000,
+          "hotspot_breadth": 4000,
+          "native_supported_hotspot_score": 4000
+        },
+        "realized_source_counts": {
+          "total_unique_candidates": 14,
+          "stage3_rank": 8,
+          "hotspot_breadth": 3,
+          "native_supported_hotspot_score": 3
+        }
+      },
+      "selection_strategy": {
+        "selection_top_k": 5000,
+        "max_per_scaffold": 8,
+        "scaffold_key": "Murcko"
+      },
+      "counts": {
+        "candidate_pool_size": 14,
+        "selected_ligands": 14,
+        "chemistry_excluded_selected_ligands": 0,
+        "prepared_microstates": 138,
+        "prep_failures": 0,
+        "scored_microstates": 138,
+        "scoring_failures": 0,
+        "successful_best_ligands": 14,
+        "scored_summary_rows": 14,
+        "final_rows": 14
+      },
+      "timings": {
+        "selection_sec": 0.03820809999888297,
+        "library_prepare_sec": 29.33627759999945,
+        "reference_setup_sec": 1.5402991000009933,
+        "scoring_sec": 56.289658199999394,
+        "artifact_generation_sec": 5.454823500000202,
+        "total_sec": 92.75736370000232
+      },
+      "output_paths": {
+        "native_scored": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_scored_top5000.csv",
+        "native_final": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\top_1000_glp1_mimetics_production_native_final.csv",
+        "bundle_root": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle",
+        "bundle_manifest": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle\\manifests\\analysis_manifest.json"
+      },
+      "diagnostics": {
+        "status": "generated",
+        "always_on": true,
+        "diagnostics": [
+          "correlation",
+          "quartiles",
+          "rank_shift",
+          "residuals"
+        ],
+        "outputs": {
+          "summary_csv": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle\\analysis\\ligand_best_native_mapping_summary.csv",
+          "analysis_label": "Top 14 native-scored ligands",
+          "bootstrap_iterations": 2000,
+          "metrics_csv": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle\\analysis\\native_correlation_metrics.csv",
+          "quartiles_csv": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle\\analysis\\native_correlation_quartiles.csv",
+          "rank_csv": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle\\analysis\\native_rank_comparison.csv",
+          "scatter_png": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+          "quartile_png": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+          "rank_png": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+          "residual_png": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+          "report_md": "evidence\\outputs\\strict_alert_check\\ghsr\\percentage\\screening_production_native_terminal_bundle\\reports\\native_correlation_analysis.md",
+          "ligand_count": 14
+        }
+      }
+    }
+  },
+  {
+    "system": "ghsr",
+    "policy": "floor1000",
+    "n_input": 31550,
+    "n_candidates": 267,
+    "n_shortlist": 267,
+    "stage012_sec": 56.594858000000386,
+    "union_stage3_sec": 93.82937210000091,
+    "native_wall_sec": 256.2807318999985,
+    "native_results_shared_with_percentage": false,
+    "native_summary": {
+      "enabled": true,
+      "config_path": "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\GLP1_top_ligand_analysis\\configs\\study_ghsr_benchmark_strict_alerts.yaml",
+      "final_rank_mode": "native_first",
+      "pair_tolerance_angstrom": 3.0,
+      "pains_filter_enabled": true,
+      "embed_conformers": 4,
+      "final_sort_contract": [
+        {
+          "field": "native_weighted_coverage_pct",
+          "direction": "desc"
+        },
+        {
+          "field": "native_matched_reference_features",
+          "direction": "desc"
+        },
+        {
+          "field": "native_fit_rmsd_angstrom",
+          "direction": "asc"
+        },
+        {
+          "field": "native_mean_pair_distance_error_angstrom",
+          "direction": "asc"
+        },
+        {
+          "field": "stage3_screen_rank",
+          "direction": "asc"
+        },
+        {
+          "field": "zinc_id",
+          "direction": "asc"
+        }
+      ],
+      "pool_strategy": {
+        "strategy": "deduplicated_union_with_stage3_backfill",
+        "requested_pool_k": 20000,
+        "requested_source_quotas": {
+          "stage3_rank": 12000,
+          "hotspot_breadth": 4000,
+          "native_supported_hotspot_score": 4000
+        },
+        "realized_source_counts": {
+          "total_unique_candidates": 267,
+          "stage3_rank": 160,
+          "hotspot_breadth": 53,
+          "native_supported_hotspot_score": 54
+        }
+      },
+      "selection_strategy": {
+        "selection_top_k": 5000,
+        "max_per_scaffold": 8,
+        "scaffold_key": "Murcko"
+      },
+      "counts": {
+        "candidate_pool_size": 267,
+        "selected_ligands": 261,
+        "chemistry_excluded_selected_ligands": 0,
+        "prepared_microstates": 1474,
+        "prep_failures": 0,
+        "scored_microstates": 1474,
+        "scoring_failures": 0,
+        "successful_best_ligands": 261,
+        "scored_summary_rows": 261,
+        "final_rows": 261
+      },
+      "timings": {
+        "selection_sec": 0.27131549999830895,
+        "library_prepare_sec": 123.25154409999959,
+        "reference_setup_sec": 1.1999130000003788,
+        "scoring_sec": 126.5724252,
+        "artifact_generation_sec": 4.471804799999518,
+        "total_sec": 256.2361974000014
+      },
+      "output_paths": {
+        "native_scored": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_scored_top5000.csv",
+        "native_final": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\top_1000_glp1_mimetics_production_native_final.csv",
+        "bundle_root": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle",
+        "bundle_manifest": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\manifests\\analysis_manifest.json"
+      },
+      "diagnostics": {
+        "status": "generated",
+        "always_on": true,
+        "diagnostics": [
+          "correlation",
+          "quartiles",
+          "rank_shift",
+          "residuals"
+        ],
+        "outputs": {
+          "summary_csv": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\analysis\\ligand_best_native_mapping_summary.csv",
+          "analysis_label": "Top 261 native-scored ligands",
+          "bootstrap_iterations": 2000,
+          "metrics_csv": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\analysis\\native_correlation_metrics.csv",
+          "quartiles_csv": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\analysis\\native_correlation_quartiles.csv",
+          "rank_csv": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\analysis\\native_rank_comparison.csv",
+          "scatter_png": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_scatter.png",
+          "quartile_png": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_quartiles.png",
+          "rank_png": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_rank_reranking.png",
+          "residual_png": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_residual_diagnostics.png",
+          "report_md": "evidence\\outputs\\strict_alert_check\\ghsr\\floor1000\\screening_production_native_terminal_bundle\\reports\\native_correlation_analysis.md",
+          "ligand_count": 261
+        }
+      }
+    }
+  }
+]

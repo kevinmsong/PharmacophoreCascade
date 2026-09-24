@@ -1,0 +1,4 @@
+method,n_ranked,roc_auc,pr_auc,ef_1pct,ef_5pct,ef_01pct,top10_recovery,top25_recovery,top50_recovery,bedroc,roc_auc_ci_low,roc_auc_ci_high,pr_auc_ci_low,pr_auc_ci_high,ef_1pct_ci_low,ef_1pct_ci_high,ef_5pct_ci_low,ef_5pct_ci_high,ef_01pct_ci_low,ef_01pct_ci_high,top10_recovery_ci_low,top10_recovery_ci_high,top25_recovery_ci_low,top25_recovery_ci_high,top50_recovery_ci_low,top50_recovery_ci_high,bedroc_ci_low,bedroc_ci_high
+full_cascade,310,1.0,1.0,31.0,19.375,31.0,1.0,1.0,1.0,1.0,,,,,,,,,,,,,,,,,,
+stage3_only,310,0.6736666666666666,0.06938622026987958,0.0,1.9375,0.0,0.1,0.1,0.4,0.12586703618357956,,,,,,,,,,,,,,,,,,
+standard_3d_pharmacophore,310,0.6736666666666666,0.06938622026987958,0.0,1.9375,0.0,0.1,0.1,0.4,0.12586703618357956,,,,,,,,,,,,,,,,,,

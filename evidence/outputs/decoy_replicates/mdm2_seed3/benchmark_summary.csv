@@ -1,4 +1,4 @@
 method,n_ranked,roc_auc,pr_auc,ef_1pct,ef_5pct,ef_01pct,top10_recovery,top25_recovery,top50_recovery,bedroc,roc_auc_ci_low,roc_auc_ci_high,pr_auc_ci_low,pr_auc_ci_high,ef_1pct_ci_low,ef_1pct_ci_high,ef_5pct_ci_low,ef_5pct_ci_high,ef_01pct_ci_low,ef_01pct_ci_high,top10_recovery_ci_low,top10_recovery_ci_high,top25_recovery_ci_low,top25_recovery_ci_high,top50_recovery_ci_low,top50_recovery_ci_high,bedroc_ci_low,bedroc_ci_high
-full_cascade,310,1.0,1.0,31.0,19.375,31.0,1.0,1.0,1.0,1.0,,,,,,,,,,,,,,,,,,
-stage3_only,310,0.6893333333333334,0.07573685577436698,0.0,1.9375,0.0,0.1,0.1,0.4,0.13993998922316034,,,,,,,,,,,,,,,,,,
-standard_3d_pharmacophore,310,0.689,0.07572129447842227,0.0,1.9375,0.0,0.1,0.1,0.4,0.1399399885093198,,,,,,,,,,,,,,,,,,
+full_cascade,1540,0.9860268456375839,0.9290805548244038,30.8,18.82857142857143,30.8,0.2,0.5,0.92,0.961790444764564,,,,,,,,,,,,,,,,,,
+stage3_only,1540,0.6240402684563758,0.05847653784842743,1.925,1.6,15.4,0.02,0.04,0.06,0.11358826688287516,,,,,,,,,,,,,,,,,,
+standard_3d_pharmacophore,1540,0.6240134228187919,0.0584755306118743,1.925,1.6,15.4,0.02,0.04,0.06,0.11358826686671848,,,,,,,,,,,,,,,,,,

@@ -18,7 +18,7 @@ pandoc understands, preserving all content:
 * ``\\multirow`` cells are expanded and full-width ``\\multicolumn`` note rows
   are moved out of the table into a following paragraph.
 * ``\\new{...}`` revision markup is either unwrapped (clean copy) or turned
-  into ``\\textcolor{RevBlue}{...}`` (highlighted copy), matched with a
+  into ``\\textcolor{RevRed}{...}`` (highlighted copy), matched with a
   brace-counting scanner rather than a regex because the argument nests and
   spans paragraphs.
 * Figures point at the 600 dpi PNGs, which Word embeds reliably.
@@ -43,10 +43,41 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SUB = ROOT / "ACS_Omega_resubmission"
 
+#: Per-round settings, selected by ``--round``. Each revision marks its own
+#: changes with a different macro and reads differently named sources, so the
+#: two rounds can be rebuilt independently without editing this file again.
+ROUNDS = {
+    "r1": {
+        "dir": "ACS_Omega_resubmission",
+        "highlight_macro": "new",
+        "plain_macros": (),
+        "aux": "main.aux",
+        "cover_src": "cover_letter.tex",
+        "response_src": "response_to_reviewers.tex",
+        "suffix": "",
+        "banner_ref": "the manuscript previously submitted to ACS Omega",
+        "mark_tables": True,
+        "mark_title": True,
+    },
+    "r2": {
+        "dir": "ACS_Omega_resubmission_R2",
+        "highlight_macro": "rev",
+        "plain_macros": ("new",),
+        "aux": "main_r2.aux",
+        "cover_src": "cover_letter_r2.tex",
+        "response_src": "response_to_reviewers_r2.tex",
+        "suffix": "_r2",
+        "banner_ref": "manuscript ao-2026-05984q.R1",
+        "mark_tables": False,
+        "mark_title": False,
+    },
+}
+ROUND = ROUNDS["r1"]
+
 #: Colors named in the LaTeX preamble that pandoc will not see.
 COLOR_DEFS = r"""
 \usepackage{xcolor}
-\definecolor{RevBlue}{RGB}{0,70,190}
+\definecolor{RevRed}{RGB}{192,0,0}
 """
 
 
@@ -307,13 +338,22 @@ def figures_to_png(text: str) -> str:
 #: again afterwards.
 MARK_START = "@@NEWSTART@@"
 MARK_END = "@@NEWEND@@"
-REV_RGB = "0046BE"
+REV_RGB = "C00000"
 
 
 def apply_revision_markup(text: str, highlighted: bool) -> str:
-    """Resolve \\new{...} the same way the corresponding LaTeX build does."""
+    """Resolve the revision macros the same way the LaTeX build does.
+
+    ROUND names which macro this round highlights. In the first revision that
+    is ``\\new``; in the second it is ``\\rev``, and ``\\new`` unwraps to plain
+    text because the editor has already seen that round's changes and marking
+    them again would bury the few passages this round touches.
+    """
+    highlight = ROUND["highlight_macro"]
     wrap = (lambda a: MARK_START + a + MARK_END) if highlighted else None
-    return rewrite_macro(text, "new", wrap)
+    for name in ROUND["plain_macros"]:
+        text = rewrite_macro(text, name, None)
+    return rewrite_macro(text, highlight, wrap)
 
 
 def _iter_paragraphs(doc):
@@ -329,8 +369,8 @@ def _iter_paragraphs(doc):
                             yield from c.paragraphs
 
 
-def colorize_marked_runs(path: Path) -> int:
-    """Color the text between the sentinels blue, then delete the sentinels.
+def colorize_marked_runs(path: Path, tables: bool = True) -> int:
+    """Color the text between the sentinels red, then delete the sentinels.
 
     Runs are split rather than rewritten, so bold, italic, and superscript
     formatting inside a revised passage is preserved. The inside/outside state
@@ -391,15 +431,16 @@ def colorize_marked_runs(path: Path) -> int:
             run._element.getparent().remove(run._element)
 
     # Treat refreshed tables as complete revision units, including retained
-    # headings. This matches the review-copy LaTeX table coloring.
-    for table in doc.tables:
+    # headings. This matches the review-copy LaTeX table coloring. The
+    # response letter opts out: its one table is quoted, not revised.
+    for table in (doc.tables if tables else []):
         for row in table.rows:
             for cell in row.cells:
                 for para in cell.paragraphs:
                     for run in para.runs:
                         _set_color(run, REV_RGB, qn)
                         colored += len(run.text)
-    for para in doc.paragraphs:
+    for para in (doc.paragraphs if tables else []):
         if re.match(r'Table\s+\d+[.:]', para.text):
             for run in para.runs:
                 _set_color(run, REV_RGB, qn)
@@ -487,8 +528,10 @@ def resolve_document_numbers(body: str, aux_name: str) -> str:
     return re.sub(r"\\(figref|tabref|schemeref|eqnref|eqref|ref)\{([^}]+)\}",reference,body)
 
 
-def common_cleanup(body: str, highlighted: bool, aux_name: str = "main.aux") -> str:
+def common_cleanup(body: str, highlighted: bool, aux_name: str | None = None) -> str:
     """Transformations every document needs, in dependency order."""
+    if aux_name is None:
+        aux_name = ROUND["aux"]
     body = inline_inputs(body, SUB)
     # Pandoc consumes numeric text after LaTeX array column modifiers.
     # Word column widths/alignment are assigned by the document formatter.
@@ -522,12 +565,40 @@ def common_cleanup(body: str, highlighted: bool, aux_name: str = "main.aux") -> 
     return body
 
 
+def author_block(pre: str) -> str:
+    """Build the Word title block from the preamble's authblk declarations.
+
+    Read rather than restated, so the Word copy cannot disagree with the PDF
+    about who the authors are or where they work.
+    """
+    authors = re.findall(r"\\author\[(\d+)\]\{(.*?)\}", pre)
+    affils = dict(re.findall(r"\\affil\[(\d+)\]\{(.*?)\}", pre, re.S))
+    if not authors or not affils:
+        raise SystemExit("could not read \\author/\\affil from acs_preamble.tex")
+
+    marked = ["%s\\textsuperscript{%s}" % (name, mark) for mark, name in authors]
+    if len(marked) > 1:
+        names = ", ".join(marked[:-1]) + ", and " + marked[-1]
+    else:
+        names = marked[0]
+
+    lines = ["\\textit{\\textsuperscript{%s}%s}" % (mark, " ".join(affils[mark].split()))
+             for mark in sorted(affils)]
+
+    email = re.search(r"\\date\{(.*?)\}", pre, re.S)
+    if email:
+        lines.append(" ".join(email.group(1).split()))
+    return names + "\n\n" + "\n\n".join(lines)
+
+
 def build_manuscript(out_tex: Path, highlighted: bool) -> None:
     src = (SUB / "manuscript_body.tex").read_text(encoding="utf-8")
     pre = (SUB / "acs_preamble.tex").read_text(encoding="utf-8")
 
     title = " ".join(re.search(r"\\title\{(.*?)\}\s*\n", pre, re.S).group(1).split())
-    if highlighted:
+    # The title was rewritten in the first revision, so that round marks it.
+    # It is unchanged in the second, where marking it would be misleading.
+    if highlighted and ROUND["mark_title"]:
         title = MARK_START + title + MARK_END
     abstract = re.search(r"\\begin\{abstract\}(.*?)\\end\{abstract\}", src, re.S).group(1)
     abstract = apply_revision_markup(abstract.strip().replace("\\noindent", ""),
@@ -539,13 +610,13 @@ def build_manuscript(out_tex: Path, highlighted: bool) -> None:
     banner = ""
     if highlighted:
         banner = (r"\textbf{Supporting Information for Review Only.} "
-                  r"Text shown in " + MARK_START + "blue" + MARK_END +
-                  r" is new or rewritten relative to the manuscript originally "
-                  r"submitted to ACS Omega. Text in black is carried over "
-                  r"substantially unchanged. Tables are marked blue as complete "
-                  r"revised units, including retained headings. Figure graphics "
-                  r"retain the publication palettes. The clean and highlighted "
-                  r"copies contain the same scientific text and results."
+                  r"Text shown in " + MARK_START + "red" + MARK_END +
+                  r" is new or rewritten relative to " + ROUND["banner_ref"] +
+                  r". Text in black is carried over from "
+                  r"that manuscript unchanged. "
+                  r"Figure graphics retain the publication palettes. The clean "
+                  r"and highlighted copies contain the same scientific text and "
+                  r"results."
                   "\n\n\\vspace{1em}\n\n")
 
     head = PREAMBLE + banner + r"""
@@ -553,12 +624,7 @@ def build_manuscript(out_tex: Path, highlighted: bool) -> None:
 {\LARGE\textbf{%s}}
 
 \vspace{1em}
-Kevin Song, John Zhang, Lei Ye, Jianyi Zhang*
-
-\textit{Department of Biomedical Engineering,
-The University of Alabama at Birmingham}
-
-*Email: jayzhang@uab.edu
+%s
 \end{center}
 
 \vspace{1em}
@@ -567,7 +633,7 @@ The University of Alabama at Birmingham}
 %s
 
 \vspace{1em}
-""" % (title, abstract)
+""" % (title, author_block(pre), abstract)
 
     out_tex.write_text(head + body + "\n\\end{document}\n", encoding="utf-8")
 
@@ -582,18 +648,78 @@ def build_supplementary(out_tex: Path) -> None:
     out_tex.write_text(PREAMBLE + body + "\n\\end{document}\n", encoding="utf-8")
 
 
+def expand_msfig(text: str) -> str:
+    """Turn ``\\msfig{fig.pdf}{width}{caption}`` into a figure Word can embed.
+
+    The vector PDF the LaTeX letter uses does not survive the conversion, so
+    the PNG render of the same figure is substituted.
+    """
+    out, pos, token = [], 0, "\\msfig{"
+    while True:
+        k = text.find(token, pos)
+        if k == -1:
+            out.append(text[pos:])
+            return "".join(out)
+        out.append(text[pos:k])
+        name, j = read_group(text, k + len(token) - 1)
+        _width, j = read_group(text, j)
+        caption, j = read_group(text, j)
+        png = Path(name).with_suffix(".png").name
+        out.append("\n\n\\begin{figure}[h]\n\\centering\n"
+                   "\\includegraphics[width=\\linewidth]{%s}\n"
+                   "\\caption{%s}\n\\end{figure}\n\n" % (png, caption))
+        pos = j
+
+
+def color_manuscript_quotes(text: str) -> str:
+    """Set quoted manuscript text in the same red the marked copy uses.
+
+    Marked with the same sentinels the highlighted manuscript uses, because
+    pandoc drops ``\\textcolor`` on the way into Word.
+    """
+    def repl(m: re.Match) -> str:
+        inner = m.group(1)
+        paras = [p for p in re.split(r"\n\s*\n", inner)]
+        colored = []
+        for p in paras:
+            if p.strip():
+                colored.append(MARK_START + p.strip() + MARK_END)
+        return "\\begin{quote}\n" + "\n\n".join(colored) + "\n\\end{quote}"
+
+    return re.sub(r"\\begin\{manuscriptquote\}(.*?)\\end\{manuscriptquote\}",
+                  repl, text, flags=re.S)
+
+
+def build_cover_letter(out_tex: Path) -> None:
+    """The cover letter is plain enough to pass through nearly unchanged."""
+    src = (SUB / ROUND["cover_src"]).read_text(encoding="utf-8")
+    body = src.split("\\begin{document}", 1)[1].split("\\end{document}", 1)[0]
+    body = strip_comments(body)
+    # Word carries the sender block as ordinary paragraphs, so the explicit
+    # line breaks that set it in LaTeX are dropped rather than converted.
+    body = re.sub(r"\\\\\s*\n", "\n\n", body)
+    body = re.sub(r"\\vspace\{[^}]*\}", "", body)
+    out_tex.write_text(PREAMBLE + body + "\n\\end{document}\n", encoding="utf-8")
+
+
 def build_response(out_tex: Path) -> None:
-    src = (SUB / "response_to_reviewers.tex").read_text(encoding="utf-8")
+    src = (SUB / ROUND["response_src"]).read_text(encoding="utf-8")
     body = src.split("\\begin{document}", 1)[1].split("\\end{document}", 1)[0]
     body = strip_comments(body)
 
     # Reviewer quotes become italic block quotes; our own macros become plain
     # markup. Manuscript quotes stay roman so the two remain distinguishable in
     # Word, where the LaTeX shading and rule do not survive the conversion.
-    body = body.replace("\\begin{reviewerquote}", "\\begin{quote}\\itshape")
+    # The letter reproduces manuscript figures compactly through \msfig; Word
+    # embeds the 600 dpi PNG renders rather than the vector PDFs.
+    body = expand_msfig(body)
+
+    body = body.replace("\\begin{reviewerquote}", "\\begin{quote}\\bfseries")
     body = body.replace("\\end{reviewerquote}", "\\end{quote}")
-    body = body.replace("\\begin{manuscriptquote}", "\\begin{quote}")
-    body = body.replace("\\end{manuscriptquote}", "\\end{quote}")
+    # Quoted manuscript text is blue in the PDF letter, matching the marked
+    # copy of the manuscript. Color each paragraph separately, since a single
+    # \textcolor cannot span a paragraph break.
+    body = color_manuscript_quotes(body)
     body = rewrite_macro(body, "comment", lambda a: "\\subsection*{" + a + "}")
     # Without this the quote runs straight on from the preceding paragraph and
     # the reader cannot tell where our reply ends and the manuscript begins.
@@ -642,29 +768,42 @@ DOCS = {
     "highlighted":   (lambda p: build_manuscript(p, highlighted=True),
                       "main_highlighted.docx", True, True),
     "supplementary": (build_supplementary, "supporting_information.docx", False, False),
-    "response":      (build_response, "response_to_reviewers.docx", False, False),
+    "response":      (build_response, "response_to_reviewers.docx", False, True),
+    "cover":         (build_cover_letter, "cover_letter.docx", False, False),
 }
 
 
 def main() -> None:
+    global SUB, ROUND
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("docs", nargs="*", choices=list(DOCS),
                     help="documents to build (default: all)")
+    ap.add_argument("--round", choices=list(ROUNDS), default="r1",
+                    help="which revision round to build (default: r1)")
     args = ap.parse_args()
+
+    ROUND = ROUNDS[args.round]
+    SUB = ROOT / ROUND["dir"]
+    suffix = ROUND["suffix"]
 
     for name in (args.docs or list(DOCS)):
         builder, out_name, with_bib, colorize = DOCS[name]
         print(f"{name}:")
         tex = SUB / f"_{name}_docx.tex"
         builder(tex)
-        out = SUB / out_name
+        stem, dot, ext = out_name.partition(".")
+        out = SUB / f"{stem}{suffix}{dot}{ext}"
         run_pandoc(tex, out, with_bib)
         if colorize:
-            n = colorize_marked_runs(out)
+            # Whole tables were marked as revised units in the first round.
+            # This round changes no table in the manuscript, so only the
+            # marked prose is colored and the tables stay black.
+            mark_tables = ROUND["mark_tables"] and name != "response"
+            n = colorize_marked_runs(out, tables=mark_tables)
             print(f"  revised text colored: {n:,} characters")
         from format_acs_docx import format_document
         format_document(out)
-        print(f"  wrote {out_name} ({out.stat().st_size:,} bytes)")
+        print(f"  wrote {out.name} ({out.stat().st_size:,} bytes)")
 
 
 if __name__ == "__main__":

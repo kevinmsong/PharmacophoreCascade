@@ -47,8 +47,17 @@ def digest(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
 
 
-def run_system(system,workers):
-    out=OUT/system
+def run_system(system,workers,gate_mode="warn_only",native_config=None,out_root=None):
+    """Run the paired production policies for one system.
+
+    ``gate_mode`` selects the structural-alert policy: "warn_only" records
+    PAINS and reactive-group matches and admits the molecule, which is what the
+    manuscript reports, while "strict" excludes it at Stage 0. ``native_config``
+    overrides the native study config, which carries its own ``pains_filter``.
+    ``out_root`` redirects the outputs. The defaults reproduce the reported runs
+    exactly, so a superseded policy can be measured without disturbing them.
+    """
+    out=(out_root or OUT)/system
     out.mkdir(parents=True,exist_ok=True)
     os.environ["CASCADIA_HOTSPOT_REQUIRED_GROUPS"]=("ECD anchoring;Upper TMD activation pocket" if system=="glp1r" else "")
     import run_optimized_1M_topological_hashed_screening as s
@@ -56,7 +65,10 @@ def run_system(system,workers):
     cfg_path=ROOT/f"evidence/configs/benchmark_{system}_full.yaml"
     cfg=yaml.safe_load(cfg_path.read_text())
     bench=cfg["benchmark"]
-    native_cfg=ROOT/("GLP1_top_ligand_analysis/configs/study_top1000_full_1M_native_tuned_no_docking.yaml" if system=="glp1r" else f"GLP1_top_ligand_analysis/configs/study_{system}_benchmark.yaml")
+    # A relative override is taken against the project root, so the manifest's
+    # relative_to(ROOT) below holds for both the default and the override.
+    native_cfg=((ROOT/native_config).resolve() if native_config else
+        ROOT/("GLP1_top_ligand_analysis/configs/study_top1000_full_1M_native_tuned_no_docking.yaml" if system=="glp1r" else f"GLP1_top_ligand_analysis/configs/study_{system}_benchmark.yaml"))
     s.DEFAULT_NATIVE_RERANK_CONFIG=native_cfg
     source=ROOT/f"evidence/data/production_frozen/{system}.csv"
     library=pd.read_csv(source)
@@ -76,12 +88,13 @@ def run_system(system,workers):
         rerank_query_features=28,pair_hash_mode="precision_5bin",
         native_support_max_residues=int(bench.get("native_support_max_residues",0)))
     args=SimpleNamespace(prescreen_workers=workers,cascade_hotspot_weight=0.25,
-        hotspot_min_exact=3,hotspot_min_groups=2,pair_hash_mode="precision_5bin",chemistry_gate_mode="warn_only")
+        hotspot_min_exact=3,hotspot_min_groups=2,pair_hash_mode="precision_5bin",chemistry_gate_mode=gate_mode)
     manifest={"status":"running","system":system,"started_utc":datetime.now(timezone.utc).isoformat(),
         "scientific_settings":{"shortlist_fraction":0.05,"shortlist_floor":1000,"shortlist_basis":"stage012_candidates",
         "cascade_weights":s.CASCADE_STAGE_WEIGHTS,"type_caps":s.TYPE_CAPS,"required_groups":s.HOTSPOT_REQUIRED_GROUPS,
         "stage3_conformers":16,"native_config":str(native_cfg.relative_to(ROOT)),"native_max_per_scaffold":8},
-        "workers":workers,"native_workers":workers,"chemistry_gate_mode":"warn_only","native_pains_filter":False,
+        "workers":workers,"native_workers":workers,"chemistry_gate_mode":gate_mode,
+        "native_pains_filter":bool(yaml.safe_load(native_cfg.read_text()).get("ligands",{}).get("pains_filter",False)),
         "source_sha256":digest(source),"config_sha256":digest(cfg_path),
         "engine_sha256":digest(ROOT/"run_optimized_1M_topological_hashed_screening.py"),
         "native_config_sha256":digest(native_cfg),"pharmacophore_sha256":digest(ROOT/bench["pharmacophore_path"]),
@@ -102,8 +115,11 @@ def run_system(system,workers):
     ev=pd.DataFrame(records)
     ev.to_csv(out/"stage012_evaluation.csv",index=False)
     stage012_sec=time.perf_counter()-started
-    if (ev.status=='chemistry_filtered').any():
+    if gate_mode=="warn_only" and (ev.status=='chemistry_filtered').any():
         raise RuntimeError('Structural-alert exclusion occurred despite the revised non-excluding setting')
+    if gate_mode=="strict":
+        print(f"{system} strict gate excluded {int((ev.status=='chemistry_filtered').sum()):,} molecules "
+              f"({int(((ev.status=='chemistry_filtered')&(ev.label=='active')).sum())} actives)",flush=True)
     # Use the complete production tie-break contract; retain actual feature metadata.
     candidates.sort(key=lambda r:(-r['cascade_score_pct'],-r['hotspot_group_count'],
         -r['hotspot_weighted_pct'],-r['pair_hash_overlap_pct'],str(r['zinc_id'])))
@@ -174,15 +190,25 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--system',choices=SYSTEMS)
     ap.add_argument('--workers',type=int,default=3)
+    ap.add_argument('--gate-mode',choices=('warn_only','strict'),default='warn_only',
+        help='structural-alert policy; "strict" excludes flagged molecules at Stage 0')
+    ap.add_argument('--native-config',default=None,
+        help='override the native study config, which carries its own pains_filter')
+    ap.add_argument('--out-root',default=None,
+        help='write outputs under this directory instead of evidence/outputs/absolute_floor')
     a=ap.parse_args()
-    OUT.mkdir(parents=True,exist_ok=True)
+    out_root=Path(a.out_root) if a.out_root else OUT
+    out_root.mkdir(parents=True,exist_ok=True)
     if a.system:
-        run_system(a.system,a.workers)
+        run_system(a.system,a.workers,gate_mode=a.gate_mode,
+                   native_config=a.native_config,out_root=out_root)
     else:
         for system in SYSTEMS:
-            with open(OUT/f'{system}.log','w',encoding='utf-8') as log:
-                subprocess.run([sys.executable,'-u',__file__,'--system',system,'--workers',str(a.workers)],
-                    cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True)
+            with open(out_root/f'{system}.log','w',encoding='utf-8') as log:
+                cmd=[sys.executable,'-u',__file__,'--system',system,'--workers',str(a.workers),
+                     '--gate-mode',a.gate_mode,'--out-root',str(out_root)]
+                if a.native_config: cmd+=['--native-config',a.native_config]
+                subprocess.run(cmd,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True)
 
 
 if __name__=='__main__': main()

@@ -1,7 +1,8 @@
 {
   "job": "ghsr_seed1",
+  "round": "decoy replicates rebuilt on the current active sets",
   "status": "completed",
-  "started_utc": "2026-09-06T23:05:03.091899+00:00",
+  "started_utc": "2026-09-20T13:54:57.684320+00:00",
   "command": [
     "C:\\Users\\kevin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
     "-u",
@@ -18,27 +19,22 @@
   "settings": {
     "chemistry_gate_mode": "warn_only",
     "native_pains_filter": false,
-    "workers": 2,
+    "workers": 4,
     "cascade_hotspot_weight": 0.25,
     "feature_caps": "fixed",
     "required_groups": "",
     "variant": null,
-    "decoy_seed": 1
+    "decoy_seed": 1,
+    "replicate_actives": "current benchmark active set"
   },
   "cached_scores_used": false,
   "input_sha256": {
-    "evidence\\outputs\\alert_disabled_revision\\configs\\ghsr_seed1.yaml": "c9d5be7b4bbc4d4ddeb7fd8cfb7bf3dad98326a2ee06e8fd513995ee3ecb4fdc",
-    "evidence\\data\\replicates\\ghsr_decoyset1.csv": "dd026165289ab1c16d308696fbb2b1736021c2d291ae61250c87bce15d7e9a0d",
+    "evidence\\outputs\\alert_disabled_revision\\configs\\ghsr_seed1.yaml": "509801cd7f98994c39ee7dfad8b3a27b152062fe705334895b6f2df7212783db",
+    "evidence\\data\\replicates\\ghsr_decoyset1.csv": "d3e95cda394bba9b9890e895f21ce61ceb65c72b4c1ca5066a304b6fa7f54b28",
     "maps\\pharmacophore_ghsr.json": "3eef2c954273c7fe2ff28af547d73c1ea68a1166ab5de3740187143540419774",
     "GLP1_top_ligand_analysis\\configs\\study_ghsr_benchmark.yaml": "bd101bc2612c0c41d8749ae0ffa74b5f397ed5fb5f39a6b6f71d1290e91a4a0d"
   },
-  "source_sha256": {
-    "run_optimized_1M_topological_hashed_screening.py": "a0a74edf143bef20dcf2e9c670fda1c7ae7a2cf31f54fa97c42cc8c4d34de60b",
-    "evidence\\src\\benchmark_runner.py": "c2985691e8d66ea4ba3b12b6222d0aace6ced8501974f73fa6a9bffc727ae339",
-    "evidence\\parallel_native.py": "a2da2d4783705403848f3a741a2c480ca92ef2da4ba12bece63a7d204b812419",
-    "evidence\\run_alert_disabled_suite.py": "91ee230b2b1d269d6f3a795689aa56312024209a9660cad96c051295f01df54d"
-  },
   "returncode": 0,
-  "elapsed_seconds": 71.4150460000019,
-  "completed_utc": "2026-09-06T23:06:14.524521+00:00"
+  "elapsed_seconds": 605.5267569000007,
+  "completed_utc": "2026-09-20T14:05:03.341004+00:00"
 }

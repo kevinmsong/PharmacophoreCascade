@@ -1,0 +1,44 @@
+{
+  "job": "ghsr_seed5",
+  "status": "completed",
+  "started_utc": "2026-09-06T23:10:36.489554+00:00",
+  "command": [
+    "C:\\Users\\kevin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-u",
+    "evidence/run_target_benchmark.py",
+    "--benchmark-config",
+    "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\alert_disabled_revision\\configs\\ghsr_seed5.yaml",
+    "--output-dir",
+    "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\evidence\\outputs\\decoy_replicates\\ghsr_seed5",
+    "--native-rerank-config",
+    "C:\\Users\\kevin\\OneDrive\\Documents\\Research\\small_molecule_GLP1_mimics\\GLP1_top_ligand_analysis\\configs\\study_ghsr_benchmark.yaml",
+    "--required-groups",
+    ""
+  ],
+  "settings": {
+    "chemistry_gate_mode": "warn_only",
+    "native_pains_filter": false,
+    "workers": 2,
+    "cascade_hotspot_weight": 0.25,
+    "feature_caps": "fixed",
+    "required_groups": "",
+    "variant": null,
+    "decoy_seed": 5
+  },
+  "cached_scores_used": false,
+  "input_sha256": {
+    "evidence\\outputs\\alert_disabled_revision\\configs\\ghsr_seed5.yaml": "ba27599b8ac401a1dd417e9327f2c9b88bbc59e1cb95f7a02897dc909291849f",
+    "evidence\\data\\replicates\\ghsr_decoyset5.csv": "7517afb8f6e7bf56324d5fa11632356cffb0d35080ec51aad665170a05f19cee",
+    "maps\\pharmacophore_ghsr.json": "3eef2c954273c7fe2ff28af547d73c1ea68a1166ab5de3740187143540419774",
+    "GLP1_top_ligand_analysis\\configs\\study_ghsr_benchmark.yaml": "bd101bc2612c0c41d8749ae0ffa74b5f397ed5fb5f39a6b6f71d1290e91a4a0d"
+  },
+  "source_sha256": {
+    "run_optimized_1M_topological_hashed_screening.py": "a0a74edf143bef20dcf2e9c670fda1c7ae7a2cf31f54fa97c42cc8c4d34de60b",
+    "evidence\\src\\benchmark_runner.py": "c2985691e8d66ea4ba3b12b6222d0aace6ced8501974f73fa6a9bffc727ae339",
+    "evidence\\parallel_native.py": "a2da2d4783705403848f3a741a2c480ca92ef2da4ba12bece63a7d204b812419",
+    "evidence\\run_alert_disabled_suite.py": "91ee230b2b1d269d6f3a795689aa56312024209a9660cad96c051295f01df54d"
+  },
+  "returncode": 0,
+  "elapsed_seconds": 97.47146599999905,
+  "completed_utc": "2026-09-06T23:12:13.979345+00:00"
+}

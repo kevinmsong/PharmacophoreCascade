@@ -3,15 +3,15 @@
   "source_sha256": {
     "evidence\\reevaluate_tied_benchmarks.py": "dc3fce368b3d1dd77720f5011f55e058207b2e67c5b724389c9808127c771771",
     "evidence\\tie_aware_metrics.py": "20bd3482ff574326b244c09a3dc28ec7a87a6eddae28b1304d698dd3e3b15d12",
-    "evidence\\data\\replicates\\ghsr_decoyset3.csv": "483c7e1b3de9c858b39e145a234ee4cc0dafeecdeaecaefa0e10f5ed6329f2d9",
-    "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\full_cascade_ranking.csv": "81956e35e1f899fe64823845d9a0871d08115297897385bd2cb743eea4bf8561",
-    "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\stage3_only_ranking.csv": "b3328b775c98a66bcd5c4d6cc72e4216e9a3ed9ad9a3671bd9ff7b7cfb2ca5e3",
-    "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\standard_3d_pharmacophore_ranking.csv": "3e5d7e8eaffa0ec58c787de304bc236317b62379aa3fef11bd52fd9b76b2b294"
+    "evidence\\data\\replicates\\ghsr_decoyset3.csv": "938d9a2a9943e2680b2bf4933ada74f07f0c33429a3d8401a5072d4aa2e1e23b",
+    "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\full_cascade_ranking.csv": "3aca0e5ed8e601bac977929ba3def67c0a8be78dd8476f817a0d899db7b07538",
+    "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\stage3_only_ranking.csv": "1ad865179d1c87d6bbcd4b125bfa9c4ed3f73fe259f11fd663e82f641a833cc3",
+    "evidence\\outputs\\decoy_replicates\\ghsr_seed3\\benchmark_external\\standard_3d_pharmacophore_ranking.csv": "7c99e1da00ce888f4f8f54a47fad064af672b9593fdd658b88232758412d99bd"
   },
-  "summary_sha256": "dacec12a64635630647752d86df760188dbe03fa56552f600bd2d1dbcd95ab1b",
+  "summary_sha256": "813ed335606144078bae51fbaade24a4144a487c48b5bcd479f56503628cd87e",
   "bootstrap_iterations": 0,
   "seed": 42,
-  "completed_utc": "2026-09-06T23:46:36.056991+00:00",
+  "completed_utc": "2026-09-20T15:44:38.442294+00:00",
   "rule": "Equal status and score are tied; missing scores tie within failure status. ROC-AUC and average precision preserve ties. EF, BEDROC and top-k recovery average over all within-tie permutations.",
   "enrichment_factor_normalization": "Expected active prevalence within the actual ceil(fraction*N) selected positions divided by the full-library active prevalence; the old nominal-fraction denominator is superseded.",
   "unchanged": "Molecular scores, original total-order ranking files, candidate selections, and production floor retention.",
